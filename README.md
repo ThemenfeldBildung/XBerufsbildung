@@ -1,6 +1,6 @@
 # XBerufsbildung
 
-![Logo und Federfuehrer](https://www.xberufsbildung.de/xberufsbildung.de/images/LOGO_XBerufsbildung_DE.png)
+![Logo und Federfuehrer](https://www.xberufsbildung.de/images/LOGO_XBerufsbildung_DE.png)
 
 # Was ist XBerufsbildung?
 
