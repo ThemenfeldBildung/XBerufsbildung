@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.1/xsd"
+           xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
+           xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.1/xsd"
+           version="0.1"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+   <xs:annotation>
+      <xs:appinfo>
+         <standard>
+            <nameLang>XBerufsbildung</nameLang>
+            <nameKurz>XBerufsbildung</nameKurz>
+            <nameTechnisch>xberufsbildung</nameTechnisch>
+            <kennung>urn:xoev-de:kosit:standard:xberufsbildung</kennung>
+            <beschreibung>XBerufsbildung</beschreibung>
+         </standard>
+         <versionStandard>
+            <version>0.1</version>
+            <versionXOEVProfil>3.0.0</versionXOEVProfil>
+            <versionXOEVHandbuch>3.0</versionXOEVHandbuch>
+            <versionXGenerator>3.1.1</versionXGenerator>
+            <versionModellierungswerkzeug>19.0 SP 4</versionModellierungswerkzeug>
+            <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+         </versionStandard>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:include schemaLocation="xberufsbildung-baukasten.xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.95/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.95/xsd"/>
+   <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
+              namespace="http://xoev.de/schemata/code/1_0"/>
+   <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
+              namespace="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"/>
+   <xs:element name="pruefling.pruefungszeugnis.0001">
+      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage/>
+         </xs:appinfo>
+         <xs:documentation>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Auszubildender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Prüfungszeugnis erhält.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="xbd:Dokument">
+               <xs:sequence>
+                  <xs:element name="rechtsgrundlage" maxOccurs="unbounded" type="xoev-code:Code">
+                     <xs:annotation>
+                        <xs:documentation>Gibt die Rechtsgrundlage für das vorliegende Dokument an.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="pruefling" type="xbbd:Pruefling">
+                     <xs:annotation>
+                        <xs:documentation>Der Prüfling ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (Ausbildungsstätte, Weiterbildungsstätte weitere) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="gesamtergebnis" type="xbd:Benotung">
+                     <xs:annotation>
+                        <xs:documentation>Gesamtergebnis fasst die Berechnung der Durchschnittsnote zusammen.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="allgemeineAngaben" type="xbbd:ZeugnisAllgemeineAngaben">
+                     <xs:annotation>
+                        <xs:documentation>allgemeineAngaben enthält die Bezeichnung der durch die Prüfung abgeschlossenen Berufsausblildung, die Bezeichnung der Prüfungsfächer sowie die Benotung und den Bewertungsrahmen.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="besondereLeistung" minOccurs="0" type="xbbd:Bemerkung">
+                     <xs:annotation>
+                        <xs:documentation>Als besondere Leistung kann eine Vielzahl von weiteren strukturierten und unstrukturierte Informationen zur der erbrachten Lesitungen erfasst werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="pruefungsdatum" type="xs:date">
+                     <xs:annotation>
+                        <xs:documentation>prüfungsdatum enthält das Datum an dem die Prüfung abgelegt wurde.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="aussteller" type="xbbd:AusstellendeStelle">
+                     <xs:annotation>
+                        <xs:documentation>aussteller enthält Angaben über Behörden entlang der Lebenslage Berufsbildung, die einen Bildungsnachweis ausstellen.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

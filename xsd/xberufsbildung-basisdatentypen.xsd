@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.1/xsd"
+           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.1/xsd"
+           version="0.1"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+   <xs:annotation>
+      <xs:appinfo>
+         <standard>
+            <nameLang>XBerufsbildung</nameLang>
+            <nameKurz>XBerufsbildung</nameKurz>
+            <nameTechnisch>xberufsbildung</nameTechnisch>
+            <kennung>urn:xoev-de:kosit:standard:xberufsbildung</kennung>
+            <beschreibung>XBerufsbildung</beschreibung>
+         </standard>
+         <versionStandard>
+            <version>0.1</version>
+            <versionXOEVProfil>3.0.0</versionXOEVProfil>
+            <versionXOEVHandbuch>3.0</versionXOEVHandbuch>
+            <versionXGenerator>3.1.1</versionXGenerator>
+            <versionModellierungswerkzeug>19.0 SP 4</versionModellierungswerkzeug>
+            <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+         </versionStandard>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

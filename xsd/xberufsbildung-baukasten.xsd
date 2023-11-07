@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.1/xsd"
+           xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
+           xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.1/xsd"
+           version="0.1"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+   <xs:annotation>
+      <xs:appinfo>
+         <standard>
+            <nameLang>XBerufsbildung</nameLang>
+            <nameKurz>XBerufsbildung</nameKurz>
+            <nameTechnisch>xberufsbildung</nameTechnisch>
+            <kennung>urn:xoev-de:kosit:standard:xberufsbildung</kennung>
+            <beschreibung>XBerufsbildung</beschreibung>
+         </standard>
+         <versionStandard>
+            <version>0.1</version>
+            <versionXOEVProfil>3.0.0</versionXOEVProfil>
+            <versionXOEVHandbuch>3.0</versionXOEVHandbuch>
+            <versionXGenerator>3.1.1</versionXGenerator>
+            <versionModellierungswerkzeug>19.0 SP 4</versionModellierungswerkzeug>
+            <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+         </versionStandard>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.95/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.95/xsd"/>
+   <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
+              namespace="http://xoev.de/schemata/code/1_0"/>
+   <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
+              namespace="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"/>
+   <xs:complexType name="AusstellendeStelle">
+      <xs:annotation>
+         <xs:documentation>Die AusstellendeStelle enthält Angaben über Behörden entlang der Lebenslage Berufsbildung, die einen Bildungsnachweis ausstellen.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="xbd:Organisation"/>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Bemerkung">
+      <xs:annotation>
+         <xs:documentation>Die Klasse "Bemerkung" beinhaltet Angaben zu weiterführenden Informationen mit direktem Berufsschulbezug, die aber nicht einzelnen Fächern zugeordnet sind. Darunter fallen können etwa die Teilnahme an Förderunterricht, freiwilligen Arbeitsgemeinschaften etc.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="beschreibung" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Die Beschreibung ergänzt die Bemerkung um weitere Informationen. Ob und welche Inhalte hier notwendig sind, hängt von der Art der Bemerkung ab.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="art" minOccurs="0" type="xbbd:Code.ArtDerBemerkung">
+            <xs:annotation>
+               <xs:documentation>Die Art der Bemerkung gibt an, ob es sich um standardisierte Bemerkungen handelt oder nicht.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Code.ArtDerBemerkung">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>ArtDerBemerkung</nameLang>
+               <nameKurz>Art der Bemerkung</nameKurz>
+               <nameTechnisch>ArtDerBemerkung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderbemerkung</kennung>
+               <beschreibung>Die Liste "Art der Bemerkung" bildet häufige Bemerkungen ab, damit sie trotz ihres unstrukturierten Charakters besser strukturiert erfasst werden können.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der Bemerkung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xbbd:ArtDerBemerkung-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xberufsbildung-de:xberufsbildung:codeliste:artderbemerkung"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Fach">
+      <xs:annotation>
+         <xs:documentation>Das Fach enthält Angaben zu Inhalten sowie der Bewertung von Prüfungsfächern.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="artDesFachs" maxOccurs="unbounded" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>artDesFachs enthät Angaben darüber, ob die Prüfung praktisch oder theoretisch abglegt wurde.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="bezeichnung" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>bezeichnung enthält den Namen / Titel / Bezeichnung des Prüfungsfachs.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="beschreibung" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>beschreibung enthält die Beschreibung eines Prüfungsfachs.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="benotung" type="xbd:Benotung">
+            <xs:annotation>
+               <xs:documentation>note enthät die Angabe der Note /einer Bewertung für ein Prüfungsfach.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Pruefling">
+      <xs:annotation>
+         <xs:documentation>Der Prüfling ist eine natürliche Person, welche die Teilnhame an einem Bildungsangebot (z.B. Ausbildungstätte, Weiterbildungsstätte) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen (z. B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="xbd:NatuerlichePerson"/>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="ZeugnisAllgemeineAngaben">
+      <xs:annotation>
+         <xs:documentation>zeugnisAllgemeineAngaben enthält die fachlichen Inhalt der abgelegten Prüfung sowie Angaben sowie zu dem Bewertungsrahmen.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="ausbildungsberuf" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>ausbildungsberuf enthält die Bezeichnung des Berufs, den spezifischen Aufbau der Ausbildung sowie die fachliche Ausrichtung des erlernten Berufs.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="fach" maxOccurs="unbounded" type="xbbd:Fach">
+            <xs:annotation>
+               <xs:documentation>fach enthält Angaben zu Inhalten sowie der Bewertung von Prüfungsfächern.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="niveauEqr" minOccurs="0" type="xbd:Code.EQF">
+            <xs:annotation>
+               <xs:documentation>niveauEqr enthält den Referenzrahmen für den Vergleich der verschiedenen nationalen Qualifikationssysteme. Kernstück des EQR sind acht Referenzniveaus.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="ArtDerBemerkung-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>ArtDerBemerkung</nameLang>
+               <nameKurz>Art der Bemerkung</nameKurz>
+               <nameTechnisch>ArtDerBemerkung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderbemerkung</kennung>
+               <beschreibung>Die Liste "Art der Bemerkung" bildet häufige Bemerkungen ab, damit sie trotz ihres unstrukturierten Charakters besser strukturiert erfasst werden können.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der Bemerkung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.1/code/artderbemerkung/10">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>freie Formulierung</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.1/code/artderbemerkung/20">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>sonstige standardisierte Bemerkung</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.1/code/artderbemerkung/25">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Äquivalenzbemerkung</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

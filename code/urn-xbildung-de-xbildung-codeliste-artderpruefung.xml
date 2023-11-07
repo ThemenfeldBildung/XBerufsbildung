@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Art der Prüfung</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen der Art einer Prüfung. Sie wurde mit den Stakeholdern von XBildung und seinen Fachmodulen gemäß den Bedarfen für die jeweiligen Anwendungsfälle erstellt und deckt sich in Teilen mit Einträgen der Assessment Types des European Learning Model (ELM). ELM List Of Assessment Types: https://op.europa.eu/de/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/assessment</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XBildung.de</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>ArtderPruefung-Codes</ShortName>
+      <LongName>Art der Prüfung</LongName>
+      <Version>0.95</Version>
+      <CanonicalUri>urn:xbildung-de:xbildung:codeliste:artderpruefung</CanonicalUri>
+      <CanonicalVersionUri>urn:xbildung-de:xbildung:codeliste:artderpruefung_0.95</CanonicalVersionUri>
+      <Agency>
+         <LongName>XBildung</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="optional">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Prüfung</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-en-GB" Use="optional">
+         <ShortName>description-en-GB</ShortName>
+         <LongName>Type of Exam</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="mapping-ELMAssessmentType" Use="optional">
+         <ShortName>mapping-ELMAssessmentType</ShortName>
+         <LongName>ELM List Of Assessment Types</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/besondere_lernleistung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>besondere Lernleistung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB"/>
+         <Value ColumnRef="mapping-ELMAssessmentType"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/fortlaufende_bewertung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>fortlaufende Bewertung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>continuous evaluation</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ELMAssessmentType">
+            <SimpleValue>http://data.europa.eu/snb/assessment/3484bd7e51</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/kuenstlerische_eignungspruefung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>künstlerische Eignungsprüfung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB"/>
+         <Value ColumnRef="mapping-ELMAssessmentType"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/muendliche_pruefung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>mündliche Prüfung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>oral examination</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ELMAssessmentType">
+            <SimpleValue>http://data.europa.eu/snb/assessment/d30284d7df</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/praesentationspruefung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Präsentationsprüfung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB"/>
+         <Value ColumnRef="mapping-ELMAssessmentType"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/praktische_pruefung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>praktische Prüfung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>practical assessment</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ELMAssessmentType">
+            <SimpleValue>http://data.europa.eu/snb/assessment/6a4db9f11d</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/schriftliche_hausarbeit</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>schriftliche Hausarbeit</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB"/>
+         <Value ColumnRef="mapping-ELMAssessmentType"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/schriftliche_pruefung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>schriftliche Prüfung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>written examination</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ELMAssessmentType">
+            <SimpleValue>http://data.europa.eu/snb/assessment/6e6cb2cc78</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/~wert_nicht_bekannt</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht bekannt</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>value not known</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ELMAssessmentType"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/~wert_nicht_in_liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>value not in list</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ELMAssessmentType"/>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>
