@@ -39,7 +39,7 @@
          <xs:appinfo>
             <rechtsgrundlage/>
          </xs:appinfo>
-         <xs:documentation>Ein Dokument, das die Datenstrukturen enthält, wie sie ein Auszubildender im Rahmen eines digital ausgestellten maschinenverarbeitbaren Prüfungszeugnis erhält.</xs:documentation>
+         <xs:documentation>Diese Nachricht bildet das Prüfungszeugnis ab. Diese enthält Informationen zur Art des Zeugnisses sowie der zugehörigen Rechtsgrundlage, zur ausstellenden Stelle, dem Prüfling, zur Berufsbezeichnung, dem Prüfungsdatum und Ergebnis.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:complexContent>
@@ -62,12 +62,12 @@
                   </xs:element>
                   <xs:element name="allgemeineAngaben" type="xbbd:ZeugnisAllgemeineAngaben">
                      <xs:annotation>
-                        <xs:documentation>allgemeineAngaben enthält die Bezeichnung der durch die Prüfung abgeschlossenen Berufsausblildung, die Bezeichnung der Prüfungsfächer sowie die Benotung und den Bewertungsrahmen.</xs:documentation>
+                        <xs:documentation>allgemeineAngaben enthält die Bezeichnung der durch die Prüfung abgeschlossenen Berufsausbildung, die Bezeichnung der Prüfungsfächer sowie die Benotung und den Bewertungsrahmen.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="besondereLeistung" minOccurs="0" type="xbbd:Bemerkung">
                      <xs:annotation>
-                        <xs:documentation>Als besondere Leistung kann eine Vielzahl von weiteren strukturierten und unstrukturierte Informationen zur der erbrachten Lesitungen erfasst werden.</xs:documentation>
+                        <xs:documentation>Als besondere Leistung kann eine Vielzahl von weiteren strukturierten und unstrukturierten Informationen zu den erbrachten Leistungen erfasst werden.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="pruefungsdatum" type="xs:date">

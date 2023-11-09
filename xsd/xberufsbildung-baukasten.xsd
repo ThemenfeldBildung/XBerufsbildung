@@ -115,7 +115,7 @@
       <xs:sequence>
          <xs:element name="artDesFachs" maxOccurs="unbounded" type="xs:string">
             <xs:annotation>
-               <xs:documentation>artDesFachs enthät Angaben darüber, ob die Prüfung praktisch oder theoretisch abglegt wurde.</xs:documentation>
+               <xs:documentation>artDesFachs enthält Angaben darüber, ob die Prüfung praktisch oder theoretisch abgelegt wurde.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="bezeichnung" minOccurs="0" type="xs:string">
@@ -130,7 +130,7 @@
          </xs:element>
          <xs:element name="benotung" type="xbd:Benotung">
             <xs:annotation>
-               <xs:documentation>note enthät die Angabe der Note /einer Bewertung für ein Prüfungsfach.</xs:documentation>
+               <xs:documentation>note enthält die Angabe der Note /einer Bewertung für ein Prüfungsfach.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
@@ -145,7 +145,7 @@
    </xs:complexType>
    <xs:complexType name="ZeugnisAllgemeineAngaben">
       <xs:annotation>
-         <xs:documentation>zeugnisAllgemeineAngaben enthält die fachlichen Inhalt der abgelegten Prüfung sowie Angaben sowie zu dem Bewertungsrahmen.</xs:documentation>
+         <xs:documentation>zeugnisAllgemeineAngaben enthält die fachlichen Inhalte der abgelegten Prüfung sowie Angaben zu dem Bewertungsrahmen.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="ausbildungsberuf" type="xs:string">
@@ -160,7 +160,7 @@
          </xs:element>
          <xs:element name="niveauEqr" minOccurs="0" type="xbd:Code.EQF">
             <xs:annotation>
-               <xs:documentation>niveauEqr enthält den Referenzrahmen für den Vergleich der verschiedenen nationalen Qualifikationssysteme. Kernstück des EQR sind acht Referenzniveaus.</xs:documentation>
+               <xs:documentation>niveauEqr enthält den Referenzrahmen für den Vergleich der verschiedenen nationalen Qualifikationssysteme. Das Kernstück des EQR sind acht Referenzniveaus.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>

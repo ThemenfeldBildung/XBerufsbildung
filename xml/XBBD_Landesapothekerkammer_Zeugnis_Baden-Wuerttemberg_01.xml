@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+    <!-- 
+        Nichtnormative Beispielinstanz für ein Prüfüungszeugnis basierend auf einem Musterzeugnis der Landesapothekerkammer Baden-Württemberg im Rahmen des Vorhabens XBerufsbildunng
+        Version: XBerufsbildung 0.1 
+        Letzte Aktualisierung: 09.11.2023
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+    -->
+
 <xbbd:pruefling.pruefungszeugnis.0001 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.1/xsd http://xberufsbildung.de/def/xberufsbildung/0.1/xsd/xberufsbildung.xsd"
     xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.1/xsd"
     xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd">
-    
-    <!-- 
-        Datum: 30.10.2023
-        Name der Beispieldatei: Beipielzeugnis der Landesapothekerkammer Baden-Württemberg im Rahmen des Vorhabens XBerufsbildunng
-        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
-    -->
     
     <xbd:titel>Prüfungszeugnis</xbd:titel>
     
@@ -46,19 +47,6 @@
         <xbd:note>1.7</xbd:note>
         <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
         <xbd:punkte>92</xbd:punkte>
-        <xbd:bewertungsschemaNote>
-            <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-            <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
-            <xbd:besteBewertung>1</xbd:besteBewertung>
-            <xbd:bestandenAbBewertung>4</xbd:bestandenAbBewertung>
-            <xbd:schlechtesteBewertung>6</xbd:schlechtesteBewertung>
-        </xbd:bewertungsschemaNote>
-        <xbd:bewertungsschemaPunkte>
-            <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
-            <xbd:besteBewertung>100</xbd:besteBewertung>
-            <xbd:bestandenAbBewertung>50</xbd:bestandenAbBewertung>
-            <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
-        </xbd:bewertungsschemaPunkte>
     </xbbd:gesamtergebnis>
     
    <xbbd:allgemeineAngaben>
