@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>ArtDerBemerkung-Codes</ShortName>
       <LongName>ArtDerBemerkung</LongName>
-      <Version>0.1</Version>
+      <Version>0.2</Version>
       <CanonicalUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderbemerkung</CanonicalUri>
-      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderbemerkung_0.1</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderbemerkung_0.2</CanonicalVersionUri>
       <Agency>
          <LongName>XBerufsbildung</LongName>
       </Agency>
@@ -47,7 +47,23 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/artderbemerkung/10</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/aequivalenzbemerkung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Äquivalenzbemerkung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/befreiung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Befreiung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/freie_formulierung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>freie Formulierung</SimpleValue>
@@ -55,18 +71,10 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/artderbemerkung/20</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/sonstige_standardisierte_bemerkung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>sonstige standardisierte Bemerkung</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/artderbemerkung/25</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Äquivalenzbemerkung</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

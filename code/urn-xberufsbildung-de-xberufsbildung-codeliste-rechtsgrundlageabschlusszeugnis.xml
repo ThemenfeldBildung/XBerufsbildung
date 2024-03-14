@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Rechtsgrundlage Abschlusszeugnis</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Die Liste "rechtsgrundlageabschlusszeugnis" bildet häufig verwendete Rechtsgrundlagen im Rahmen der Ausstellung eines Abschlusszeugnisses ab.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XBerufsbildung</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>RechtsgrundlageAbschlusszeugnis-Codes</ShortName>
+      <LongName>Rechtsgrundlage Abschlusszeugnis</LongName>
+      <Version>0.1</Version>
+      <CanonicalUri>urn:xberufsbildung-de:xberufsbildung:codeliste:rechtsgrundlageabschlusszeugnis</CanonicalUri>
+      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:rechtsgrundlageabschlusszeugnis_0.1</CanonicalVersionUri>
+      <Agency>
+         <LongName>XBerufsbildung</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Art der Bemerkung</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+      <Key Id="description-de-DEKey">
+         <ShortName>description-de-DEKey</ShortName>
+         <ColumnRef Ref="description-de-DE"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/31(2)_hwo</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>§ 31 Abs. 2 HwO</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>§ 37 Abs. 2 BBiG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37_bbig</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>§ 37 BBiG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/62(3)_ivm_37(2)_bbig</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>§ 62 Abs. 3 i.V.m. § 37 Abs. 2 BBiG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/66_ivm_ 37(2)_bbig</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>§ 66 i.V.m. § 37 Abs. 2 BBiG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

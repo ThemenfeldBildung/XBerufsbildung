@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE
+                    appendix
+                    [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><appendix xmlns="http://docbook.org/ns/docbook"
+          version="5"
+          xml:lang="de"
+          xml:id="schluesseltabellen"
+          status="&specstatus;"
+          revision="&xrecent;">
+   <title xmlns:xlink="http://www.w3.org/1999/xlink">Codelisten</title>
+   <para xmlns:xlink="http://www.w3.org/1999/xlink">In diesem Abschnitt sind die in XBerufsbildung verwendeten Codelisten und ihre Inhalte aufgeführt.</para>
+   <section xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:id="schluesseltabellen.uebersicht">
+      <title>Übersicht</title>
+      <para>In der nachstehenden Tabelle werden die folgenden Informationen dargestellt:</para>
+      <variablelist>
+         <varlistentry>
+            <term>Codeliste</term>
+            <listitem>
+               <para>Alle in XBerufsbildung genutzten Codelisten in alphabetischer Reihenfolge, die in mindestens einem Code-Datentyp genutzt werden (Typ der Codelistennutzung 1 bis 3).<footnote xml:id="no-entry">
+                     <para>Sofern in der Spalte „Code-Datentyp(en)“ kein Eintrag vorhanden ist, bedeutet dies, dass der Standard die jeweilige Codeliste verwendet und dokumentieren möchte. Der die Codeliste nutzende Code-Datentyp ist jedoch nicht im Standard spezifiziert.</para>
+                  </footnote>
+               </para>
+            </listitem>
+         </varlistentry>
+         <varlistentry>
+            <term>Version</term>
+            <listitem>
+               <para>Die Version der Codeliste.</para>
+            </listitem>
+         </varlistentry>
+         <varlistentry>
+            <term>Code-Datentyp(en)</term>
+            <listitem>
+               <para>Die die jeweilige Codeliste nutzenden Code-Datentypen.<footnoteref linkend="no-entry"/>
+               </para>
+            </listitem>
+         </varlistentry>
+      </variablelist>
+      <para>Die Namen der Code-Datentypen und der Codelisten stellen Links zu den jeweiligen Detail-Abschnitten dar.</para>
+      <informaltable version="5" xml:lang="de" xml:id="codelisten-uebersichtstabelle">
+         <tgroup cols="3">
+            <colspec colnum="1" colname="codeliste" colwidth="63mm"/>
+            <colspec colnum="2" colname="version" colwidth="34mm"/>
+            <colspec colnum="3" colname="code" colwidth="63mm"/>
+            <thead>
+               <row>
+                  <entry>Codeliste</entry>
+                  <entry>Version</entry>
+                  <entry>Code-Datentyp(en)</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderbemerkung.ArtDerBemerkung-Codes">Art der Bemerkung</link>
+                  </entry>
+                  <entry align="left">0.2</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBemerkung">Code.ArtDerBemerkung</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.de.dsmeld.schluesseltabelle.gesetzlicher.vertreter.GesetzlicherVertreter-Codes">Gesetzlicher Vertreter</link>
+                  </entry>
+                  <entry align="left">3</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.GesetzlicherVertreter">Code.GesetzlicherVertreter</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.rechtsgrundlageabschlusszeugnis.RechtsgrundlageAbschlusszeugnis-Codes">Rechtsgrundlage Abschlusszeugnis</link>
+                  </entry>
+                  <entry align="left">0.1</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.RechtsgrundlageAbschlusszeugnis">Code.RechtsgrundlageAbschlusszeugnis</link>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </informaltable>
+   </section>
+   <section xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:id="schluesseltabellen.details">
+      <title>Details</title>
+      <section xml:id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderbemerkung.ArtDerBemerkung-Codes">
+         <title>Art der Bemerkung</title><para>Die Liste "Art der Bemerkung" bildet häufige Bemerkungen ab, damit sie trotz ihres unstrukturierten Charakters besser strukturiert erfasst werden können.</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>ArtDerBemerkung</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Art der Bemerkung</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:artderbemerkung</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XBerufsbildung (XBerufsbildung)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.2</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code</entry>
+                        <entry align="left">description-de-DE (Art der Bemerkung)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/aequivalenzbemerkung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​2​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​a​e​q​u​i​v​a​l​e​n​z​b​e​m​e​r​k​u​n​g</link>
+                        </entry>
+                        <entry align="left">Äquivalenzbemerkung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/befreiung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​2​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​b​e​f​r​e​i​u​n​g</link>
+                        </entry>
+                        <entry align="left">Befreiung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/freie_formulierung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​2​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​f​r​e​i​e​_​f​o​r​m​u​l​i​e​r​u​n​g</link>
+                        </entry>
+                        <entry align="left">freie Formulierung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/sonstige_standardisierte_bemerkung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​2​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​s​o​n​s​t​i​g​e​_​s​t​a​n​d​a​r​d​i​s​i​e​r​t​e​_​b​e​m​e​r​k​u​n​g</link>
+                        </entry>
+                        <entry align="left">sonstige standardisierte Bemerkung</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.de.dsmeld.schluesseltabelle.gesetzlicher.vertreter.GesetzlicherVertreter-Codes">
+         <title>Gesetzlicher Vertreter</title><para>Mit dieser Schlüsseltabelle wird die Art der gesetzlichen Vertretung abgebildet. Siehe Blatt 0001 des DSMeld.</para>
+
+<para><emphasis role="bold">Link zur Webseite:</emphasis> <link xlink:href="https://www.xrepository.de/details/urn:de:dsmeld:schluesseltabelle:gesetzlicher.vertreter">https://www.xrepository.de/details/​urn​:de​:dsmeld​:schluesseltabelle​:gesetzlicher​.vertreter</link></para>
+
+<para><emphasis role="bold">Code:</emphasis> Der zu verwendende Schlüssel ist der Eintrag in der empfohlenen Codespalte "key".</para>
+<para><emphasis role="bold">Beispiele:</emphasis> (Element : Code)
+<itemizedlist spacing="compact" mark="-">
+<listitem><para><emphasis role="bold">Vater, Elternteil</emphasis> : 1</para></listitem>
+<listitem><para><emphasis role="bold">Mutter, Elternteil</emphasis> : 2</para></listitem>
+<listitem><para><emphasis role="bold">anderer gesetzlicher Vertreter (natürliche Person)</emphasis> : 3</para></listitem>
+<listitem><para><emphasis role="bold">anderer gesetzlicher Vertreter (juristische Person)</emphasis> : 4</para></listitem>
+</itemizedlist>
+</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>DSMeld Gesetzlicher Vertreter (DSMeld 0001)</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Gesetzlicher Vertreter</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:de:dsmeld:schluesseltabelle:gesetzlicher.vertreter</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>Koordinierungsstelle für IT-Standards (KoSIT)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>3</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.rechtsgrundlageabschlusszeugnis.RechtsgrundlageAbschlusszeugnis-Codes">
+         <title>Rechtsgrundlage Abschlusszeugnis</title><para>Die Liste "rechtsgrundlageabschlusszeugnis" bildet häufig verwendete Rechtsgrundlagen im Rahmen der Ausstellung eines Abschlusszeugnisses ab.</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Rechtsgrundlage Abschlusszeugnis</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Rechtsgrundlage Abschlusszeugnis</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:rechtsgrundlageabschlusszeugnis</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XBerufsbildung (XBerufsbildung)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.1</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code</entry>
+                        <entry align="left">description-de-DE (Art der Bemerkung)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/31(2)_hwo">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​3​1​(​2​)​_​h​w​o</link>
+                        </entry>
+                        <entry align="left">§ 31 Abs. 2 HwO</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​3​7​(​2​)​_​b​b​i​g</link>
+                        </entry>
+                        <entry align="left">§ 37 Abs. 2 BBiG</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​3​7​_​b​b​i​g</link>
+                        </entry>
+                        <entry align="left">§ 37 BBiG</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/62(3)_ivm_37(2)_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​6​2​(​3​)​_​i​v​m​_​3​7​(​2​)​_​b​b​i​g</link>
+                        </entry>
+                        <entry align="left">§ 62 Abs. 3 i.V.m. § 37 Abs. 2 BBiG</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/66_ivm_ 37(2)_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​6​6​_​i​v​m​_ 3​7​(​2​)​_​b​b​i​g</link>
+                        </entry>
+                        <entry align="left">§ 66 i.V.m. § 37 Abs. 2 BBiG</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+   </section>
+</appendix>

@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE section [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+    xml:id="spezifikation.kernkomponenten">
+    <info>
+        <title>Kernkomponenten</title>
+    </info>
+    
+    <para> Mit der Version 1.0 von XBildung wurde ein neues Konzept zur Einbindung von
+        Kernkomponenten erstellt. Dieses Konzept sieht es vor, dass die Fachmodule die
+        Kernkomponenten direkt einbinden, diese jedoch so angepasst werden, wie es das jeweilige
+        Fachmodul erfordert. </para>
+    <para>Für XBerufsbildung wurde beispielsweise die Kernkomponente NatuerlichePerson in Auszubildender und Pruefling umbenannt. Die Kernkomponente Organisation wurde für den spezifischen Anwendungsfall von
+        XBerufsbildung in StelleAusstellend umbenannt.</para>
+    <para>Im folgenden sind alle XBerufsbildung-spezifischen Kernkomponenten aufgelistet:</para>
+
+    <!--<include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/AusstellendeStelle.xml"/>-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/AllgemeinerName.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/AlternativeRepraesentation.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Anschrift.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Auszubildender.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Behoerde.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Behoerdenkennung.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Geburt.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Geschlecht.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Identifikation.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Kommunikation.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/NameNatuerlichePerson.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/NameOrganisation.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Organisationseinheit.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Ortsangabe.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Pruefling.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Registrierung.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/StelleAusstellend.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/VerwaltungspolitischeKodierung.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Zeitraum.xml"/>
+    
+</chapter>

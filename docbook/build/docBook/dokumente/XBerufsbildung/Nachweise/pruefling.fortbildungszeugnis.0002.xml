@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis.0002">
+   <title>pruefling.fortbildungszeugnis.0002</title>
+   <subtitle>Nachricht: <emphasis role="codebf">pruefling.fortbildungszeugnis.0002</emphasis>
+   </subtitle><para>Diese Nachricht bildet das Fortbildungszeugnis, das die erfolgreiche Teilnahme an einer Fortbildungsprüfung bescheinigt, ab. Diese enthält Angaben zum Prüfling, zum Fortbildungsabschluss, zum Prüfungsergebnis, zur Fortbildungsordnung, zur ausstellenden Stelle, zum Datum des Bestehens der Prüfung und ggf. weitere zusätzliche Angaben.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis.0002">
+      <title>pruefling.fortbildungszeugnis.0002</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XBerufsbildung/Nachweise/pruefling.fortbildungszeugnis.0002.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <informaltable xml:id="table.XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis.0002">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">pruefling.fortbildungszeugnis.0002</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">pruefling</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Pruefling</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Pruefling"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Pruefling"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der Prüfling ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (in einer Ausbildungs- oder Weiterbildungsstätte) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen wie beispielsweise Zeugnissen beurkunden oder bescheinigen kann.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">allgemeineAngaben</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>allgemeineAngaben enthält Informationen zur abgeschlossenen Fortbildung, eine Übersicht der Prüfungsteilen und -bereiche sowie deren Benotung, das DQR-Niveau und ggf. die Befreiung von vergleichbaren Prüfungsbestandteilen.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">fortbildungsabschluss</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Fortbildungsabschluss</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Fortbildungsabschluss"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Fortbildungsabschluss"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>fortbildungsabschluss enthält die Bezeichnung des Berufs, die Fundstelle der Fortbildungsordnung und ggf. den Schwerpunkt der jeweiligen Fortbildung.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">pruefungsuebersicht</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Pruefungsuebersicht</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Pruefungsuebersicht"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Pruefungsuebersicht"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>pruefungsuebersicht enthält Angaben zu den Prüfungsteilen und -bereichen sowie deren Bewertung.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">befreiung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>befreiung enthält die Angabe zur Befreiung von einzelnen, rechtlich selbstständigen Prüfungsbestandteilen der jeweiligen Fortbildungsprüfung (Prüfungsteile, Prüfungsbereiche, Prüfungsfächer oder Handlungsfächer).</para>
+ 
+
+</entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">niveauDQR</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.EQF</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>niveauDQR enthält die Einordnung des erworbenen Abschlusses in den Deutschen Qualifikationsrahmen. Das Kernstück des DQR sind acht Referenzniveaus, die den acht Niveaus des Europäischen Qualifikationsrahmens (EQR) entsprechen.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">zusaetzlicheAngaben</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Bemerkung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Bemerkung" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Bemerkung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Als zusätzliche Angabe kann eine Vielzahl von weiteren strukturierten und unstrukturierten Informationen zu den erbrachten Leistungen erfasst werden, z. B. Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">gesamtergebnis</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Benotung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>gesamtergebnis fasst die Berechnung der erreichten Durchschnittsnote zusammen.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">pruefungsdatum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:date</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>prüfungsdatum enthält das Datum an dem die Prüfung abgelegt wurde.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">aussteller</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">StelleAusstellend</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleAusstellend"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleAusstellend"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>aussteller enthält Angaben über die zuständige Stelle entlang der Lebenslage Berufsbildung, die einen Bildungsnachweis ausstellt.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+</section>

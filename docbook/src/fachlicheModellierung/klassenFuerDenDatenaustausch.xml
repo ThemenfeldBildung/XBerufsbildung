@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE section [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+    xml:id="spezifikation.klassenFuerDenDatenaustausch">
+    <info>
+        <title>Klassen für den Datenaustausch</title>
+    </info>
+
+    <!--<include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/AusstellendeStelle.xml"/>-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/AngabenAusbildung.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Ausbildungsberuf.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Ausbildungsbetrieb.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Ausbildungsstaette.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Bemerkung.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Fortbildungsabschluss.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/GesetzlicherVertreter.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Pruefungsbereich.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Pruefungsuebersicht.xml"/>
+    
+</chapter>
