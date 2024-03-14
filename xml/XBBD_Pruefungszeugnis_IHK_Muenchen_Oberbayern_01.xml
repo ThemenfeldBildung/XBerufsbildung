@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!-- 
+        Nichtnormative Beispielinstanz für ein Prüfüungszeugnis basierend auf einem Musterzeugnis der IHK München-Oberbayern im Rahmen des Vorhabens XBerufsbildunng
+        Version: XBerufsbildung 0.2 
+        Letzte Aktualisierung: 14.03.2024
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+    -->
+<xbbd:pruefling.pruefungszeugnis.0001 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd http://xberufsbildung.de/def/xberufsbildung/0.2/xsd/xberufsbildung.xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd">
+    
+    <titel>Prüfungszeugnis</titel>
+    
+    <ausstellung>
+        <datum>2023-11-21</datum>
+        <ort>
+            <ort>München</ort>
+        </ort>
+    </ausstellung>
+    
+    <sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </sprache>
+    
+    <xbbd:rechtsgrundlage>
+        <xbbd:code>
+            <code>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37_bbig</code>
+        </xbbd:code>
+    </xbbd:rechtsgrundlage>
+    
+    <xbbd:pruefling>
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:familienname>
+                <xbbd:name>Musterfrau</xbbd:name>
+            </xbbd:familienname>
+            <xbbd:vorname>
+                <xbbd:name>Magdalena</xbbd:name>
+            </xbbd:vorname>
+        </xbbd:nameNatuerlichePerson>
+        <xbbd:geburt>
+            <xbbd:datum>
+                <jahrMonatTag>1997-04-01</jahrMonatTag>
+            </xbbd:datum>
+        </xbbd:geburt>
+    </xbbd:pruefling>
+   
+   <xbbd:gesamtergebnis>
+       <wortbezeichnung>gut</wortbezeichnung>
+       <punkte>81</punkte>
+       <bewertungsschemaNote>
+               <beschreibung>
+               100-90 Punkte Note 1 = sehr gut,
+               unter 92 - 81 Punkte Note 2 = gut,
+               unter 81 - 67 Punkte Note 3 = befriedigend,
+               unter 67 - 50 Punkte Note 4 = ausreichend,
+               unter 50 - 30 Punkte Note 5 = mangelhaft,
+               unter 30 Punkte Note 6 = ungenügend
+           </beschreibung>
+           <besteBewertung>1</besteBewertung>
+           <bestandenAbBewertung>4</bestandenAbBewertung>
+           <schlechtesteBewertung>6</schlechtesteBewertung>
+       </bewertungsschemaNote>
+       <bewertungsschemaPunkte>
+           <beschreibung>
+               100-90 Punkte Note 1 = sehr gut,
+               unter 92 - 81 Punkte Note 2 = gut,
+               unter 81 - 67 Punkte Note 3 = befriedigend,
+               unter 67 - 50 Punkte Note 4 = ausreichend,
+               unter 50 - 30 Punkte Note 5 = mangelhaft,
+               unter 30 Punkte Note 6 = ungenügend</beschreibung>
+           <besteBewertung>100</besteBewertung>
+           <bestandenAbBewertung>50</bestandenAbBewertung>
+           <schlechtesteBewertung>00</schlechtesteBewertung>
+       </bewertungsschemaPunkte>
+   </xbbd:gesamtergebnis>
+    
+    <xbbd:allgemeineAngaben>
+        <xbbd:ausbildungsberuf>
+            <xbbd:bezeichnung>Elektronikerin für Maschinen und Antriebstechnik</xbbd:bezeichnung>
+            <xbbd:fundstelle>BGBl. I S. 662, 714</xbbd:fundstelle>            
+        </xbbd:ausbildungsberuf>
+        
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 1 der Abschlussprüfung</xbbd:pruefungsteil>         
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Arbeitsauftrag</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <note>befriedigend</note>
+                    <punkte>78</punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+         </xbbd:pruefungsuebersicht>
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 2 der Abschlussprüfung</xbbd:pruefungsteil>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Betrieblicher Auftrag</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <note>gut</note>
+                    <punkte>90</punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+        </xbbd:pruefungsuebersicht>
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 2 der Abschlussprüfung</xbbd:pruefungsteil>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Systementwurf</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <note>ausreichend</note>
+                    <punkte>56</punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+        </xbbd:pruefungsuebersicht>
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 2 der Abschlussprüfung</xbbd:pruefungsteil>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Funktions- und Systemanalyse</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <note>sehr gut</note>
+                    <punkte>100</punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+        </xbbd:pruefungsuebersicht>
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 2 der Abschlussprüfung</xbbd:pruefungsteil>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Wirtschafts- und Sozialkunde</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <note>befriedigend</note>
+                    <punkte>78</punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>        
+        </xbbd:pruefungsuebersicht>
+        
+        <xbbd:niveauDQR listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
+            <code>4</code>
+        </xbbd:niveauDQR>
+    </xbbd:allgemeineAngaben>
+    
+    <xbbd:pruefungsdatum>2019-05-13</xbbd:pruefungsdatum>
+    
+    <xbbd:aussteller>
+        <xbbd:name>
+            <xbbd:name>IHK München Oberbayern</xbbd:name>
+        </xbbd:name>
+    </xbbd:aussteller>
+   
+</xbbd:pruefling.pruefungszeugnis.0001>
