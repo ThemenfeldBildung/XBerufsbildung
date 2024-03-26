@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Testdatei: T01_pruefungszeugnis_min_positiv.xml
+    Datei enthält alle Pflichtfelder eines Abschluss-Prüfungszeugnisses nach XBBD v0.2
+    Letzte Aktualisierung: 22.03.2024 
+    Lizenz: Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag von BMBF und Land Sachsen-Anhalt"
+-->
+<xbbd:pruefling.pruefungszeugnis.0001
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd http://xberufsbildung.de/def/xberufsbildung/0.2/xsd/xberufsbildung.xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd">
+    
+    <sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </sprache>
+    
+    <xbbd:rechtsgrundlage>
+        <xbbd:code>
+            <code>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37_bbig</code>
+        </xbbd:code>
+    </xbbd:rechtsgrundlage>
+    
+    <xbbd:pruefling>
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:familienname>
+                <xbbd:name>Musterfrau</xbbd:name>
+            </xbbd:familienname>
+            <xbbd:vorname>
+                <xbbd:name>Magdalena</xbbd:name>
+            </xbbd:vorname>
+        </xbbd:nameNatuerlichePerson>
+        <xbbd:geburt>
+            <xbbd:datum>
+                <jahrMonatTag>1997-04-01</jahrMonatTag>
+            </xbbd:datum>
+        </xbbd:geburt>
+    </xbbd:pruefling>
+    
+    <xbbd:gesamtergebnis>
+        <punkte>81</punkte>
+    </xbbd:gesamtergebnis>
+    <xbbd:allgemeineAngaben>
+        <xbbd:ausbildungsberuf>
+            <xbbd:bezeichnung>Elektronikerin für Maschinen und Antriebstechnik</xbbd:bezeichnung>
+        </xbbd:ausbildungsberuf>
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 1 der Abschlussprüfung</xbbd:pruefungsteil>
+        </xbbd:pruefungsuebersicht>
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 2 der Abschlussprüfung</xbbd:pruefungsteil>
+        </xbbd:pruefungsuebersicht>
+    </xbbd:allgemeineAngaben>
+    
+    <xbbd:pruefungsdatum>2019-05-13</xbbd:pruefungsdatum>
+    
+    <xbbd:aussteller>
+        <xbbd:name>
+            <xbbd:name>IHK München Oberbayern</xbbd:name>
+        </xbbd:name>
+    </xbbd:aussteller>
+    
+</xbbd:pruefling.pruefungszeugnis.0001>
