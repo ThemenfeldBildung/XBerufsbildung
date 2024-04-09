@@ -1,6 +1,6 @@
 ---
-name: 'XBBD: Rückmeldung zu aktueller Version'
-about: Rückmeldung zu aktueller Version
+name: 'XBBD: Feedback zur Spezifikation'
+about: Rückmeldung zur aktuellen Version
 title: ''
 labels: ''
 assignees: ''
