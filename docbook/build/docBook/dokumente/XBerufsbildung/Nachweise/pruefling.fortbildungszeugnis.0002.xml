@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis.0002">
    <title>pruefling.fortbildungszeugnis.0002</title>
    <subtitle>Nachricht: <emphasis role="codebf">pruefling.fortbildungszeugnis.0002</emphasis>
-   </subtitle><para>Diese Nachricht bildet das Fortbildungszeugnis, das die erfolgreiche Teilnahme an einer Fortbildungsprüfung bescheinigt, ab. Diese enthält Angaben zum Prüfling, zum Fortbildungsabschluss, zum Prüfungsergebnis, zur Fortbildungsordnung, zur ausstellenden Stelle, zum Datum des Bestehens der Prüfung und ggf. weitere zusätzliche Angaben.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis.0002">
+   </subtitle><para>Diese Nachricht bildet das Fortbildungszeugnis nach BBiG und HwO ab, das die erfolgreiche Teilnahme an einer Fortbildungsprüfung bescheinigt. Diese enthält Angaben zum Prüfling, zum Fortbildungsabschluss, zum Prüfungsergebnis, zur Fortbildungsordnung, zur ausstellenden Stelle, zum Datum des Bestehens der Prüfung und ggf. weitere zusätzliche Angaben.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis.0002">
       <title>pruefling.fortbildungszeugnis.0002</title>
       <mediaobject>
          <imageobject>
@@ -67,7 +67,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Der Prüfling ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (in einer Ausbildungs- oder Weiterbildungsstätte) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen wie beispielsweise Zeugnissen beurkunden oder bescheinigen kann.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element beschreibt eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (in einer Ausbildungs- oder Weiterbildungsstätte) Wissen und Kompetenzen erworben hat, die mit Bildungsnachweisen wie beispielsweise Zeugnissen beurkundet oder bescheinigt werden können.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -81,7 +81,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>allgemeineAngaben enthält Informationen zur abgeschlossenen Fortbildung, eine Übersicht der Prüfungsteilen und -bereiche sowie deren Benotung, das DQR-Niveau und ggf. die Befreiung von vergleichbaren Prüfungsbestandteilen.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Informationen zur abgeschlossenen Fortbildung, eine Übersicht der Prüfungsteile und -bereiche sowie deren Benotung, das DQR-Niveau und ggf. die Befreiung von vergleichbaren Prüfungsbestandteilen.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -105,7 +105,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>fortbildungsabschluss enthält die Bezeichnung des Berufs, die Fundstelle der Fortbildungsordnung und ggf. den Schwerpunkt der jeweiligen Fortbildung.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält die Bezeichnung des Berufs, die Fundstelle der Fortbildungsordnung und ggf. den Schwerpunkt der jeweiligen Fortbildung.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -113,23 +113,23 @@
                   <emphasis role="bold">pruefungsuebersicht</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Pruefungsuebersicht</emphasis>
+                  <emphasis role="codebf">PruefungsuebersichtFortbildungszeugnis</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1..n</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Pruefungsuebersicht"
+                  <xref linkend="XBerufsbildung.Baukasten.PruefungsuebersichtFortbildungszeugnis"
                         role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Pruefungsuebersicht"
+                  <xref linkend="XBerufsbildung.Baukasten.PruefungsuebersichtFortbildungszeugnis"
                         role="Seitenzahl"/>
                </entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>pruefungsuebersicht enthält Angaben zu den Prüfungsteilen und -bereichen sowie deren Bewertung.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält Angaben zu den Prüfungsteilen und -bereichen sowie deren Bewertung.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -147,7 +147,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>befreiung enthält die Angabe zur Befreiung von einzelnen, rechtlich selbstständigen Prüfungsbestandteilen der jeweiligen Fortbildungsprüfung (Prüfungsteile, Prüfungsbereiche, Prüfungsfächer oder Handlungsfächer).</para>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält die Angabe zur Befreiung von einzelnen, rechtlich selbstständigen Prüfungsbestandteilen der jeweiligen Fortbildungsprüfung (Prüfungsteile, Prüfungsbereiche, Prüfungsfächer oder Handlungsfächer).</para>
  
 
 </entry>
@@ -172,7 +172,7 @@
             </row>
             <row>
                <entry rowsep="1" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>niveauDQR enthält die Einordnung des erworbenen Abschlusses in den Deutschen Qualifikationsrahmen. Das Kernstück des DQR sind acht Referenzniveaus, die den acht Niveaus des Europäischen Qualifikationsrahmens (EQR) entsprechen.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält die Einordnung des erworbenen Abschlusses in den Deutschen Qualifikationsrahmen. Das Kernstück des DQR sind acht Referenzniveaus, die den acht Niveaus des Europäischen Qualifikationsrahmens (EQR) entsprechen.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -192,7 +192,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Als zusätzliche Angabe kann eine Vielzahl von weiteren strukturierten und unstrukturierten Informationen zu den erbrachten Leistungen erfasst werden, z. B. Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält zusätzliche Angaben und kann eine Vielzahl von weiteren strukturierten und unstrukturierten Informationen zu den erbrachten Leistungen erfassen, z. B. Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -212,7 +212,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>gesamtergebnis fasst die Berechnung der erreichten Durchschnittsnote zusammen.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element fasst die Berechnung der erreichten Durchschnittsnote zusammen. Das Gesamtergebnis ist die zusammenfassende Bewertung der Leistungen eines Prüflings, die aus den Einzelbewertungen der verschiedenen Prüfungsteile errechnet wird und den Erfolg oder Misserfolg der gesamten Prüfung widerspiegelt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -228,29 +228,29 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>prüfungsdatum enthält das Datum an dem die Prüfung abgelegt wurde.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält das spezifische Datum, an dem eine einzelne Prüfung im Rahmen der Abschlussprüfungen für einen Ausbildungsberuf stattfindet.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">aussteller</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">StelleAusstellend</emphasis>
+                  <emphasis role="codebf">NameOrganisation</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleAusstellend"
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation"
                         role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleAusstellend"
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation"
                         role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>aussteller enthält Angaben über die zuständige Stelle entlang der Lebenslage Berufsbildung, die einen Bildungsnachweis ausstellt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zu einer Institution oder Behörde, die offizielle Dokumente, Zertifikate oder Nachweise erstellt und ausstellt.</para></entry>
             </row>
          </tbody>
       </tgroup>

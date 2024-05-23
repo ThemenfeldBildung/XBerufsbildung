@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Ausbildungsstaette">
    <title>Ausbildungsstaette</title>
    <subtitle>Typ: <emphasis role="codebf">Ausbildungsstaette</emphasis>
-   </subtitle><para>Die Klasse "Ausbildungsstaette" beinhaltet Angaben zur Ausbildungsstätte des Ausbildungsbetriebs. Eine Ausbildungsstätte ist anzugeben, wenn sich der Hauptsitz eines Unternehmens an einem anderen Ort befindet als der Standort, an dem die Berufsausbildung absolviert wird. Beim Ausbildungsbetrieb wird in diesem Fall der Hauptsitz angegeben. Die Angaben zum Standort, an dem die Ausbildung größtenteils absolviert wird, werden unter der Ausbildungsstätte erfasst.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Ausbildungsstaette">
+   </subtitle><para>Die Klasse enthält Informationen zur Ausbildungsstätte eines Ausbildungsbetriebs. Wenn der Hauptsitz des Unternehmens nicht mit dem Ausbildungsort übereinstimmt, wird der Hauptsitz als Ausbildungsbetrieb und der Ausbildungsort als Ausbildungsstätte angegeben.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Ausbildungsstaette">
       <title>Ausbildungsstaette</title>
       <mediaobject>
          <imageobject>
@@ -66,7 +66,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>name gibt den Namen der Ausbildungsstaette an.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element gibt den Namen der Ausbildungsstätte an. Die Ausbildungsstätte ist der Ort oder die Einrichtung, an dem die Auszubildenden sowohl die praktische als auch theoretische Ausbildung für einen spezifischen Beruf erhalten.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -88,7 +88,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>anschrift enthält Angaben zur Anschrift der Ausbildungsstätte. Bei Bedarf kann über den Typ der Anschrift auf deren Verwendung als Postanschrift, Niederlassungsanschrift oder Gründungsanschrift verwiesen werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element bietet Informationen zur Adresse der Ausbildungsstätte. Bei Bedarf kann angegeben werden, ob es sich um die Postanschrift, die Adresse einer Niederlassung oder die Gründungsanschrift handelt.</para></entry>
             </row>
          </tbody>
       </tgroup>

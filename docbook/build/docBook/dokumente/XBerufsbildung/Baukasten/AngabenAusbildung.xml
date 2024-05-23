@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.AngabenAusbildung">
    <title>AngabenAusbildung</title>
    <subtitle>Typ: <emphasis role="codebf">AngabenAusbildung</emphasis>
-   </subtitle><para>Die Klasse "AngabenAusbildung" enthält die Bezeichnung des Ausbildungsberufs, Informationen zum Ausbildungszeitraum der Berufsausbildung sowie zum Prüfungstermin.</para><figure xml:id="figure.XBerufsbildung.Baukasten.AngabenAusbildung">
+   </subtitle><para>Die Klasse enthält die Bezeichnung des Ausbildungsberufs, Informationen zum Ausbildungszeitraum der Berufsausbildung sowie zum Prüfungstermin.</para><figure xml:id="figure.XBerufsbildung.Baukasten.AngabenAusbildung">
       <title>AngabenAusbildung</title>
       <mediaobject>
          <imageobject>
@@ -65,7 +65,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>ausbildungsberuf enthält die Bezeichnung des erlernten Berufs, die Fundstelle der Ausbildungsverordnung sowie weitere prüfungsrelevante Binnendifferenzierungen.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung des erlernten Berufs, die Fundstelle der Ausbildungsverordnung sowie weitere prüfungsrelevante Binnendifferenzierungen.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -87,7 +87,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>ausbildungszeitraum enthält einen Datumsbereich, in dem die Ausbildung planmäßig stattfinden wird.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die festgelegte Dauer, über die eine berufliche Ausbildung hinweg erfolgt, typischerweise in Jahren angegeben, wie etwa drei Jahre für viele duale Ausbildungsberufe in Deutschland.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -107,7 +107,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>pruefungstermin enthält das Datum, an dem die letzte Prüfung abgelegt wird.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält das spezifische Datum, an dem eine einzelne Prüfung im Rahmen der Abschlussprüfungen für einen Ausbildungsberuf stattfindet.</para></entry>
             </row>
          </tbody>
       </tgroup>

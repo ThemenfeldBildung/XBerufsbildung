@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Kernkomponenten.Auszubildender">
    <title>Auszubildender</title>
    <subtitle>Typ: <emphasis role="codebf">Auszubildender</emphasis>
-   </subtitle><para>Auszubildender ist eine natürliche Person, die auf der Grundlage eines Berufsausbildungsvertrages im Rahmen des dualen Systems nach Berufsbildungsgesetz (BBiG) oder Handwerksordnung (HwO) eine Berufsausbildung durchläuft.</para> <figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.Auszubildender">
+   </subtitle><para>Ein Auszubildender/ eine Auszubildende ist eine natürliche Person, die auf der Grundlage eines Berufsausbildungsvertrages im Rahmen des dualen Systems nach Berufsbildungsgesetz (BBiG) oder Handwerksordnung (HwO) eine Berufsausbildung durchläuft.</para> <figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.Auszubildender">
       <title>Auszubildender</title>
       <mediaobject>
          <imageobject>
@@ -182,18 +182,16 @@
                   <emphasis role="bold">geschlecht</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Geschlecht</emphasis>
+                  <emphasis role="codebf">Code.Geschlecht</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..n</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geschlecht"
-                        role="AbschnittNummer"/>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geschlecht"
-                        role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
                </entry>
             </row>
             <row>

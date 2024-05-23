@@ -24,11 +24,11 @@
          </row>
          <row>
             <entry>Version</entry>
-            <entry>0.2</entry>
+            <entry>0.3</entry>
          </row>
          <row>
             <entry>Namensraum</entry>
-            <entry>http://xberufsbildung.de/def/xberufsbildung/0.2/xsd</entry>
+            <entry>http://xberufsbildung.de/def/xberufsbildung/0.3/xsd</entry>
          </row>
          <row>
             <entry>Präfix</entry>
@@ -36,7 +36,7 @@
          </row>
          <row>
             <entry>SchemaLocation</entry>
-            <entry>http://xberufsbildung.de/def/xberufsbildung/0.2/xsd/xberufsbildung-basisdatentypen.xsd</entry>
+            <entry>http://xberufsbildung.de/def/xberufsbildung/0.3/xsd/xberufsbildung-basisdatentypen.xsd</entry>
          </row>
          <row>
             <entry>Inkludierte XSDs</entry>

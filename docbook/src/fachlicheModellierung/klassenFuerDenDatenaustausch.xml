@@ -18,7 +18,8 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Bemerkung.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Fortbildungsabschluss.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/GesetzlicherVertreter.xml"/>
-    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Pruefungsbereich.xml"/>
-    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Pruefungsuebersicht.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/PruefungsuebersichtFortbildungszeugnis.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/PruefungsuebersichtPruefungszeugnis.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Qualifikationsinhalt.xml"/>
     
 </chapter>

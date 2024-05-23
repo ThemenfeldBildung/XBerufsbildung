@@ -1,6 +1,7 @@
 <?xml version="1.0" standalone="yes" ?>
 <?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<appendix version="5" xml:id="spezifikation.anhang.glossar" xml:lang="de" xmlns="http://docbook.org/ns/docbook">
+<appendix version="5" xml:id="spezifikation.anhang.glossar" xml:lang="de"
+    xmlns="http://docbook.org/ns/docbook">
     <info>
         <title>Glossar</title>
     </info>
@@ -13,6 +14,14 @@
                 </row>
             </thead>
             <tbody>
+                <row>
+                    <entry>Basismodul</entry>
+                    <entry>Ein Basismodul im XÖV bezieht sich auf einen standardisierten Satz von
+                        Basisdaten und -funktionen, der als Grundlage für den Austausch von
+                        Fachdaten zwischen verschiedenen Behörden oder Verwaltungen dient. Es stellt
+                        eine gemeinsame Infrastruktur bereit, um eine reibungslose Kommunikation und
+                        Interoperabilität zu ermöglichen.</entry>
+                </row>
                 <row>
                     <entry>Berufsbildung</entry>
                     <entry>Berufsbildung bezieht sich auf die Ausbildung und Qualifizierung von
@@ -28,12 +37,61 @@
                         Berufsausbildung und Weiterbildung.</entry>
                 </row>
                 <row>
+                    <entry>Datenaustauschstandard</entry>
+                    <entry>Ein Datenaustauschstandard bezieht sich auf eine spezifische Norm,
+                        Richtlinie oder Spezifikation, die definiert, wie Daten zwischen
+                        verschiedenen Systemen, Plattformen oder Organisationen ausgetauscht werden
+                        sollen. Diese Standards legen die Struktur, das Format, die Syntax, die
+                        Semantik und die Regeln fest, nach denen Daten ausgetauscht und
+                        interpretiert werden sollen, um eine reibungslose Kommunikation und
+                        Interoperabilität zu gewährleisten.</entry>
+                </row>
+                <row>
+                    <entry>Definition of Ready</entry>
+                    <entry>Dokument zur Beschreibung des ermittelten Bedarfs zur Vorlage beim
+                        IT-Planungsrat.</entry>
+                </row>
+                <row>
                     <entry>EQR, EQF / DQR</entry>
-                    <entry>Die EU hat den European Qualifications Framework (dt. EQR, "Europäischer Qualifikationsrahmen für lebenslanges Lernen") entwickelt, um in den einzelnen Ländern verliehene Qualifikationen verständlicher und vergleichbar zu machen. Der EQF soll die grenzüberschreitende Mobilität von Lernenden und Arbeitnehmern erleichtern und das lebenslange Lernen sowie die berufliche Entwicklung in ganz Europa fördern. Der EQF ist ein auf Lernergebnissen basierender Rahmen, in dem alle Arten von Qualifikationen in 8 Niveaus eingestuft werden. Er dient zur „Übersetzung“ der Qualifikationsrahmen einzelner Länder und trägt damit zu Transparenz, Vergleichbarkeit und Übertragbarkeit von Qualifikationen bei. Er ermöglicht die Zuordnung verschiedener Qualifikationen aus verschiedenen Ländern. Der EQF deckt alle Arten und Niveaus von Qualifikationen ab. Durch die Einteilung in Lernergebnisse wird deutlich, was eine Person weiß, versteht und in der Lage ist, zu tun. Das Niveau steigt je nach Kompetenzniveau an – 1 ist das niedrigste und 8 das höchste Niveau.</entry>    
+                    <entry>Die EU hat den European Qualifications Framework (dt. EQR, "Europäischer
+                        Qualifikationsrahmen für lebenslanges Lernen") entwickelt, um in den
+                        einzelnen Ländern verliehene Qualifikationen verständlicher und vergleichbar
+                        zu machen. Der EQF soll die grenzüberschreitende Mobilität von Lernenden und
+                        Arbeitnehmern erleichtern und das lebenslange Lernen sowie die berufliche
+                        Entwicklung in ganz Europa fördern. Der EQF ist ein auf Lernergebnissen
+                        basierender Rahmen, in dem alle Arten von Qualifikationen in 8 Niveaus
+                        eingestuft werden. Er dient zur „Übersetzung“ der Qualifikationsrahmen
+                        einzelner Länder und trägt damit zu Transparenz, Vergleichbarkeit und
+                        Übertragbarkeit von Qualifikationen bei. Er ermöglicht die Zuordnung
+                        verschiedener Qualifikationen aus verschiedenen Ländern. Der EQF deckt alle
+                        Arten und Niveaus von Qualifikationen ab. Durch die Einteilung in
+                        Lernergebnisse wird deutlich, was eine Person weiß, versteht und in der Lage
+                        ist, zu tun. Das Niveau steigt je nach Kompetenzniveau an – 1 ist das
+                        niedrigste und 8 das höchste Niveau.</entry>
                 </row>
                 <row>
                     <entry>eIDAS</entry>
-                    <entry>Verordnung des Europäischen Parlaments und des Rates vom 23. Juli 2014 über elektronische Identifizierung und Vertrauensdienste für elektronische Transaktionen im Binnenmarkt und zur Aufhebung der Richtlinie 1999/93/EG. In der Verordnung, die in der Bundesrepublik Deutschland mit dem eIDAS-Durchführungsgesetz vom 29.07.2017 im nationalen Recht umgesetzt wurde, wird europaweit der Einsatz von Vertrauensdiensten bzw. die elektronische Identifizierung geregelt.</entry>
+                    <entry>Verordnung des Europäischen Parlaments und des Rates vom 23. Juli 2014
+                        über elektronische Identifizierung und Vertrauensdienste für elektronische
+                        Transaktionen im Binnenmarkt und zur Aufhebung der Richtlinie 1999/93/EG. In
+                        der Verordnung, die in der Bundesrepublik Deutschland mit dem
+                        eIDAS-Durchführungsgesetz vom 29.07.2017 im nationalen Recht umgesetzt
+                        wurde, wird europaweit der Einsatz von Vertrauensdiensten bzw. die
+                        elektronische Identifizierung geregelt.</entry>
+                </row>
+                <row>
+                    <entry>Fachmodul</entry>
+                    <entry>Ein Fachmodul definiert die Struktur, das Format und die Inhalte der
+                        Daten, die zwischen den beteiligten Parteien ausgetauscht werden sollen. Es
+                        beschreibt, welche Informationen übermittelt werden müssen, wie sie zu
+                        codieren sind und wie sie interpretiert werden sollen.</entry>
+                </row>
+                <row>
+                    <entry>Kammern</entry>
+                    <entry>Kammern sind berufsständische Organisationen, die auf gesetzlicher
+                        Grundlage gebildet werden und ihre Mitglieder in einer körperschaftlichen
+                        Selbstverwaltungseinrichtung mit staatlich festgelegten Aufgaben
+                        vertreten.</entry>
                 </row>
                 <row>
                     <entry>Kammerleistungen</entry>
@@ -49,12 +107,18 @@
                         werden.</entry>
                 </row>
                 <row>
-                    <entry>Interoperabilität</entry>
-                    <entry>Als Interoperabilität wird die Fähigkeit zum Zusammenspiel (möglichst nahtlos und effizient) verschiedener Systeme, Techniken oder Organisationen bezeichnet.</entry>
+                    <entry>Lehrlingsrolle</entry>
+                    <entry>Auch Berufsausbildungsverzeichnis, ist eine öffentlich zugängliche
+                        Datenbank oder Liste, in der alle anerkannten Ausbildungsberufe eines Landes
+                        oder einer Region aufgeführt sind. Es dient als umfassende
+                        Informationsquelle über die verschiedenen Ausbildungsmöglichkeiten in einem
+                        bestimmten Bildungssystem.</entry>
                 </row>
                 <row>
-                    <entry>Mapping</entry>
-                    <entry>Unter (Daten-)Mapping wird das Verknüpfen oder die Zuordnung von Feldern verschiedener Datenbanken verstanden.</entry>
+                    <entry>Interoperabilität</entry>
+                    <entry>Als Interoperabilität wird die Fähigkeit zum Zusammenspiel (möglichst
+                        nahtlos und effizient) verschiedener Systeme, Techniken oder Organisationen
+                        bezeichnet.</entry>
                 </row>
                 <row>
                     <entry>Nicht-Kammerleistung</entry>
@@ -63,15 +127,12 @@
                         Akteuren der Berufsbildung sein.</entry>
                 </row>
                 <row>
-                    <entry>Nomenklatur</entry>
-                    <entry>Eine Nomenklatur ist eine strukturierte und umfassende Sammlung sich
-                        gegenseitig ausschließender Kategorien/Benennungen. Diese werden häufig in
-                        einer Hierarchie dargestellt, die sich in den zugeordneten Codes erkennen
-                        lässt (siehe Thesaurus).</entry>
-                </row>
-                <row>
-                    <entry>Thesaurus</entry>
-                    <entry>Bei einem Thesaurus handelt es sich in der Dokumentationswissenschaft um eine hierarchische Nomenklatur, dessen Begriffe durch Relationen miteinander verbunden sind.</entry>
+                    <entry>Standardisiserung</entry>
+                    <entry>Standardisierung bezieht sich auf den Prozess der Festlegung von
+                        einheitlichen Normen, Spezifikationen oder Kriterien, die in einem
+                        bestimmten Bereich gelten. Es geht darum, gemeinsame Regeln, Richtlinien
+                        oder Verfahren zu entwickeln, um eine einheitliche Vorgehensweise,
+                        Interoperabilität und Vergleichbarkeit zu gewährleisten.</entry>
                 </row>
             </tbody>
         </tgroup>

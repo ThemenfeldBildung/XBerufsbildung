@@ -18,19 +18,6 @@
    </itemizedlist>
    <section xmlns:xlink="http://www.w3.org/1999/xlink">
       <title>Nicht in Nachrichten verwendete Datentypen</title>
-      <itemizedlist>
-         <listitem>
-            <para>Behoerde</para>
-         </listitem>
-         <listitem>
-            <para>Behoerdenkennung</para>
-         </listitem>
-         <listitem>
-            <para>Organisationseinheit</para>
-         </listitem>
-         <listitem>
-            <para>Registrierung</para>
-         </listitem>
-      </itemizedlist>
+      <itemizedlist/>
    </section>
 </appendix>

@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>RechtsgrundlageAbschlusszeugnis-Codes</ShortName>
       <LongName>Rechtsgrundlage Abschlusszeugnis</LongName>
-      <Version>0.1</Version>
+      <Version>0.3</Version>
       <CanonicalUri>urn:xberufsbildung-de:xberufsbildung:codeliste:rechtsgrundlageabschlusszeugnis</CanonicalUri>
-      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:rechtsgrundlageabschlusszeugnis_0.1</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:rechtsgrundlageabschlusszeugnis_0.3</CanonicalVersionUri>
       <Agency>
          <LongName>XBerufsbildung</LongName>
       </Agency>
@@ -47,7 +47,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/31(2)_hwo</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/31(2)_hwo</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>§ 31 Abs. 2 HwO</SimpleValue>
@@ -55,7 +55,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>§ 37 Abs. 2 BBiG</SimpleValue>
@@ -63,7 +63,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37_bbig</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37_bbig</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>§ 37 BBiG</SimpleValue>
@@ -71,7 +71,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/62(3)_ivm_37(2)_bbig</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/62(3)_ivm_37(2)_bbig</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>§ 62 Abs. 3 i.V.m. § 37 Abs. 2 BBiG</SimpleValue>
@@ -79,7 +79,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/66_ivm_ 37(2)_bbig</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/66_ivm_ 37(2)_bbig</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>§ 66 i.V.m. § 37 Abs. 2 BBiG</SimpleValue>
@@ -87,7 +87,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>

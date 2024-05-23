@@ -31,7 +31,7 @@
             <entry align="left">
                <para>pruefling.pruefungszeugnis.0001</para>
             </entry>
-            <entry><para>Diese Nachricht bildet das Prüfungszeugnis, das einem Prüfling nach einer bestandenen Abschlussprüfung ausgestellt wird, ab. Diese enthält Angaben zum Prüfling, zum Prüfungsergebnis, zum erworbenen Abschluss, zur Rechtsgrundlage, zur ausstellenden Stelle, zum Datum der Prüfung und ggf. weitere zusätzliche Angaben.</para></entry>
+            <entry><para>Diese Nachricht bildet das Prüfungszeugnis der Abschlussprüfung der dualen Ausbildung nach BBiG und HwO ab. Ein Prüfungszeugnis ist ein offizielles Dokument, das die erfolgreiche Teilnahme an einer Prüfung oder einer Ausbildung bescheinigt und die erlangten Qualifikationen sowie die erreichten Leistungen des Prüflings dokumentiert. Dieses enthält Angaben zum Prüfling, zum Prüfungsergebnis, zum erworbenen Abschluss, zur Rechtsgrundlage, zur ausstellenden Stelle, zum Datum der Prüfung und ggf. weitere zusätzliche Angaben.</para></entry>
             <entry align="center">
                <xref role="Seite"
                      linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis.0001"/>
@@ -41,7 +41,7 @@
             <entry align="left">
                <para>pruefling.fortbildungszeugnis.0002</para>
             </entry>
-            <entry><para>Diese Nachricht bildet das Fortbildungszeugnis, das die erfolgreiche Teilnahme an einer Fortbildungsprüfung bescheinigt, ab. Diese enthält Angaben zum Prüfling, zum Fortbildungsabschluss, zum Prüfungsergebnis, zur Fortbildungsordnung, zur ausstellenden Stelle, zum Datum des Bestehens der Prüfung und ggf. weitere zusätzliche Angaben.</para></entry>
+            <entry><para>Diese Nachricht bildet das Fortbildungszeugnis nach BBiG und HwO ab, das die erfolgreiche Teilnahme an einer Fortbildungsprüfung bescheinigt. Diese enthält Angaben zum Prüfling, zum Fortbildungsabschluss, zum Prüfungsergebnis, zur Fortbildungsordnung, zur ausstellenden Stelle, zum Datum des Bestehens der Prüfung und ggf. weitere zusätzliche Angaben.</para></entry>
             <entry align="center">
                <xref role="Seite"
                      linkend="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis.0002"/>
@@ -51,7 +51,7 @@
             <entry align="left">
                <para>auszubildender.eintragungsbestaetigung.0003</para>
             </entry>
-            <entry><para>Diese Nachricht bildet die Eintragungsbestätigung. Diese enthält Angaben zur Ausbildung (Personenbezogene Daten zum Auszubildenden, Ausbildungsberuf, Ausbildungszeitraum) und Informationen zum Ausbildungsbetrieb (Name, Anschrift).</para></entry>
+            <entry><para>Diese Nachricht bildet die Eintragungsbestätigung der zuständigen Stelle nach BBiG und HwO ab. Die Eintragung des Ausbildungsvertrags in das Verzeichnis der Berufsausbildungsverhältnisse wird dem Ausbildungsbetrieb und dem/der Auszubildenden mit einer schriftlichen Eintragungsbestätigung angezeigt. Diese enthält Angaben zur Ausbildung (personenbezogene Daten zum Auszubildenden, Ausbildungsberuf, Ausbildungszeitraum) und Informationen zum Ausbildungsbetrieb (Name, Anschrift).</para></entry>
             <entry align="center">
                <xref role="Seite"
                      linkend="XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung.0003"/>

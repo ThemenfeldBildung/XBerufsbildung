@@ -6,8 +6,6 @@
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/Kernkomponenten/AllgemeinerName.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../XBerufsbildung/Baukasten/Kernkomponenten/AlternativeRepraesentation.xml"/>
-   <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/AngabenAusbildung.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/Kernkomponenten/Anschrift.xml"/>
@@ -19,10 +17,6 @@
             href="../../XBerufsbildung/Baukasten/Ausbildungsstaette.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/Kernkomponenten/Auszubildender.xml"/>
-   <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Behoerde.xml"/>
-   <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Behoerdenkennung.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/Bemerkung.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
@@ -36,8 +30,6 @@
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/Kernkomponenten/Geburt.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Geschlecht.xml"/>
-   <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/GesetzlicherVertreter.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/Kernkomponenten/Identifikation.xml"/>
@@ -48,21 +40,17 @@
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/Kernkomponenten/NameOrganisation.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Organisationseinheit.xml"/>
-   <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/Kernkomponenten/Ortsangabe.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/Kernkomponenten/Pruefling.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../XBerufsbildung/Baukasten/Pruefungsbereich.xml"/>
+            href="../../XBerufsbildung/Baukasten/PruefungsuebersichtFortbildungszeugnis.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../XBerufsbildung/Baukasten/Pruefungsuebersicht.xml"/>
+            href="../../XBerufsbildung/Baukasten/PruefungsuebersichtPruefungszeugnis.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Registrierung.xml"/>
+            href="../../XBerufsbildung/Baukasten/Qualifikationsinhalt.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/Kernkomponenten/StelleAusstellend.xml"/>
-   <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../XBerufsbildung/Baukasten/Kernkomponenten/VerwaltungspolitischeKodierung.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="../../XBerufsbildung/Baukasten/Kernkomponenten/Zeitraum.xml"/>
 </section>

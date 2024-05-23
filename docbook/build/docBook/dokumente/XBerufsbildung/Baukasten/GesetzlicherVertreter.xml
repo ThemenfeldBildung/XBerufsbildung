@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.GesetzlicherVertreter">
    <title>GesetzlicherVertreter</title>
    <subtitle>Typ: <emphasis role="codebf">GesetzlicherVertreter</emphasis>
-   </subtitle><para>Mit diesem Datentyp werden die Daten des gesetzlichen Vertreters der betroffenen Person abgebildet.</para>
+   </subtitle><para>Diese Klasse enthält Daten des gesetzlichen Vertreters der betroffenen Person. Gesetzliche Vertreter sind Personen oder Einrichtungen, die gemäß gesetzlicher Bestimmungen befugt sind, im Namen anderer zu handeln und deren Rechte und Pflichten zu vertreten.</para>
 <figure xml:id="figure.XBerufsbildung.Baukasten.GesetzlicherVertreter">
       <title>GesetzlicherVertreter</title>
       <mediaobject>
@@ -67,7 +67,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Mit dieser Schlüsseltabelle wird die Art der gesetzlichen Vertretung abgebildet. Siehe Blatt 0001 des DSMeld.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält eine Schlüsseltabelle, in der die verschiedenen Arten der gesetzlichen Vertretung dargestellt sind. Siehe Blatt 0001 des DSMeld.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -89,7 +89,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Mit diesem Element werden die Namensinformationen des gesetzlichen Vertreters übermittelt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Namensinformationen des gesetzlichen Vertreters. Der Name des gesetzlichen Vertreters bezieht sich auf die individuelle Bezeichnung der Person oder Einrichtung, die gemäß rechtlicher Bestimmungen befugt ist, im Namen einer anderen Person oder Organisation zu handeln und diese rechtlich zu vertreten.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -111,7 +111,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Mit diesem Element wird die Hauptanschrift des gesetzlichen Vertreters übermittelt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element dient der Übermittlung der Hauptanschrift des gesetzlichen Vertreters. Die Anschrift des gesetzlichen Vertreters bezeichnet die genaue postalische Adresse der Person oder Einrichtung, die gemäß den gesetzlichen Vorschriften befugt ist, im Namen einer anderen Partei zu handeln und diese rechtlich zu vertreten.</para></entry>
             </row>
          </tbody>
       </tgroup>

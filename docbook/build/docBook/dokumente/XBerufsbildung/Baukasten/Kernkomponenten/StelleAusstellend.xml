@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Kernkomponenten.StelleAusstellend">
    <title>StelleAusstellend</title>
    <subtitle>Typ: <emphasis role="codebf">StelleAusstellend</emphasis>
-   </subtitle><para>StelleAusstellend enthält Angaben über Behörden entlang der Lebenslage Berufsbildung, die eine Eintragungsbestätigung ausstellen.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.StelleAusstellend">
+   </subtitle><para>Diese Klasse enthält Angaben zu einer Institution oder Behörde, die offizielle Dokumente, Zertifikate oder Nachweise erstellt und ausstellt.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.StelleAusstellend">
       <title>StelleAusstellend</title>
       <mediaobject>
          <imageobject>
@@ -134,29 +134,6 @@
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>eindeutige Identifikation einer Organisation im Bildungswesen</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">existenzzeitraum</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Zeitraum</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Zeitraum"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Zeitraum"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Hier werden Angaben zum Zeitraum der Existenz einer Organisation gemacht, der mit Gründungs- und Auflösungsdatum
-der Organisation angegeben wird.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">

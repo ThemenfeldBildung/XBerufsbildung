@@ -58,7 +58,7 @@
                      <link role="schwarz"
                            linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderbemerkung.ArtDerBemerkung-Codes">Art der Bemerkung</link>
                   </entry>
-                  <entry align="left">0.2</entry>
+                  <entry align="left">0.3</entry>
                   <entry align="left">
                      <link role="schwarz"
                            linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBemerkung">Code.ArtDerBemerkung</link>
@@ -80,7 +80,7 @@
                      <link role="schwarz"
                            linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.rechtsgrundlageabschlusszeugnis.RechtsgrundlageAbschlusszeugnis-Codes">Rechtsgrundlage Abschlusszeugnis</link>
                   </entry>
-                  <entry align="left">0.1</entry>
+                  <entry align="left">0.3</entry>
                   <entry align="left">
                      <link role="schwarz"
                            linkend="XBerufsbildung.Baukasten.Codes.Code.RechtsgrundlageAbschlusszeugnis">Code.RechtsgrundlageAbschlusszeugnis</link>
@@ -125,7 +125,7 @@
                      </row>
                      <row>
                         <entry>Version</entry>
-                        <entry>0.2</entry>
+                        <entry>0.3</entry>
                      </row>
                   </tbody>
                </tgroup>
@@ -146,25 +146,25 @@
                   <tbody>
                      <row>
                         <entry align="left">
-                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/aequivalenzbemerkung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​2​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​a​e​q​u​i​v​a​l​e​n​z​b​e​m​e​r​k​u​n​g</link>
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/aequivalenzbemerkung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​3​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​a​e​q​u​i​v​a​l​e​n​z​b​e​m​e​r​k​u​n​g</link>
                         </entry>
                         <entry align="left">Äquivalenzbemerkung</entry>
                      </row>
                      <row>
                         <entry align="left">
-                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/befreiung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​2​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​b​e​f​r​e​i​u​n​g</link>
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/befreiung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​3​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​b​e​f​r​e​i​u​n​g</link>
                         </entry>
                         <entry align="left">Befreiung</entry>
                      </row>
                      <row>
                         <entry align="left">
-                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/freie_formulierung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​2​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​f​r​e​i​e​_​f​o​r​m​u​l​i​e​r​u​n​g</link>
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/freie_formulierung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​3​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​f​r​e​i​e​_​f​o​r​m​u​l​i​e​r​u​n​g</link>
                         </entry>
                         <entry align="left">freie Formulierung</entry>
                      </row>
                      <row>
                         <entry align="left">
-                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/sonstige_standardisierte_bemerkung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​2​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​s​o​n​s​t​i​g​e​_​s​t​a​n​d​a​r​d​i​s​i​e​r​t​e​_​b​e​m​e​r​k​u​n​g</link>
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/sonstige_standardisierte_bemerkung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​3​/​c​o​d​e​/​a​r​t​d​e​r​b​e​m​e​r​k​u​n​g​/​s​o​n​s​t​i​g​e​_​s​t​a​n​d​a​r​d​i​s​i​e​r​t​e​_​b​e​m​e​r​k​u​n​g</link>
                         </entry>
                         <entry align="left">sonstige standardisierte Bemerkung</entry>
                      </row>
@@ -258,7 +258,7 @@
                      </row>
                      <row>
                         <entry>Version</entry>
-                        <entry>0.1</entry>
+                        <entry>0.3</entry>
                      </row>
                   </tbody>
                </tgroup>
@@ -279,37 +279,37 @@
                   <tbody>
                      <row>
                         <entry align="left">
-                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/31(2)_hwo">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​3​1​(​2​)​_​h​w​o</link>
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/31(2)_hwo">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​3​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​3​1​(​2​)​_​h​w​o</link>
                         </entry>
                         <entry align="left">§ 31 Abs. 2 HwO</entry>
                      </row>
                      <row>
                         <entry align="left">
-                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​3​7​(​2​)​_​b​b​i​g</link>
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​3​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​3​7​(​2​)​_​b​b​i​g</link>
                         </entry>
                         <entry align="left">§ 37 Abs. 2 BBiG</entry>
                      </row>
                      <row>
                         <entry align="left">
-                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​3​7​_​b​b​i​g</link>
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​3​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​3​7​_​b​b​i​g</link>
                         </entry>
                         <entry align="left">§ 37 BBiG</entry>
                      </row>
                      <row>
                         <entry align="left">
-                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/62(3)_ivm_37(2)_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​6​2​(​3​)​_​i​v​m​_​3​7​(​2​)​_​b​b​i​g</link>
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/62(3)_ivm_37(2)_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​3​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​6​2​(​3​)​_​i​v​m​_​3​7​(​2​)​_​b​b​i​g</link>
                         </entry>
                         <entry align="left">§ 62 Abs. 3 i.V.m. § 37 Abs. 2 BBiG</entry>
                      </row>
                      <row>
                         <entry align="left">
-                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/66_ivm_ 37(2)_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​6​6​_​i​v​m​_ 3​7​(​2​)​_​b​b​i​g</link>
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/66_ivm_ 37(2)_bbig">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​3​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​6​6​_​i​v​m​_ 3​7​(​2​)​_​b​b​i​g</link>
                         </entry>
                         <entry align="left">§ 66 i.V.m. § 37 Abs. 2 BBiG</entry>
                      </row>
                      <row>
                         <entry align="left">
-                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​1​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​0​.​3​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
                         </entry>
                         <entry align="left">Wert nicht in Liste</entry>
                      </row>

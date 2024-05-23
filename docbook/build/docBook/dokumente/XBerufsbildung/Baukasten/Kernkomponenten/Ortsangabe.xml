@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Kernkomponenten.Ortsangabe">
    <title>Ortsangabe</title>
    <subtitle>Typ: <emphasis role="codebf">Ortsangabe</emphasis>
-   </subtitle><para>Der Zeitraum kennzeichnet einen Abschnitt auf einem Zeitstrahl durch Angabe von Beginn und/oder Ende.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.Ortsangabe">
+   </subtitle><para>Diese Klasse umfasst Informationen über den genauen Ort und den Staat eines Ereignisses, wie z.B. Geburt einer Person oder Erwerb eines Dokuments.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.Ortsangabe">
       <title>Ortsangabe</title>
       <mediaobject>
          <imageobject>

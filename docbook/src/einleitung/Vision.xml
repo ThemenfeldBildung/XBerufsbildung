@@ -31,29 +31,27 @@
 		</imageobject>
 	</mediaobject>
 	<para>Im Jahr 2024 wurde der Bedarf für diesen Standard dem IT-Planungsrat gemeldet, ausführlich
-		beschrieben und soll auf die Standardisierungsagenda aufgenommen werden. Die Einführung
-		dieses Standards führt zu einer erheblichen Reduzierung des Datenerhebungsaufwands im
-		Konzept des lebenslangen Lernens. Dies betrifft nicht nur Behörden, zuständige Stellen und
+		beschrieben und auf die Standardisierungsagenda gehoben. Die Einführung dieses Standards
+		führt zu einer erheblichen Reduzierung des Datenerhebungsaufwands im Konzept des
+		lebenslangen Lernens. Dies betrifft nicht nur Behörden, zuständige Stellen und
 		berufsbildende Schulen, sondern auch Bildungsnehmende, ihre Sorgeberechtigten sowie
 		Unternehmen. Schulakten aus allgemeinbildenden Schulen liegen bereits in digitaler Form vor
 		und können nahtlos und schnell beim Schulwechsel an die entsprechenden berufsbildenden
 		Schulen oder andere Beteiligte übertragen werden, wobei die landesdatenschutzrechtlichen
 		Bestimmungen berücksichtigt werden. Leistungen im Bereich der Berufsbildung, wie die
-		Eintragung in das Berufsausbildungsregister (Lehrlingsrolle) und die Erstellung von
-		Ausbildungsverträgen oder Zeugnissen, werden mit XBerufsbildung digital und einfach über
-		einen Portalverbund abgewickelt. Zeugnisse der berufsbildenden Schulen und zuständigen
-		Stellen werden zusätzlich zu den analogen Originalen in digitaler, signierter und
-		maschinenlesbarer Form an Bildungsnehmende übergeben und können in einer digitalen Wallet
-		verwaltet werden. Auf diese Weise können Antragstellungen bei Behörden, die Einreichung von
-		Nachweisen und sogar der Bewerbungsprozess für weiterführende Bildungsgänge beschleunigt und
-		vereinfacht werden.</para>
-	<para>Der Datenaustausch zwischen den zuständigen Stellen und weiteren an der Berufsbildung beteiligten 
-		Akteuren erfolgt digital und effizient, da abgestimmte Daten in vordefinierter Qualität importiert, 
-		validiert und verarbeitet werden können. Eine spezielle Datenaustauschspezifikation beschreibt die 
-		technischen Schnittstellen für eine maschinenlesbare Datenübertragung an die beteiligten öffentlichen 
-		Stellen im Bereich der Berufsbildung. Darüber hinaus dient ein Kerndatenmodell zur Bereitstellung von 
-		fachlichen Informationen im Bereich der Berufsbildung als technologieunabhängiges und harmonisiertes 
-		Informationsmodell. Dies unterstützt die Digitalisierung berufsbezogener Verwaltungsleistungen und 
-		fördert die Interoperabilität und Wiederverwendbarkeit.</para>
+		Eintragung in das Berufsausbildungsverzeichnis (Lehrlingsrolle) und die Erstellung von
+		Zeugnissen werden mit XBerufsbildung digital und einfach über einen Portalverbund
+		abgewickelt. Zeugnisse der berufsbildenden Schulen und Kammern werden zusätzlich zu den
+		analogen Originalen in digitaler, signierter und maschinenlesbarer Form an Bildungsnehmende
+		übergeben und können in einer digitalen Wallet verwaltet werden. Auf diese Weise können
+		Antragstellungen bei Behörden, die Einreichung von Nachweisen und sogar der
+		Bewerbungsprozess für weiterführende Bildungsgänge beschleunigt und vereinfacht
+		werden.</para>
+	<para>Der Datenaustausch zwischen den zuständigen Stellen und weiteren an der Berufsbildung
+		beteiligten Akteuren erfolgt digital und effizient, da abgestimmte Daten in vordefinierter
+		Qualität importiert, validiert und verarbeitet werden können. Eine spezielle
+		Datenaustauschspezifikation beschreibt die technischen Schnittstellen für eine
+		maschinenlesbare Datenübertragung an die beteiligten öffentlichen Stellen im Bereich der
+		Berufsbildung. </para>
 
 </chapter>

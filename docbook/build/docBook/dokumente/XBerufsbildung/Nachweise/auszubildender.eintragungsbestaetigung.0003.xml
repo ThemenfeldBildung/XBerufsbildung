@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung.0003">
    <title>auszubildender.eintragungsbestaetigung.0003</title>
    <subtitle>Nachricht: <emphasis role="codebf">auszubildender.eintragungsbestaetigung.0003</emphasis>
-   </subtitle><para>Diese Nachricht bildet die Eintragungsbestätigung. Diese enthält Angaben zur Ausbildung (Personenbezogene Daten zum Auszubildenden, Ausbildungsberuf, Ausbildungszeitraum) und Informationen zum Ausbildungsbetrieb (Name, Anschrift).</para><figure xml:id="figure.XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung.0003">
+   </subtitle><para>Diese Nachricht bildet die Eintragungsbestätigung der zuständigen Stelle nach BBiG und HwO ab. Die Eintragung des Ausbildungsvertrags in das Verzeichnis der Berufsausbildungsverhältnisse wird dem Ausbildungsbetrieb und dem/der Auszubildenden mit einer schriftlichen Eintragungsbestätigung angezeigt. Diese enthält Angaben zur Ausbildung (personenbezogene Daten zum Auszubildenden, Ausbildungsberuf, Ausbildungszeitraum) und Informationen zum Ausbildungsbetrieb (Name, Anschrift).</para><figure xml:id="figure.XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung.0003">
       <title>auszubildender.eintragungsbestaetigung.0003</title>
       <mediaobject>
          <imageobject>
@@ -67,7 +67,13 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>auszubildender enthält Angaben zur auszubildenden Person, für die eine Eintragungsbestätigung ausgestellt wird.&#xD;</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur auszubildenden Person, für die eine Eintragungsbestätigung durch die zuständige Stelle ausgestellt wird. Ein Auszubildender ist eine Person, die eine berufliche Ausbildung durchläuft, um theoretische und praktische Kenntnisse sowie Fähigkeiten in einem bestimmten Berufsfeld zu erwerben.
+
+
+
+
+
+&#xD;</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -89,7 +95,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Mit diesem Datentyp werden die Daten des gesetzlichen Vertreters der betroffenen Person abgebildet. Ein gesetzlicher Vertreter wird z. B. dann angegeben, wenn der Auszubildende minderjährig ist.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element bildet Daten des gesetzlichen Vertreters der betroffenen Person ab. Ein gesetzlicher Vertreter eines Auszubildenden ist eine Person, die kraft Gesetzes oder gerichtlicher Anordnung befugt ist, die rechtlichen Angelegenheiten des minderjährigen oder betreuten Auszubildenden zu regeln und zu vertreten.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -110,7 +116,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>angabenAusbildung enthält die Bezeichnung des Berufs, Informationen zur Vergütung, zum Zeitraum und Prüfungstermin der Berufsausbildung.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung des Berufs, Informationen zur Vergütung, zum Zeitraum und Prüfungstermin der Berufsausbildung.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -131,7 +137,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>ausbildungsbetrieb enthält den Namen und die Anschrift des Ausbildungsbetriebs.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält den Namen Ausbildungsbetriebs. Ein Ausbildungsbetrieb ist ein Unternehmen oder eine Einrichtung, die nach gesetzlichen Vorschriften dazu berechtigt ist, Auszubildende im Rahmen eines anerkannten Ausbildungsberufes praktisch auszubilden.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -153,7 +159,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>aussteller enthält Angaben über Behörden entlang der Lebenslage Berufsbildung, die eine Eintragungsbestätigung ausstellen.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zu einer Institution oder Behörde, die die Eintragung eines Ausbildungsverhältnisses in das Verzeichnis in die Beufsausbildungsverhältnisse vornimmt und eine Eintragungsbestätigung erstellt und ausstellt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -175,7 +181,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>eintragungsnummer enthält die interne Nummer der ausstellenden Stelle, unter der der Lehrvertrag geführt wird.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die zumeist organisationsinterne Nummer der ausstellenden Stelle, unter der der Lehrvertrag geführt wird. Die Eintragungsbestätigung wird mit einer Eintragungsnummer versehen. Diese dient insbesondere dem Schriftverkehr und wird nur einmal vergeben.</para></entry>
             </row>
          </tbody>
       </tgroup>

@@ -54,24 +54,6 @@
          <tbody>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">id</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Die "id" kann genutzt werden, um eine Instanz einer Anschrift innerhalb einer Datenstruktur eindeutig zu identifizieren. Hierbei handelt es sich um eine technische ID.</para>
-
-<para>Anmerkung: z.B. über IDREF in XML</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
                   <emphasis role="bold">strasse</emphasis>
                </entry>
                <entry>
@@ -190,48 +172,6 @@ Eine Beschränkung auf deutsche Postleitzahlen (5-stellig) wurde bewusst nicht v
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">ortsteil</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Ein Ortsteil ist Teil eines Ortes und dient zur Untergliederung dieses Ortes.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">ortFruehererGemeindename</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Der frühere Gemeindename ist die Bezeichnung eines Ortes, die vom aktuell gültigen amtlichen Gemeindenamen abweicht.</para>
-
-<para>Anmerkung: Der frühere Gemeindename kann der Ortsangabe einer Anschrift hinzugefügt werden, um eine Adressierung zu erleichtern.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
                   <emphasis role="bold">zusatz</emphasis>
                </entry>
                <entry>
@@ -275,28 +215,6 @@ Auf eine Festlegung des Formats von Anschriftenzusätzen wurde wegen der uneinhe
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>Der Staat, dem die Anschrift postalisch zugeordnet wird.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">verwaltungspolitischeKodierung</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">VerwaltungspolitischeKodierung</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.VerwaltungspolitischeKodierung"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.VerwaltungspolitischeKodierung"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Die "verwaltungspolitischeKodierung" beinhaltet Informationen, mit denen eine Anschrift verwaltungspolitisch eindeutig zugeordnet werden kann.</para></entry>
             </row>
          </tbody>
       </tgroup>

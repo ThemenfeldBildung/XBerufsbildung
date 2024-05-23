@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Bemerkung">
    <title>Bemerkung</title>
    <subtitle>Typ: <emphasis role="codebf">Bemerkung</emphasis>
-   </subtitle><para>Die Klasse "Bemerkung" beinhaltet Angaben zu weiterführenden Informationen zum erworbenen Abschluss. Darunter fallen etwa die Teilnahme an Förderunterricht, freiwilligen Arbeitsgemeinschaften oder die Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung etc..</para><figure xml:id="figure.XBerufsbildung.Baukasten.Bemerkung">
+   </subtitle><para>Die Klasse beinhaltet Angaben zu weiterführenden Informationen zum erworbenen Abschluss. Darunter fallen etwa die Teilnahme an Förderunterricht, freiwilligen Arbeitsgemeinschaften oder die Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung etc.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Bemerkung">
       <title>Bemerkung</title>
       <mediaobject>
          <imageobject>
@@ -66,7 +66,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Die Art der Bemerkung gibt an, ob es sich um standardisierte Bemerkungen handelt oder nicht.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element gibt an, ob es sich um standardisierte Bemerkungen handelt oder nicht.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -82,7 +82,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Die Beschreibung ergänzt die Bemerkung um weitere Informationen. Ob und welche Inhalte hier notwendig sind, hängt von der Art der Bemerkung ab.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element ergänzt die Bemerkung um weitere Informationen. Ob und welche Inhalte hier notwendig sind, hängt von der Art der Bemerkung ab.</para></entry>
             </row>
          </tbody>
       </tgroup>

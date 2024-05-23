@@ -26,7 +26,7 @@
          </row>
          <row>
             <entry morerows="1">X&#x200B;B&#x200B;B&#x200B;D&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;1&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;R&#x200B;A&#x200B;</entry>
-            <entry/>
+            <entry>XBBD-1000-0001-WNIL_RA: Wenn und nur wenn der Wert der Codeliste Rechtsgrundlage 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
          </row>
          <row>
             <entry align="left">

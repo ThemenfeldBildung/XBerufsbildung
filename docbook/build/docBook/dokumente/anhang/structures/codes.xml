@@ -4,19 +4,19 @@
                  xmlns:xlink="http://www.w3.org/1999/xlink">
    <kosit:codelist urn="urn:xberufsbildung-de:xberufsbildung:codeliste:artderbemerkung"
                    id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderbemerkung.ArtDerBemerkung-Codes">
-      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/aequivalenzbemerkung">Äquivalenzbemerkung</kosit:entry>
-      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/befreiung">Befreiung</kosit:entry>
-      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/freie_formulierung">freie Formulierung</kosit:entry>
-      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/sonstige_standardisierte_bemerkung">sonstige standardisierte Bemerkung</kosit:entry>
+      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/aequivalenzbemerkung">Äquivalenzbemerkung</kosit:entry>
+      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/befreiung">Befreiung</kosit:entry>
+      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/freie_formulierung">freie Formulierung</kosit:entry>
+      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/sonstige_standardisierte_bemerkung">sonstige standardisierte Bemerkung</kosit:entry>
    </kosit:codelist>
    <kosit:codelist urn="urn:xberufsbildung-de:xberufsbildung:codeliste:rechtsgrundlageabschlusszeugnis"
                    id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.rechtsgrundlageabschlusszeugnis.RechtsgrundlageAbschlusszeugnis-Codes">
-      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/31(2)_hwo">§ 31 Abs. 2 HwO</kosit:entry>
-      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig">§ 37 Abs. 2 BBiG</kosit:entry>
-      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37_bbig">§ 37 BBiG</kosit:entry>
-      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/62(3)_ivm_37(2)_bbig">§ 62 Abs. 3 i.V.m. § 37 Abs. 2 BBiG</kosit:entry>
-      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/66_ivm_ 37(2)_bbig">§ 66 i.V.m. § 37 Abs. 2 BBiG</kosit:entry>
-      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste">Wert nicht in Liste</kosit:entry>
+      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/31(2)_hwo">§ 31 Abs. 2 HwO</kosit:entry>
+      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig">§ 37 Abs. 2 BBiG</kosit:entry>
+      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37_bbig">§ 37 BBiG</kosit:entry>
+      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/62(3)_ivm_37(2)_bbig">§ 62 Abs. 3 i.V.m. § 37 Abs. 2 BBiG</kosit:entry>
+      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/66_ivm_ 37(2)_bbig">§ 66 i.V.m. § 37 Abs. 2 BBiG</kosit:entry>
+      <kosit:entry code="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste">Wert nicht in Liste</kosit:entry>
    </kosit:codelist>
    <kosit:codelist urn="urn:xbildung-de:destatis:codeliste:artdesschulabschlusses"
                    id="tabelle.urn.xbildung-de.destatis.codeliste.artdesschulabschlusses.ArtDesSchulabschlusses-Codes">
@@ -95,13 +95,5 @@
       <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15">Notensystem der KMK aus dem Jahre 1972, verwendet für Leistungen aus der Qualifkationsphase. Es werden in einem Kurs mindestens 5 Punkte zum Bestehen benötigt. Maximal möglich sind 15 Punkte.</kosit:entry>
       <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_hochschulnote_5_4_1">Notensystem der KMK aus dem Jahre 2003, verwendet für die Bewertung von Leistungen erbracht im Verlauf des Hochschulstudiums. Es wird mindestens eine 4 zum Bestehen benötigt. Maximal möglich ist eine 1.</kosit:entry>
       <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1">Notensystem der KMK für die Bewertung von Leistungen erbracht im Verlauf der Primar- und Sekundarstufe. Es wird mindestens eine 4 zum Bestehen benötigt. Maximal möglich ist eine 1.</kosit:entry>
-   </kosit:codelist>
-   <kosit:codelist urn="urn:xbildung-de:xbildung:codeliste:kursstatus"
-                   id="tabelle.urn.xbildung-de.xbildung.codeliste.kursstatus.Kursstatus-Codes">
-      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/kursstatus/befreit">befreit</kosit:entry>
-      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden">bestanden</kosit:entry>
-      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/kursstatus/erfolgreich_teilgenommen">erfolgreich teilgenommen</kosit:entry>
-      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/kursstatus/nicht_bestanden">nicht bestanden</kosit:entry>
-      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/kursstatus/~wert_nicht_bekannt">Wert nicht bekannt</kosit:entry>
    </kosit:codelist>
 </kosit:codelists>

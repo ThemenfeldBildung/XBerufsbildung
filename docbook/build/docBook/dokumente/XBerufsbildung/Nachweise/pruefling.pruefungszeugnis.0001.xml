@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis.0001">
    <title>pruefling.pruefungszeugnis.0001</title>
    <subtitle>Nachricht: <emphasis role="codebf">pruefling.pruefungszeugnis.0001</emphasis>
-   </subtitle><para>Diese Nachricht bildet das Prüfungszeugnis, das einem Prüfling nach einer bestandenen Abschlussprüfung ausgestellt wird, ab. Diese enthält Angaben zum Prüfling, zum Prüfungsergebnis, zum erworbenen Abschluss, zur Rechtsgrundlage, zur ausstellenden Stelle, zum Datum der Prüfung und ggf. weitere zusätzliche Angaben.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.pruefungszeugnis.0001">
+   </subtitle><para>Diese Nachricht bildet das Prüfungszeugnis der Abschlussprüfung der dualen Ausbildung nach BBiG und HwO ab. Ein Prüfungszeugnis ist ein offizielles Dokument, das die erfolgreiche Teilnahme an einer Prüfung oder einer Ausbildung bescheinigt und die erlangten Qualifikationen sowie die erreichten Leistungen des Prüflings dokumentiert. Dieses enthält Angaben zum Prüfling, zum Prüfungsergebnis, zum erworbenen Abschluss, zur Rechtsgrundlage, zur ausstellenden Stelle, zum Datum der Prüfung und ggf. weitere zusätzliche Angaben.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.pruefungszeugnis.0001">
       <title>pruefling.pruefungszeugnis.0001</title>
       <mediaobject>
          <imageobject>
@@ -53,13 +53,13 @@
                </entry>
                <entry/>
                <entry>
-                  <emphasis role="bold">1..n</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry/>
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Gibt die Rechtsgrundlage für das vorliegende Dokument an.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element gibt die Rechtsgrundlage für das vorliegende Dokument an. Die Rechtsgrundlage eines Prüfungszeugnisses ist das gesetzliche oder vertragliche Regelwerk, das die Bedingungen und Verfahren zur Ausstellung, Form und den rechtlichen Stellenwert dieses Dokuments festlegt, z.B. BBiG und HwO.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -70,7 +70,7 @@
                   <emphasis role="codebf">Code.RechtsgrundlageAbschlusszeugnis</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..n</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XBerufsbildung.Baukasten.Codes.Code.RechtsgrundlageAbschlusszeugnis"
@@ -124,7 +124,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Der Prüfling ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (in einer Ausbildungs- oder Weiterbildungsstätte) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen wie beispielsweise Zeugnissen beurkunden oder bescheinigen kann.</para>
+               <entry namest="indent0" nameend="page"><para>Das Element beschreibt eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (in einer Ausbildungs- oder Weiterbildungsstätte) Wissen und Kompetenzen erworben hat, die mit Bildungsnachweisen wie beispielsweise Zeugnissen beurkundet oder bescheinigt werden können.</para>
 </entry>
             </row>
             <row>
@@ -145,7 +145,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>gesamtergebnis fasst die Berechnung der erreichten Durchschnittsnote zusammen.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element fasst die Berechnung der erreichten Durchschnittsnote zusammen. Das Gesamtergebnis ist die zusammenfassende Bewertung der Leistungen eines Prüflings, die aus den Einzelbewertungen der verschiedenen Prüfungsteile errechnet wird und den Erfolg oder Misserfolg der gesamten Prüfung widerspiegelt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -159,7 +159,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>allgemeineAngaben enthält Informationen zum Ausbildungsberuf, eine Übersicht der Prüfungsteilen und -bereiche sowie deren Benotung, das DQR-Niveau und ggf. die Befreiung von vergleichbaren Prüfungsbestandteilen.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Informationen zum Ausbildungsberuf, eine Übersicht der Prüfungsteile und -bereiche sowie deren Benotung, das DQR-Niveau und ggf. die Befreiung von vergleichbaren Prüfungsbestandteilen.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -182,7 +182,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>ausbildungsberuf enthält die Bezeichnung des Berufs, den spezifischen Aufbau der Ausbildung sowie die fachliche Ausrichtung des erlernten Berufs.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält die Bezeichnung des Berufs, den spezifischen Aufbau der Ausbildung sowie die fachliche Ausrichtung des erlernten Berufs.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -190,23 +190,23 @@
                   <emphasis role="bold">pruefungsuebersicht</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Pruefungsuebersicht</emphasis>
+                  <emphasis role="codebf">PruefungsuebersichtPruefungszeugnis</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1..n</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Pruefungsuebersicht"
+                  <xref linkend="XBerufsbildung.Baukasten.PruefungsuebersichtPruefungszeugnis"
                         role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Pruefungsuebersicht"
+                  <xref linkend="XBerufsbildung.Baukasten.PruefungsuebersichtPruefungszeugnis"
                         role="Seitenzahl"/>
                </entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>pruefungsuebersicht enthält Angaben zu den Prüfungsteilen und -bereichen sowie deren Bewertung.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält Angaben zu den Prüfungsteilen und -bereichen sowie deren Bewertung.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -224,7 +224,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>befreiung enthält die Angabe zur Befreiung von vergleichbaren Prüfungsbestandteilen bei der Umschulungsprüfung, wenn der Prüfling eine andere vergleichbare Prüfung vor einer öffentlichen oder staatlich anerkannten Bildungseinrichtung oder vor einem staatlichen Prüfungsausschuss erfolgreich abgelegt hat.</para>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält die Angabe zur Befreiung von vergleichbaren Prüfungsbestandteilen bei der Umschulungsprüfung oder einer Zweitausbildung, wenn der Prüfling eine andere vergleichbare Prüfung vor einer öffentlichen oder staatlich anerkannten Bildungseinrichtung oder vor einem staatlichen Prüfungsausschuss erfolgreich abgelegt hat.</para>
  </entry>
             </row>
             <row>
@@ -247,7 +247,7 @@
             </row>
             <row>
                <entry rowsep="1" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>niveauDQR enthält die Einordnung des erworbenen Abschlusses in den Deutschen Qualifikationsrahmen. Das Kernstück des DQR sind acht Referenzniveaus, die den acht Niveaus des Europäischen Qualifikationsrahmens (EQR) entsprechen.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält die Einordnung des erworbenen Abschlusses in den Deutschen Qualifikationsrahmen. Das Kernstück des DQR sind acht Referenzniveaus, die den acht Niveaus des Europäischen Qualifikationsrahmens (EQR) entsprechen.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -267,7 +267,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Als besondere Leistung kann eine Vielzahl von weiteren strukturierten und unstrukturierten Informationen zu den erbrachten Leistungen erfasst werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Informationen zu besonderen Leistungen und kann eine Vielzahl von weiteren strukturierten und unstrukturierten Informationen zu den erbrachten Leistungen erfassen.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -283,29 +283,29 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>prüfungsdatum enthält das Datum, an dem die Prüfung abgelegt wurde.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält das spezifische Datum, an dem eine einzelne Prüfung im Rahmen der Abschlussprüfungen für einen Ausbildungsberuf stattfindet.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">aussteller</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">StelleAusstellend</emphasis>
+                  <emphasis role="codebf">NameOrganisation</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleAusstellend"
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation"
                         role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleAusstellend"
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation"
                         role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>aussteller enthält Angaben über die zuständige Stelle entlang der Lebenslage Berufsbildung, die einen Bildungsnachweis ausstellt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zu einer Institution oder Behörde, die offizielle Dokumente, Zertifikate oder Nachweise erstellt und ausstellt.</para></entry>
             </row>
          </tbody>
       </tgroup>
@@ -331,7 +331,7 @@
                </row>
                <row>
                   <entry morerows="1">X&#x200B;B&#x200B;B&#x200B;D&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;1&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;R&#x200B;A&#x200B;</entry>
-                  <entry/>
+                  <entry>XBBD-1000-0001-WNIL_RA: Wenn und nur wenn der Wert der Codeliste Rechtsgrundlage 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
                </row>
                <row>
                   <entry align="left">

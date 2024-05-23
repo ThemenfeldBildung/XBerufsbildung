@@ -8,40 +8,38 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="spezifikation.einleitung.Berufsbildungsjourney">
 
 	<info>
-		<title>Die X-Berufsbildung-Journey</title>
+		<title>Die XBerufsbildung-Journey</title>
 	</info>
-	<para>Die X-Berufsbildung-Journey basiert auf der Berufsbildungsjourney und stellt einen
-		konkretisierten, exemplarischen Überblick über einzelne Aktivitäten eines
-		Bildungsteilnehmenden und den beteiligten Akteuren im Berufsbildungswesen und bereits
-		mögliche Stellen für einen standardisierten Datenaustausch dar. Dabei wurde eine von vielen
-		möglichen Bildungswegen als Reise entlang der Lebenslage Berufsausbildung durch das
-		Berufsbildungswesen abgebildet. Grundlage für die XBerufsschul-Journey sind Leistungen aus
-		dem OZG-Umsetzungskatalog – im konkreten der OZG-L 10748 „Berufliche Bildung“. Erweitert
-		wurde die XBerufsbildung-Journey darüber hinaus durch potenzielle digitale
-		Datenaustauschmomente an einzelnen Stationen. Die blauen Icons weisen auf bereits umgesetzte
-		Standardisierungsaktivitäten hin, die im Entwicklungsprozess und in der weiteren
-		Anforderungserhebung näher betrachtet und konkretisiert wurden. </para>
-	<para>Die X-Berufsbildung-Journey umfasst Stationen von der Vorbereitung auf den Eintritt in die
-		Berufsbildung bis zum Abschluss der Berufsausbildung und dem Übergang in weitere
-		Ausbildungsphasen:</para>
-	<para>Die ersten Stationen umfassen vorbereitende Maßnahmen vor dem Beginn der Berufsausbildung,
-		wie die Information und Beratung von Menschen zu möglichen Bildungswegen. Es können auch
-		Vorbereitungsmaßnahmen zur Aufnahme in eine Berufsausbildung oder zur Feststellung eines
-		speziellen Förderbedarfs (z. B. sonderpädagogisch) getroffen werden. Zudem kann die
-		Anerkennung schulischer Leistungen aus dem Ausland oder anderweitig erbrachter Leistungen
-		erfolgen. In der nachfolgenden Station erfolgt der Eintritt in eine duale Berufsausbildung
-		und die Durchführung der dabei notwendigen Schritte vom Vertragsabschluss mit einem
-		Ausbildungsbetrieb bis hin zur Eintragung in das Berufsausbildungsverzeichnis der
-		zuständigen Stellen. </para>
-	<para>Am Ende der Berufsausbildung kann eine weitere Bildungsstufe angestrebt werden –
-		beispielsweise der Übergang in eine Aufstiegsfortbildung. Im Nachgang an die einzelnen
-		Schritte der Fortbildung ist ein Übergang in ein Studium oder die Beschäftigung möglich. </para>
+	<para>Die XBerufsbildung-Journey bietet einen Überblick über die verschiedenen Aktivitäten eines
+		Bildungsteilnehmenden sowie der beteiligten Akteure im Berufsbildungswesen. Dabei zeigt sie
+		auch potenzielle oder durch XBerufsbildung bereits umgesetzte Stellen auf, an denen ein
+		standardisierter Datenaustausch sinnvoll und notwendig ist. Dabei wurde eine von vielen
+		möglichen Bildungswegen als exemplarische Reise entlang der Lebenslage Berufsausbildung
+		durch das Berufsbildungswesen abgebildet. Grundlage für die XBerufsbildung-Journey sind
+		Leistungen aus dem OZG-Umsetzungskatalog – im Konkreten der OZG-L 10748 „Berufliche
+		Bildung“.  Die violetten Icons weisen auf bereits umgesetzte Standardisierungsaktivitäten
+		hin, die im Entwicklungsprozess und in der weiteren Anforderungserhebung näher betrachtet
+		und konkretisiert wurden. </para>
+	<para>Die XBerufsbildung-Journey umfasst Stationen von der Berufsvorbereitung bis zum Abschluss der
+		Berufsausbildung und dem Übergang in weitere Ausbildungsphasen:</para>
+	<para>Die ersten Stationen der XBerufsbildung-Journey umfassen vorbereitende Maßnahmen vor
+		Beginn der Berufsausbildung. Dazu gehören die Suche und Bereitstellung von Information durch
+		bspw. Beratung zu möglichen Bildungswegen sowie Vorbereitungsmaßnahmen zur Aufnahme in eine
+		Berufsausbildung oder zur Feststellung eines speziellen Förderbedarfs, beispielsweise im
+		sonderpädagogischen Bereich. Darüber hinaus kann die Anerkennung schulischer Leistungen aus
+		dem Ausland oder anderweitig erbrachter Leistungen erfolgen.</para>
+	<para>Im Anschluss an die vorbereitenden Stationen, erfolgt der Eintritt in eine duale
+		Berufsausbildung, wobei notwendige Schritte wie der Vertragsabschluss mit einem
+		Ausbildungsbetrieb und die Eintragung in das Berufsausbildungsverzeichnis der zuständigen
+		Kammer durchgeführt werden. Am Ende der Berufsausbildung kann eine weitere Bildungsstufe,
+		wie der Übergang in eine Aufstiegsfortbildung, angestrebt werden. Nach Abschluss der
+		Fortbildung ist ein Übergang in ein Studium oder die Beschäftigung möglich.</para>
 	<para>Es ist wichtig zu beachten, dass die Stationen nicht zwangsläufig in der angegebenen
-		Reihenfolge stattfinden müssen. Nicht alle Stationen müssen zwingend durchlaufen werden, wie
-		beispielsweise die Station "Teilnahme an überbetriebliche Unterweisung". Grundsätzlich
-		können die Stationen jedoch in der hier dargestellten Reihenfolge verortet werden.</para>
-	<para>Die Bildungsjourney, wie sie in der XBildung-Spezifikation dargestellt ist, ersetzt nicht die
-		X-Berufsbildung-Journey, sondern verfeinert stattdessen die Lebenslage
+		Reihenfolge durchlaufen werden müssen und nicht alle Stationen verpflichtend sind, wie
+		beispielsweise die Teilnahme an überbetrieblichen Unterweisungen. Grundsätzlich können die
+		Stationen jedoch in der dargestellten Reihenfolge verortet werden.</para>
+	<para>Die Bildungsjourney, wie sie in der XBildung-Spezifikation dargestellt ist, ersetzt nicht
+		die XBerufsbildung-Journey, sondern verfeinert stattdessen die Lebenslage
 		"Berufsbildung".</para>
 
 	<mediaobject>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd"
+           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
            xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd"
-           version="0.2"
+           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd"
+           version="0.3"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -18,7 +18,7 @@
             <beschreibung>XBerufsbildung</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.2</version>
+            <version>0.3</version>
             <versionXOEVProfil>3.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>3.0</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
@@ -35,7 +35,7 @@
               namespace="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"/>
    <xs:complexType name="AllgemeinerName">
       <xs:annotation>
-         <xs:documentation>Der AllgemeineName dient der Darstellung von Vor- und Nachnamen und fasst deren gemeinsame Eigenschaften zusammen.</xs:documentation>
+         <xs:documentation>Diese Klasse dient der Darstellung von typischen Namensarten natürlicher Personen und fasst deren gemeinsame Eigenschaften zusammen.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="name" minOccurs="0" type="din91379:datatypeC">
@@ -48,61 +48,26 @@
                <xs:documentation>Diese Komponente beinhaltet eine Feststellung (wahr oder falsch), ob zu Recht kein Name angegeben wurde. Ueber das Setzen auf TRUE, wird angezeigt, dass zurecht kein Name angegeben wurde. Diese Komponente sollte nur bei der Verwendung der Komponente "AllgemeinerName" als Vorname oder Familienname verwendet werden.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="namensart" minOccurs="0" type="xbd:Code.Namensart">
-            <xs:annotation>
-               <xs:documentation>Mit der Komponente "namensart" kann der Name näher charakterisiert werden. Beispiel: Eigenname, spezielle Namensart nach ausländischem Recht oder Blockname</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="alternativeRepraesentation"
-                     minOccurs="0"
-                     maxOccurs="unbounded"
-                     type="xbbd:AlternativeRepraesentation">
-            <xs:annotation>
-               <xs:documentation>Die Komponente "alternativeRepraesentation" beinhaltet Bestandteile aus dem Objekt AllgemeinerName in einer Form, die einer festgelegten Konvention folgt. Die im Element AlternativeRepraesentation übermittelten Informationen müssen redundant zu den anderen Elementen der Komponente "AllgemeinerName" sein, sie dürfen diese nicht ersetzen. Anmerkung: Die alternative Repräsentation soll u.a. für die redundante Übermittlung eines Nachnamens genutzt werden, um die Bestandteile "Präfix" und "namensgebenden Bestandteil" eines Nachnamens zusätzlich getrennt zu übermitteln. Der hierfür zu nutzende Algorithmus könnte z.B. lauten: "namensgebender Bestandteil, Präfix". Der Name "Graf Lambsdorf" wird also alternativ als "Lambsdorf, Graf" übertragen.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType name="AlternativeRepraesentation">
-      <xs:annotation>
-         <xs:documentation>Die "AlternativeRepraesentation" beinhaltet das mit ihm verbundene Objekt in einer alternativen Form, die einer festgelegten Konvention folgt. Das Element kann Inhalte anderer Elemente des verbundenen Objekts beinhalten. Die in der Komponente "AlternativeRepraesentation" übermittelten Informationen müssen redundant zu den anderen Elementen des mit ihm verbundenen Objekts sein. Eine "AlternativeRepraesentation" kann auch eine multimediale Abbildung des Objektes darstellen. Hierzu zählen beispielsweise Logos oder Bilder. Beispiel: Ein Beispiel für die Verwendung einer alternativen Repraesentation ist die Übermittlung von Namen. Der Name "Andrè Müller" würde nach ICAO-Standard, in dem keine Umlaute erlaubt sind, daher alternativ als "ANDRE MUELLER" übertragen.</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="repraesentation" type="xs:base64Binary">
-            <xs:annotation>
-               <xs:documentation>Die Komponente "repraesentation" enthält die alternative Repräsentation von Inhalten, die originär an anderer Stelle und in anderer Form übermittelt werden und der festgelegten Konvention folgt. Als Datentyp wird Binary (BASE64) gewählt, damit jeder beliebige Inhalt (so z. B. auch XML) in jeder beliebigen Codierung übermittelt werden kann.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="algorithmus" minOccurs="0" type="din91379:datatypeC">
-            <xs:annotation>
-               <xs:documentation>Die Komponente "algorithmus" enthält den Algorithmus, der (möglichst in formaler Notation) genau beschreibt wie die alternative Repräsentation erzeugt wird. Beispiel: Analog der Vorgehensweise bei XML Signature, wo über URIs die Hashalgorithmen benannt werden, in Form von URLs oder URIs.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="hinweis" minOccurs="0" type="din91379:datatypeC">
-            <xs:annotation>
-               <xs:documentation>Die Komponente "hinweis" enthält einen zusätzlichen Hinweis des Senders über die von ihm intendierte Umgehensweise mit der alternativen Repräsentation.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="AngabenAusbildung">
       <xs:annotation>
-         <xs:documentation>Die Klasse "AngabenAusbildung" enthält die Bezeichnung des Ausbildungsberufs, Informationen zum Ausbildungszeitraum der Berufsausbildung sowie zum Prüfungstermin.</xs:documentation>
+         <xs:documentation>Die Klasse enthält die Bezeichnung des Ausbildungsberufs, Informationen zum Ausbildungszeitraum der Berufsausbildung sowie zum Prüfungstermin.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="ausbildungsberuf" type="xbbd:Ausbildungsberuf">
             <xs:annotation>
-               <xs:documentation>ausbildungsberuf enthält die Bezeichnung des erlernten Berufs, die Fundstelle der Ausbildungsverordnung sowie weitere prüfungsrelevante Binnendifferenzierungen.</xs:documentation>
+               <xs:documentation>Das Element enthält die Bezeichnung des erlernten Berufs, die Fundstelle der Ausbildungsverordnung sowie weitere prüfungsrelevante Binnendifferenzierungen.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="ausbildungszeitraum" minOccurs="0" type="xbbd:Zeitraum">
             <xs:annotation>
-               <xs:documentation>ausbildungszeitraum enthält einen Datumsbereich, in dem die Ausbildung planmäßig stattfinden wird.</xs:documentation>
+               <xs:documentation>Das Element enthält die festgelegte Dauer, über die eine berufliche Ausbildung hinweg erfolgt, typischerweise in Jahren angegeben, wie etwa drei Jahre für viele duale Ausbildungsberufe in Deutschland.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="pruefungstermin" minOccurs="0" type="xbd:TeilbekanntesDatum">
             <xs:annotation>
-               <xs:documentation>pruefungstermin enthält das Datum, an dem die letzte Prüfung abgelegt wird.</xs:documentation>
+               <xs:documentation>Das Element enthält das spezifische Datum, an dem eine einzelne Prüfung im Rahmen der Abschlussprüfungen für einen Ausbildungsberuf stattfindet.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
@@ -112,11 +77,6 @@
          <xs:documentation>Eine Anschrift beschreibt einen Ort mit den klassischen Ordnungsbegriffen wie Orts- und Straßennamen sowie ergänzenden Informationen wie z. B. Ortsteil oder Postfach. Eine Anschrift kann genutzt werden, um Orte zu benennen, an denen sich Personen aufhalten, an denen Objekte zu finden sind, oder an denen Ereignisse stattfinden. Darüber hinaus kann sie genutzt werden, um Post oder Waren zuzustellen. Daher enthält sie auch die notwendigen Attribute um Postfächer zu adressieren. Die Anschrift kann auch über eine Subkomponente verfügen, die eine verwaltungspolitische Zuordnung des Ortes erlaubt (Zuordnung zu einer Gemeinde über den AGS, eines Bundesland, etc.).</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="id" minOccurs="0" type="xs:string">
-            <xs:annotation>
-               <xs:documentation>Die "id" kann genutzt werden, um eine Instanz einer Anschrift innerhalb einer Datenstruktur eindeutig zu identifizieren. Hierbei handelt es sich um eine technische ID. Anmerkung: z.B. über IDREF in XML</xs:documentation>
-            </xs:annotation>
-         </xs:element>
          <xs:element name="strasse" minOccurs="0" type="din91379:datatypeB">
             <xs:annotation>
                <xs:documentation>Eine Straße ist ein planmäßig angelegter, im allgemeinen befestigter Verkehrsweg innerhalb eines Ortes. Die "strasse" enthält den Namen/die Bezeichnung einer Straße. Anmerkung: Es soll möglichst der amtliche Straßenname aus einem offiziellen Straßenverzeichnis genutzt werden.</xs:documentation>
@@ -142,18 +102,6 @@
                <xs:documentation>Der "ort" enthält den Namen eines Ortes (Gemeinde, Ortschaft oder Stadt). Anmerkung: Als Ortsname sollte der amtliche Gemeindename genutzt werden.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="ortsteil" minOccurs="0" type="din91379:datatypeB">
-            <xs:annotation>
-               <xs:documentation>Ein Ortsteil ist Teil eines Ortes und dient zur Untergliederung dieses Ortes.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="ortFruehererGemeindename"
-                     minOccurs="0"
-                     type="din91379:datatypeB">
-            <xs:annotation>
-               <xs:documentation>Der frühere Gemeindename ist die Bezeichnung eines Ortes, die vom aktuell gültigen amtlichen Gemeindenamen abweicht. Anmerkung: Der frühere Gemeindename kann der Ortsangabe einer Anschrift hinzugefügt werden, um eine Adressierung zu erleichtern.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
          <xs:element name="zusatz" minOccurs="0" type="din91379:datatypeB">
             <xs:annotation>
                <xs:documentation>Ein Anschriftenzusatz beinhaltet ggf. erforderliche weitere Präzisierungen zu einer Anschrift. Anmerkung: Anschriftenzusätze können der Anschrift hinzugefügt werden, um eine Adressierung zu erleichtern oder ein Objekt genauer zu beschreiben, als es mit den klassischen Attributen einer Anschrift allein möglich ist. Auf eine Festlegung des Formats von Anschriftenzusätzen wurde wegen der uneinheitlichen Verwendung verzichtet. Beispiele: Hinterhof, 3. Aufgang, Haus A, 3. Stock, Appartement 25a, 3. Stock - Appartement 25 a, #325a, Raum 77</xs:documentation>
@@ -164,49 +112,42 @@
                <xs:documentation>Der Staat, dem die Anschrift postalisch zugeordnet wird.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="verwaltungspolitischeKodierung"
-                     minOccurs="0"
-                     type="xbbd:VerwaltungspolitischeKodierung">
-            <xs:annotation>
-               <xs:documentation>Die "verwaltungspolitischeKodierung" beinhaltet Informationen, mit denen eine Anschrift verwaltungspolitisch eindeutig zugeordnet werden kann.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="Ausbildungsberuf">
       <xs:annotation>
-         <xs:documentation>Die Klasse "Ausbildungsberuf" enthält die Bezeichnung des erlernten Berufs, die Fundstelle der Ausbildungsverordnung sowie weitere prüfungsrelevante Binnendifferenzierungen.</xs:documentation>
+         <xs:documentation>Die Klasse enthält die Bezeichnung des erlernten Berufs, die Fundstelle der Ausbildungsverordnung sowie weitere prüfungsrelevante Binnendifferenzierungen.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="bezeichnung" type="xs:string">
             <xs:annotation>
-               <xs:documentation>bezeichnung enthält die Bezeichnung des Ausbildungsberufs, z. B. Fachkraft für Metalltechnik.</xs:documentation>
+               <xs:documentation>Das Element enthält die offizielle Bezeichnung des Ausbildungsberufs laut Ausbildungsordnung unter dem eine spezifische Berufsausbildung anerkannt und durchgeführt wird, z. B. Fachkraft für Metalltechnik.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="fundstelle" minOccurs="0" type="xs:string">
             <xs:annotation>
-               <xs:documentation>fundstelle enthält die Fundstelle der berufsspezifischen Verordnung eines Ausbildungsberufs im Bundesgesetzblatt, z. B. BGBl. I S. 628.</xs:documentation>
+               <xs:documentation>Das Element enthält die Fundstelle der berufsspezifischen Verordnung eines Ausbildungsberufs im Bundesgesetzblatt. Die Fundstelle des Ausbildungsberufes ist die genaue rechtliche Quelle, wie ein Gesetz oder eine Verordnung, in der die Ausbildungsvorschriften und Rahmenbedingungen für diesen Beruf festgelegt sind. z. B. BGBl. I S. 628.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="binnendifferenzierung" minOccurs="0">
             <xs:annotation>
-               <xs:documentation>binnendifferenzierung enthält die Fachrichtung, den Schwerpunkt oder weitere prüfungsrelevante Differenzierung des Ausbildungsberufs.</xs:documentation>
+               <xs:documentation>Das Element enthält die Fachrichtung, den Schwerpunkt oder weitere prüfungsrelevante Differenzierung des Ausbildungsberufs. Die Binnendifferenzierung des Ausbildungsberufes bezeichnet die Möglichkeit, innerhalb eines Ausbildungsberufes durch verschiedene Wahlqualifikationen, Fachrichtungen oder Spezialisierungen spezifische Kenntnisse und Fähigkeiten zu vertiefen.</xs:documentation>
             </xs:annotation>
             <xs:complexType>
                <xs:choice>
                   <xs:element name="fachrichtung" minOccurs="0" type="xs:string">
                      <xs:annotation>
-                        <xs:documentation>fachrichtung enthält die Fachrichtung des Ausbildungsberufs, z. B. Montagetechnik.</xs:documentation>
+                        <xs:documentation>Das Element enthält die Fachrichtung des Ausbildungsberufs, z. B. Montagetechnik.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="schwerpunkt" minOccurs="0" type="xs:string">
                      <xs:annotation>
-                        <xs:documentation>schwerpunkt enthält den prüfungsrelevanten Schwerpunkt des Ausbildungsberufs, z. B. Zerspanungstechnik.</xs:documentation>
+                        <xs:documentation>Das Element enthält den prüfungsrelevanten Schwerpunkt des Ausbildungsberufs, z. B. Zerspanungstechnik.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="sonstiges" minOccurs="0" type="xs:string">
                      <xs:annotation>
-                        <xs:documentation>sonstiges enthält eine weitere prüfungsrelevante Differenzierung, die nicht den Schwerpunkt oder die Fachrichtung betrifft, z. B. Beruf für Menschen mit Behinderung.</xs:documentation>
+                        <xs:documentation>Das Element enthält weitere prüfungsrelevante Differenzierungen, wie Einsatzgebiet, Wahlqualifikationen oder Handlungsfelder.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                </xs:choice>
@@ -216,48 +157,48 @@
    </xs:complexType>
    <xs:complexType name="Ausbildungsbetrieb">
       <xs:annotation>
-         <xs:documentation>Die Klasse "Ausbildungsbetrieb" enthält den Namen und die Anschrift des Ausbildungsbetriebs.</xs:documentation>
+         <xs:documentation>Die Klasse enthält den Namen und die Anschrift des Ausbildungsbetriebs. Ein Ausbildungsbetrieb ist ein Unternehmen oder eine Einrichtung, die nach gesetzlichen Vorschriften dazu berechtigt ist, Auszubildende im Rahmen eines anerkannten Ausbildungsberufes praktisch auszubilden.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="name" type="xbbd:NameOrganisation">
             <xs:annotation>
-               <xs:documentation>name gibt den Namen des Ausbildungsbetriebs an.</xs:documentation>
+               <xs:documentation>Das Element gibt den Namen des Ausbildungsbetriebs an. Der Name eines Ausbildungsbetriebes ist die offizielle Bezeichnung des Unternehmens oder der Einrichtung, die eine Berufsausbildung durchführt.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="anschrift" minOccurs="0" type="xbbd:Anschrift">
             <xs:annotation>
-               <xs:documentation>anschrift enthält Angaben zur Anschrift des Ausbildungsbetriebs. Bei Bedarf kann über den Typ der Anschrift auf deren Verwendung als Postanschrift, Niederlassungsanschrift oder Gründungsanschrift verwiesen werden.</xs:documentation>
+               <xs:documentation>Das Element enthält Angaben zur Anschrift des Ausbildungsbetriebs. Bei Bedarf kann über den Typ der Anschrift auf deren Verwendung als Postanschrift, Anschrift der Niederlassung oder Gründungsanschrift verwiesen werden.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="ausbildungsstaette"
                      minOccurs="0"
                      type="xbbd:Ausbildungsstaette">
             <xs:annotation>
-               <xs:documentation>ausbildungsstaette enthält Angaben zur Ausbildungsstätte des Ausbildungsbetriebs. Eine Ausbildungsstätte ist anzugeben, wenn sich der Hauptsitz eines Unternehmens an einem anderen Ort befindet als der Standort, an dem die Berufsausbildung absolviert wird. Beim Ausbildungsbetrieb wird in diesem Fall der Hauptsitz angegeben. Die Angaben zum Standort, an dem die Ausbildung größtenteils absolviert wird, werden unter der Ausbildungsstätte erfasst.</xs:documentation>
+               <xs:documentation>Das Element enthält Angaben zur Ausbildungsstätte des Ausbildungsbetriebs. Eine Ausbildungsstätte ist anzugeben, wenn sich der Hauptsitz eines Unternehmens an einem anderen Ort befindet als der Standort, an dem die Berufsausbildung absolviert wird. Beim Ausbildungsbetrieb wird in diesem Fall der Hauptsitz angegeben. Die Angaben zum Standort, an dem die Ausbildung größtenteils absolviert wird, werden unter der Ausbildungsstätte erfasst.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="Ausbildungsstaette">
       <xs:annotation>
-         <xs:documentation>Die Klasse "Ausbildungsstaette" beinhaltet Angaben zur Ausbildungsstätte des Ausbildungsbetriebs. Eine Ausbildungsstätte ist anzugeben, wenn sich der Hauptsitz eines Unternehmens an einem anderen Ort befindet als der Standort, an dem die Berufsausbildung absolviert wird. Beim Ausbildungsbetrieb wird in diesem Fall der Hauptsitz angegeben. Die Angaben zum Standort, an dem die Ausbildung größtenteils absolviert wird, werden unter der Ausbildungsstätte erfasst.</xs:documentation>
+         <xs:documentation>Die Klasse enthält Informationen zur Ausbildungsstätte eines Ausbildungsbetriebs. Wenn der Hauptsitz des Unternehmens nicht mit dem Ausbildungsort übereinstimmt, wird der Hauptsitz als Ausbildungsbetrieb und der Ausbildungsort als Ausbildungsstätte angegeben.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="name" type="xbbd:NameOrganisation">
             <xs:annotation>
-               <xs:documentation>name gibt den Namen der Ausbildungsstaette an.</xs:documentation>
+               <xs:documentation>Das Element gibt den Namen der Ausbildungsstätte an. Die Ausbildungsstätte ist der Ort oder die Einrichtung, an dem die Auszubildenden sowohl die praktische als auch theoretische Ausbildung für einen spezifischen Beruf erhalten.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="anschrift" minOccurs="0" type="xbbd:Anschrift">
             <xs:annotation>
-               <xs:documentation>anschrift enthält Angaben zur Anschrift der Ausbildungsstätte. Bei Bedarf kann über den Typ der Anschrift auf deren Verwendung als Postanschrift, Niederlassungsanschrift oder Gründungsanschrift verwiesen werden.</xs:documentation>
+               <xs:documentation>Das Element bietet Informationen zur Adresse der Ausbildungsstätte. Bei Bedarf kann angegeben werden, ob es sich um die Postanschrift, die Adresse einer Niederlassung oder die Gründungsanschrift handelt.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="Auszubildender">
       <xs:annotation>
-         <xs:documentation>Auszubildender ist eine natürliche Person, die auf der Grundlage eines Berufsausbildungsvertrages im Rahmen des dualen Systems nach Berufsbildungsgesetz (BBiG) oder Handwerksordnung (HwO) eine Berufsausbildung durchläuft.</xs:documentation>
+         <xs:documentation>Ein Auszubildender/ eine Auszubildende ist eine natürliche Person, die auf der Grundlage eines Berufsausbildungsvertrages im Rahmen des dualen Systems nach Berufsbildungsgesetz (BBiG) oder Handwerksordnung (HwO) eine Berufsausbildung durchläuft.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="nameNatuerlichePerson" type="xbbd:NameNatuerlichePerson">
@@ -302,125 +243,26 @@
                <xs:documentation>"Kommunikation" fasst Angaben zur Erreichbarkeit über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="geschlecht"
-                     minOccurs="0"
-                     maxOccurs="unbounded"
-                     type="xbbd:Geschlecht">
+         <xs:element name="geschlecht" minOccurs="0" type="xbd:Code.Geschlecht">
             <xs:annotation>
                <xs:documentation>Die Komponente "geschlecht" repräsentiert die Angaben zum Geschlecht einer natürlichen Person.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
-   <xs:complexType name="Behoerde">
-      <xs:annotation>
-         <xs:documentation>Eine Behörde ist ein Organ eines Verwaltungsträgers, das gegenüber dem Verwaltungsträger berechtigt ist, mit Außenwirkung Aufgaben öffentlichen Handelns (insbes. der Erlass von Verwaltungsakten und das Schließen öffentlich-rechtlicher Verträge) wahrzunehmen.</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="id" minOccurs="0" type="xs:ID">
-            <xs:annotation>
-               <xs:documentation>Die "id" kann genutzt werden, um eine Instanz einer Behörde innerhalb einer Datenstruktur eindeutig zu identifizieren. Hierbei handelt es sich um eine technische ID.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="typ" minOccurs="0" type="xoev-code:Code">
-            <xs:annotation>
-               <xs:documentation>Der Typ der Behörde ist ein Code zur Abbildung des föderalen Systems von EU, Bund, Land, Kommune. (Alt: Der Typ der Behörde wird über einen Code ausgedrückt zur fachlichen Zuordnung einer Behörde wie zum Beispiel Meldebehörde, Finanzbehörde, Sozialbehörde ....)</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="zusatz" minOccurs="0" type="din91379:datatypeC">
-            <xs:annotation>
-               <xs:documentation>Der "zusatz" enthält als Freitext weitere Informationen zu einer Behörde. Beispiel: zur genaueren Beschreibung des Typs mit einem Hinweis wie "Stadt", "Markt", "Gemeinde", "Große Kreisstadt", "kreisfreie Stadt" (Behördenwegweiser des Freistaats Bayern)</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="behoerdenkennung" minOccurs="0" type="xbbd:Behoerdenkennung">
-            <xs:annotation>
-               <xs:documentation>Die Behördenkennung ist ein System zur eindeutigen Identifikation einer Behörde bspw. im DVDV.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="kommunikation"
-                     minOccurs="0"
-                     maxOccurs="unbounded"
-                     type="xbbd:Kommunikation">
-            <xs:annotation>
-               <xs:documentation>Unter Kommunikation werden Angaben zur Erreichbarkeit einer Behörde über elektronische Kommunikationskanäle, vor allem Telekommunikation zusammengefasst.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="behoerdenidentifikation"
-                     minOccurs="0"
-                     type="xbbd:Identifikation">
-            <xs:annotation>
-               <xs:documentation>Die "behoerdenidentifikation" fasst alle Elemente zusammen, die eine Behörde eindeutig unter anderen Behörden identifiziert. Anmerkung: Neben der konkreten BehördenID wird der fachliche Typ der ID wie z.B. Staatsanwaltschaft, Amtsgericht, Finanzamt oder Meldebehörde festgelegt.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="behoerdenname" minOccurs="0" type="xbbd:NameOrganisation">
-            <xs:annotation>
-               <xs:documentation>Hier werden Angaben zum Namen einer Behörde zusammengefasst.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="nachgeordneteBehoerde"
-                     minOccurs="0"
-                     maxOccurs="unbounded"
-                     type="xbbd:Behoerde">
-            <xs:annotation>
-               <xs:documentation>Die "nachgeordneteBehoerde" erlaubt die Abbildung einer der Behörde nachgeordneten Stelle.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="verwaltungspolitischeZustaendigkeit"
-                     minOccurs="0"
-                     maxOccurs="unbounded"
-                     type="xbbd:VerwaltungspolitischeKodierung">
-            <xs:annotation>
-               <xs:documentation>Die verwaltungspolitische Zuständigkeit der Behörde beschreibt für welche verwaltungspolitische Einheit eine Behörde zuständig ist. Beispiele: Land Berlin, Gemeinde Parthenstein.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="anschrift"
-                     minOccurs="0"
-                     maxOccurs="unbounded"
-                     type="xbbd:Anschrift">
-            <xs:annotation>
-               <xs:documentation>Die Anschrift einer Behörde. Hierbei kann es sich z.B. um den Sitz der Behörde, eine Besucher- oder Lieferanschrift handeln.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="organisationsstruktur"
-                     minOccurs="0"
-                     maxOccurs="unbounded"
-                     type="xbbd:Organisationseinheit">
-            <xs:annotation>
-               <xs:documentation>Die "organisationsstruktur" eröffnet die Möglichkeit, ergänzend interne Organisations- und Hierarchieebenen einer Behörde für ihre Erreichbarkeit aber auch für Zwecke der Dienstaufsicht im Rahmen des Geschäftsprozesses zu beschreiben. Anmerkung: Mit Hilfe der Komponente "hierarchieebene" sind die unterschiedlichen Ebenen einer Behörde abbildbar.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType name="Behoerdenkennung">
-      <xs:annotation>
-         <xs:documentation>Die Behoerdenkennung fasst die Elemente zusammen, über die eine Behörde identifiziert werden kann. Die "Behoerdenkennung" ist prioritär zur Übermittlung der im DVDV verzeichneten Behördenschlüssel vorgesehen, kann aber auch für andere Behördenkennungen, bspw. die BKZ der Justizverwaltung eingesetzt werden. Eine Behördenkennung im DVDV besteht aus einem Präfix und der eigentlichen Kennung. Die Codelisten für die Präfixe sowie die Kennungen pro Präfix werden durch die koordinierende Stelle für das DVDV verwaltet. Anmerkung: Beispiel für die Übermittlung einer Behördenkennung des DVDV: Bei einer Identifikation von Behörden auf kommunaler Ebene anhand des amtlichen Gemeindeschlüssels (AGS) der Gemeinde, für die die Behörde zuständig ist, lautet der Präfix "ags:", die Kennung ist dann der AGS der jeweiligen Gemeinde.</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="kennung" minOccurs="0" type="xoev-code:Code">
-            <xs:annotation>
-               <xs:documentation>Schlüssel zur eindeutigen Identifikation einer Behörde. Die Kennung kennzeichnet eine Behörde (ggf. innerhalb der durch den Präfix bezeichneten Klasse (DVDV)) eindeutig. Anmerkung: Im Zusammenhang mit dem DVDV wird die Kennung durch die koordinierende Stelle für das DVDV verwaltet. Die tatsächlich zu nutzende Codeliste kann an dieser Stelle nicht angegeben werden, da es voraussichtlich pro Präfix jeweils eine Codeliste der Kennungen der Behörden mit diesem Präfix geben wird. (Zum Beispiel die Codeliste der Amtlichen Gemeindeschlüssel für die Behörden auf kommunaler Ebene, die anhand dieses Ordnungsmerkmals im DVDV verzeichnet sind und mit dem Präfix ags: adressiert werden. Eine andere zulässige Liste wäre die Codeliste der Kennungen aller Bundesbehörden, die jeweils mit dem Präfix dbs: zu versehen sind. Nach jetzigem Kenntnisstand kann nicht ausgeschlossen werden, dass Inhalte der Codelisten mit Kennungen für Behörden unterschiedlichen Typs immer disjunkt sind.)</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="praefix" minOccurs="0" type="xoev-code:Code">
-            <xs:annotation>
-               <xs:documentation>Der "praefix" bezeichnet eine Klasse von Behördenkennungen. Anmerkung: Die Liste der Präfixe für Behördenkennungen werden im Zusammenhang mit dem DVDV durch das Bundesverwaltungsamt als koordinierende Stelle für das DVDV verwaltet. Beispiel: Alle Behördenkennungen der Behörden, die anhand des amtlichen Gemeindeschlüssels (AGS) identifiziert werden können, erhalten den Präfix ags.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
    <xs:complexType name="Bemerkung">
       <xs:annotation>
-         <xs:documentation>Die Klasse "Bemerkung" beinhaltet Angaben zu weiterführenden Informationen zum erworbenen Abschluss. Darunter fallen etwa die Teilnahme an Förderunterricht, freiwilligen Arbeitsgemeinschaften oder die Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung etc..</xs:documentation>
+         <xs:documentation>Die Klasse beinhaltet Angaben zu weiterführenden Informationen zum erworbenen Abschluss. Darunter fallen etwa die Teilnahme an Förderunterricht, freiwilligen Arbeitsgemeinschaften oder die Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung etc.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="art" minOccurs="0" type="xbbd:Code.ArtDerBemerkung">
             <xs:annotation>
-               <xs:documentation>Die Art der Bemerkung gibt an, ob es sich um standardisierte Bemerkungen handelt oder nicht.</xs:documentation>
+               <xs:documentation>Das Element gibt an, ob es sich um standardisierte Bemerkungen handelt oder nicht.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="beschreibung" minOccurs="0" type="xs:string">
             <xs:annotation>
-               <xs:documentation>Die Beschreibung ergänzt die Bemerkung um weitere Informationen. Ob und welche Inhalte hier notwendig sind, hängt von der Art der Bemerkung ab.</xs:documentation>
+               <xs:documentation>Das Element ergänzt die Bemerkung um weitere Informationen. Ob und welche Inhalte hier notwendig sind, hängt von der Art der Bemerkung ab.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
@@ -438,7 +280,7 @@
                <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.2</version>
+               <version>0.3</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -471,7 +313,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.2"/>
+                          fixed="0.3"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -524,7 +366,7 @@
                <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.1</version>
+               <version>0.3</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -559,35 +401,35 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.1"/>
+                          fixed="0.3"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
    <xs:complexType name="Fortbildungsabschluss">
       <xs:annotation>
-         <xs:documentation>Die Klasse "Fortbildungsabschluss" beinhaltet Angaben zur Bezeichnung des Berufs, zur Fundstelle der jeweiligen Fortbildungsordnung und ggf. zum Schwerpunkt der Fortbildung.</xs:documentation>
+         <xs:documentation>Die Klasse beinhaltet Angaben zur Bezeichnung des Berufs, zur Fundstelle der jeweiligen Fortbildungsordnung und ggf. zum Schwerpunkt der Fortbildung.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="bezeichnung" type="xs:string">
             <xs:annotation>
-               <xs:documentation>ausbildungsberuf enthält die Bezeichnung des Fortbildungsabschlusses, z. B. Bachelor Professional für Veranstaltungstechnik.</xs:documentation>
+               <xs:documentation>Da Element enthält die offizielle Bezeichnung des Fortbildungsabschlusses laut Fortbildungsordnung. Es stellt den spezifischen Titel oder die Qualifikation dar, die eine Person nach erfolgreichem Abschluss einer Fortbildung erhält, z. B. Bachelor Professional für Veranstaltungstechnik.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="fundstelle" type="xs:string">
             <xs:annotation>
-               <xs:documentation>fundstelle enthält die Fundstelle der jeweiligen Fortbildungsordnung im Bundesgesetzblatt oder in anderen amtlichen Verkündungsorganen, z. B. BGBl. I S. 2977.</xs:documentation>
+               <xs:documentation>Das Element enthält die Fundstelle der jeweiligen Fortbildungsordnung im Bundesgesetzblatt oder in anderen amtlichen Verkündungsorganen, z. B. BGBl. I S. 2977.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="schwerpunkt" minOccurs="0" type="xs:string">
             <xs:annotation>
-               <xs:documentation>schwerpunkt enthält den Schwerpunkt des Fortbildungsabschlusses.</xs:documentation>
+               <xs:documentation>Das Element enthält den Schwerpunkt des Fortbildungsabschlusses. Es handelt sich hierbei um einen spezifischen Bereich oder eine Fachrichtung, auf die sich die Fortbildung konzentriert und in der der Absolvent/ die Absolventin vertiefte Kenntnisse erlangt hat.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="Geburt">
       <xs:annotation>
-         <xs:documentation>Unter "Geburt" werden geburtsbezogene Informationen zusammengefasst.</xs:documentation>
+         <xs:documentation>Diese Klasse enthält geburtsbezogene Informationen.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="datum" type="xbd:TeilbekanntesDatum">
@@ -602,37 +444,20 @@
          </xs:element>
       </xs:sequence>
    </xs:complexType>
-   <xs:complexType name="Geschlecht">
-      <xs:annotation>
-         <xs:documentation>Die Komponente "Geschlecht" dient der Repräsentation des biologischen Geschlechts.</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="geschlecht" type="xoev-code:Code">
-            <xs:annotation>
-               <xs:documentation>Das "geschlecht" bezeichnet das biologische Geschlecht eines Lebewesens.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="gueltigkeit" minOccurs="0" type="xbbd:Zeitraum">
-            <xs:annotation>
-               <xs:documentation>Die "gueltigkeit" gibt mit Beginn- und/oder Endzeitpunkt den Zeitraum an, in dem ein Lebewesen ein bestimmtes Geschlecht hat.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
    <xs:complexType name="GesetzlicherVertreter">
       <xs:annotation>
-         <xs:documentation>Mit diesem Datentyp werden die Daten des gesetzlichen Vertreters der betroffenen Person abgebildet.</xs:documentation>
+         <xs:documentation>Diese Klasse enthält Daten des gesetzlichen Vertreters der betroffenen Person. Gesetzliche Vertreter sind Personen oder Einrichtungen, die gemäß gesetzlicher Bestimmungen befugt sind, im Namen anderer zu handeln und deren Rechte und Pflichten zu vertreten.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="gesetzlicherVertreterSchluessel"
                      type="xbbd:Code.GesetzlicherVertreter">
             <xs:annotation>
-               <xs:documentation>Mit dieser Schlüsseltabelle wird die Art der gesetzlichen Vertretung abgebildet. Siehe Blatt 0001 des DSMeld.</xs:documentation>
+               <xs:documentation>Das Element enthält eine Schlüsseltabelle, in der die verschiedenen Arten der gesetzlichen Vertretung dargestellt sind. Siehe Blatt 0001 des DSMeld.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="name" type="xbbd:NameNatuerlichePerson">
             <xs:annotation>
-               <xs:documentation>Mit diesem Element werden die Namensinformationen des gesetzlichen Vertreters übermittelt.</xs:documentation>
+               <xs:documentation>Das Element enthält Namensinformationen des gesetzlichen Vertreters. Der Name des gesetzlichen Vertreters bezieht sich auf die individuelle Bezeichnung der Person oder Einrichtung, die gemäß rechtlicher Bestimmungen befugt ist, im Namen einer anderen Person oder Organisation zu handeln und diese rechtlich zu vertreten.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="anschrift"
@@ -640,14 +465,14 @@
                      maxOccurs="unbounded"
                      type="xbbd:Anschrift">
             <xs:annotation>
-               <xs:documentation>Mit diesem Element wird die Hauptanschrift des gesetzlichen Vertreters übermittelt.</xs:documentation>
+               <xs:documentation>Das Element dient der Übermittlung der Hauptanschrift des gesetzlichen Vertreters. Die Anschrift des gesetzlichen Vertreters bezeichnet die genaue postalische Adresse der Person oder Einrichtung, die gemäß den gesetzlichen Vorschriften befugt ist, im Namen einer anderen Partei zu handeln und diese rechtlich zu vertreten.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="Identifikation">
       <xs:annotation>
-         <xs:documentation>Unter "Identifikation" werden die Informationen zusammengefasst, die die eindeutige Identifikation von Objekten, Dokumenten, Personen oder Organisationen in einem fachlichen Kontext erlauben.</xs:documentation>
+         <xs:documentation>Diese Klasse enthält Informationen, die die eindeutige Identifikation von Objekten, Personen oder Organisationen in einem fachlichen Kontext erlauben.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="id" minOccurs="0" type="xs:string">
@@ -669,7 +494,7 @@
    </xs:complexType>
    <xs:complexType name="Kommunikation">
       <xs:annotation>
-         <xs:documentation>"Kommunikation" fasst Angaben zur Erreichbarkeit über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</xs:documentation>
+         <xs:documentation>Diese Klasse fasst Angaben zur Erreichbarkeit über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="kanal" minOccurs="0" type="xoev-code:Code">
@@ -696,7 +521,7 @@
    </xs:complexType>
    <xs:complexType name="NameNatuerlichePerson">
       <xs:annotation>
-         <xs:documentation>Der Name einer Person ist eine Benennung dieser Person, die dazu dient, diese Person von anderen Personen zu unterscheiden.</xs:documentation>
+         <xs:documentation>Diese Klasse bündelt alle Namensarten und Bestandteile, die im fachlichen Kontext relevant sind oder sein können.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="titel" minOccurs="0" type="din91379:datatypeC">
@@ -722,22 +547,9 @@
                <xs:documentation>Der Geburtsname ist der Nachname einer Person, der sich jeweils aus dem Geburtseintrag für diese Person ergibt. Der Geburtsname ist i.d.R. der Nachname, der vor der ersten Eheschließung oder Lebenspartnerschaft geführt wurde.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="fruehererFamilienname"
-                     minOccurs="0"
-                     maxOccurs="unbounded"
-                     type="xbbd:AllgemeinerName">
-            <xs:annotation>
-               <xs:documentation>Der frühere Familienname ist der Nachname, den eine Person vor einer Nachnamensänderung geführt hat.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
          <xs:element name="vorname" type="xbbd:AllgemeinerName">
             <xs:annotation>
                <xs:documentation>Der Vorname ist der Name bzw. der Teil des Namens, der nicht die Zugehörigkeit zu einer Familie ausdrückt, sondern das Individuum innerhalb der Familie bezeichnet und dazu dient, es von anderen Familienmitgliedern zu unterscheiden.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="rufname" minOccurs="0" type="xbbd:AllgemeinerName">
-            <xs:annotation>
-               <xs:documentation>Der Rufname ist der im alltäglichen Gebrauch zu nutzende Vorname.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="fruehererVorname"
@@ -748,19 +560,11 @@
                <xs:documentation>Der frühere Vorname ist der Vorname, der vor einer Vornamensänderung geführt wurde.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="alternativeRepraesentation"
-                     minOccurs="0"
-                     maxOccurs="unbounded"
-                     type="xbbd:AlternativeRepraesentation">
-            <xs:annotation>
-               <xs:documentation>Die Komponente "alternativeRepraesentation" beinhaltet den Namen einer natürlichen Person in einer Form, die einer festgelegten Konvention folgt. Die in der Komponente "AlternativeRepraesentation" übermittelten Informationen müssen redundant zu den anderen Elementen der Komponente "NameNatuerlichePerson" sein, sie dürfen diese nicht ersetzen. Anmerkung: Im Zusammenhang mit ausländischen Namen kann diese Komponente z.B. genutzt werden, um die gesamte Namenskette einzutragen oder den Namen in Originalschreibweise zu übermitteln. Beispiel: Ein Beispiel für alternative Repräsentation ist die Übermittlung des Namens "Andrè Müller" nach ICAO-Standard, in dem keine Umlaute erlaubt sind, und daher der Name als "ANDRE MUELLER" übertragen wird.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="NameOrganisation">
       <xs:annotation>
-         <xs:documentation>"NameOrganisation" fasst die Angaben zum Namen einer Organisation zusammen.</xs:documentation>
+         <xs:documentation>Diese Klasse fasst die Angaben zum Namen einer Organisation zusammen.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="name" minOccurs="0" type="din91379:datatypeE">
@@ -773,38 +577,11 @@
                <xs:documentation>Kurzbezeichnung des Namen einer Organisation.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="gueltigkeit" minOccurs="0" type="xbbd:Zeitraum">
-            <xs:annotation>
-               <xs:documentation>Angaben zum Gültigkeitszeitraum für den Namen der Organisation.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType name="Organisationseinheit">
-      <xs:annotation>
-         <xs:documentation>Die Organisationseinheit fasst Angaben zur Darstellung der internen hierarchischen Organisationsstruktur einer Institution zusammen, z.B. zur Darstellung von Abteilungen oder Referaten.</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="name" type="din91379:datatypeC">
-            <xs:annotation>
-               <xs:documentation>Bezeichnung der Organisationseinheit.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="hierarchieebene" minOccurs="0" type="xs:integer">
-            <xs:annotation>
-               <xs:documentation>Kennzeichnung der Hierarchieebene der Organisationseinheit.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="hierarchiename" minOccurs="0" type="din91379:datatypeC">
-            <xs:annotation>
-               <xs:documentation>Hier kann der Name einer Hierachieebene angegeben werden. Beispiele: Abteilung, Referat</xs:documentation>
-            </xs:annotation>
-         </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="Ortsangabe">
       <xs:annotation>
-         <xs:documentation>Der Zeitraum kennzeichnet einen Abschnitt auf einem Zeitstrahl durch Angabe von Beginn und/oder Ende.</xs:documentation>
+         <xs:documentation>Diese Klasse umfasst Informationen über den genauen Ort und den Staat eines Ereignisses, wie z.B. Geburt einer Person oder Erwerb eines Dokuments.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="ort" type="din91379:datatypeB">
@@ -844,88 +621,78 @@
          </xs:element>
       </xs:sequence>
    </xs:complexType>
-   <xs:complexType name="Pruefungsbereich">
+   <xs:complexType name="PruefungsuebersichtFortbildungszeugnis">
       <xs:annotation>
-         <xs:documentation>Die Klasse "Pruefungsbereich" beinhaltet Angaben über die Bezeichnung, Beschreibung und Benotung einzelner Prüfungsbereiche. Ein Prüfungsbereich wird unter anderem als Handlungsbereich, Qualifikationsbereich, Handlungsfeld, Prüfungsfach, Prüfungsleistung oder als eine andere prüfungsrelevante Kategorie je nach Rechtsgrundlage definiert.</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="bezeichnung" type="xs:string">
-            <xs:annotation>
-               <xs:documentation>bezeichnung enthält die Bezeichnung eines Prüfungsbereichs, z. B. Wirtschafts- und Sozialkunde.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="beschreibung" minOccurs="0" type="xs:string">
-            <xs:annotation>
-               <xs:documentation>beschreibung enthält die Beschreibung eines Prüfungsbereichs.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="benotung" minOccurs="0" type="xbd:Benotung">
-            <xs:annotation>
-               <xs:documentation>benotung enthält die Angabe einer Note / einer Bewertung für einen Prüfungsbereich.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType name="Pruefungsuebersicht">
-      <xs:annotation>
-         <xs:documentation>Die Klasse "Pruefungsuebersicht" beinhaltet Angaben über den Prüfungsteil, einschließlich der Beschreibung und Benotung des Prüfungsteils sowie die Angaben zu den einzelnen Prüfungsbereichen.</xs:documentation>
+         <xs:documentation>Die Klasse beinhaltet Angaben zum Handlungsbereich, einschließlich der Beschreibung und Benotung des Handlungsbereichs sowie die Angaben zu den einzelnen Qualifikationsinhalten. Der Handlungsbereich bezeichnet den Bereich oder die Tätigkeitsfelder, in denen eine Person über spezifische Kompetenzen, Fähigkeiten und Kenntnisse verfügt und handlungsfähig ist.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="pruefungsteil" type="xs:string">
             <xs:annotation>
-               <xs:documentation>prüfungsteil enthält die Bezeichnung eines Prüfungsteils, z. B. Teil A der Prüfung, Teil 1 der Abschlussprüfung.</xs:documentation>
+               <xs:documentation>Das Element enthält die Bezeichnung eines Prüfungsteils. Ein Prüfungsteil ist ein spezifischer Abschnitt oder Teil einer Prüfung, der sich auf bestimmte Inhalte, Fähigkeiten oder Kompetenzen konzentriert und separat bewertet wird, z. B. Projektarbeit und projektbezogenes Fachgespräch.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="beschreibung" minOccurs="0" type="xs:string">
+         <xs:element name="benotung" type="xbd:Benotung">
             <xs:annotation>
-               <xs:documentation>beschreibung enthält die Beschreibung eines Prüfungsteils.</xs:documentation>
+               <xs:documentation>Das Element enthält die Angabe der zusammengefassten Note / Bewertung für einen Prüfungsteil basierend auf der Leistung einer Person in diesem spezifischen Abschnitt der Prüfung.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="benotung" minOccurs="0" type="xbd:Benotung">
-            <xs:annotation>
-               <xs:documentation>benotung enthält die Angabe der zusammengefassten Note / Bewertung für einen Prüfungsteil.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="pruefungsbereich"
+         <xs:element name="qualifikationsinhalt"
                      minOccurs="0"
                      maxOccurs="unbounded"
-                     type="xbbd:Pruefungsbereich">
+                     type="xbbd:Qualifikationsinhalt">
             <xs:annotation>
-               <xs:documentation>pruefungsbereich enthält die einzelnen Prüfungsbereiche innerhalb eines Prüfungsteils.</xs:documentation>
+               <xs:documentation>Das Element enthält die einzelnen Qualifikationsinhalte innerhalb eines Prüfungsteils. Ein Qualifikationsinhalt beschreibt somit die spezifischen Kenntnisse, Fähigkeiten oder Kompetenzen, z. B. Marketing-Management.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
-   <xs:complexType name="Registrierung">
+   <xs:complexType name="PruefungsuebersichtPruefungszeugnis">
       <xs:annotation>
-         <xs:documentation>Angaben zum Registereintrag.</xs:documentation>
+         <xs:documentation>Die Klasse beinhaltet Angaben über den Prüfungsteil, einschließlich der Beschreibung und Benotung des Prüfungsteils sowie die Angaben zu den einzelnen Prüfungsbereichen.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="id" minOccurs="0" type="xs:string">
+         <xs:element name="pruefungsteil" type="xs:string">
             <xs:annotation>
-               <xs:documentation>Die "id" gibt die Identifikationsnummer im Register an. Beispiel: Handelsregisternummer</xs:documentation>
+               <xs:documentation>Das Element enthält die Bezeichnung eines Prüfungsteils, z. B. Teil A der Prüfung, Teil 1 der Abschlussprüfung. Mit der Einführung der gestreckten Abschluss- bzw. Gesellenprüfung (GAP) wurde festgelegt, dass die Bezeichnung Prüfungsteil nur noch für die beiden zeitlich auseinanderfallenden Teile (Teil 1 und Teil 2 der GAP) dieser Prü­ fungsstruktur benutzt werden soll.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="registertyp" minOccurs="0" type="xoev-code:Code">
+         <xs:element name="benotung" minOccurs="0" type="xbd:Benotung">
             <xs:annotation>
-               <xs:documentation>Der "registertyp" gibt an, um welche Art von Register es sich handelt. Beispiele: Handelsregister, Vereinsregister</xs:documentation>
+               <xs:documentation>Das Element enthält die Angabe der zusammengefassten Note / Bewertung für einen Prüfungsteil. Diese basiert auf der Leistung einer Person in diesem spezifischen Abschnitt der Prüfung.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="registrierendeBehoerde" minOccurs="0" type="xbbd:Behoerde">
+         <xs:element name="pruefungsbereich" maxOccurs="unbounded" type="xs:string">
             <xs:annotation>
-               <xs:documentation>Angaben zur Behörde, die das Register führt. Beispiel: Amtsgericht</xs:documentation>
+               <xs:documentation>Das Element enthält die einzelnen Prüfungsbereiche innerhalb eines Prüfungsteils. Prüfungsbereiche dienen als Strukturelemente zur Unterteilung von Prüfungen, indem sie sich an den Tätigkeitsfeldern der Berufspraxis orientieren und die Anforderungen an den Prüfling beschreiben; optional können sie durch eine Liste von Tätigkeiten oder Gebieten präzisiert werden, um festzulegen, wie die Qualifikationen nachgewiesen werden sollen, z. B. Arbeitsauftrag, Wirtschafts- und Sozialkunde.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="gueltigkeit" minOccurs="0" type="xbbd:Zeitraum">
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Qualifikationsinhalt">
+      <xs:annotation>
+         <xs:documentation>Die Klasse beinhaltet Angaben über die Bezeichnung, Beschreibung und Benotung einzelner Qualifikationsinhalte. Ein Qualifikationsinhalt wird unter anderem als Qualifikationsbereich, Handlungsfeld, Prüfungsfach, Prüfungsleistung oder als eine andere prüfungsrelevante Kategorie je nach Fortbildungsordnung definiert.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="bezeichnung" type="xs:string">
             <xs:annotation>
-               <xs:documentation>Hier werden Angaben zum Zeitraum der Gültigkeit einer "Registrierung" gemacht. Anmerkung: Bei der Gültigkeit handelt es sich um den Zeitraum zwischen dem Datum der Eintragung in ein Register und dem Datum, an dem der Eintrag aus dem Register gelöscht wurde.</xs:documentation>
+               <xs:documentation>Das Element enthält die Bezeichnung eines Qualifikationsinhaltes. Der Qualifikationsinhalt bezeichnet die spezifischen Kenntnisse, Fähigkeiten oder Kompetenzen, die für eine bestimmte berufliche Qualifikation erforderlich sind und in einem Ausbildungs- oder Prüfungsrahmen festgelegt werden, z. B. Wirtschafts- und Sozialkunde.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="beschreibung" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Das Element enthält die Beschreibung eines Qualifikationsinhaltes. Dies umfasst eine detaillierte Darstellung der spezifischen Kenntnisse, Fähigkeiten oder Kompetenzen, die für einen bestimmten beruflichen Abschluss oder eine Qualifikation erforderlich sind.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="benotung" minOccurs="0" type="xbd:Benotung">
+            <xs:annotation>
+               <xs:documentation>Das Element enthält die Angabe einer Note / einer Bewertung für einen Qualifikationsinhalt, basierend auf der Leistung einer Person in diesem spezifischen Abschnitt der Prüfung.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="StelleAusstellend">
       <xs:annotation>
-         <xs:documentation>StelleAusstellend enthält Angaben über Behörden entlang der Lebenslage Berufsbildung, die eine Eintragungsbestätigung ausstellen.</xs:documentation>
+         <xs:documentation>Diese Klasse enthält Angaben zu einer Institution oder Behörde, die offizielle Dokumente, Zertifikate oder Nachweise erstellt und ausstellt.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="name" minOccurs="0" type="xbbd:NameOrganisation">
@@ -957,61 +724,12 @@
                <xs:documentation>eindeutige Identifikation einer Organisation im Bildungswesen</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="existenzzeitraum"
-                     minOccurs="0"
-                     maxOccurs="unbounded"
-                     type="xbbd:Zeitraum">
-            <xs:annotation>
-               <xs:documentation>Hier werden Angaben zum Zeitraum der Existenz einer Organisation gemacht, der mit Gründungs- und Auflösungsdatum der Organisation angegeben wird.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
          <xs:element name="anschrift"
                      minOccurs="0"
                      maxOccurs="unbounded"
                      type="xbbd:Anschrift">
             <xs:annotation>
                <xs:documentation>Angaben zur Anschrift der Organisation. Bei Bedarf kann über den Typ der Anschrift auf deren Verwendung als Postanschrift, Niederlassungsanschrift oder Gründungsanschrift verwiesen werden.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType name="VerwaltungspolitischeKodierung">
-      <xs:annotation>
-         <xs:documentation>Die Komponente "VerwaltungspolitischeKodierung" beinhaltet Informationen, die eine verwaltungspolitisch eindeutige Zuordnung ermöglichen. Sofern nicht anderes angegeben wird, sollten die vom Statistischen Bundesamt im XRepository veröffentlichten Codelisten verwendet werden. (Suchen Sie nach: urn:de:bund:destatis:bevoelkerungsstatistik:schluessel)</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="kreis" minOccurs="0" type="xbd:Code.Kreis">
-            <xs:annotation>
-               <xs:documentation>In Deutschland bezeichnet der Kreis eine bestimmt Region, einen Stadt- oder Landkreis.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="bezirk" minOccurs="0" type="xbd:Code.Bezirk">
-            <xs:annotation>
-               <xs:documentation>In Deutschland wird mit Bezirk eine bestimmte Region bezeichnet, die einem Regierungsbezirk, einem ehemaligen Regierungsbezirk oder einer anderen statistischen Einheit entspricht, die zwar mehrere Kreise umfasst, jedoch kleiner als ein Bundesland ist.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="bundesland" minOccurs="0" type="xbd:Code.Bundesland">
-            <xs:annotation>
-               <xs:documentation>In Deutschland bezeichnet ein Bundesland eine bestimmte Region und umfasst mehrere Kreise und Bezirke (Ausnahme bilden die sogenannten Stadtstaaten).</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="gemeindeschluessel"
-                     minOccurs="0"
-                     type="xbd:Code.AmtlicherGemeindeschluessel">
-            <xs:annotation>
-               <xs:documentation>Ein Gemeindeschlüssel ist ein Schlüssel zur Identifikation einer Gemeinde oder sonstiger Gebietskörperschaften (Kreis, Bezirk, Bundesland). Anmerkung: In Deutschland ist der Amtliche Gemeindeschlüssel (AGS) als Gemeindeschlüssel 8-stellig und bundesweit gültig. Der AGS wird vom Statistischen Bundesamt herausgegeben.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="regionalschluessel"
-                     minOccurs="0"
-                     type="xbd:Code.Regionalschluessel">
-            <xs:annotation>
-               <xs:documentation>Ein Regionalschlüssel ist ein Schlüssel zur Identifikation einer Gemeinde oder sonstiger Gebietskörperschaften (Kreis, Bezirks, Bundesland). Anmerkung: In Deutschland ist der Regionalschlüssel (RS) 12-stellig und bundesweit gültig. Der RS wird im Statistischen Bundesamt gesammelt (Rückläufe aus den Ländern) und veröffentlicht. Der AGS kann aus dem RS abgeleitet werden (Stellen 1-5 und 10-12).</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="nation" minOccurs="0" type="xbd:Code.Staat">
-            <xs:annotation>
-               <xs:documentation>Die Nation, der die Anschrift verwaltungspolitisch zugeordnet wird.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
@@ -1051,7 +769,7 @@
                <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.2</version>
+               <version>0.3</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1072,28 +790,28 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/aequivalenzbemerkung">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/aequivalenzbemerkung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Äquivalenzbemerkung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/befreiung">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/befreiung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Befreiung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/freie_formulierung">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/freie_formulierung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>freie Formulierung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/sonstige_standardisierte_bemerkung">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/sonstige_standardisierte_bemerkung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>sonstige standardisierte Bemerkung</description-de-DE>
@@ -1115,7 +833,7 @@
                <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.1</version>
+               <version>0.3</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1136,42 +854,42 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/31(2)_hwo">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/31(2)_hwo">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>§ 31 Abs. 2 HwO</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>§ 37 Abs. 2 BBiG</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37_bbig">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37_bbig">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>§ 37 BBiG</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/62(3)_ivm_37(2)_bbig">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/62(3)_ivm_37(2)_bbig">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>§ 62 Abs. 3 i.V.m. § 37 Abs. 2 BBiG</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/66_ivm_ 37(2)_bbig">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/66_ivm_ 37(2)_bbig">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>§ 66 i.V.m. § 37 Abs. 2 BBiG</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>

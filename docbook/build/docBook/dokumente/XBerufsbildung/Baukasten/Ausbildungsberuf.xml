@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Ausbildungsberuf">
    <title>Ausbildungsberuf</title>
    <subtitle>Typ: <emphasis role="codebf">Ausbildungsberuf</emphasis>
-   </subtitle><para>Die Klasse "Ausbildungsberuf" enthält die Bezeichnung des erlernten Berufs, die Fundstelle der Ausbildungsverordnung sowie weitere prüfungsrelevante Binnendifferenzierungen.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Ausbildungsberuf">
+   </subtitle><para>Die Klasse enthält die Bezeichnung des erlernten Berufs, die Fundstelle der Ausbildungsverordnung sowie weitere prüfungsrelevante Binnendifferenzierungen.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Ausbildungsberuf">
       <title>Ausbildungsberuf</title>
       <mediaobject>
          <imageobject>
@@ -60,7 +60,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>bezeichnung enthält die Bezeichnung des Ausbildungsberufs, z. B. Fachkraft für Metalltechnik. </para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die offizielle Bezeichnung des Ausbildungsberufs laut Ausbildungsordnung unter dem eine spezifische Berufsausbildung anerkannt und durchgeführt wird, z. B. Fachkraft für Metalltechnik.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -76,7 +76,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>fundstelle enthält die Fundstelle der berufsspezifischen Verordnung eines Ausbildungsberufs im Bundesgesetzblatt, z. B. BGBl. I S. 628.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Fundstelle der berufsspezifischen Verordnung eines Ausbildungsberufs im Bundesgesetzblatt. Die Fundstelle des Ausbildungsberufes ist die genaue rechtliche Quelle, wie ein Gesetz oder eine Verordnung, in der die Ausbildungsvorschriften und Rahmenbedingungen für diesen Beruf festgelegt sind. z. B. BGBl. I S. 628.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -90,7 +90,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>binnendifferenzierung enthält die Fachrichtung, den Schwerpunkt oder weitere prüfungsrelevante Differenzierung des Ausbildungsberufs.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Fachrichtung, den Schwerpunkt oder weitere prüfungsrelevante Differenzierung des Ausbildungsberufs. Die Binnendifferenzierung des Ausbildungsberufes bezeichnet die Möglichkeit, innerhalb eines Ausbildungsberufes durch verschiedene Wahlqualifikationen, Fachrichtungen oder Spezialisierungen spezifische Kenntnisse und Fähigkeiten zu vertiefen.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -108,7 +108,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>fachrichtung enthält die Fachrichtung des Ausbildungsberufs, z. B. Montagetechnik.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält die Fachrichtung des Ausbildungsberufs, z. B. Montagetechnik.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -126,7 +126,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>schwerpunkt enthält den prüfungsrelevanten Schwerpunkt des Ausbildungsberufs, z. B. Zerspanungstechnik.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält den prüfungsrelevanten Schwerpunkt des Ausbildungsberufs, z. B. Zerspanungstechnik.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -144,7 +144,7 @@
             </row>
             <row>
                <entry rowsep="1" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>sonstiges enthält eine weitere prüfungsrelevante Differenzierung, die nicht den Schwerpunkt oder die Fachrichtung betrifft, z. B. Beruf für Menschen mit Behinderung.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält weitere prüfungsrelevante Differenzierungen, wie Einsatzgebiet, Wahlqualifikationen oder Handlungsfelder.</para></entry>
             </row>
          </tbody>
       </tgroup>

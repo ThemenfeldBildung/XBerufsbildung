@@ -24,37 +24,12 @@
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.AmtlicherGemeindeschluessel">Code.AmtlicherGemeindeschluessel</link>
-            </para>
-         </listitem>
-         <listitem>
-            <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.Bezirk">Code.Bezirk</link>
-            </para>
-         </listitem>
-         <listitem>
-            <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.Bundesland">Code.Bundesland</link>
-            </para>
-         </listitem>
-         <listitem>
-            <para>
                <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.EQF">Code.EQF</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.Kreis">Code.Kreis</link>
-            </para>
-         </listitem>
-         <listitem>
-            <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.Namensart">Code.Namensart</link>
-            </para>
-         </listitem>
-         <listitem>
-            <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.Regionalschluessel">Code.Regionalschluessel</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.Geschlecht">Code.Geschlecht</link>
             </para>
          </listitem>
          <listitem>

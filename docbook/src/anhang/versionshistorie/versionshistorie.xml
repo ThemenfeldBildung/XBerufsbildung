@@ -10,80 +10,38 @@
 		<title>Versionshistorie</title>
 	</info>
 	<para>In der Versionshistorie werden die Änderungen der aktuellen Version zur Vorversion der
-		Spezifikation dargestellt.</para>
-	<!--ab V0.3 bitte noch folgenden Satz ergänzen: Es werden die Änderungen der letzten zwei Versionen aufgeführt.-->
+		Spezifikation dargestellt. Es werden die Änderungen der letzten zwei Versionen
+		aufgeführt.</para>
 
-	<section xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
-		xml:id="spezifikation.anhang.versionshistorie02">
+	<section>
 		<info>
 			<title>Version &version;</title>
 		</info>
 		<para>Veröffentlichungsdatum: &fassung;</para>
 
 		<section>
-			<title>Aufnahme neuer Nachweise</title>
-			<para>Mit der Version 0.2 wurden XBerufsbildung zwei neue Nachweise hinzugefügt. Neben
-				dem bisher bestehenden <link
-					linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis.0001"
-					>Prüfungszeugnis</link> beinhaltet das Fachmodell nun das <link
-					linkend="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis.0002"
-					>Fortbildungszeugnis</link> und die <link
-					linkend="XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung.0003"
-					>Eintragungsbestätigung</link>. Das Fortbildungszeugnis bescheinigt die
-				erfolgreiche Teilnahme an einer Fortbildungsprüfung. Es enthält u. a. Angaben zum
-				Prüfling, zum Fortbildungsabschluss sowie zum Prüfungsergebnis.</para>
-			<para>Die Eintragungsbestätigung bescheinigt die Eintragung in das Verzeichnis der
-				Berufsausbildungsverhältnisse bei der zuständigen Kammer. Im weiteren Sinne zeigt
-				sie auch das erfolgreiche Zustandekommen eines Ausbildungsverhältnisses an. Der
-				Nachweis beinhaltet Angaben zum Auszubildenden, zum Ausbildungsberuf sowie -zeitraum
-				und Informationen zum Ausbildungsbetrieb.</para>
-			<para>Zudem wurden zu beiden neuen Nachweisen Instanznachrichten erstellt.</para>
+			<title>Überarbeitung der Kernkomponenten</title>
+			<para>Die XÖV-Kernkomponenten wurden aus XBildung entfernt und bereits mit der Version
+				0.2 von XBerufsbildung direkt über die XÖV-Bibliothek eingebunden. Mit der Version
+				0.3 wurden die Kernkomponenten nochmals überarbeitet und reduziert. Nicht genutzte
+				Eigenschaften wurden im Sinne der Datensparsamkeit entfernt, sodass sich die
+				XBBD-Kernkomponenten nun auf das Wesentliche beschränken.</para>
 		</section>
 		<section>
-			<title>Neues Konzept zur Einbindung der Kernkomponenten</title>
-			<para>Die XÖV-Kernkomponenten wurden aus XBildung entfernt und sind mit der Version 0.2
-				von XBerufsbildung direkt über die XÖV-Bibliothek eingebunden. Die Kernkomponente
-				NatuerlichePerson wurde anwendungsfallspezifisch modelliert und wurde dadurch zu
-					<link linkend="XBerufsbildung.Baukasten.Kernkomponenten.Auszubildender"
-					>Auszubildender</link> und <link
-					linkend="XBerufsbildung.Baukasten.Kernkomponenten.Pruefling">Pruefling</link>.
-				Durch Auszubildender kann der Anwendungsfall der <link
-					linkend="XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung.0003"
-					>Eintragungsbestätigung</link> erfüllt werden, Pruefling wird im <link
-					linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis.0001"
-					>Prüfungszeugnis</link> sowie im <link
-					linkend="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis.0002"
-					>Fortbildungszeugnis</link> verwendet. Zu den Kernkomponenten kommt die <link
-					linkend="XBerufsbildung.Baukasten.Kernkomponenten.Ortsangabe">Ortsangabe</link>
-				hinzu, die als reduzierte Anschrift verwendet wird.</para>
-		</section>
-		<section>
-			<title>Neue erweiterbare Codeliste</title>
-			<para>Es wurde die neue Codeliste <link
-					linkend="XBerufsbildung.Baukasten.Codes.Code.RechtsgrundlageAbschlusszeugnis"
-					>RechtsgrundlageAbschlusszeugnis</link> erstellt. Diese ist zur Erweiterung
-				vorgesehen, weshalb innerhalb der Codeliste der Eintrag „Wert nicht in Liste“
-				existiert. Wird dieser Wert ausgewählt, kann zusätzlich das Feld
-				„nichtGelisteterWert“ befüllt werden. Soll ein fehlender Wert zukünftig fest in die
-				Codelisten aufgenommen werden, muss ein Change Request gestellt werden.</para>
-		</section>
-		<section>
-			<title>Weitere Änderungen an Codelisten</title>
-			<para>Es wird nun die externe Codeliste <link
-					linkend="XBerufsbildung.Baukasten.Codes.Code.GesetzlicherVertreter"
-					>GesetzlicherVertreter</link> aus dem Datensatz für das Meldewesen
-				eingebunden.</para>
-			<para>Die Codeliste <link linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBemerkung"
-					>ArtDerBemerkung</link> wurde auf sprechende Werte umgestellt und ihr wurde
-				zudem der Wert Befreiung hinzugefügt.</para>
+			<title>Weitere Anpassungen am Modell</title>
+			<para>Das Modell wurde hinsichtlich der Fachlichkeit überarbeitet, sodass mit der neuen
+				Version vormals optionale Felder nun mandatorisch sind. Ebenso wurden Datentypen
+				einiger Eigenschaften angepasst, um diese fachlich zu konkretisieren. </para>
 		</section>
 		<section>
 			<title>Inhaltliche Änderungen an der Spezifikation</title>
-			<para>Die Spezifikation wurde textlich überarbeitet und konkretisiert. Die
-				Dokumentationstexte der einzelnen Klassen wurden dabei teilweise neu abgestimmt und
-				dementsprechend angepasst. Dem <link xlink:href="#spezifikation.kernkomponenten"
-					>Kapitel Kernkomponenten</link> wurde ein kurzer Einleitungstext vorangestellt,
-				welcher das neue Konzept zur Einbindung der Kernkomponenten erläutert.</para>
+			<para>Dem Kapitel <link xlink:href="#spezifikation.einleitung.spezifikationXBerufsbildung"
+					>Spezifikation XBerufsbildung</link> wurde mit der Version 0.3 ein neuer
+				Abschnitt zur fachlichen Beschreibung des Datenmodells hinzugefügt. Dort wird
+				grundlegend der fachliche Aufbau des Modells erklärt. Es wird ein kurzer Überblick
+				über Datentypen, Multiplizitäten und Logik des Modells geschaffen, was Lesenden den
+				Einstieg und das Verständnis in die technischen Hintergründe des Fachmodells
+				XBerufsbildung vereinfachen soll.</para>
 		</section>
 
 		<section>
@@ -91,65 +49,130 @@
 			<para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
 			<itemizedlist>
 				<listitem>
-					<para>XBBD-281: Codeliste mit ~wert_nicht_in_liste erweiterbar machen</para>
+					<para>XBBD-514: "beschreibung" aus Klasse Prüfungsübersicht entfernen</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-302: Eigene Kernkomponenten einbauen</para>
+					<para>XBBD-513: XBD V1.0 einbinden</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-316: Typ der Eigenschaft „geburtsort“ auf Ortsangabe ändern</para>
+					<para>XBBD-504: Neues Kapitel "Fachliche Beschreibung des Datenmodells" für XBBD übernehmen</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-321: Codeliste „artderbemerkung“ um sprechende Werte ergänzen</para>
+					<para>XBBD-503: Klassen zur Prüfungsübersicht anpassen</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-372: Nachricht „Eintragungsbestätigung“ modellieren</para>
+					<para>XBBD-501: Text für Schematron-Fehlermeldung erstellen</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-373: Codeliste mit Rechtsgrundlagen erstellen</para>
+					<para>XBBD-489: Angabe DQR-Niveau vorhabensübergreifend klären</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-375: Bezeichnung „artDesFachs“ ändern</para>
+					<para>XBBD-488: Fehler in der Spezifikation korrigieren</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-382: Nachricht „Fortbildungszeugnis“ modellieren</para>
+					<para>XBBD-484: Typ der Eigenschaft „geschlecht" ändern</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-390: Klasse Ausbildungsberuf erstellen</para>
+					<para>XBBD-483: Typ der Eigenschaft "aussteller" ändern</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-394: Beispielhafte XML-Instanz eines Fortbildungszeugnisses
-						erstellen</para>
+					<para>XBBD-463: Multiplizität der Eigenschaft "niveauDQR" auf 1 setzen</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-395: Beispielhafte XML-Instanz einer Eintragungsbestätigung
-						erstellen</para>
+					<para>XBBD-461: nicht genutzte Kernkomponenten entfernen</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-404: Dokumentationstexte anpassen</para>
+					<para>XBBD-458: Klasse "Binnendifferenzierung" überarbeiten</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-412: Ausbildungsstätte anlegen</para>
+					<para>XBBD-455: Multiplizität der Eigenschaft "niveauDQR" auf 1 setzen</para>
 				</listitem>
+				<listitem>
+					<para>XBBD-454: Multiplizität der Eigenschaft "rechtsgrundlage" auf 1
+						setzen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-430: Benotung in der Beispielinstanz anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-429: Schematron-Regel für das Prüfungszeugnis anpassen</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</section>
+
+	<section>
+		<info>
+			<title>Version 0.2</title>
+		</info>
+		<para>Veröffentlichungsdatum: 14.03.2024</para>
+		<para>Mit der Version 0.2 wurden die beiden neuen Nachweise Fortbildungszeugnis und
+			Eintragungsbestätigung aufgenommen. Des Weiteren wurde ein neues Konzept zur Einbindung
+			der Kernkomponenten integriert. Außerdem enthält XBerufsbildung nun eine Codeliste, die
+			erweiterbar ist und dadurch um eigene, nicht in der Codeliste vorhandenen Werte ergänzt
+			werden kann.</para>
+		<simplesect>
+			<title>Liste der umgesetzten Tickets</title>
+			<para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
+			<itemizedlist>
 				<listitem>
 					<para>XBBD-431: Ausbildungsvergütung entfernen</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-414: Gesetzlicher Vertreter einbinden</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-416: Klasse Fortbildungsabschluss erstellen</para>
+					<para>XBBD-418: Eigenschaft „befreiung“ einfügen</para>
 				</listitem>
 				<listitem>
 					<para>XBBD-417: AlternativeRepraesentation aus NameNatuerlichePerson
 						entfernen</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-418: Eigenschaft „befreiung“ einfügen</para>
+					<para>XBBD-416: Klasse Fortbildungsabschluss erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-414: Gesetzlicher Vertreter einbinden</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-412: Ausbildungsstätte anlegen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-404: Dokumentationstexte anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-395: Beispielhafte XML-Instanz einer Eintragungsbestätigung
+						erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-394: Beispielhafte XML-Instanz eines Fortbildungszeugnisses
+						erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-390: Klasse Ausbildungsberuf erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-382: Nachricht „Fortbildungszeugnis“ modellieren</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-375: Bezeichnung „artDesFachs“ ändern</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-373: Codeliste mit Rechtsgrundlagen erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-372: Nachricht „Eintragungsbestätigung“ modellieren</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-321: Codeliste „artderbemerkung“ um sprechende Werte ergänzen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-316: Typ der Eigenschaft „geburtsort“ auf Ortsangabe ändern</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-302: Eigene Kernkomponenten einbauen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-281: Codeliste mit ~wert_nicht_in_liste erweiterbar machen</para>
 				</listitem>
 			</itemizedlist>
-		</section>
-
+		</simplesect>
 	</section>
-
 </appendix>

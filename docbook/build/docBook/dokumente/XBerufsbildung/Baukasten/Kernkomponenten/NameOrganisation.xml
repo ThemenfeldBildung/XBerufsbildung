@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation">
    <title>NameOrganisation</title>
    <subtitle>Typ: <emphasis role="codebf">NameOrganisation</emphasis>
-   </subtitle><para>"NameOrganisation" fasst die Angaben zum Namen einer Organisation zusammen.</para> <figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation">
+   </subtitle><para>Diese Klasse fasst die Angaben zum Namen einer Organisation zusammen.</para> <figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation">
       <title>NameOrganisation</title>
       <mediaobject>
          <imageobject>
@@ -85,28 +85,6 @@
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>Kurzbezeichnung des Namen einer Organisation.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">gueltigkeit</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Zeitraum</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Zeitraum"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Zeitraum"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zum Gültigkeitszeitraum für den Namen der Organisation.</para></entry>
             </row>
          </tbody>
       </tgroup>

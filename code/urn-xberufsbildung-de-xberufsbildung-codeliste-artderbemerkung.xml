@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>ArtDerBemerkung-Codes</ShortName>
       <LongName>ArtDerBemerkung</LongName>
-      <Version>0.2</Version>
+      <Version>0.3</Version>
       <CanonicalUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderbemerkung</CanonicalUri>
-      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderbemerkung_0.2</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderbemerkung_0.3</CanonicalVersionUri>
       <Agency>
          <LongName>XBerufsbildung</LongName>
       </Agency>
@@ -47,7 +47,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/aequivalenzbemerkung</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/aequivalenzbemerkung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Äquivalenzbemerkung</SimpleValue>
@@ -55,7 +55,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/befreiung</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/befreiung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Befreiung</SimpleValue>
@@ -63,7 +63,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/freie_formulierung</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/freie_formulierung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>freie Formulierung</SimpleValue>
@@ -71,7 +71,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.2/code/artderbemerkung/sonstige_standardisierte_bemerkung</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/0.3/code/artderbemerkung/sonstige_standardisierte_bemerkung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>sonstige standardisierte Bemerkung</SimpleValue>
