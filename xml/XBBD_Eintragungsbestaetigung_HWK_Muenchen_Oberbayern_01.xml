@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+        Nichtnormative Beispielinstanz für eine Eintragungsbestätigung basierend auf einem Musternachweis der HWK München und Oberbayern im Rahmen des Vorhabens XBerufsbildunng
+        Version: XBerufsbildung 0.3
+        Letzte Aktualisierung: 23.05.2024
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+    -->
+
+<xbbd:auszubildender.eintragungsbestaetigung.0003
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd http://xberufsbildung.de/def/xberufsbildung/0.3/xsd/xberufsbildung.xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd">
+    
+    <titel>Eintragungsbestätigung</titel>
+    <ausstellung>
+        <datum>2012-08-18</datum>
+        <ort>
+            <ort>München</ort>
+            <staat listVersionID="2023-04-24">
+                <code>000</code>
+                <name>Deutschland</name>
+            </staat>
+        </ort>
+    </ausstellung>
+   
+    <sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </sprache>
+    
+    <xbbd:auszubildender>
+        
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:anrede>Herr</xbbd:anrede>
+            <xbbd:familienname>
+                <xbbd:name>Testmann</xbbd:name>
+            </xbbd:familienname>
+            <xbbd:vorname>
+                <xbbd:name>Tom</xbbd:name>
+            </xbbd:vorname>
+        </xbbd:nameNatuerlichePerson>
+        
+        <xbbd:geburt>
+            <xbbd:datum>
+                <jahrMonatTag>1985-12-31</jahrMonatTag>
+            </xbbd:datum>
+            <xbbd:geburtsort>
+                <xbbd:ort>Testhausen</xbbd:ort>
+            </xbbd:geburtsort>
+        </xbbd:geburt>
+        
+        <xbbd:geschlecht> 
+            <code>m</code>
+        </xbbd:geschlecht>
+        
+    </xbbd:auszubildender>
+    
+    <xbbd:angabenAusbildung>
+        
+        <xbbd:ausbildungsberuf>
+            <xbbd:bezeichnung>Bürokaufmann</xbbd:bezeichnung>
+        </xbbd:ausbildungsberuf>
+        
+        <xbbd:ausbildungszeitraum>
+            <xbbd:beginn>2013-09-01</xbbd:beginn>
+            <xbbd:ende>2013-08-31</xbbd:ende>
+        </xbbd:ausbildungszeitraum>
+        
+    </xbbd:angabenAusbildung>
+    
+    <xbbd:ausbildungsbetrieb>
+        
+        <xbbd:name>
+            <xbbd:name>Testfirma</xbbd:name>
+        </xbbd:name>
+        
+        <xbbd:anschrift>
+            <xbbd:strasse>Max-Joseph-Strasse</xbbd:strasse>
+            <xbbd:postleitzahl>80333</xbbd:postleitzahl>
+            <xbbd:ort>München</xbbd:ort>
+        </xbbd:anschrift>
+        
+    </xbbd:ausbildungsbetrieb>
+    
+    <xbbd:aussteller>
+        
+        <xbbd:name>
+            <xbbd:name>Handwerkskammer für München und Oberbayern</xbbd:name>
+        </xbbd:name>
+        
+        <xbbd:anschrift>
+            <xbbd:postfach>34 01 38</xbbd:postfach>
+        </xbbd:anschrift>
+        
+    </xbbd:aussteller>
+    
+    <xbbd:eintragungsnummer>
+        <xbbd:id>99999999999999</xbbd:id>
+        <xbbd:beschreibung>Nummer des Lehrvertrags</xbbd:beschreibung>
+    </xbbd:eintragungsnummer>
+    
+</xbbd:auszubildender.eintragungsbestaetigung.0003>
