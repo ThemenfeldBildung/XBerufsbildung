@@ -5,7 +5,7 @@
            xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
            targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd"
-           version="0.3"
+           version="0.4"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -18,7 +18,7 @@
             <beschreibung>XBerufsbildung</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.3</version>
+            <version>0.4</version>
             <versionXOEVProfil>3.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>3.0</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
