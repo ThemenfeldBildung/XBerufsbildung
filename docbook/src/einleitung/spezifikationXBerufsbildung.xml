@@ -19,14 +19,14 @@
 	<section>
 		<title>Aufbau der Spezifikation </title>
 
-		<para>Das vorliegende Dokument ist in drei Teile gegliedert. XBerufsbildung besteht im
-			Wesentlichen aus Prozess- und Nachweisdefinitionen. Das einleitende Kapitel zeigt
-			außerdem den Hintergrund XBerufsbildung auf und stellt die XBerufsbildung-Journey dar.
-			Darüber hinaus wird der Anwendungsfall Ausstellen des Prüfungszeugnisses beschrieben.
-			Das darauffolgende Kapitel ist das inhaltliche Kapitel zu den fachlichen Modellierungen
-			mit Metadaten-Strukturen für die initial abgebildeten (Kern-)Anwendungsfälle. Zuletzt
-			werden im Glossar alle verwendeten Fachtermini erläutert und im Anhang u.a. eigens
-			geschaffene Wertelisten zur Verfügung gestellt. </para>
+		<para>as vorliegende Dokument ist in drei Teile gegliedert. XBerufsbildung besteht im Wesentlichen
+			aus Pro- zess- und Nachweisdefinitionen. Das einleitende Kapitel zeigt außerdem den
+			Hintergrund des Standar- disierungsvorhabens XBerufsbildung auf und stellt die
+			XBerufsbildung-Journey dar. Darüber hinaus wird der Anwendungsfall Ausstellen des
+			Prüfungszeugnisses beschrieben. Das darauffolgende Kapitel ist das inhaltliche Kapitel
+			zu den fachlichen Modellierungen mit Metadaten-Strukturen für die initial abge- bildeten
+			(Kern-)Anwendungsfälle. Zuletzt werden im Glossar alle verwendeten Fachtermini erläutert
+			und im Anhang u.a. eigens geschaffene Wertelisten zur Verfügung gestellt. </para>
 	</section>
 
 	<section>

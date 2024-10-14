@@ -20,6 +20,9 @@
         href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/pruefling.fortbildungszeugnis.0002.xml"/>
     
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/auszubildender.eintragungsbestaetigung.0003.xml"/>
+        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/pruefling.zeugnisAEVO.0003.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/auszubildender.eintragungsbestaetigung.0004.xml"/>
 
 </chapter>

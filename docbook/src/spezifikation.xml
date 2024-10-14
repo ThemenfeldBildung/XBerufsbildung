@@ -12,7 +12,7 @@
 			<para>Fassung: &fassung;</para>
 			<para>Herausgeber: Land Sachsen-Anhalt</para>
 			<para>Bezugsort: <link xmlns:xlink="http://www.w3.org/1999/xlink"
-				xlink:href="https://xberufsbildung.de/def/xberufsbildung/0.3/spec/xbbd_spezifikation_0.3.pdf">https://xberufsbildung.de/def/xberufsbildung/0.3/spec/xbbd_spezifikation_0.3.pdf</link></para>
+				xlink:href="https://xberufsbildung.de/def/xberufsbildung/0.4/spec/xbbd_spezifikation_0.4.pdf">https://xberufsbildung.de/def/xberufsbildung/0.4/spec/xbbd_spezifikation_0.4.pdf</link></para>
 		</abstract>
 	</info>
 
@@ -35,8 +35,8 @@
 		</info>
 		<!--<include xmlns="http://www.w3.org/2001/XInclude" href="grundl_begriffe/grundl_begriffe.xml"/>
 		<include xmlns="http://www.w3.org/2001/XInclude" href="basisdatentypen/basisdatentypen.xml"/>-->
-		<include xmlns="http://www.w3.org/2001/XInclude"
-			href="../build/docBook/dokumente/anhang/externeModelle/externeModelle.xml"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="../build/docBook/dokumente/anhang/externeModelle/externeModelle.xml"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="fachlicheModellierung/grundlegendeDesignentscheidungen.xml"/>
 		<include xmlns="http://www.w3.org/2001/XInclude" href="fachlicheModellierung/wichtigeHinweiseZurImplementierung.xml"/>
 		<include xmlns="http://www.w3.org/2001/XInclude" href="fachlicheModellierung/code-Datentypen.xml"/>
 		<include xmlns="http://www.w3.org/2001/XInclude" href="fachlicheModellierung/kernkomponenten.xml"/>

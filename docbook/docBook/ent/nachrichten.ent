@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><!ENTITY nachricht.0001 "pruefling.pruefungszeugnis.0001">
+                    <!ENTITY nachricht.title.0001 "pruefling.pruefungszeugnis.0001">
+                    <!ENTITY nachricht.ref.0001 "<link linkend='XBerufsbildung.Nachweise.pruefling.pruefungszeugnis.0001'>Nachricht 0001</link>">
+                    <!ENTITY nachricht.0002 "pruefling.fortbildungszeugnis.0002">
+                    <!ENTITY nachricht.title.0002 "pruefling.fortbildungszeugnis.0002">
+                    <!ENTITY nachricht.ref.0002 "<link linkend='XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis.0002'>Nachricht 0002</link>">
+                    <!ENTITY nachricht.0003 "pruefling.zeugnisAEVO.0003">
+                    <!ENTITY nachricht.title.0003 "pruefling.zeugnisAEVO.0003">
+                    <!ENTITY nachricht.ref.0003 "<link linkend='XBerufsbildung.Nachweise.pruefling.zeugnisAEVO.0003'>Nachricht 0003</link>">
+                    <!ENTITY nachricht.0004 "auszubildender.eintragungsbestaetigung.0004">
+                    <!ENTITY nachricht.title.0004 "auszubildender.eintragungsbestaetigung.0004">
+                    <!ENTITY nachricht.ref.0004 "<link linkend='XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung.0004'>Nachricht 0004</link>">
+                    

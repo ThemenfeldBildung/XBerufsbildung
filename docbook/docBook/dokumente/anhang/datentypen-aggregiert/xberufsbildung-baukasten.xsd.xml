@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent"> %complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xml:id="datentypen.aggregiert.XBerufsbildung.Baukasten">
+   <title>Datentypen</title>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/AllgemeinerName.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/AngabenAusbildung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Anschrift.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Ausbildungsberuf.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Ausbildungsbetrieb.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Ausbildungsstaette.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Auszubildender.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Bemerkung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Codes/Code.RechtsgrundlageAbschlusszeugnis.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Fortbildungsabschluss.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Geburt.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/GesetzlicherVertreter.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Identifikation.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Kommunikation.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/NameNatuerlichePerson.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/NameOrganisation.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Ortsangabe.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Pruefling.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Pruefungsbereich.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Pruefungsleistung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/PruefungsteilAEVO.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/PruefungsteilFortbildungszeugnis.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/PruefungsteilPruefungszeugnis.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/StelleAusstellend.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../XBerufsbildung/Baukasten/Kernkomponenten/Zeitraum.xml"/>
+</section>

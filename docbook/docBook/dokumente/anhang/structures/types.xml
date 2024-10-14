@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kosit:types xmlns:kosit="http://www.xoev.de/de/kosit-zubehoer/3_0_0"
+             xmlns="http://docbook.org/ns/docbook"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+   <kosit:type name="AllgemeinerName"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.AllgemeinerName"
+               prefix="xbbd">
+      <kosit:property name="name"/>
+      <kosit:property name="nichtVorhanden"/>
+   </kosit:type>
+   <kosit:type name="AngabenAusbildung"
+               id="XBerufsbildung.Baukasten.AngabenAusbildung"
+               prefix="xbbd">
+      <kosit:property name="ausbildungsberuf"/>
+      <kosit:property name="ausbildungsberuf/bezeichnung"/>
+      <kosit:property name="ausbildungsberuf/fundstelle"/>
+      <kosit:property name="ausbildungsberuf/binnendifferenzierung"/>
+      <kosit:property name="ausbildungsberuf/binnendifferenzierung/fachrichtung"/>
+      <kosit:property name="ausbildungsberuf/binnendifferenzierung/schwerpunkt"/>
+      <kosit:property name="ausbildungsberuf/binnendifferenzierung/sonstiges"/>
+      <kosit:property name="ausbildungszeitraum"/>
+      <kosit:property name="ausbildungszeitraum/beginn"/>
+      <kosit:property name="ausbildungszeitraum/ende"/>
+      <kosit:property name="ausbildungszeitraum/zusatz"/>
+      <kosit:property name="pruefungstermin"/>
+      <kosit:property name="pruefungstermin/jahrMonatTag"/>
+      <kosit:property name="pruefungstermin/jahrMonat"/>
+      <kosit:property name="pruefungstermin/jahr"/>
+   </kosit:type>
+   <kosit:type name="Anschrift"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.Anschrift"
+               prefix="xbbd">
+      <kosit:property name="hausnummer"/>
+      <kosit:property name="ort"/>
+      <kosit:property name="postfach"/>
+      <kosit:property name="postleitzahl"/>
+      <kosit:property name="staat"/>
+      <kosit:property name="strasse"/>
+      <kosit:property name="zusatz"/>
+   </kosit:type>
+   <kosit:type name="Ausbildungsberuf"
+               id="XBerufsbildung.Baukasten.Ausbildungsberuf"
+               prefix="xbbd">
+      <kosit:property name="bezeichnung"/>
+      <kosit:property name="binnendifferenzierung"/>
+      <kosit:property name="binnendifferenzierung/fachrichtung"/>
+      <kosit:property name="binnendifferenzierung/schwerpunkt"/>
+      <kosit:property name="binnendifferenzierung/sonstiges"/>
+      <kosit:property name="fundstelle"/>
+   </kosit:type>
+   <kosit:type name="Ausbildungsbetrieb"
+               id="XBerufsbildung.Baukasten.Ausbildungsbetrieb"
+               prefix="xbbd">
+      <kosit:property name="anschrift"/>
+      <kosit:property name="anschrift/staat"/>
+      <kosit:property name="anschrift/strasse"/>
+      <kosit:property name="anschrift/hausnummer"/>
+      <kosit:property name="anschrift/postfach"/>
+      <kosit:property name="anschrift/postleitzahl"/>
+      <kosit:property name="anschrift/ort"/>
+      <kosit:property name="anschrift/zusatz"/>
+      <kosit:property name="ausbildungsstaette"/>
+      <kosit:property name="ausbildungsstaette/name"/>
+      <kosit:property name="ausbildungsstaette/name/name"/>
+      <kosit:property name="ausbildungsstaette/name/kurzbezeichnung"/>
+      <kosit:property name="ausbildungsstaette/anschrift"/>
+      <kosit:property name="ausbildungsstaette/anschrift/staat"/>
+      <kosit:property name="ausbildungsstaette/anschrift/strasse"/>
+      <kosit:property name="ausbildungsstaette/anschrift/hausnummer"/>
+      <kosit:property name="ausbildungsstaette/anschrift/postfach"/>
+      <kosit:property name="ausbildungsstaette/anschrift/postleitzahl"/>
+      <kosit:property name="ausbildungsstaette/anschrift/ort"/>
+      <kosit:property name="ausbildungsstaette/anschrift/zusatz"/>
+      <kosit:property name="betriebsnummer"/>
+      <kosit:property name="name"/>
+      <kosit:property name="name/name"/>
+      <kosit:property name="name/kurzbezeichnung"/>
+   </kosit:type>
+   <kosit:type name="Ausbildungsstaette"
+               id="XBerufsbildung.Baukasten.Ausbildungsstaette"
+               prefix="xbbd">
+      <kosit:property name="anschrift"/>
+      <kosit:property name="anschrift/staat"/>
+      <kosit:property name="anschrift/strasse"/>
+      <kosit:property name="anschrift/hausnummer"/>
+      <kosit:property name="anschrift/postfach"/>
+      <kosit:property name="anschrift/postleitzahl"/>
+      <kosit:property name="anschrift/ort"/>
+      <kosit:property name="anschrift/zusatz"/>
+      <kosit:property name="name"/>
+      <kosit:property name="name/name"/>
+      <kosit:property name="name/kurzbezeichnung"/>
+   </kosit:type>
+   <kosit:type name="Auszubildender"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.Auszubildender"
+               prefix="xbbd">
+      <kosit:property name="anschrift"/>
+      <kosit:property name="anschrift/staat"/>
+      <kosit:property name="anschrift/strasse"/>
+      <kosit:property name="anschrift/hausnummer"/>
+      <kosit:property name="anschrift/postfach"/>
+      <kosit:property name="anschrift/postleitzahl"/>
+      <kosit:property name="anschrift/ort"/>
+      <kosit:property name="anschrift/zusatz"/>
+      <kosit:property name="geburt"/>
+      <kosit:property name="geburt/datum"/>
+      <kosit:property name="geburt/datum/jahrMonatTag"/>
+      <kosit:property name="geburt/datum/jahrMonat"/>
+      <kosit:property name="geburt/datum/jahr"/>
+      <kosit:property name="geburt/geburtsort"/>
+      <kosit:property name="geburt/geburtsort/ort"/>
+      <kosit:property name="geburt/geburtsort/staat"/>
+      <kosit:property name="geschlecht"/>
+      <kosit:property name="identifikationsnummer"/>
+      <kosit:property name="identifikationsnummer/id"/>
+      <kosit:property name="identifikationsnummer/beschreibung"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit/beginn"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit/ende"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit/zusatz"/>
+      <kosit:property name="kommunikation"/>
+      <kosit:property name="kommunikation/kanal"/>
+      <kosit:property name="kommunikation/kanal/code"/>
+      <kosit:property name="kommunikation/kanal/name"/>
+      <kosit:property name="kommunikation/kanal/@listURI"/>
+      <kosit:property name="kommunikation/kanal/@listVersionID"/>
+      <kosit:property name="kommunikation/kennung"/>
+      <kosit:property name="kommunikation/istDienstlich"/>
+      <kosit:property name="kommunikation/zusatz"/>
+      <kosit:property name="nameNatuerlichePerson"/>
+      <kosit:property name="nameNatuerlichePerson/familienname"/>
+      <kosit:property name="nameNatuerlichePerson/familienname/name"/>
+      <kosit:property name="nameNatuerlichePerson/familienname/nichtVorhanden"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname/name"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname/nichtVorhanden"/>
+      <kosit:property name="nameNatuerlichePerson/vorname"/>
+      <kosit:property name="nameNatuerlichePerson/vorname/name"/>
+      <kosit:property name="nameNatuerlichePerson/vorname/nichtVorhanden"/>
+      <kosit:property name="nameNatuerlichePerson/titel"/>
+      <kosit:property name="nameNatuerlichePerson/anrede"/>
+      <kosit:property name="nameNatuerlichePerson/fruehererVorname"/>
+      <kosit:property name="nameNatuerlichePerson/fruehererVorname/name"/>
+      <kosit:property name="nameNatuerlichePerson/fruehererVorname/nichtVorhanden"/>
+      <kosit:property name="staatsangehoerigkeit"/>
+   </kosit:type>
+   <kosit:type name="BehoerdeType" prefix="bn-beh">
+      <kosit:property name="erreichbarkeit"/>
+      <kosit:property name="erreichbarkeit/kanal"/>
+      <kosit:property name="erreichbarkeit/kennung"/>
+      <kosit:property name="erreichbarkeit/zusatz"/>
+      <kosit:property name="kennung"/>
+      <kosit:property name="name"/>
+      <kosit:property name="verzeichnisdienst"/>
+   </kosit:type>
+   <kosit:type name="BehoerdeType" prefix="bn-beh">
+      <kosit:property name="erreichbarkeit"/>
+      <kosit:property name="erreichbarkeit/kanal"/>
+      <kosit:property name="erreichbarkeit/kennung"/>
+      <kosit:property name="erreichbarkeit/zusatz"/>
+      <kosit:property name="kennung"/>
+      <kosit:property name="name"/>
+      <kosit:property name="verzeichnisdienst"/>
+   </kosit:type>
+   <kosit:type name="BehoerdeType" prefix="bn-uq-g2g">
+      <kosit:property name="erreichbarkeit"/>
+      <kosit:property name="erreichbarkeit/kanal"/>
+      <kosit:property name="erreichbarkeit/kennung"/>
+      <kosit:property name="erreichbarkeit/zusatz"/>
+      <kosit:property name="kennung"/>
+      <kosit:property name="name"/>
+      <kosit:property name="verzeichnisdienst"/>
+   </kosit:type>
+   <kosit:type name="BehoerdeType" prefix="bn-uq-g2g">
+      <kosit:property name="erreichbarkeit"/>
+      <kosit:property name="erreichbarkeit/kanal"/>
+      <kosit:property name="erreichbarkeit/kennung"/>
+      <kosit:property name="erreichbarkeit/zusatz"/>
+      <kosit:property name="kennung"/>
+      <kosit:property name="name"/>
+      <kosit:property name="verzeichnisdienst"/>
+   </kosit:type>
+   <kosit:type name="Bemerkung"
+               id="XBerufsbildung.Baukasten.Bemerkung"
+               prefix="xbbd">
+      <kosit:property name="art"/>
+      <kosit:property name="beschreibung"/>
+   </kosit:type>
+   <kosit:type name="Benotung" prefix="xbd">
+      <kosit:property name="bewertungsschemaNote"/>
+      <kosit:property name="bewertungsschemaNote/schemaURI"/>
+      <kosit:property name="bewertungsschemaNote/beschreibung"/>
+      <kosit:property name="bewertungsschemaNote/beschreibung/@lang"/>
+      <kosit:property name="bewertungsschemaNote/schlechtesteBewertung"/>
+      <kosit:property name="bewertungsschemaNote/bestandenAbBewertung"/>
+      <kosit:property name="bewertungsschemaNote/besteBewertung"/>
+      <kosit:property name="bewertungsschemaNote/weitereInformationen"/>
+      <kosit:property name="bewertungsschemaPunkte"/>
+      <kosit:property name="bewertungsschemaPunkte/schemaURI"/>
+      <kosit:property name="bewertungsschemaPunkte/beschreibung"/>
+      <kosit:property name="bewertungsschemaPunkte/beschreibung/@lang"/>
+      <kosit:property name="bewertungsschemaPunkte/schlechtesteBewertung"/>
+      <kosit:property name="bewertungsschemaPunkte/bestandenAbBewertung"/>
+      <kosit:property name="bewertungsschemaPunkte/besteBewertung"/>
+      <kosit:property name="bewertungsschemaPunkte/weitereInformationen"/>
+      <kosit:property name="note"/>
+      <kosit:property name="punkte"/>
+      <kosit:property name="wortbezeichnung"/>
+      <kosit:property name="wortbezeichnung/@lang"/>
+   </kosit:type>
+   <kosit:type name="Code" prefix="xoev-code">
+      <kosit:property name="@listURI"/>
+      <kosit:property name="@listVersionID"/>
+      <kosit:property name="code"/>
+      <kosit:property name="name"/>
+   </kosit:type>
+   <kosit:type name="Code.AmtlicherGemeindeschluessel" prefix="xbd"/>
+   <kosit:type name="Code.ArtDerBemerkung" prefix="xbd"/>
+   <kosit:type name="Code.ArtDerPruefung" prefix="xbd"/>
+   <kosit:type name="Code.ArtDerSchule" prefix="xbd"/>
+   <kosit:type name="Code.ArtDerTraegerschaft" prefix="xbd"/>
+   <kosit:type name="Code.ArtDesSchulabschlusses" prefix="xbd"/>
+   <kosit:type name="Code.Bewertungsschema" prefix="xbd"/>
+   <kosit:type name="Code.Bezirk" prefix="xbd"/>
+   <kosit:type name="Code.Bundesland" prefix="xbd"/>
+   <kosit:type name="Code.CEFR" prefix="xbd"/>
+   <kosit:type name="Code.EQF" prefix="xbd"/>
+   <kosit:type name="Code.Erreichbarkeit" prefix="xbd"/>
+   <kosit:type name="Code.Geschlecht" prefix="xbd"/>
+   <kosit:type name="Code.GesetzlicherVertreter" prefix="xbd"/>
+   <kosit:type name="Code.ISCED2011" prefix="xbd"/>
+   <kosit:type name="Code.ISCEDF2013" prefix="xbd"/>
+   <kosit:type name="Code.Kommunikation.KanalType" prefix="bn-kom"/>
+   <kosit:type name="Code.Kommunikation.KanalType" prefix="bn-kom"/>
+   <kosit:type name="Code.Kommunikation.KanalType" prefix="bn-uq-g2g"/>
+   <kosit:type name="Code.Kommunikation.KanalType" prefix="bn-uq-g2g"/>
+   <kosit:type name="Code.Kreis" prefix="xbd"/>
+   <kosit:type name="Code.Language" prefix="xbd"/>
+   <kosit:type name="Code.Lernzeitmodell" prefix="xbd"/>
+   <kosit:type name="Code.RechtsgrundlageAbschlusszeugnis"
+               id="XBerufsbildung.Baukasten.Codes.Code.RechtsgrundlageAbschlusszeugnis"
+               prefix="xbbd"/>
+   <kosit:type name="Code.Regionalschluessel" prefix="xbd"/>
+   <kosit:type name="Code.Staat" prefix="xbd"/>
+   <kosit:type name="Code.Staatsangehoerigkeit" prefix="xbd"/>
+   <kosit:type name="Code.VerzeichnisdienstType" prefix="bn-beh"/>
+   <kosit:type name="Code.VerzeichnisdienstType" prefix="bn-beh"/>
+   <kosit:type name="Code.VerzeichnisdienstType" prefix="bn-uq-g2g"/>
+   <kosit:type name="Code.VerzeichnisdienstType" prefix="bn-uq-g2g"/>
+   <kosit:type name="Dokument" prefix="xbd">
+      <kosit:property name="ausstellung"/>
+      <kosit:property name="ausstellung/datum"/>
+      <kosit:property name="ausstellung/ort"/>
+      <kosit:property name="ausstellung/ort/ort"/>
+      <kosit:property name="ausstellung/ort/staat"/>
+      <kosit:property name="gueltigkeitsdatum"/>
+      <kosit:property name="nonce"/>
+      <kosit:property name="sprache"/>
+      <kosit:property name="titel"/>
+      <kosit:property name="titel/@lang"/>
+   </kosit:type>
+   <kosit:type name="Fortbildungsabschluss"
+               id="XBerufsbildung.Baukasten.Fortbildungsabschluss"
+               prefix="xbbd">
+      <kosit:property name="bezeichnung"/>
+      <kosit:property name="fundstelle"/>
+      <kosit:property name="schwerpunkt"/>
+   </kosit:type>
+   <kosit:type name="Geburt"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.Geburt"
+               prefix="xbbd">
+      <kosit:property name="datum"/>
+      <kosit:property name="datum/jahrMonatTag"/>
+      <kosit:property name="datum/jahrMonat"/>
+      <kosit:property name="datum/jahr"/>
+      <kosit:property name="geburtsort"/>
+      <kosit:property name="geburtsort/ort"/>
+      <kosit:property name="geburtsort/staat"/>
+   </kosit:type>
+   <kosit:type name="GesetzlicherVertreter"
+               id="XBerufsbildung.Baukasten.GesetzlicherVertreter"
+               prefix="xbbd">
+      <kosit:property name="anschrift"/>
+      <kosit:property name="anschrift/staat"/>
+      <kosit:property name="anschrift/strasse"/>
+      <kosit:property name="anschrift/hausnummer"/>
+      <kosit:property name="anschrift/postfach"/>
+      <kosit:property name="anschrift/postleitzahl"/>
+      <kosit:property name="anschrift/ort"/>
+      <kosit:property name="anschrift/zusatz"/>
+      <kosit:property name="gesetzlicherVertreterSchluessel"/>
+      <kosit:property name="name"/>
+      <kosit:property name="name/familienname"/>
+      <kosit:property name="name/familienname/name"/>
+      <kosit:property name="name/familienname/nichtVorhanden"/>
+      <kosit:property name="name/geburtsname"/>
+      <kosit:property name="name/geburtsname/name"/>
+      <kosit:property name="name/geburtsname/nichtVorhanden"/>
+      <kosit:property name="name/vorname"/>
+      <kosit:property name="name/vorname/name"/>
+      <kosit:property name="name/vorname/nichtVorhanden"/>
+      <kosit:property name="name/titel"/>
+      <kosit:property name="name/anrede"/>
+      <kosit:property name="name/fruehererVorname"/>
+      <kosit:property name="name/fruehererVorname/name"/>
+      <kosit:property name="name/fruehererVorname/nichtVorhanden"/>
+   </kosit:type>
+   <kosit:type name="Identifikation"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
+               prefix="xbbd">
+      <kosit:property name="beschreibung"/>
+      <kosit:property name="gueltigkeit"/>
+      <kosit:property name="gueltigkeit/beginn"/>
+      <kosit:property name="gueltigkeit/ende"/>
+      <kosit:property name="gueltigkeit/zusatz"/>
+      <kosit:property name="id"/>
+   </kosit:type>
+   <kosit:type name="Identifikation.NachrichtType" prefix="bn-g2g">
+      <kosit:property name="erstellungszeitpunkt"/>
+      <kosit:property name="nachrichtenUUID"/>
+      <kosit:property name="nachrichtentyp"/>
+      <kosit:property name="nachrichtentyp/code"/>
+      <kosit:property name="nachrichtentyp/name"/>
+      <kosit:property name="nachrichtentyp/@listURI"/>
+      <kosit:property name="nachrichtentyp/@listVersionID"/>
+   </kosit:type>
+   <kosit:type name="Identifikation.NachrichtType" prefix="bn-g2g">
+      <kosit:property name="erstellungszeitpunkt"/>
+      <kosit:property name="nachrichtenUUID"/>
+      <kosit:property name="nachrichtentyp"/>
+      <kosit:property name="nachrichtentyp/code"/>
+      <kosit:property name="nachrichtentyp/name"/>
+      <kosit:property name="nachrichtentyp/@listURI"/>
+      <kosit:property name="nachrichtentyp/@listVersionID"/>
+   </kosit:type>
+   <kosit:type name="Identifikation.NachrichtType" prefix="bn-uq-g2g">
+      <kosit:property name="erstellungszeitpunkt"/>
+      <kosit:property name="nachrichtenUUID"/>
+      <kosit:property name="nachrichtentyp"/>
+      <kosit:property name="nachrichtentyp/code"/>
+      <kosit:property name="nachrichtentyp/name"/>
+      <kosit:property name="nachrichtentyp/@listURI"/>
+      <kosit:property name="nachrichtentyp/@listVersionID"/>
+   </kosit:type>
+   <kosit:type name="Identifikation.NachrichtType" prefix="bn-uq-g2g">
+      <kosit:property name="erstellungszeitpunkt"/>
+      <kosit:property name="nachrichtenUUID"/>
+      <kosit:property name="nachrichtentyp"/>
+      <kosit:property name="nachrichtentyp/code"/>
+      <kosit:property name="nachrichtentyp/name"/>
+      <kosit:property name="nachrichtentyp/@listURI"/>
+      <kosit:property name="nachrichtentyp/@listVersionID"/>
+   </kosit:type>
+   <kosit:type name="Kommunikation"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.Kommunikation"
+               prefix="xbbd">
+      <kosit:property name="istDienstlich"/>
+      <kosit:property name="kanal"/>
+      <kosit:property name="kanal/code"/>
+      <kosit:property name="kanal/name"/>
+      <kosit:property name="kanal/@listURI"/>
+      <kosit:property name="kanal/@listVersionID"/>
+      <kosit:property name="kennung"/>
+      <kosit:property name="zusatz"/>
+   </kosit:type>
+   <kosit:type name="KommunikationType" prefix="bn-kom">
+      <kosit:property name="kanal"/>
+      <kosit:property name="kennung"/>
+      <kosit:property name="zusatz"/>
+   </kosit:type>
+   <kosit:type name="KommunikationType" prefix="bn-kom">
+      <kosit:property name="kanal"/>
+      <kosit:property name="kennung"/>
+      <kosit:property name="zusatz"/>
+   </kosit:type>
+   <kosit:type name="KommunikationType" prefix="bn-uq-g2g">
+      <kosit:property name="kanal"/>
+      <kosit:property name="kennung"/>
+      <kosit:property name="zusatz"/>
+   </kosit:type>
+   <kosit:type name="KommunikationType" prefix="bn-uq-g2g">
+      <kosit:property name="kanal"/>
+      <kosit:property name="kennung"/>
+      <kosit:property name="zusatz"/>
+   </kosit:type>
+   <kosit:type name="Nachricht.G2GType" prefix="bn-g2g">
+      <kosit:property name="nachrichtenkopf.g2g"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtenUUID"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/code"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/@listURI"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/@listVersionID"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/erstellungszeitpunkt"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/verzeichnisdienst"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/kanal"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/zusatz"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/verzeichnisdienst"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/kanal"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/zusatz"/>
+      <kosit:property name="@produkt"/>
+      <kosit:property name="@produkthersteller"/>
+      <kosit:property name="@produktversion"/>
+      <kosit:property name="@standard"/>
+      <kosit:property name="@test"/>
+      <kosit:property name="@version"/>
+   </kosit:type>
+   <kosit:type name="Nachricht.G2GType" prefix="bn-g2g">
+      <kosit:property name="nachrichtenkopf.g2g"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtenUUID"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/code"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/@listURI"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/@listVersionID"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/erstellungszeitpunkt"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/verzeichnisdienst"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/kanal"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/zusatz"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/verzeichnisdienst"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/kanal"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/zusatz"/>
+      <kosit:property name="@produkt"/>
+      <kosit:property name="@produkthersteller"/>
+      <kosit:property name="@produktversion"/>
+      <kosit:property name="@standard"/>
+      <kosit:property name="@test"/>
+      <kosit:property name="@version"/>
+   </kosit:type>
+   <kosit:type name="Nachricht.G2GType" prefix="bn-uq-g2g">
+      <kosit:property name="@produkt"/>
+      <kosit:property name="@produkthersteller"/>
+      <kosit:property name="@produktversion"/>
+      <kosit:property name="@standard"/>
+      <kosit:property name="@test"/>
+      <kosit:property name="@version"/>
+      <kosit:property name="nachrichtenkopf.g2g"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtenUUID"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/code"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/@listURI"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/@listVersionID"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/erstellungszeitpunkt"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/verzeichnisdienst"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/kanal"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/zusatz"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/verzeichnisdienst"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/kanal"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/zusatz"/>
+   </kosit:type>
+   <kosit:type name="Nachricht.G2GType" prefix="bn-uq-g2g">
+      <kosit:property name="@produkt"/>
+      <kosit:property name="@produkthersteller"/>
+      <kosit:property name="@produktversion"/>
+      <kosit:property name="@standard"/>
+      <kosit:property name="@test"/>
+      <kosit:property name="@version"/>
+      <kosit:property name="nachrichtenkopf.g2g"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtenUUID"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/code"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/@listURI"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/nachrichtentyp/@listVersionID"/>
+      <kosit:property name="nachrichtenkopf.g2g/identifikation.nachricht/erstellungszeitpunkt"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/verzeichnisdienst"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/kanal"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/leser/erreichbarkeit/zusatz"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/verzeichnisdienst"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/name"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/kanal"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/kennung"/>
+      <kosit:property name="nachrichtenkopf.g2g/autor/erreichbarkeit/zusatz"/>
+   </kosit:type>
+   <kosit:type name="Nachrichtenkopf.G2GType" prefix="bn-g2g">
+      <kosit:property name="identifikation.nachricht"/>
+      <kosit:property name="identifikation.nachricht/nachrichtenUUID"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/code"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/name"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/@listURI"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/@listVersionID"/>
+      <kosit:property name="identifikation.nachricht/erstellungszeitpunkt"/>
+      <kosit:property name="leser"/>
+      <kosit:property name="leser/verzeichnisdienst"/>
+      <kosit:property name="leser/kennung"/>
+      <kosit:property name="leser/name"/>
+      <kosit:property name="leser/erreichbarkeit"/>
+      <kosit:property name="leser/erreichbarkeit/kanal"/>
+      <kosit:property name="leser/erreichbarkeit/kennung"/>
+      <kosit:property name="leser/erreichbarkeit/zusatz"/>
+      <kosit:property name="autor"/>
+      <kosit:property name="autor/verzeichnisdienst"/>
+      <kosit:property name="autor/kennung"/>
+      <kosit:property name="autor/name"/>
+      <kosit:property name="autor/erreichbarkeit"/>
+      <kosit:property name="autor/erreichbarkeit/kanal"/>
+      <kosit:property name="autor/erreichbarkeit/kennung"/>
+      <kosit:property name="autor/erreichbarkeit/zusatz"/>
+   </kosit:type>
+   <kosit:type name="Nachrichtenkopf.G2GType" prefix="bn-g2g">
+      <kosit:property name="identifikation.nachricht"/>
+      <kosit:property name="identifikation.nachricht/nachrichtenUUID"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/code"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/name"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/@listURI"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/@listVersionID"/>
+      <kosit:property name="identifikation.nachricht/erstellungszeitpunkt"/>
+      <kosit:property name="leser"/>
+      <kosit:property name="leser/verzeichnisdienst"/>
+      <kosit:property name="leser/kennung"/>
+      <kosit:property name="leser/name"/>
+      <kosit:property name="leser/erreichbarkeit"/>
+      <kosit:property name="leser/erreichbarkeit/kanal"/>
+      <kosit:property name="leser/erreichbarkeit/kennung"/>
+      <kosit:property name="leser/erreichbarkeit/zusatz"/>
+      <kosit:property name="autor"/>
+      <kosit:property name="autor/verzeichnisdienst"/>
+      <kosit:property name="autor/kennung"/>
+      <kosit:property name="autor/name"/>
+      <kosit:property name="autor/erreichbarkeit"/>
+      <kosit:property name="autor/erreichbarkeit/kanal"/>
+      <kosit:property name="autor/erreichbarkeit/kennung"/>
+      <kosit:property name="autor/erreichbarkeit/zusatz"/>
+   </kosit:type>
+   <kosit:type name="Nachrichtenkopf.G2GType" prefix="bn-uq-g2g">
+      <kosit:property name="autor"/>
+      <kosit:property name="autor/verzeichnisdienst"/>
+      <kosit:property name="autor/kennung"/>
+      <kosit:property name="autor/name"/>
+      <kosit:property name="autor/erreichbarkeit"/>
+      <kosit:property name="autor/erreichbarkeit/kanal"/>
+      <kosit:property name="autor/erreichbarkeit/kennung"/>
+      <kosit:property name="autor/erreichbarkeit/zusatz"/>
+      <kosit:property name="identifikation.nachricht"/>
+      <kosit:property name="identifikation.nachricht/nachrichtenUUID"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/code"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/name"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/@listURI"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/@listVersionID"/>
+      <kosit:property name="identifikation.nachricht/erstellungszeitpunkt"/>
+      <kosit:property name="leser"/>
+      <kosit:property name="leser/verzeichnisdienst"/>
+      <kosit:property name="leser/kennung"/>
+      <kosit:property name="leser/name"/>
+      <kosit:property name="leser/erreichbarkeit"/>
+      <kosit:property name="leser/erreichbarkeit/kanal"/>
+      <kosit:property name="leser/erreichbarkeit/kennung"/>
+      <kosit:property name="leser/erreichbarkeit/zusatz"/>
+   </kosit:type>
+   <kosit:type name="Nachrichtenkopf.G2GType" prefix="bn-uq-g2g">
+      <kosit:property name="autor"/>
+      <kosit:property name="autor/verzeichnisdienst"/>
+      <kosit:property name="autor/kennung"/>
+      <kosit:property name="autor/name"/>
+      <kosit:property name="autor/erreichbarkeit"/>
+      <kosit:property name="autor/erreichbarkeit/kanal"/>
+      <kosit:property name="autor/erreichbarkeit/kennung"/>
+      <kosit:property name="autor/erreichbarkeit/zusatz"/>
+      <kosit:property name="identifikation.nachricht"/>
+      <kosit:property name="identifikation.nachricht/nachrichtenUUID"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/code"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/name"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/@listURI"/>
+      <kosit:property name="identifikation.nachricht/nachrichtentyp/@listVersionID"/>
+      <kosit:property name="identifikation.nachricht/erstellungszeitpunkt"/>
+      <kosit:property name="leser"/>
+      <kosit:property name="leser/verzeichnisdienst"/>
+      <kosit:property name="leser/kennung"/>
+      <kosit:property name="leser/name"/>
+      <kosit:property name="leser/erreichbarkeit"/>
+      <kosit:property name="leser/erreichbarkeit/kanal"/>
+      <kosit:property name="leser/erreichbarkeit/kennung"/>
+      <kosit:property name="leser/erreichbarkeit/zusatz"/>
+   </kosit:type>
+   <kosit:type name="NameNatuerlichePerson"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.NameNatuerlichePerson"
+               prefix="xbbd">
+      <kosit:property name="anrede"/>
+      <kosit:property name="familienname"/>
+      <kosit:property name="familienname/name"/>
+      <kosit:property name="familienname/nichtVorhanden"/>
+      <kosit:property name="fruehererVorname"/>
+      <kosit:property name="fruehererVorname/name"/>
+      <kosit:property name="fruehererVorname/nichtVorhanden"/>
+      <kosit:property name="geburtsname"/>
+      <kosit:property name="geburtsname/name"/>
+      <kosit:property name="geburtsname/nichtVorhanden"/>
+      <kosit:property name="titel"/>
+      <kosit:property name="vorname"/>
+      <kosit:property name="vorname/name"/>
+      <kosit:property name="vorname/nichtVorhanden"/>
+   </kosit:type>
+   <kosit:type name="NameOrganisation"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation"
+               prefix="xbbd">
+      <kosit:property name="kurzbezeichnung"/>
+      <kosit:property name="name"/>
+   </kosit:type>
+   <kosit:type name="Ortsangabe"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.Ortsangabe"
+               prefix="xbbd">
+      <kosit:property name="ort"/>
+      <kosit:property name="staat"/>
+   </kosit:type>
+   <kosit:type name="Ortsangabe" prefix="xbd">
+      <kosit:property name="ort"/>
+      <kosit:property name="staat"/>
+   </kosit:type>
+   <kosit:type name="Praktikum" prefix="xbd">
+      <kosit:property name="namePraktikumsstelle"/>
+      <kosit:property name="ort"/>
+      <kosit:property name="ort/ort"/>
+      <kosit:property name="ort/staat"/>
+      <kosit:property name="zeitraum"/>
+      <kosit:property name="zeitraum/beginn"/>
+      <kosit:property name="zeitraum/ende"/>
+      <kosit:property name="zeitraum/zusatz"/>
+   </kosit:type>
+   <kosit:type name="Pruefling"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.Pruefling"
+               prefix="xbbd">
+      <kosit:property name="geburt"/>
+      <kosit:property name="geburt/datum"/>
+      <kosit:property name="geburt/datum/jahrMonatTag"/>
+      <kosit:property name="geburt/datum/jahrMonat"/>
+      <kosit:property name="geburt/datum/jahr"/>
+      <kosit:property name="geburt/geburtsort"/>
+      <kosit:property name="geburt/geburtsort/ort"/>
+      <kosit:property name="geburt/geburtsort/staat"/>
+      <kosit:property name="identifikationsnummer"/>
+      <kosit:property name="identifikationsnummer/id"/>
+      <kosit:property name="identifikationsnummer/beschreibung"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit/beginn"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit/ende"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit/zusatz"/>
+      <kosit:property name="nameNatuerlichePerson"/>
+      <kosit:property name="nameNatuerlichePerson/familienname"/>
+      <kosit:property name="nameNatuerlichePerson/familienname/name"/>
+      <kosit:property name="nameNatuerlichePerson/familienname/nichtVorhanden"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname/name"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname/nichtVorhanden"/>
+      <kosit:property name="nameNatuerlichePerson/vorname"/>
+      <kosit:property name="nameNatuerlichePerson/vorname/name"/>
+      <kosit:property name="nameNatuerlichePerson/vorname/nichtVorhanden"/>
+      <kosit:property name="nameNatuerlichePerson/titel"/>
+      <kosit:property name="nameNatuerlichePerson/anrede"/>
+      <kosit:property name="nameNatuerlichePerson/fruehererVorname"/>
+      <kosit:property name="nameNatuerlichePerson/fruehererVorname/name"/>
+      <kosit:property name="nameNatuerlichePerson/fruehererVorname/nichtVorhanden"/>
+   </kosit:type>
+   <kosit:type name="Pruefungsbereich"
+               id="XBerufsbildung.Baukasten.Pruefungsbereich"
+               prefix="xbbd">
+      <kosit:property name="benotung"/>
+      <kosit:property name="benotung/note"/>
+      <kosit:property name="benotung/wortbezeichnung"/>
+      <kosit:property name="benotung/wortbezeichnung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaNote"/>
+      <kosit:property name="benotung/bewertungsschemaNote/schemaURI"/>
+      <kosit:property name="benotung/bewertungsschemaNote/beschreibung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/beschreibung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaNote/schlechtesteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/bestandenAbBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/besteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/weitereInformationen"/>
+      <kosit:property name="benotung/punkte"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/schemaURI"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/beschreibung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/beschreibung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/schlechtesteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/bestandenAbBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/besteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/weitereInformationen"/>
+      <kosit:property name="bezeichnung"/>
+   </kosit:type>
+   <kosit:type name="Pruefungsleistung"
+               id="XBerufsbildung.Baukasten.Pruefungsleistung"
+               prefix="xbbd">
+      <kosit:property name="benotung"/>
+      <kosit:property name="benotung/note"/>
+      <kosit:property name="benotung/wortbezeichnung"/>
+      <kosit:property name="benotung/wortbezeichnung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaNote"/>
+      <kosit:property name="benotung/bewertungsschemaNote/schemaURI"/>
+      <kosit:property name="benotung/bewertungsschemaNote/beschreibung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/beschreibung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaNote/schlechtesteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/bestandenAbBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/besteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/weitereInformationen"/>
+      <kosit:property name="benotung/punkte"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/schemaURI"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/beschreibung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/beschreibung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/schlechtesteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/bestandenAbBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/besteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/weitereInformationen"/>
+      <kosit:property name="bezeichnung"/>
+   </kosit:type>
+   <kosit:type name="PruefungsteilAEVO"
+               id="XBerufsbildung.Baukasten.PruefungsteilAEVO"
+               prefix="xbbd">
+      <kosit:property name="benotung"/>
+      <kosit:property name="benotung/note"/>
+      <kosit:property name="benotung/wortbezeichnung"/>
+      <kosit:property name="benotung/wortbezeichnung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaNote"/>
+      <kosit:property name="benotung/bewertungsschemaNote/schemaURI"/>
+      <kosit:property name="benotung/bewertungsschemaNote/beschreibung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/beschreibung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaNote/schlechtesteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/bestandenAbBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/besteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/weitereInformationen"/>
+      <kosit:property name="benotung/punkte"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/schemaURI"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/beschreibung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/beschreibung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/schlechtesteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/bestandenAbBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/besteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/weitereInformationen"/>
+      <kosit:property name="bezeichnung"/>
+   </kosit:type>
+   <kosit:type name="PruefungsteilFortbildungszeugnis"
+               id="XBerufsbildung.Baukasten.PruefungsteilFortbildungszeugnis"
+               prefix="xbbd">
+      <kosit:property name="benotung"/>
+      <kosit:property name="benotung/note"/>
+      <kosit:property name="benotung/wortbezeichnung"/>
+      <kosit:property name="benotung/wortbezeichnung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaNote"/>
+      <kosit:property name="benotung/bewertungsschemaNote/schemaURI"/>
+      <kosit:property name="benotung/bewertungsschemaNote/beschreibung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/beschreibung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaNote/schlechtesteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/bestandenAbBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/besteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/weitereInformationen"/>
+      <kosit:property name="benotung/punkte"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/schemaURI"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/beschreibung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/beschreibung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/schlechtesteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/bestandenAbBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/besteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/weitereInformationen"/>
+      <kosit:property name="bezeichnung"/>
+      <kosit:property name="pruefungsleistung"/>
+      <kosit:property name="pruefungsleistung/bezeichnung"/>
+      <kosit:property name="pruefungsleistung/benotung"/>
+      <kosit:property name="pruefungsleistung/benotung/note"/>
+      <kosit:property name="pruefungsleistung/benotung/wortbezeichnung"/>
+      <kosit:property name="pruefungsleistung/benotung/wortbezeichnung/@lang"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaNote"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaNote/schemaURI"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaNote/beschreibung"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaNote/beschreibung/@lang"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaNote/schlechtesteBewertung"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaNote/bestandenAbBewertung"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaNote/besteBewertung"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaNote/weitereInformationen"/>
+      <kosit:property name="pruefungsleistung/benotung/punkte"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaPunkte"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaPunkte/schemaURI"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaPunkte/beschreibung"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaPunkte/beschreibung/@lang"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaPunkte/schlechtesteBewertung"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaPunkte/bestandenAbBewertung"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaPunkte/besteBewertung"/>
+      <kosit:property name="pruefungsleistung/benotung/bewertungsschemaPunkte/weitereInformationen"/>
+   </kosit:type>
+   <kosit:type name="PruefungsteilPruefungszeugnis"
+               id="XBerufsbildung.Baukasten.PruefungsteilPruefungszeugnis"
+               prefix="xbbd">
+      <kosit:property name="benotung"/>
+      <kosit:property name="benotung/note"/>
+      <kosit:property name="benotung/wortbezeichnung"/>
+      <kosit:property name="benotung/wortbezeichnung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaNote"/>
+      <kosit:property name="benotung/bewertungsschemaNote/schemaURI"/>
+      <kosit:property name="benotung/bewertungsschemaNote/beschreibung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/beschreibung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaNote/schlechtesteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/bestandenAbBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/besteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaNote/weitereInformationen"/>
+      <kosit:property name="benotung/punkte"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/schemaURI"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/beschreibung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/beschreibung/@lang"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/schlechtesteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/bestandenAbBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/besteBewertung"/>
+      <kosit:property name="benotung/bewertungsschemaPunkte/weitereInformationen"/>
+      <kosit:property name="bezeichnung"/>
+      <kosit:property name="pruefungsbereich"/>
+      <kosit:property name="pruefungsbereich/bezeichnung"/>
+      <kosit:property name="pruefungsbereich/benotung"/>
+      <kosit:property name="pruefungsbereich/benotung/note"/>
+      <kosit:property name="pruefungsbereich/benotung/wortbezeichnung"/>
+      <kosit:property name="pruefungsbereich/benotung/wortbezeichnung/@lang"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaNote"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaNote/schemaURI"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaNote/beschreibung"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaNote/beschreibung/@lang"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaNote/schlechtesteBewertung"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaNote/bestandenAbBewertung"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaNote/besteBewertung"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaNote/weitereInformationen"/>
+      <kosit:property name="pruefungsbereich/benotung/punkte"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaPunkte"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaPunkte/schemaURI"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaPunkte/beschreibung"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaPunkte/beschreibung/@lang"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaPunkte/schlechtesteBewertung"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaPunkte/bestandenAbBewertung"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaPunkte/besteBewertung"/>
+      <kosit:property name="pruefungsbereich/benotung/bewertungsschemaPunkte/weitereInformationen"/>
+   </kosit:type>
+   <kosit:type name="StelleAusstellend"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.StelleAusstellend"
+               prefix="xbbd">
+      <kosit:property name="anschrift"/>
+      <kosit:property name="anschrift/staat"/>
+      <kosit:property name="anschrift/strasse"/>
+      <kosit:property name="anschrift/hausnummer"/>
+      <kosit:property name="anschrift/postfach"/>
+      <kosit:property name="anschrift/postleitzahl"/>
+      <kosit:property name="anschrift/ort"/>
+      <kosit:property name="anschrift/zusatz"/>
+      <kosit:property name="identifikation"/>
+      <kosit:property name="identifikation/id"/>
+      <kosit:property name="identifikation/beschreibung"/>
+      <kosit:property name="identifikation/gueltigkeit"/>
+      <kosit:property name="identifikation/gueltigkeit/beginn"/>
+      <kosit:property name="identifikation/gueltigkeit/ende"/>
+      <kosit:property name="identifikation/gueltigkeit/zusatz"/>
+      <kosit:property name="kommunikation"/>
+      <kosit:property name="kommunikation/kanal"/>
+      <kosit:property name="kommunikation/kanal/code"/>
+      <kosit:property name="kommunikation/kanal/name"/>
+      <kosit:property name="kommunikation/kanal/@listURI"/>
+      <kosit:property name="kommunikation/kanal/@listVersionID"/>
+      <kosit:property name="kommunikation/kennung"/>
+      <kosit:property name="kommunikation/istDienstlich"/>
+      <kosit:property name="kommunikation/zusatz"/>
+      <kosit:property name="name"/>
+      <kosit:property name="name/name"/>
+      <kosit:property name="name/kurzbezeichnung"/>
+      <kosit:property name="unterorganisation"/>
+   </kosit:type>
+   <kosit:type name="String.Latin" prefix="xoev-lc"/>
+   <kosit:type name="String.Localized" prefix="xbd">
+      <kosit:property name="@lang"/>
+   </kosit:type>
+   <kosit:type name="TeilbekanntesDatum" prefix="xbd">
+      <kosit:property name="jahr"/>
+      <kosit:property name="jahrMonat"/>
+      <kosit:property name="jahrMonatTag"/>
+   </kosit:type>
+   <kosit:type name="UUID" prefix="bn-g2g"/>
+   <kosit:type name="UUID" prefix="bn-g2g"/>
+   <kosit:type name="UUID" prefix="bn-uq-g2g"/>
+   <kosit:type name="UUID" prefix="bn-uq-g2g"/>
+   <kosit:type name="Zeitraum"
+               id="XBerufsbildung.Baukasten.Kernkomponenten.Zeitraum"
+               prefix="xbbd">
+      <kosit:property name="beginn"/>
+      <kosit:property name="ende"/>
+      <kosit:property name="zusatz"/>
+   </kosit:type>
+   <kosit:type name="Zeitraum" prefix="xbd">
+      <kosit:property name="beginn"/>
+      <kosit:property name="ende"/>
+      <kosit:property name="zusatz"/>
+   </kosit:type>
+   <kosit:type name="datatypeA" prefix="dinspec91379"/>
+   <kosit:type name="datatypeA" prefix="din91379"/>
+   <kosit:type name="datatypeB" prefix="dinspec91379"/>
+   <kosit:type name="datatypeB" prefix="din91379"/>
+   <kosit:type name="datatypeC" prefix="dinspec91379"/>
+   <kosit:type name="datatypeC" prefix="din91379"/>
+   <kosit:type name="datatypeD" prefix="dinspec91379"/>
+   <kosit:type name="datatypeD" prefix="din91379"/>
+   <kosit:type name="datatypeE" prefix="dinspec91379"/>
+   <kosit:type name="datatypeE" prefix="din91379"/>
+</kosit:types>
