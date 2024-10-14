@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd"
+           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
            xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd"
+           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
            version="0.4"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">

@@ -28,7 +28,7 @@
          </row>
          <row>
             <entry>Namensraum</entry>
-            <entry>http://xberufsbildung.de/def/xberufsbildung/0.3/xsd</entry>
+            <entry>http://xberufsbildung.de/def/xberufsbildung/0.4/xsd</entry>
          </row>
          <row>
             <entry>Präfix</entry>
@@ -36,7 +36,7 @@
          </row>
          <row>
             <entry>SchemaLocation</entry>
-            <entry>http://xberufsbildung.de/def/xberufsbildung/0.3/xsd/xberufsbildung-nachweise.xsd</entry>
+            <entry>http://xberufsbildung.de/def/xberufsbildung/0.4/xsd/xberufsbildung-nachweise.xsd</entry>
          </row>
          <row>
             <entry>Inkludierte XSDs</entry>
