@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!-- 
+        Nichtnormative Beispielinstanz für ein Fortbildungszeugnis basierend auf einem Musterzeugnis der IHK Saarland im Rahmen des Vorhabens XBerufsbildunng
+        Version: XBerufsbildung 0.4 
+        Letzte Aktualisierung: 14.10.2024
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+    -->
+
+<xbbd:pruefling.fortbildungszeugnis.0002
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd http://xberufsbildung.de/def/xberufsbildung/0.4/xsd/xberufsbildung.xsd">
+    
+    <xbd:titel>Zeugnis</xbd:titel>
+    
+    <xbd:ausstellung>
+        <xbd:datum>2020-05-20</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Saarbrücken</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
+    
+    <xbd:sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+    
+    <xbbd:pruefling>
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:familienname>
+                <xbbd:name>Mustermann</xbbd:name>
+            </xbbd:familienname>
+            <xbbd:vorname>
+                <xbbd:name>Max</xbbd:name>
+            </xbbd:vorname>
+        </xbbd:nameNatuerlichePerson>
+        <xbbd:geburt>
+            <xbbd:datum>
+                <xbd:jahrMonatTag>1994-11-03</xbd:jahrMonatTag>
+            </xbbd:datum>
+            <xbbd:geburtsort>
+                <xbbd:ort>Saarbrücken</xbbd:ort>
+            </xbbd:geburtsort>
+        </xbbd:geburt>
+    </xbbd:pruefling>
+    
+   <xbbd:allgemeineAngaben>
+       <xbbd:fortbildungsabschluss>
+           <xbbd:bezeichnung>Geprüfter Betriebswirt nach dem Berufsbildungsgesetz - Master Professional in Business Management nach dem Berufsbildungsgesetz</xbbd:bezeichnung>
+           <xbbd:fundstelle>Geprüfter Betriebswirt-Master Professional Business Management-Fortbildungsverordnung vom 18. Dezember 2020 (BGBl. I S. 3079)</xbbd:fundstelle>
+       </xbbd:fortbildungsabschluss>
+       
+       <xbbd:pruefungsteil>
+           <xbbd:bezeichnung>Wirtschaftliches Handeln und betrieblicher Leistungsprozess</xbbd:bezeichnung>
+           <xbbd:benotung>
+               <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+           </xbbd:benotung>
+           <xbbd:pruefungsleistung>
+               <xbbd:bezeichnung>Marketing-Management</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <xbd:punkte>63</xbd:punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsleistung>
+           <xbbd:pruefungsleistung>
+               <xbbd:bezeichnung>Bilanz- und Steuerpolitik des Unternehmens</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <xbd:punkte>67</xbd:punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsleistung>
+           <xbbd:pruefungsleistung>
+               <xbbd:bezeichnung>Finanzwirtschaftliche Steuerung des Unternehmens</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <xbd:punkte>69</xbd:punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsleistung>
+           <xbbd:pruefungsleistung>
+               <xbbd:bezeichnung>Rechtliche Rahmenbedingungen der Unternehmensführung</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <xbd:punkte>82</xbd:punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsleistung>
+           <xbbd:pruefungsleistung>
+               <xbbd:bezeichnung>Europäische und Internationale Wirtschaftsbeziehungen</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <xbd:punkte>85</xbd:punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsleistung>
+       </xbbd:pruefungsteil>
+       
+       <xbbd:pruefungsteil>
+           <xbbd:bezeichnung>Führung und Management im Unternehmen</xbbd:bezeichnung>
+           <xbbd:benotung>
+               <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+           </xbbd:benotung>
+           <xbbd:pruefungsleistung>
+               <xbbd:bezeichnung>Schriftliche Situationsaufgabe mit Schwerpunkt im Handlungsbereich: Unternehmensführung</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <xbd:punkte>75</xbd:punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsleistung>
+           <xbbd:pruefungsleistung>
+               <xbbd:bezeichnung>Schriftliche Situationsaufgabe mit Schwerpunkt im Handlungsbereich: Unternehmensorganisation und Projektmanagement</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <xbd:punkte>62</xbd:punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsleistung>
+           <xbbd:pruefungsleistung>
+               <xbbd:bezeichnung>Situationsbezogenes Fachgespräch mit Schwerpunkt im Handlungsbereich: Personalmanagement</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <xbd:punkte>87</xbd:punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsleistung>
+       </xbbd:pruefungsteil>
+       
+       <xbbd:pruefungsteil>
+           <xbbd:bezeichnung>Projektarbeit und projektarbeitsbezogenes Fachgespräch</xbbd:bezeichnung>
+           <xbbd:benotung>
+               <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+           </xbbd:benotung>
+           <xbbd:pruefungsleistung>
+               <xbbd:bezeichnung>Projektarbeit Optimierung des Prozesses bei der Bearbeitung der Wareneingangsrechnungen</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <xbd:punkte>75</xbd:punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsleistung>
+           <xbbd:pruefungsleistung>
+               <xbbd:bezeichnung>Projektarbeitsbezogenes Fachgespräch</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <xbd:punkte>78</xbd:punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsleistung>
+       </xbbd:pruefungsteil>
+      
+       <xbbd:niveauDQR listVersionID="20230118-0" listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf"> 
+           <code>7</code>
+       </xbbd:niveauDQR>
+   </xbbd:allgemeineAngaben>
+    
+    <xbbd:gesamtergebnis>
+        <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+    </xbbd:gesamtergebnis>
+     
+    <xbbd:pruefungsdatum>2023-05-28</xbbd:pruefungsdatum>
+    
+    <xbbd:aussteller>
+        <xbbd:name>IHK Saarland</xbbd:name>
+    </xbbd:aussteller>
+    
+</xbbd:pruefling.fortbildungszeugnis.0002>

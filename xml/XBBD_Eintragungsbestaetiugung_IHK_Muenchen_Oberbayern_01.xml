@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+        Nichtnormative Beispielinstanz für eine Eintragungsbestätigung basierend auf einem Musternachweis der IHK München und Oberbayern im Rahmen des Vorhabens XBerufsbildunng
+        Version: XBerufsbildung 0.4 
+        Letzte Aktualisierung: 14.10.2024
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+    -->
+
+<xbbd:auszubildender.eintragungsbestaetigung.0004
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd http://xberufsbildung.de/def/xberufsbildung/0.4/xsd/xberufsbildung.xsd">
+    
+    <xbd:titel>Eintragung eines Berufsausbildungsvertrags</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2024-10-14</xbd:datum>
+    </xbd:ausstellung>
+    <xbd:sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+
+    <xbbd:auszubildender>
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:familienname>
+                <xbbd:name>Maier Hoch</xbbd:name>
+            </xbbd:familienname>
+            <xbbd:vorname>
+                <xbbd:name>Friedrich</xbbd:name>
+            </xbbd:vorname>
+        </xbbd:nameNatuerlichePerson>
+        <xbbd:geburt>
+            <xbbd:datum>
+                <xbd:jahrMonatTag>2007-04-01</xbd:jahrMonatTag>
+            </xbbd:datum>
+        </xbbd:geburt>
+        <xbbd:geschlecht>
+            <code>m</code>
+        </xbbd:geschlecht>
+    </xbbd:auszubildender>
+    
+    <xbbd:angabenGesetzlicherVertreter>
+        <xbbd:gesetzlicherVertreterSchluessel>
+            <code>1</code>
+        </xbbd:gesetzlicherVertreterSchluessel>
+        <xbbd:name>
+            <xbbd:familienname>
+                <xbbd:name>Maier Hoch</xbbd:name>
+            </xbbd:familienname>
+            <xbbd:vorname>
+                <xbbd:name>Friedrich</xbbd:name>
+            </xbbd:vorname>
+        </xbbd:name>
+    </xbbd:angabenGesetzlicherVertreter>
+
+    <xbbd:angabenAusbildung>
+        <xbbd:ausbildungsberuf>
+            <xbbd:bezeichnung>Fachkraft für Metalltechnik</xbbd:bezeichnung>
+            <xbbd:binnendifferenzierung>
+                <xbbd:fachrichtung>Montagetechnik</xbbd:fachrichtung>
+            </xbbd:binnendifferenzierung>
+        </xbbd:ausbildungsberuf>
+        <xbbd:ausbildungszeitraum>
+            <xbbd:beginn>2022-09-01</xbbd:beginn>
+            <xbbd:ende>2024-08-31</xbbd:ende>
+        </xbbd:ausbildungszeitraum>
+    </xbbd:angabenAusbildung>
+
+    <xbbd:ausbildungsbetrieb>
+        <xbbd:name>
+            <xbbd:name>Musterasta WVA</xbbd:name>
+        </xbbd:name>
+        <xbbd:anschrift>
+            <xbbd:strasse>Orleansstr.</xbbd:strasse>
+            <xbbd:hausnummer>10-12</xbbd:hausnummer>
+            <xbbd:postleitzahl>81669</xbbd:postleitzahl>
+            <xbbd:ort>München</xbbd:ort>
+        </xbbd:anschrift>
+        <xbbd:betriebsnummer>77531911</xbbd:betriebsnummer>
+    </xbbd:ausbildungsbetrieb>
+
+    <xbbd:aussteller>
+        <xbbd:name>
+            <xbbd:name>IHK für München und Oberbayern</xbbd:name>
+        </xbbd:name>
+        <xbbd:anschrift>
+            <xbbd:postleitzahl>80323</xbbd:postleitzahl>
+            <xbbd:ort>München</xbbd:ort>
+        </xbbd:anschrift>
+    </xbbd:aussteller>
+    
+    <xbbd:eintragungsnummer>
+        <xbbd:id>3241646 / 1</xbbd:id>
+    </xbbd:eintragungsnummer>
+    
+</xbbd:auszubildender.eintragungsbestaetigung.0004>

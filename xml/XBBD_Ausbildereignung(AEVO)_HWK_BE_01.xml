@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+        Nichtnormative Beispielinstanz für ein Prüfungszeugnis Ausbildereignung(AEVO) basierend auf einem Musterzeugnis der HWK Berlin im Rahmen des Vorhabens XBerufsbildunng
+        Version: XBerufsbildung 0.4
+        Letzte Aktualisierung: 14.10.2024
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+    -->
+
+<xbbd:pruefling.zeugnisAEVO.0003
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd http://xberufsbildung.de/def/xberufsbildung/0.4/xsd/xberufsbildung.xsd">
+    
+    <xbd:titel>Prüfungszeugnis</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2019-05-19</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Berlin</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
+    
+    <xbd:sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+    
+    <xbbd:pruefling>
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:anrede>Frau</xbbd:anrede>
+            <xbbd:familienname>
+                <xbbd:name>Musterfrau</xbbd:name>
+            </xbbd:familienname>
+            <xbbd:vorname>
+                <xbbd:name>Magdalena</xbbd:name>
+            </xbbd:vorname>
+        </xbbd:nameNatuerlichePerson>
+        <xbbd:geburt>
+            <xbbd:datum>
+                <xbd:jahrMonatTag>1989-07-15</xbd:jahrMonatTag>
+            </xbbd:datum>
+            <xbbd:geburtsort>
+                <xbbd:ort>Schleswig</xbbd:ort>
+            </xbbd:geburtsort>
+        </xbbd:geburt>
+    </xbbd:pruefling>
+    
+    <xbbd:pruefungsteil>
+        <xbbd:bezeichnung>Schriftlicher Prüfungsteil</xbbd:bezeichnung>
+        <xbbd:benotung>
+            <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+            <xbd:punkte>84</xbd:punkte>
+            <xbd:bewertungsschemaPunkte>
+                <xbd:beschreibung>
+                    100-92 Punkte - Note 1
+                    91-81 Punkte - Note 2
+                    80-67 Punkte - Note 3
+                    66-50 Punkte - Note 4
+                    Die Gewichtung einzelner Prüfungsleistungen zueinander ergibt sich aus der Fortbildungsprüfungsordnung.
+                </xbd:beschreibung>
+                <xbd:besteBewertung>100</xbd:besteBewertung>
+                <xbd:bestandenAbBewertung>50</xbd:bestandenAbBewertung>
+                <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
+            </xbd:bewertungsschemaPunkte>
+        </xbbd:benotung>
+        
+    </xbbd:pruefungsteil>
+    <xbbd:pruefungsteil>
+        <xbbd:bezeichnung>Praktischer Prüfungsteil</xbbd:bezeichnung>
+        <xbbd:benotung>
+            <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+            <xbd:punkte>95</xbd:punkte>
+            <xbd:bewertungsschemaPunkte>
+                <xbd:beschreibung>
+                    100-92 Punkte - Note 1,
+                    91-81 Punkte - Note 2,
+                    80-67 Punkte - Note 3,
+                    66-50 Punkte - Note 4
+                    Die Gewichtung einzelner Prüfungsleistungen zueinander ergibt sich aus der Fortbildungsprüfungsordnung.
+                </xbd:beschreibung>
+                <xbd:besteBewertung>100</xbd:besteBewertung>
+                <xbd:bestandenAbBewertung>50</xbd:bestandenAbBewertung>
+                <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
+            </xbd:bewertungsschemaPunkte>
+        </xbbd:benotung>
+    </xbbd:pruefungsteil>
+    
+    <xbbd:pruefungsdatum>2019-05-10</xbbd:pruefungsdatum>
+    
+    <xbbd:aussteller>
+        <xbbd:name>Handwerkskammer Berlin</xbbd:name>
+    </xbbd:aussteller>
+    
+</xbbd:pruefling.zeugnisAEVO.0003>

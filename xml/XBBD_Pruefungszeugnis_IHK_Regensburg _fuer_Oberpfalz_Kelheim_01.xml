@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.4/sch/xberufsbildung-schematron.sch" 
+            type="application/xml" 
+            schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!-- 
+        Nichtnormative Beispielinstanz für ein Prüfungszeugnis basierend auf einem Musterzeugnis der IHK Regensburg für Oberpfalz / Kelheim im Rahmen des Vorhabens XBerufsbildunng
+        Version: XBerufsbildung 0.4
+        Letzte Aktualisierung: 14.10.2024
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+    -->
+
+<xbbd:pruefling.pruefungszeugnis.0001 
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd http://xberufsbildung.de/def/xberufsbildung/0.4/xsd/xberufsbildung.xsd">
+    
+    <xbd:titel>Prüfungszeugnis</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2023-10-25</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Regensburg</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
+    <xbd:sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+    
+    <xbbd:rechtsgrundlage>
+        <xbbd:code>
+            <code>http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37_bbig</code>
+        </xbbd:code>
+    </xbbd:rechtsgrundlage>
+    
+    <xbbd:pruefling>
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:familienname>
+                <xbbd:name>Mustermann</xbbd:name>
+            </xbbd:familienname>
+            <xbbd:vorname>
+                <xbbd:name>Max</xbbd:name>
+            </xbbd:vorname>
+        </xbbd:nameNatuerlichePerson>
+        <xbbd:geburt>
+            <xbbd:datum>
+                <xbd:jahrMonatTag>2001-01-01</xbd:jahrMonatTag>
+            </xbbd:datum>
+        </xbbd:geburt>
+    </xbbd:pruefling>
+    
+    <xbbd:gesamtergebnis>
+        <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+        <xbd:punkte>100</xbd:punkte>
+        <xbd:bewertungsschemaNote>
+            <xbd:beschreibung>
+                100-92 Punkte Note 1 = sehr gut
+                unter 92 - 81 Punkte Note 2 = gut
+                unter 81 - 67 Punkte Note 3 = befriedigend
+                unter 67 - 50 Punkte Note 4 = ausreichend
+                unter 50 - 30 Punkte Note 5 = mangelhaft
+                unter 30 Punkte Note 6 = ungenügend
+            </xbd:beschreibung>
+            <xbd:besteBewertung>1</xbd:besteBewertung>
+            <xbd:bestandenAbBewertung>4</xbd:bestandenAbBewertung>
+            <xbd:schlechtesteBewertung>6</xbd:schlechtesteBewertung>
+        </xbd:bewertungsschemaNote>
+        <xbd:bewertungsschemaPunkte>
+            <xbd:beschreibung>
+                100-90 Punkte Note 1 = sehr gut
+                unter 92 - 81 Punkte Note 2 = gut
+                unter 81 - 67 Punkte Note 3 = befriedigend
+                unter 67 - 50 Punkte Note 4 = ausreichend
+                unter 50 - 30 Punkte Note 5 = mangelhaft
+                unter 30 Punkte Note 6 = ungenügend</xbd:beschreibung>
+            <xbd:besteBewertung>100</xbd:besteBewertung>
+            <xbd:bestandenAbBewertung>50</xbd:bestandenAbBewertung>
+            <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
+        </xbd:bewertungsschemaPunkte>
+    </xbbd:gesamtergebnis>
+    
+    <xbbd:allgemeineAngaben>
+        <xbbd:ausbildungsberuf>
+            <xbbd:bezeichnung>Elektroniker für Betriebstechnik</xbbd:bezeichnung>
+            <xbbd:fundstelle>BGBl. I 2003 S. 1144</xbbd:fundstelle>            
+        </xbbd:ausbildungsberuf>
+        <xbbd:pruefungsteil>
+            <xbbd:bezeichnung>Teil 1 der Abschlussprüfung</xbbd:bezeichnung>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Komplexe Arbeitsaufgabe</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                    <xbd:punkte>100</xbd:punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+        </xbbd:pruefungsteil>  
+        <xbbd:pruefungsteil>
+            <xbbd:bezeichnung>Teil 2 der Abschlussprüfung</xbbd:bezeichnung>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Betrieblicher Auftrag</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                    <xbd:punkte>100</xbd:punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Systementwurf</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                    <xbd:punkte>100</xbd:punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Funktions- und Systemanalyse</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                    <xbd:punkte>100</xbd:punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Wirtschafts- und Sozialkunde</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                    <xbd:punkte>100</xbd:punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+        </xbbd:pruefungsteil>
+        <xbbd:niveauDQR listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
+            <code>4</code>
+        </xbbd:niveauDQR>
+        <xbbd:berufsschulnote>
+            <xbd:note>1</xbd:note>
+        </xbbd:berufsschulnote> 
+    </xbbd:allgemeineAngaben>
+    
+    <xbbd:pruefungsdatum>2023-10-10</xbbd:pruefungsdatum>
+    
+    <xbbd:aussteller>
+        <xbbd:name>IHK Regensburg für Oberpfalz / Kelheim</xbbd:name>
+    </xbbd:aussteller>
+    
+</xbbd:pruefling.pruefungszeugnis.0001>
