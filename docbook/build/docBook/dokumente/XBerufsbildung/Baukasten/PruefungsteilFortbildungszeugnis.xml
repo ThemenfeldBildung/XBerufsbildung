@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XBerufsbildung.Baukasten.PruefungsteilFortbildungszeugnis">
+   <title>PruefungsteilFortbildungszeugnis</title>
+   <subtitle>Typ: <emphasis role="codebf">PruefungsteilFortbildungszeugnis</emphasis>
+   </subtitle><para>Die Klasse beinhaltet Angaben zum Prüfungsteil, einschließlich der Bezeichnung, Benotung sowie der zugehörigen Prüfungsleistungen.</para><figure xml:id="figure.XBerufsbildung.Baukasten.PruefungsteilFortbildungszeugnis">
+      <title>PruefungsteilFortbildungszeugnis</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XBerufsbildung/Baukasten/PruefungsteilFortbildungszeugnis.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XBerufsbildung.Baukasten.PruefungsteilFortbildungszeugnis">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">PruefungsteilFortbildungszeugnis</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">bezeichnung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung eines Prüfungsteils. Ein Prüfungsteil ist ein spezifischer Abschnitt oder Teil einer Prüfung, der sich auf bestimmte Inhalte, Fähigkeiten oder Kompetenzen konzentriert und separat bewertet wird, z. B. Projektarbeit und projektbezogenes Fachgespräch.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">benotung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Benotung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Angabe der zusammengefassten Note bzw. Bewertung für einen Prüfungsteil basierend auf der Leistung einer Person in diesem spezifischen Abschnitt der Prüfung.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">pruefungsleistung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Pruefungsleistung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Pruefungsleistung"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Pruefungsleistung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur Prüfungsleitung innerhalb eines Prüfungsteils. Eine Prüfungsleitung beschreibt somit die spezifischen Kenntnisse, Fähigkeiten oder Kompetenzen, z. B. Marketing-Management.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../anhang/verwendung/complexTypes/pruefungsteilfortbildungszeugnis_list.xml"/>
+</section>

@@ -80,8 +80,8 @@
                         elektronische Identifizierung geregelt.</entry>
                 </row>
                 <row>
-                    <entry>Fachmodul</entry>
-                    <entry>Ein Fachmodul definiert die Struktur, das Format und die Inhalte der
+                    <entry>Teilmodul</entry>
+                    <entry>Ein Teilmodul definiert die Struktur, das Format und die Inhalte der
                         Daten, die zwischen den beteiligten Parteien ausgetauscht werden sollen. Es
                         beschreibt, welche Informationen übermittelt werden müssen, wie sie zu
                         codieren sind und wie sie interpretiert werden sollen.</entry>

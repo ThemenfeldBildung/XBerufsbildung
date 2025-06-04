@@ -14,15 +14,18 @@
         href="../../build/docBook/dokumente/anhang/nachrichten/tabelle.nachrichten.uebersicht.xml"/>
     
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/pruefling.pruefungszeugnis.0001.xml"/>
+        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/pruefling.pruefungszeugnis.xml"/>
     
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/pruefling.fortbildungszeugnis.0002.xml"/>
+        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/pruefling.fortbildungszeugnis.xml"/>
     
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/pruefling.zeugnisAEVO.0003.xml"/>
+        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/pruefling.zeugnisAEVO.xml"/>
     
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/auszubildender.eintragungsbestaetigung.0004.xml"/>
+        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/auszubildender.eintragungsbestaetigung.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/pruefling.berufsschulnote.xml"/>
 
 </chapter>

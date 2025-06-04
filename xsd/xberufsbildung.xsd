@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
-           version="0.4"
+           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+           version="0.5"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
-   <xs:include schemaLocation="xberufsbildung-basisdatentypen.xsd"/>
    <xs:include schemaLocation="xberufsbildung-baukasten.xsd"/>
    <xs:include schemaLocation="xberufsbildung-nachweise.xsd"/>
 </xs:schema>

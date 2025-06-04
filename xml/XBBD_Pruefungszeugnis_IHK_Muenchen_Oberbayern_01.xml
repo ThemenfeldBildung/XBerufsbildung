@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.4/sch/xberufsbildung-schematron.sch" 
+<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.5/sch/xberufsbildung-schematron.sch" 
             type="application/xml" 
             schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <!-- 
-        Nichtnormative Beispielinstanz für ein Prüfungszeugnis basierend auf einem Musterzeugnis der IHK München-Oberbayern im Rahmen des Vorhabens XBerufsbildunng
-        Version: XBerufsbildung 0.4
-        Letzte Aktualisierung: 14.10.2024
+        Nichtnormative Beispielinstanz für ein Prüfungszeugnis basierend auf einem Musterzeugnis der IHK München-Oberbayern im Rahmen des Vorhabens XBerufsbildung
+        Musternachweis: https://xbildung.de/def/rep/by/example/Pruefungszeugnis_IHK_Muenchen_mit_Erlauuterung_2.pdf
+        Version: XBerufsbildung 0.5
+        Letzte Aktualisierung: 04.06.2025
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
-<xbbd:pruefling.pruefungszeugnis.0001 
+<xbbd:pruefling.pruefungszeugnis
     xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd http://xberufsbildung.de/def/xberufsbildung/0.4/xsd/xberufsbildung.xsd">
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd http://xberufsbildung.de/def/xberufsbildung/0.5/xsd/xberufsbildung.xsd">
     
     <xbd:titel>Prüfungszeugnis</xbd:titel>
     <xbd:ausstellung>
@@ -29,7 +33,7 @@
 
     <xbbd:rechtsgrundlage>
         <xbbd:code>
-            <code>http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37_bbig</code>
+            <code>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig</code>
         </xbbd:code>
     </xbbd:rechtsgrundlage>
     
@@ -52,19 +56,6 @@
     <xbbd:gesamtergebnis>
         <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
         <xbd:punkte>81</xbd:punkte>
-        <xbd:bewertungsschemaNote>
-            <xbd:beschreibung>
-                100-90 Punkte Note 1 = sehr gut,
-                unter 92 - 81 Punkte Note 2 = gut,
-                unter 81 - 67 Punkte Note 3 = befriedigend,
-                unter 67 - 50 Punkte Note 4 = ausreichend,
-                unter 50 - 30 Punkte Note 5 = mangelhaft,
-                unter 30 Punkte Note 6 = ungenügend
-            </xbd:beschreibung>
-            <xbd:besteBewertung>1</xbd:besteBewertung>
-            <xbd:bestandenAbBewertung>4</xbd:bestandenAbBewertung>
-            <xbd:schlechtesteBewertung>6</xbd:schlechtesteBewertung>
-        </xbd:bewertungsschemaNote>
         <xbd:bewertungsschemaPunkte>
             <xbd:beschreibung>
                 100-90 Punkte Note 1 = sehr gut,
@@ -75,7 +66,7 @@
                 unter 30 Punkte Note 6 = ungenügend</xbd:beschreibung>
             <xbd:besteBewertung>100</xbd:besteBewertung>
             <xbd:bestandenAbBewertung>50</xbd:bestandenAbBewertung>
-            <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
+            <xbd:schlechtesteBewertung>0</xbd:schlechtesteBewertung>
         </xbd:bewertungsschemaPunkte>
     </xbbd:gesamtergebnis>
     
@@ -128,6 +119,9 @@
         <xbbd:niveauDQR listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
             <code>4</code>
         </xbbd:niveauDQR>
+        <xbbd:berufsschulnote>
+            <xbd:note>1.5</xbd:note>
+        </xbbd:berufsschulnote>
     </xbbd:allgemeineAngaben>
     
     <xbbd:pruefungsdatum>2019-05-13</xbbd:pruefungsdatum>
@@ -136,4 +130,4 @@
         <xbbd:name>IHK München Oberbayern</xbbd:name>
     </xbbd:aussteller>
     
-</xbbd:pruefling.pruefungszeugnis.0001>
+</xbbd:pruefling.pruefungszeugnis>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.5/sch/xberufsbildung-schematron.sch" 
+            type="application/xml" 
+            schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!-- 
+        Nichtnormative Beispielinstanz für ein Prüfungszeugnis in englischer Sprache basierend auf einem Musterzeugnis der IHK München-Oberbayern im Rahmen des Vorhabens XBerufsbildung
+        Version: XBerufsbildung 0.5
+        Letzte Aktualisierung: 04.06.2025
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+    -->
+
+<xbbd:pruefling.pruefungszeugnis
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd http://xberufsbildung.de/def/xberufsbildung/0.5/xsd/xberufsbildung.xsd">
+    
+    <xbd:titel>Examination Certificate</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2019-05-13</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Munich</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
+    <xbd:sprache>
+        <code>http://publications.europa.eu/resource/authority/language/ENG</code>
+    </xbd:sprache>
+
+    <xbbd:rechtsgrundlage>
+       <xbbd:code>
+           <code>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig</code>
+       </xbbd:code>
+    </xbbd:rechtsgrundlage>
+    
+    <xbbd:pruefling>
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:familienname>
+                <xbbd:name>Patternson</xbbd:name>
+            </xbbd:familienname>
+            <xbbd:vorname>
+                <xbbd:name>Magdalena</xbbd:name>
+            </xbbd:vorname>
+        </xbbd:nameNatuerlichePerson>
+        <xbbd:geburt>
+            <xbbd:datum>
+                <xbd:jahrMonatTag>1997-04-01</xbd:jahrMonatTag>
+            </xbbd:datum>
+        </xbbd:geburt>
+    </xbbd:pruefling>
+    
+    <xbbd:gesamtergebnis>
+        <xbd:wortbezeichnung>good</xbd:wortbezeichnung>
+        <xbd:punkte>81</xbd:punkte>
+        <xbd:bewertungsschemaPunkte>
+            <xbd:beschreibung>
+                100-90 points grade 1 = excellent,
+                below 92 - 81 grade 2 = good,
+                below 81 - 67 points grade 3 = satisfactory,
+                below 67 - 50 points grade 4 = sufficient,
+                below 50 - 30 points grade 5 = poor,
+                below 30 points grade 6 = very poor
+            </xbd:beschreibung>
+            <xbd:besteBewertung>100</xbd:besteBewertung>
+            <xbd:bestandenAbBewertung>50</xbd:bestandenAbBewertung>
+            <xbd:schlechtesteBewertung>0</xbd:schlechtesteBewertung>
+        </xbd:bewertungsschemaPunkte>
+    </xbbd:gesamtergebnis>
+    
+    <xbbd:allgemeineAngaben>
+        <xbbd:ausbildungsberuf>
+            <xbbd:bezeichnung>Electronics Technician for Machines and Drive Technology</xbbd:bezeichnung>
+            <xbbd:fundstelle>Federal Law Gazette I, Page 662, 714</xbbd:fundstelle>            
+        </xbbd:ausbildungsberuf>
+        <xbbd:pruefungsteil>
+            <xbbd:bezeichnung>Part 1 of the final examination</xbbd:bezeichnung>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Complex work task</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>satisfactory</xbd:wortbezeichnung>
+                    <xbd:punkte>78</xbd:punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+        </xbbd:pruefungsteil>    
+     <xbbd:pruefungsteil>
+         <xbbd:bezeichnung>Part 2 of the final examination</xbbd:bezeichnung>
+         <xbbd:pruefungsbereich>
+             <xbbd:bezeichnung>Workplace assignment</xbbd:bezeichnung>
+             <xbbd:benotung>
+                 <xbd:wortbezeichnung>good</xbd:wortbezeichnung>
+                 <xbd:punkte>90</xbd:punkte>
+             </xbbd:benotung>
+         </xbbd:pruefungsbereich>
+         <xbbd:pruefungsbereich>
+             <xbbd:bezeichnung>System design</xbbd:bezeichnung>
+             <xbbd:benotung>
+                 <xbd:wortbezeichnung>sufficient</xbd:wortbezeichnung>
+                 <xbd:punkte>56</xbd:punkte>
+             </xbbd:benotung>
+         </xbbd:pruefungsbereich>
+         <xbbd:pruefungsbereich>
+             <xbbd:bezeichnung>Function and system analysis</xbbd:bezeichnung>
+             <xbbd:benotung>
+                 <xbd:wortbezeichnung>excellent</xbd:wortbezeichnung>
+                 <xbd:punkte>100</xbd:punkte>
+             </xbbd:benotung>
+         </xbbd:pruefungsbereich>
+         <xbbd:pruefungsbereich>
+             <xbbd:bezeichnung>Economics and social studies</xbbd:bezeichnung>
+             <xbbd:benotung>
+                 <xbd:wortbezeichnung>satisfactory</xbd:wortbezeichnung>
+                 <xbd:punkte>78</xbd:punkte>
+             </xbbd:benotung>
+         </xbbd:pruefungsbereich>
+     </xbbd:pruefungsteil>
+        <xbbd:niveauDQR listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
+            <code>4</code>
+        </xbbd:niveauDQR>
+        <xbbd:berufsschulnote>
+            <xbd:note>1.5</xbd:note>
+        </xbbd:berufsschulnote>
+    </xbbd:allgemeineAngaben>
+    
+    <xbbd:pruefungsdatum>2019-05-13</xbbd:pruefungsdatum>
+    
+    <xbbd:aussteller>
+        <xbbd:name>Chamber of Commerce and Industry for Munich and Upper Bavaria</xbbd:name>
+    </xbbd:aussteller>
+    
+</xbbd:pruefling.pruefungszeugnis>

@@ -6,57 +6,62 @@
 ]>
 
 
-	<chapter xmlns="http://docbook.org/ns/docbook" xml:id="spezifikation.einleitung.hintergrundZuXSchule" xml:lang="de" version="5"
-		xmlns:xlink="http://www.w3.org/1999/xlink" > 
-		<info> 
-			<title>Hintergrund zu &fachmodul;</title>
-		</info>
-		
-		<para>Der &fachmodul;-Standard wird als ein XML-basierter Standard für den Datenaustausch im
-		Kontext der Berufsbildung entwickelt. Das Ziel dieses Vorhabens ist es, sämtliche Akteure im
-		Bereich der Berufsbildung, wie beispielsweise berufsbildende Schulen, zuständige Stellen wie
-		Kammern und andere öffentliche Behörden, in die Lage zu versetzen, elektronische Daten
-		standardisiert und länder- sowie organisationsübergreifend miteinander auszutauschen. Diese
-		Initiative zielt darauf ab, eine Entlastung für die genannten Akteure sowie für
-		Bildungsteilnehmende (z. B. Auszubildende und ihre Erziehungsberechtigten) zu schaffen,
-		indem Bildungsnachweise digital übermittelt, automatisch verarbeitet und geprüft werden
-		können. Die digitale Erfassung von Bildungsnachweisen, wie beispielsweise
-		Abschlusszeugnisse, bietet auch in anderen Lebensbereichen Vorteile, da Prozesse
-		beschleunigt und Akteure entlastet werden.</para>
-		<para>Konkret ermöglicht der XBerufsbildung-Standard als XÖV-konformer Datenaustauschstandard auf
-		semantischer Ebene die Abbildung der für die jeweiligen Anwendungsfälle relevanten
-		Datenfelder (siehe Kapitel I.3). Für digitale Bildungsnachweise werden beispielsweise
+<chapter xmlns="http://docbook.org/ns/docbook"
+	xml:id="spezifikation.einleitung.hintergrundZuXSchule" xml:lang="de" version="5"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+	<info>
+		<title>Hintergrund zu &fachmodul;</title>
+	</info>
+
+	<para>Der &fachmodul;-Standard wird als ein XML-basierter Standard für die Erstellung von
+		elektronischen Bildungsnachweisen sowie den Datenaustausch im Kontext der Berufsbildung
+		entwickelt. Das Ziel dieses Vorhabens ist es, eine Grundlage zu schaffen, um
+		Bildungsnachweise standardisiert elektronisch übermitteln, automatisch verarbeiten und
+		prüfen zu können. Die Verfügbarkeit von standardisierten digitalen Bildungsnachweisen führt
+		zu einer Entlastung sämtlicher Akteure und Bildungsteilnehmenden im Kontext der
+		Berufsbildung.</para>
+	<para>So werden beispielsweise berufsbildende Schulen, zuständige Stellen wie Kammern und andere
+		öffentliche Behörden, in die Lage versetzt, elektronische Daten standardisiert und länder-
+		sowie organisationsübergreifend miteinander auszutauschen. Die digitale Erfassung von
+		Bildungsnachweisen, wie beispielsweise Abschlusszeugnissen, bietet zahlreiche Vorteile, da
+		Prozesse beschleunigt und damit Akteure entlastet werden. </para>
+	<para>Der Standard XBerufsbildung wird als XÖV-konformer Datenaustauschstandard entwickelt.
+		Mittels XBerufsbildung werden relevante Datenfelder der jeweiligen Anwendungsfälle auf
+		semantischer Ebene abgebildet. Für digitale Bildungsnachweise werden beispielsweise
 		Codelisten für Ausbildungsberufe oder Datenfelder zur Beschreibung des Lernenden definiert
-		oder wiederverwendet. <link xlink:href="https://www.xbildung.de/web/">XBildung</link> als
-		Basismodul regelt die Aspekte, die für mindestens drei seiner Fachmodule von Relevanz sind.
-		In einigen Fällen kann daher im Kontext des XBerufsbildung-Standards auf XBildung verwiesen
-		werden, was die Notwendigkeit spezifischer Datenfelder für XBerufsbildung reduziert. Auf
-		diese Weise wird die Interoperabilität im Bildungswesen gewährleistet.</para>
-	<para>Die Grundlage für das Vorhaben bildete das Onlinezugangsgesetz (OZG), das im August 2017 in
-		Kraft trat. Das OZG verpflichtete alle deutschen Behörden, einschließlich der zuständigen
-		Stellen und berufsbildenden Schulen, ihre Verwaltungsdienstleistungen digital anzubieten.
-		Das Bundeskabinett hat im Jahr 2024 nun das Gesetz zur Änderung des Onlinezugangsgesetzes
-		sowie dazugehörige Eckpunkte verabschiedet. Mit diesem Gesetz möchte die Bundesregierung die
-		Digitalisierung weiter vorantreiben. Das politische Begleitpapier legt entscheidende
-		Richtlinien fest, die eine stärkere Priorisierung und Standardisierung anstreben und eine
-		enge Verknüpfung des OZG mit Großprojekten wie der Registermodernisierung und den digitalen
-		Identitäten sicherstellen sollen. Mit dem OZG-Änderungsgesetz soll die permanente
-		Entwicklung und Fortentwicklung von verbindlichen Standards, Schnittstellen und
-		Basisdiensten durch das Bundesministerium des Inneren und für Heimat in Zusammenarbeit mit
-		der föderalen IT-Kooperation (FITKO) vorangetrieben werden. Als Leitprojekt im
-		OZG-Bildungsbereich des Landes Sachsen-Anhalt wurde der Bedarf für die Standardisierung im
-		Berufsbildungsbereich beschrieben und in virtuellen Workshops mit den zuständigen Stellen
-		(Kammern ), Softwarherstellern und IT-Dienstleistern abgestimmt. In der 43. Sitzung des
-		IT-Planungsrates, die am 20. März 2024 stattfand, wurde die "Definition of Ready" (DoR),
-		früher als Bedarfsbeschreibung bekannt, vorgestellt. Diese DoR legt die Anforderungen für
-		einen XÖV-konformen Datenaustausch im deutschen Berufsbildungsbereich fest. Die Definition
-		of Ready stellt sicher, dass alle beteiligten Parteien klare Anforderungen und Standards
-		haben, an denen sie sich orientieren können. Dies umfasst technische Spezifikationen,
-		Sicherheitsstandards und organisatorische Vorgaben. Durch die Einhaltung dieser Standards
-		soll der Austausch von Bildungsdaten nicht nur vereinfacht, sondern auch sicherer und
-		verlässlicher gestaltet werden. So trägt die DoR entscheidend dazu bei, die Digitalisierung
-		im Berufsbildungsbereich voranzutreiben und die Qualität der Berufsausbildung in Deutschland
-		zu verbessern.</para>
-	</chapter>
+		oder wiederverwendet.</para>
+	<para>XBerufsbildung ist ein Teilmodul neben XSchule und XHochschule, die alle von dem
+		IT-Standard <link xlink:href="https://www.xbildung.de/web/">XBildung</link> inhaltlich
+		umklammert werden. XBildung regelt diejenigen Aspekte, die für die Teilmodule übergreifend
+		relevant sind, konkret definiert er semantische und fachlich übergreifende Bausteine zur
+		Wiederverwendung. Das erhöht die Interoperabilität im Bildungswesen durch übergreifend
+		einheitlich definierte Datenstrukturen.</para>
 
-
+	<para>Die Grundlage für das Vorhaben bildete das <link
+			xlink:href="https://www.gesetze-im-internet.de/ozg/BJNR313800017.html"
+			>Onlinezugangsgesetz (OZG)</link>, das im August 2017 in Kraft trat. Das OZG
+		verpflichtete alle deutschen Behörden, einschließlich der zuständigen Stellen und
+		berufsbildenden Schulen, ihre Verwaltungsdienstleistungen digital anzubieten. Das
+		Bundeskabinett hat im Jahr 2024 nun das <link
+			xlink:href="https://www.recht.bund.de/bgbl/1/2024/245/regelungstext.pdf?__blob=publicationFile&amp;v=3"
+			>Gesetz zur Änderung des Onlinezugangsgesetzes</link> sowie dazugehörige Eckpunkte
+		verabschiedet. Mit diesem Gesetz möchte die Bundesregierung die Digitalisierung weiter
+		vorantreiben. Das politische Begleitpapier legt entscheidende Richtlinien fest, die eine
+		stärkere Priorisierung und Standardisierung anstreben und eine enge Verknüpfung des OZG mit
+		Großprojekten wie der Registermodernisierung und den digitalen Identitäten sicherstellen
+		sollen. Mit dem OZG-Änderungsgesetz soll die permanente Entwicklung und Fortentwicklung von
+		verbindlichen Standards, Schnittstellen und Basisdiensten durch das Bundesministerium des
+		Inneren und für Heimat in Zusammenarbeit mit der föderalen IT-Kooperation (FITKO)
+		vorangetrieben werden. Als Leitprojekt im OZG-Bildungsbereich des Landes Sachsen-Anhalt
+		wurde der Bedarf für die Standardisierung im Berufsbildungsbereich beschrieben und in
+		virtuellen Workshops mit den zuständigen Stellen (Kammern), Softwareherstellern und
+		IT-Dienstleistern abgestimmt. </para>
+	<para>In der <link xlink:href="https://www.it-planungsrat.de/beschluss/beschluss-2024-12">43.
+			Sitzung des IT-Planungsrates</link>, die am 20. März 2024 stattfand, wurde die <link
+			xlink:href="https://xberufsbildung.de/def/req/1.0/Definition_of_Ready_XBerufsbildung.pdf"
+			>"Definition of Ready" (DoR)</link> zum Datenaustausch im Berufsbildungswesen
+		vorgestellt. Diese DoR legt Anforderungen für einen XÖV-konformen Datenaustausch im
+		deutschen Berufsbildungsbereich fest. Sie umfasst technische Spezifikationen,
+		Sicherheitsstandards und organisatorische Vorgaben, vereinfacht damit den Austausch von
+		Bildungsdaten und erhöht ihre Verlässlichkeit und Sicherheit.</para>
+</chapter>

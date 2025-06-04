@@ -18,11 +18,131 @@
 			<title>Version &version;</title>
 		</info>
 		<para>Veröffentlichungsdatum: &fassung;</para>
+		
+		<section>
+			<title>Aufnahme der Nachricht pruefling.berufsschulnote</title>
+			<para>Mit der Version 0.5 wurde in XBerufsbildung der Nachweis <link
+					linkend="XBerufsbildung.Nachweise.pruefling.berufsschulnote"
+					>pruefling.berufsschulnote</link> hinzugefügt. Diese Nachricht dient der
+				Übermittlung der Berufsschulnote von der Berufsschule an die zuständige Kammer.
+				Neben der Gesamtnote enthält die Nachricht auch Angaben zur Berufsschule, zur
+				zuständigen Kammer und zum Prüfling. Die Implementierung basierte auf den
+				Ergebnissen der Umfrage sowie den Erkenntnissen aus dem Arbeitskreis.</para>
+		</section>
+		
+		<section>
+			<title>Änderungen an Codelisten</title>
+			<para>Die Codeliste <link linkend="XBerufsbildung.Baukasten.Codes.Code.PruefungsteilAEVO"
+					>Code.PruefungsteilAEVO</link> wurde in der Version 2025-06-04 veröffentlicht.</para>
+		</section>
+		
+		<section>
+			<title>Einbindung der XML-Signatur</title>
+			<para>In allen Nachrichten wurde eine Enveloped Signature gemäß
+				XÖV-Spezifikation umgesetzt. Dabei wurde das Element <emphasis role="codebf"
+					>ds:Signature</emphasis> in die jeweiligen Nachweise aufgenommen, wobei es auf
+				die Signaturklasse verweist und mit der Kardinalität <emphasis role="codebf"
+					>0..1</emphasis> versehen wurde.</para>
+		</section>
+		<section>
+			<title>Inhaltliche Änderungen an der Spezifikation</title>
+			<para>Das ursprüngliche Kapitel "Grundlegende Designentscheidungen" wurde verkürzt, in das
+				Kapitel <link xlink:href="#spezifikation.wichtigeHinweiseZurImplementierung"
+					>Wichtige Hinweise zur Implementierung </link> eingegliedert und verweist nun
+				auf das ausführliche und übergreifend gültige Kapitel mit selbem Titel in der <link
+					xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#%5B%7B%22num%22%3A121%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C70.866%2C727.937%2Cnull%5D"
+					>Spezifikation von XBildung</link>.</para>
+		</section>
+		<section>
+			<title>Aktualisierung auf gültige XÖV-Konfiguration</title>
+			<para>Die XÖV-Spezifikations- und Produktionswerkzeuge, bestehend aus dem XÖV-Profil und dem XGenerator, 
+				sind die zentralen Mittel zur automatisierten Erzeugung der Bestandteile eines XÖV-Standards. Zur Erstellung 
+				der XBerufsbildung-Spezifikation in der Version 0.5 kamen die gültigen Werkzeuge zum Einsatz: XÖV-Profil in der Version 3.0.3 und XGenerator in der Version 3.1.1. </para>
+		</section>
+		
+		<section>
+			<title>Liste der umgesetzten Tickets</title>
+			<para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
+			<itemizedlist>
+				<listitem>
+					<para>XBBD-649: Klasse Ausbildungsstaette in die Kernkomponenten überführen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-648: Englische Version der XML-Beispielinstanz für Prüfungszeugnis erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-647: Standard- und Versionsbeschreibung im Modell einfügen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-646: pruefungstermin in der Klasse AngabenAusbildung entfernen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-645: Nachrichtennummerierung aus der Spezifikation entfernen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-644: Spezifikation auf veraltete Inhalte prüfen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-643: neue Versionen der XÖV-Produkte anbinden</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-630: Copyright Claim in der Spezifikation anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-629: unterorganisation aus der Klasse StelleZustaendig entfernen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-628: StelleAustellend in StelleZustaendig umbenennen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-627: Dokumentation der Eigenschaft 'benotung' in der Klasse PruefungsteilPruefungszeugnis anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-626: neue Nachricht "pruefling.berufsschulnote" aufnehmen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-625: Rechtsgrundlage in Beispiel-Instanznachricht AEVO-Zeugnis ergänzen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-624: XML-Signatur in XBBD einbinden</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-623: XBD V1.1 einbinden</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-622: Pruefungsteil AEVO als Codeliste modellieren</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-619: Dokumentation der Eigenschaft "ausbildungszeitraum" anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-616: Dokumentation der Eigenschaft "pruefungsdatum" anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-593: fruehererVorname aus NameNatuerlichePerson entfernen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-592: Kapitel "Grundlegende Designentscheidungen" überarbeiten</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-590: Versionierung von Codelisten an neue Systematik anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-515: Dokumentationstexte detaillierter ausführen</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</section>
+	<section>
+		<info>
+			<title>Version 0.4</title>
+		</info>
+		<para>Veröffentlichungsdatum: 14. Oktober 2024</para>
 
 		<section>
 			<title>Aufnahme des AEVO-Zeugnisses</title>
 			<para>Mit der Version 0.4 wurde in XBerufsbildung der Nachweis <link
-					linkend="XBerufsbildung.Nachweise.pruefling.zeugnisAEVO.0003"
+					linkend="XBerufsbildung.Nachweise.pruefling.zeugnisAEVO"
 					>AEVO-Zeugnis</link> umgesetzt. Dieser Nachweis bildet das Zeugnis nach der
 				Ausbilder-Eignungsverordnung (AEVO) vom 21.01.2009 (BGBl. I 2009 S. 88) ab, aus dem
 				hervorgeht, dass der Ausbilder oder die Ausbilderin die berufs- und
@@ -38,19 +158,17 @@
 		<section>
 			<title>Sonstige Änderungen</title>
 			<para>Für die Nachweise <link
-					linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis.0001"
+					linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis"
 					>Prüfungszeugnis</link> und <link
-					linkend="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis.0002"
+					linkend="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis"
 					>Fortbildungszeugnis</link> wurden die Strukturen der Prüfungsübersicht
 				überarbeitet.</para>
 			<para>Der <link linkend="XBerufsbildung.Baukasten.Ausbildungsbetrieb">Ausbildungsbetrieb</link> kann nun eine Betriebsnummer enthalten.</para>
-			<para>Die Eigenschaft Befreiung wurde aus den allgemeinen Angaben des <link linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis.0001">Prüfungszeugnisses</link> entfernt. Sollte eine Befreiung vorliegen, wird diese als Bemerkung in den zusätzlichen Angaben angegeben.</para>
+			<para>Die Eigenschaft Befreiung wurde aus den allgemeinen Angaben des <link linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis">Prüfungszeugnisses</link> entfernt. Sollte eine Befreiung vorliegen, wird diese als Bemerkung in den zusätzlichen Angaben angegeben.</para>
 		</section>
 		<section>
 			<title>Inhaltliche Änderungen an der Spezifikation</title>
-			<para>Das Kapitel <link
-				xlink:href="#spezifikation.grundlegendeDesignentscheidungen"
-					>Grundlegende Designentscheidungen</link> wurde in die Spezifikation von
+			<para>Das Kapitel Grundlegende Designentscheidungen wurde in die Spezifikation von
 				XBerufsbildung aufgenommen.</para>
 		</section>
 
@@ -87,7 +205,7 @@
 						"Ausbildungsbetrieb" erstellen</para>
 				</listitem>
 				<listitem>
-					<para>XBBD-546: Dokumenation der Eigenschaft "pruefungstermin" ergänzen</para>
+					<para>XBBD-546: Dokumentation der Eigenschaft "pruefungstermin" ergänzen</para>
 				</listitem>
 				<listitem>
 					<para>XBBD-543: Dokumentation der Klasse "Ortsangabe" anpassen </para>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Prüfungsteil AEVO</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Die Codeliste stellt die beiden Teile der Prüfung gemäß der Ausbilder-Eignungsverordnung dar und wird zur Unterscheidung sowie Dokumentation der jeweiligen Prüfungsteile verwendet.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XBerufsbildung</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>PruefungsteilAEVO-Codes</ShortName>
+      <LongName>Prüfungsteil AEVO</LongName>
+      <Version>2025-06-04</Version>
+      <CanonicalUri>urn:xberufsbildung-de:xberufsbildung:codeliste:pruefungsteilaevo</CanonicalUri>
+      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:pruefungsteilaevo_2025-06-04</CanonicalVersionUri>
+      <Agency>
+         <LongName>XBerufsbildung</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Prüfungsteil AEVO</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/pruefungsteilaevo/praktischer_pruefungsteil</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Praktischer Prüfungsteil</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/pruefungsteilaevo/schriftlicher_pruefungsteil</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Schriftlicher Prüfungsteil</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

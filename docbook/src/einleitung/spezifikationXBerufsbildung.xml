@@ -19,25 +19,24 @@
 	<section>
 		<title>Aufbau der Spezifikation </title>
 
-		<para>as vorliegende Dokument ist in drei Teile gegliedert. XBerufsbildung besteht im Wesentlichen
-			aus Pro- zess- und Nachweisdefinitionen. Das einleitende Kapitel zeigt außerdem den
-			Hintergrund des Standar- disierungsvorhabens XBerufsbildung auf und stellt die
-			XBerufsbildung-Journey dar. Darüber hinaus wird der Anwendungsfall Ausstellen des
-			Prüfungszeugnisses beschrieben. Das darauffolgende Kapitel ist das inhaltliche Kapitel
-			zu den fachlichen Modellierungen mit Metadaten-Strukturen für die initial abge- bildeten
-			(Kern-)Anwendungsfälle. Zuletzt werden im Glossar alle verwendeten Fachtermini erläutert
-			und im Anhang u.a. eigens geschaffene Wertelisten zur Verfügung gestellt. </para>
+		<para>Das vorliegende Dokument ist in drei Teile gegliedert. Der Standard XBerufsbildung besteht
+			im Wesentlichen aus Prozess- und Nachweisdefinitionen. Das einleitende Kapitel zeigt den
+			Hintergrund des Standardisierungsvorhabens XBerufsbildung auf und stellt die
+			XBerufsbildung-Journey dar. Das darauffolgende Kapitel ist das inhaltliche Kapitel zu
+			der fachlichen Modellierung mit Metadaten-Strukturen für die initial abgebildeten
+			(Kern-)Anwendungsfälle. Im Anhang werden eigens erstellte Wertelisten, ein Glossar mit
+			verwendeten Fachbegriffen sowie die Versionshistorie des Standards
+			bereitgestellt.</para>
 	</section>
 
 	<section>
 
 		<title>Vorgehen zur Erarbeitung</title>
-		<para>Das Vorgehen bei der Erarbeitung des Datenaustauschformates XBerufsbildung ist transparent
-			und partizipativ. Bereits zu Beginn der Vorarbeiten von XBerufsbildung wurden alle
-			relevanten Stakeholder wie die Bildungsministerien der Länder und Kammern über
-			gemeinsame virtuelle Workshops einbezogen und weitere, relevante Stakeholder aktiv
-			informiert (z.B. mithilfe des Newsletters, Durchführung von übergreifenden
-			Veranstaltungen, etc.). Diese Vorarbeiten wurden in einer <link
+		<para>Das Vorgehen bei der Erarbeitung des Standards XBerufsbildung ist transparent und
+			partizipativ. Bereits zu Beginn der Vorarbeiten von XBerufsbildung wurden relevante
+			Stakeholder wie die Bildungsministerien der Länder und Kammern über gemeinsame virtuelle
+			Workshops einbezogen und aktiv informiert (z.B. mithilfe der Newsletter, Durchführung
+			von übergreifenden Veranstaltungen, etc.). Diese Vorarbeiten wurden in einer <link
 				xlink:href="https://www.xberufsbildung.de/studie/XBerufsbildung_Studie_V0.8.pdf"
 				>Standardisierungsstrategie (Studie)</link> zusammengeführt und die Strategie in
 			einer offenen Kommentierungsphase entsprechend abgestimmt. Auf Basis der Vorstudie wurde
@@ -45,13 +44,15 @@
 				xlink:href="https://xberufsbildung.de/def/req/1.0/Definition_of_Ready_XBerufsbildung.pdf"
 				>DoR (Definition of Ready)</link> verfasst, die bestehende Standards, mögliche
 			Anwendungsszenarien, Mindestanforderungen, eine umfassende Analyse des Umfelds, zu
-			beteiligtende Systeme, Rollen und Akteure sowie die fachlichen Anforderungen der
-			Spezifikation für den IT-Planungsrat beschreibt, sodass dieser das
-			Standardisierungsvorhaben auf die Standardisierungsagenda heben kann. Für die Jahre 2023
-			und 2024 sind daran anknüpfend themenspezifische Arbeitskreise umgesetzt worden, in
-			denen die ersten Anwendungsfälle und Anforderungen an den Datenaustausch im
-			Berufsbildungswesen analysiert und der Fokus von XBerufsbildung geschärft wurde. Das
-			methodische Vorgehen der Datenmodellierung ist an zwei bewährten Methoden angelehnt: </para>
+			beteiligende Systeme, Rollen und Akteure sowie die fachlichen Anforderungen der
+			Spezifikation für den IT-Planungsrat beschreibt. In <link
+				xlink:href="https://www.it-planungsrat.de/beschluss/beschluss-2024-12">der 43.
+				Sitzung des IT-Planungsrates</link>, die am 20. März 2024 stattfand, wurde
+			XBerufsbildung als Standardisierungsbedarf auf die Agenda des IT-Planungsrates gehoben.
+			Für die Jahre 2023, 2024 und 2025 sind daran anknüpfend themenspezifische Arbeitskreise
+			umgesetzt worden, in denen die Anwendungsfälle und Anforderungen an den Datenaustausch
+			im Berufsbildungswesen analysiert und der Fokus von XBerufsbildung geschärft wurde. </para>
+		<para>Das methodische Vorgehen der Datenmodellierung ist an zwei bewährte Methoden angelehnt: </para>
 		<itemizedlist>
 			<listitem>
 				<para>deutsches XÖV-Vorgehen und</para>
@@ -64,9 +65,9 @@
 			Ausarbeitung durch die Veröffentlichung von Änderungsanmerkungen, den Fokus auf die
 			starke Wiederverwendung bewährter Methoden und die Verwendung von nicht-proprietären,
 			zukunftssicheren und freien Technologien wie dem W3C Technology Stack (XML, XSD,
-			Schematron). Die Spezifikation XBerufsbildung als Fachmodul des Basismoduls XBildung
-			versucht die Komplexität im Berufsbildungswesen, soweit wie dies möglich ist,
-			abzubilden. Zugunsten von Interoperabilität zwischen den Fachverfahren im
+			Schematron). Die Spezifikation XBerufsbildung als Teilmodul des Basismoduls XBildung
+			versucht, die Komplexität im Berufsbildungswesen, soweit wie dies möglich ist,
+			abzubilden. Zugunsten der Interoperabilität zwischen den Fachverfahren im
 			Berufsbildungswesen können nicht alle Länder- und Organisationsspezifika
 			Berücksichtigung finden. Dazu ist der Einsatz von abgestimmten harmonisierten
 			Interoperabilitätsartefakten wie gemeinsamen Datenmodellen, Wertelisten und Datentypen
@@ -84,34 +85,33 @@
 			vermittelt werden.</para>
 		<para>Das in diesem Dokument beschriebene Modell besteht aus verschiedenen aus der Realität
 			stammenden Datenfeldern. Diese Datenfelder (Elemente) können entweder einfache Werte
-			(wie Basisdatentypen oder einfache Datentypen, z.B. numerische Werte oder Zeichenketten)
-			darstellen oder sich ihrerseits in einen strukturierten Satz von Datenfeldern
-			aufschlüsseln, die durch einen komplexen Datentyp definiert werden. Dies führt zu einem
-			hierarchischen Datenmodell, in dem Datenfelder auf (theoretisch) beliebige Ebenen
-			verschachtelt werden können. Letztendlich werden alle Informationen auf der untersten
-			Ebene in einfache Werte aufgeschlüsselt.</para>
-		<para>Bei der Definition von Datenfeldern werden Kardinalitäten (oder Multiplizitäten)
-			angegeben. Diese legen fest, wie häufig ein Datenfeld innerhalb eines Datentyps
-			angegeben werden kann oder muss. In der Regel muss ein Datenfeld genau einmal angegeben
-			werden (1), was das Feld obligatorisch macht. Die Angabe kann aber auch optional sein
-			(0..1), d.h. das Feld kann, muss aber nicht verwendet werden. In beiden Fällen kann das
-			Feld höchstens einmal verwendet werden. Um eine bestimmte Anzahl von möglichen
-			Verwendungen festzulegen, kann die Kardinalität von Elementen in Form eines Bereichs X..Y
-			angegeben werden, wobei X die Untergrenze und Y die Obergrenze ist (z.B. 0..3 oder
-			10..15). Wenn keine Obergrenze festgelegt werden soll, kann dies durch die Angabe des
-			Platzhalters n definiert werden (z.B. 0..n oder 0..*).</para>
+			(wie Basisdatentypen oder einfache Datentypen, z. B. numerische Werte oder
+			Zeichenketten) darstellen oder sich ihrerseits in einen strukturierten Satz von
+			Datenfeldern aufschlüsseln, die durch einen komplexen Datentyp definiert werden. Dies
+			führt zu einem hierarchischen Datenmodell, in dem Datenfelder auf (theoretisch)
+			beliebige Ebenen verschachtelt werden können. Letztendlich werden alle Informationen auf
+			der untersten Ebene in einfache Werte aufgeschlüsselt.</para>
+		<para>Bei der Definition von Datenfeldern werden Kardinalitäten (oder Multiplizitäten) angegeben.
+			Diese legen fest, wie häufig ein Datenfeld innerhalb eines Datentyps angegeben werden
+			kann oder muss. In der Regel muss ein Datenfeld genau einmal angegeben werden (1), was
+			das Feld obligatorisch macht. Die Angabe kann aber auch optional sein (0..1), d. h. das
+			Feld kann, muss aber nicht verwendet werden. In beiden Fällen kann das Feld höchstens
+			einmal verwendet werden. Um eine bestimmte Anzahl von möglichen Verwendungen
+			festzulegen, kann die Kardinalität von Elementen in Form eines Bereichs X..Y angegeben
+			werden, wobei X die Untergrenze und Y die Obergrenze ist (z.B. 0..3 oder 10..15). Wenn
+			keine Obergrenze festgelegt werden soll, kann dies durch die Angabe des Platzhalters n
+			definiert werden (z. B. 0..n oder 0..*).</para>
 		<para>Die im Datenmodell dargestellten Nachweise, wie beispielsweise das Prüfungszeugnis,
 			sind selbst komplexe Datentypen, die auf die gleiche Weise wie andere komplexe
 			Datentypen definiert sind. Sie sind besonders, weil sie einen Datensatz auf der obersten
 			Hierarchieebene (Wurzelelement) und damit einen fachlich vollständigen Datensatz
 			(Nachricht) umfassen.</para>
 		<para>Die Darstellung der Datentypen in den folgenden Unterkapiteln folgt dieser Logik: Es wird
-			immer zuerst ein Datentyp vorgestellt und die enthaltenen Datenfelder darunter aufgeführt -
-			beginnend mit den Nachweisen als Wurzelelemente. Die Datenfelder der Datentypen selbst
-			werden in Bezug auf ihre Funktion innerhalb des Datentyps beschrieben. Darüber hinaus
-			wird der verwendete (komplexe oder einfache) Datentyp genannt und ist in der
-			elektronischen Version des vorliegenden Dokuments verlinkt. Dies erleichtert das
-			Nachschlagen von Datentypen.</para>
+			immer zuerst ein Datentyp vorgestellt und die enthaltenen Datenfelder darunter
+			aufgeführt. Die Datenfelder der Datentypen selbst werden in Bezug auf ihre Funktion
+			innerhalb des Datentyps beschrieben. Darüber hinaus wird der verwendete (komplexe oder
+			einfache) Datentyp genannt und ist in der elektronischen Version des vorliegenden
+			Dokuments verlinkt. Dies erleichtert das Nachschlagen von Datentypen.</para>
 	</section>
 
 	<section>

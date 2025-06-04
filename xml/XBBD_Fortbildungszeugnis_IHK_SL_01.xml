@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <!-- 
         Nichtnormative Beispielinstanz für ein Fortbildungszeugnis basierend auf einem Musterzeugnis der IHK Saarland im Rahmen des Vorhabens XBerufsbildunng
-        Version: XBerufsbildung 0.4 
-        Letzte Aktualisierung: 14.10.2024
+        Musternachweis: https://xbildung.de/def/rep/sl/example/Fortbildungszeugnis_IHK_Saarland_mit_Noten.pdf
+        Version: XBerufsbildung 0.5
+        Letzte Aktualisierung: 04.06.2025
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
-<xbbd:pruefling.fortbildungszeugnis.0002
+<xbbd:pruefling.fortbildungszeugnis
     xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd http://xberufsbildung.de/def/xberufsbildung/0.4/xsd/xberufsbildung.xsd">
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd http://xberufsbildung.de/def/xberufsbildung/0.5/xsd/xberufsbildung.xsd">
     
-    <xbd:titel>Zeugnis</xbd:titel>
+    <xbd:titel>Zeugnis über die Prüfung zum anerkannten Fortbildungsabschluss</xbd:titel>
     
     <xbd:ausstellung>
-        <xbd:datum>2020-05-20</xbd:datum>
+        <xbd:datum>2020-05-28</xbd:datum>
         <xbd:ort>
             <xbd:ort>Saarbrücken</xbd:ort>
         </xbd:ort>
@@ -146,4 +150,4 @@
         <xbbd:name>IHK Saarland</xbbd:name>
     </xbbd:aussteller>
     
-</xbbd:pruefling.fortbildungszeugnis.0002>
+</xbbd:pruefling.fortbildungszeugnis>

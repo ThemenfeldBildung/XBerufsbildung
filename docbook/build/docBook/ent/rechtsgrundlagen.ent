@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY auszubildender.eintragungsbestaetigung.rechtsgrundlagen "BBiG, HwO">
+<!ENTITY pruefling.berufsschulnote.rechtsgrundlagen "BBiG, Erlasse der Bundesländer">
+<!ENTITY pruefling.fortbildungszeugnis.rechtsgrundlagen "BBiG, HwO, Prüfungsordnungen der zuständigen Stellen">
+<!ENTITY pruefling.pruefungszeugnis.rechtsgrundlagen "<html>
+  <head>
+		<style>
+			p {padding:0px; margin:0px;}
+		</style>
+	</head>
+  <body>
+BBiG, HwO, Pr&uuml;fungsordnungen der zust&auml;ndigen Stellen</body>
+</html>">
+<!ENTITY pruefling.zeugnisAEVO.rechtsgrundlagen "BBiG, AEVO, Prüfungsordnungen der zuständigen Stellen">

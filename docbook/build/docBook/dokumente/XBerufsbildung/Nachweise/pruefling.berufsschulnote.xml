@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XBerufsbildung.Nachweise.pruefling.berufsschulnote">
+   <title>pruefling.berufsschulnote</title>
+   <subtitle>Nachricht: <emphasis role="codebf">pruefling.berufsschulnote</emphasis>
+   </subtitle><para>Diese Nachricht dient der Übermittlung der Berufsschulnote von der Berufsschule an die für die Berufsbildung des Prüflings zuständige Stelle. Sie enthält die relevanten Informationen zum Prüfling, zur besuchten Berufsschule, zur für die Berufsbildung des Prüflings zuständigen Stelle sowie zur erreichten Gesamtnote und der Bezeichnung des Ausbildungsberufs. Die Übermittlung erfolgt im Rahmen der gesetzlichen Vorgaben gemäß § 37 Abs. 3 BBiG sowie den jeweiligen landesrechtlichen Vorgaben.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.berufsschulnote">
+      <title>pruefling.berufsschulnote</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XBerufsbildung/Nachweise/pruefling.berufsschulnote.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <informaltable xml:id="table.XBerufsbildung.Nachweise.pruefling.berufsschulnote">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">pruefling.berufsschulnote</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">berufsschule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Berufsschule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Berufsschule"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Berufsschule"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element beschreibt die Berufsschule, an der der Prüfling seine schulische Berufsbildung absolviert hat. Die Berufsschule ist die Versenderin der Nachricht und übermittelt die Berufsschulnote an die für die Berufsbildung des Prüflings zuständige Stelle.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">zustaendigeStelle</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">StelleZustaendig</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element beschreibt die für die Berufsbildung des Prüflings zuständige Stelle (z. B. Industrie- und Handelskammer oder Handwerkskammer). Die für die Berufsbildung des Prüflings zuständige Stelle ist Empfängerin der Nachricht und verarbeitet die übermittelten Daten für die Ausstellung des Zeugnisses.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">pruefling</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Pruefling</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Pruefling"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Pruefling"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die personenbezogenen Daten des Prüflings und dient der Zuordnung der Berufsschulnote zur entsprechenden Person.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ausbildungsberuf</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Ausbildungsberuf</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsberuf"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsberuf" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung des Ausbildungsberufs, den der Prüfling erlernt hat. Optional können die Fundstelle sowie eine Binnendifferenzierung angegeben werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">benotung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Benotung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element gibt das Ergebnis der berufsschulischen Leistungsfeststellungen des Prüflings an. Die Berechnung der Note erfolgt gemäß den jeweiligen landesrechtlichen Vorgaben. Der Wert der Berufsschulnote wird üblicherweise als Dezimalzahl mit einer Nachkommastelle angegeben (z. B. 2,3).</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">Signature</emphasis> (ref)</entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier kann eine digitale Signatur angegeben werden.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+</section>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
+           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+           xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
            xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
-           version="0.4"
+           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+           version="0.5"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -15,12 +16,13 @@
             <nameKurz>XBerufsbildung</nameKurz>
             <nameTechnisch>xberufsbildung</nameTechnisch>
             <kennung>urn:xoev-de:kosit:standard:xberufsbildung</kennung>
-            <beschreibung>XBerufsbildung</beschreibung>
+            <beschreibung>Der XBerufsbildung-Standard ist ein XML-basierter Standard für die Erstellung von elektronischen Bildungsnachweisen sowie den Datenaustausch im Kontext der Berufsbildung.</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.4</version>
-            <versionXOEVProfil>3.0.0</versionXOEVProfil>
-            <versionXOEVHandbuch>3.0</versionXOEVHandbuch>
+            <version>0.5</version>
+            <beschreibung>Mit der Version 0.5 wurde in XBerufsbildung der Nachweis pruefling.berufsschulnote hinzugefügt. Diese Nachricht dient der Übermittlung der Berufsschulnote von der Berufsschule an die zuständige Kammer. Die Codeliste "Prüfungsteil AEVO" wurde in den Standard aufgenommen. In allen Nachrichten wurde eine Enveloped Signature gemäß XÖV-Spezifikation umgesetzt. Die Dokumentationstexte in der Spezifikation wurden zur besseren Verständlichkeit überarbeitet und korrigiert.</beschreibung>
+            <versionXOEVProfil>3.0.3</versionXOEVProfil>
+            <versionXOEVHandbuch>3.0.2</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
             <versionModellierungswerkzeug>19.0 SP 4</versionModellierungswerkzeug>
             <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
@@ -28,16 +30,216 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:include schemaLocation="xberufsbildung-baukasten.xsd"/>
+   <xs:import schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"
+              namespace="http://www.w3.org/2000/09/xmldsig#"/>
    <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.1/xsd/xbildung-baukasten.xsd"
               namespace="http://xbildung.de/def/xbildung/1.1/xsd"/>
    <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
               namespace="http://xoev.de/schemata/code/1_0"/>
    <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
               namespace="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"/>
-   <xs:element name="pruefling.pruefungszeugnis.0001">
+   <xs:element name="pruefling.berufsschulnote">
       <xs:annotation>
          <xs:appinfo>
-            <rechtsgrundlage/>
+            <rechtsgrundlage>BBiG, Erlasse der Bundesländer</rechtsgrundlage>
+         </xs:appinfo>
+         <xs:documentation>Diese Nachricht dient der Übermittlung der Berufsschulnote von der Berufsschule an die für die Berufsbildung des Prüflings zuständige Stelle. Sie enthält die relevanten Informationen zum Prüfling, zur besuchten Berufsschule, zur für die Berufsbildung des Prüflings zuständigen Stelle sowie zur erreichten Gesamtnote und der Bezeichnung des Ausbildungsberufs. Die Übermittlung erfolgt im Rahmen der gesetzlichen Vorgaben gemäß § 37 Abs. 3 BBiG sowie den jeweiligen landesrechtlichen Vorgaben.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="xbd:Dokument">
+               <xs:sequence>
+                  <xs:element name="berufsschule" type="xbbd:Berufsschule">
+                     <xs:annotation>
+                        <xs:documentation>Das Element beschreibt die Berufsschule, an der der Prüfling seine schulische Berufsbildung absolviert hat. Die Berufsschule ist die Versenderin der Nachricht und übermittelt die Berufsschulnote an die für die Berufsbildung des Prüflings zuständige Stelle.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="zustaendigeStelle" type="xbbd:StelleZustaendig">
+                     <xs:annotation>
+                        <xs:documentation>Das Element beschreibt die für die Berufsbildung des Prüflings zuständige Stelle (z. B. Industrie- und Handelskammer oder Handwerkskammer). Die für die Berufsbildung des Prüflings zuständige Stelle ist Empfängerin der Nachricht und verarbeitet die übermittelten Daten für die Ausstellung des Zeugnisses.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="pruefling" type="xbbd:Pruefling">
+                     <xs:annotation>
+                        <xs:documentation>Das Element enthält die personenbezogenen Daten des Prüflings und dient der Zuordnung der Berufsschulnote zur entsprechenden Person.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="ausbildungsberuf" minOccurs="0" type="xbbd:Ausbildungsberuf">
+                     <xs:annotation>
+                        <xs:documentation>Das Element enthält die Bezeichnung des Ausbildungsberufs, den der Prüfling erlernt hat. Optional können die Fundstelle sowie eine Binnendifferenzierung angegeben werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="benotung" type="xbd:Benotung">
+                     <xs:annotation>
+                        <xs:documentation>Das Element gibt das Ergebnis der berufsschulischen Leistungsfeststellungen des Prüflings an. Die Berechnung der Note erfolgt gemäß den jeweiligen landesrechtlichen Vorgaben. Der Wert der Berufsschulnote wird üblicherweise als Dezimalzahl mit einer Nachkommastelle angegeben (z. B. 2,3).</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element ref="ds:Signature" minOccurs="0">
+                     <xs:annotation>
+                        <xs:documentation>Hier kann eine digitale Signatur angegeben werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="auszubildender.eintragungsbestaetigung">
+      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage>BBiG, HwO</rechtsgrundlage>
+         </xs:appinfo>
+         <xs:documentation>Diese Nachricht bildet die Eintragungsbestätigung der zuständigen Stelle nach BBiG und HwO ab. Die Eintragung des Ausbildungsvertrags in das Verzeichnis der Berufsausbildungsverhältnisse wird dem Ausbildungsbetrieb und der auszubildenden Person mit einer schriftlichen Eintragungsbestätigung angezeigt. Diese enthält Angaben zur Ausbildung (personenbezogene Daten zum Auszubildenden, Ausbildungsberuf, Ausbildungszeitraum) und Informationen zum Ausbildungsbetrieb (Name, Anschrift).</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="xbd:Dokument">
+               <xs:sequence>
+                  <xs:element name="auszubildender" type="xbbd:Auszubildender">
+                     <xs:annotation>
+                        <xs:documentation>Das Element enthält Angaben zur auszubildenden Person, für die eine Eintragungsbestätigung durch die zuständige Stelle ausgestellt wird. Ein Auszubildender ist eine Person, die eine berufliche Ausbildung durchläuft, um theoretische und praktische Kenntnisse sowie Fähigkeiten in einem bestimmten Berufsfeld zu erwerben.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="angabenGesetzlicherVertreter"
+                              minOccurs="0"
+                              maxOccurs="2"
+                              type="xbbd:GesetzlicherVertreter">
+                     <xs:annotation>
+                        <xs:documentation>Das Element bildet Daten des gesetzlichen Vertreters der betroffenen Person ab. Ein gesetzlicher Vertreter eines Auszubildenden ist eine Person, die kraft Gesetzes oder gerichtlicher Anordnung befugt ist, die rechtlichen Angelegenheiten des minderjährigen oder betreuten Auszubildenden zu regeln und zu vertreten.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="angabenAusbildung" type="xbbd:AngabenAusbildung">
+                     <xs:annotation>
+                        <xs:documentation>Das Element enthält Angaben zum Ausbildungsberuf und zum Zeitraum der Berufsausbildung.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="ausbildungsbetrieb"
+                              minOccurs="0"
+                              type="xbbd:Ausbildungsbetrieb">
+                     <xs:annotation>
+                        <xs:documentation>Das Element enthält Angaben zum Ausbildungsbetrieb. Ein Ausbildungsbetrieb ist ein Unternehmen oder eine Einrichtung, die nach gesetzlichen Vorgaben zur praktischen Ausbildung im Rahmen eines anerkannten Ausbildungsberufs befugt ist.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="aussteller" type="xbbd:StelleZustaendig">
+                     <xs:annotation>
+                        <xs:documentation>Das Element enthält Angaben zu einer Institution oder Behörde, die die Eintragung eines Ausbildungsverhältnisses in das Verzeichnis der Berufsausbildungsverhältnisse vornimmt und eine Eintragungsbestätigung erstellt und ausstellt.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="eintragungsnummer" type="xbbd:Identifikation">
+                     <xs:annotation>
+                        <xs:documentation>Das Element enthält die zumeist organisationsinterne Nummer der ausstellenden Stelle, unter der der Lehrvertrag geführt wird. Die Eintragungsbestätigung wird mit einer Eintragungsnummer versehen. Diese dient insbesondere dem Schriftverkehr und wird nur einmal vergeben.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element ref="ds:Signature" minOccurs="0">
+                     <xs:annotation>
+                        <xs:documentation>Hier kann eine digitale Signatur angegeben werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="pruefling.fortbildungszeugnis">
+      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage>BBiG, HwO, Prüfungsordnungen der zuständigen Stellen</rechtsgrundlage>
+         </xs:appinfo>
+         <xs:documentation>Diese Nachricht bildet das Fortbildungszeugnis nach BBiG und HwO ab, das die erfolgreiche Teilnahme an einer Fortbildungsprüfung bescheinigt. Diese enthält Angaben zum Prüfling, zum Fortbildungsabschluss, zum Prüfungsergebnis, zur Fortbildungsordnung, zur ausstellenden Stelle, zum Datum des Bestehens der Prüfung und ggf. weitere zusätzliche Angaben.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="xbd:Dokument">
+               <xs:sequence>
+                  <xs:element name="pruefling" type="xbbd:Pruefling">
+                     <xs:annotation>
+                        <xs:documentation>Das Element beschreibt eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (in einer Ausbildungs- oder Weiterbildungsstätte) Wissen und Kompetenzen erworben hat, die mit Bildungsnachweisen wie beispielsweise Zeugnissen beurkundet oder bescheinigt werden können.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="allgemeineAngaben">
+                     <xs:annotation>
+                        <xs:documentation>Das Element enthält allgemeine Angaben zur abgeschlossenen Fortbildung, einschließlich der Bezeichnung, einer Übersicht der Prüfungsteile und -leistungen sowie deren Benotung, dem DQR-Niveau, ggf. den Handlungsbereichen und einer Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="fortbildungsabschluss" type="xbbd:Fortbildungsabschluss">
+                              <xs:annotation>
+                                 <xs:documentation>Das Element enthält die Bezeichnung des Fortbildungsabschlusses, die Fundstelle der Fortbildungsordnung und ggf. den Schwerpunkt der jeweiligen Fortbildung.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="pruefungsteil"
+                                       maxOccurs="unbounded"
+                                       type="xbbd:PruefungsteilFortbildungszeugnis">
+                              <xs:annotation>
+                                 <xs:documentation>Das Element enthält Angaben zu den Prüfungsteilen und -bereichen sowie deren Bewertung.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="handlungsbereich"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xs:string">
+                              <xs:annotation>
+                                 <xs:documentation>Das Element beschreibt einen spezifischen Kompetenzbereich, in dem die zu prüfende Person Fachwissen und Fähigkeiten nachweisen muss. Jeder Handlungsbereich umfasst bestimmte Aufgaben oder Themenfelder, die in der Prüfungssituation abgedeckt werden, wie z. B. „Jahresabschlüsse aufbereiten und auswerten“ oder „Betriebliche Sachverhalte steuerlich darstellen“.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="befreiungAEVO"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xs:string">
+                              <xs:annotation>
+                                 <xs:documentation>Das Element enthält die Angabe zur Befreiung vom schriftlichen Teil der Prüfung nach der Ausbilder-Eignungsverordnung.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="niveauDQR" minOccurs="0" type="xbd:Code.EQF">
+                              <xs:annotation>
+                                 <xs:documentation>Das Element enthält die Einordnung des erworbenen Abschlusses in den Deutschen Qualifikationsrahmen. Das Kernstück des DQR sind acht Referenzniveaus, die den acht Niveaus des Europäischen Qualifikationsrahmens (EQR) entsprechen.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="zusaetzlicheAngaben" minOccurs="0" type="xbbd:Bemerkung">
+                     <xs:annotation>
+                        <xs:documentation>Das Element kann eine Vielzahl strukturierter und unstrukturierter Informationen zu den erbrachten Leistungen enthalten, z. B. eine Befreiung von vergleichbaren Prüfungsbestandteilen. Eine Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung wird gesondert in der Eigenschaft befreiungAEVO angegeben.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="gesamtergebnis" type="xbd:Benotung">
+                     <xs:annotation>
+                        <xs:documentation>Das Element fasst die Berechnung der erreichten Note zusammen. Das Gesamtergebnis ist die zusammenfassende Bewertung der Leistungen eines Prüflings, die aus den Einzelbewertungen der verschiedenen Prüfungsteile errechnet wird und den Erfolg oder Misserfolg der gesamten Prüfung widerspiegelt.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="pruefungsdatum" type="xs:date">
+                     <xs:annotation>
+                        <xs:documentation>Das Element enthält das Datum des Bestehens der Fortbildungsprüfung.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="aussteller" type="xbbd:NameOrganisation">
+                     <xs:annotation>
+                        <xs:documentation>Das Element enthält den Namen der zuständigen Stelle, die offizielle Dokumente, Zertifikate oder Nachweise erstellt und ausstellt.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element ref="ds:Signature" minOccurs="0">
+                     <xs:annotation>
+                        <xs:documentation>Hier kann eine digitale Signatur angegeben werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="pruefling.pruefungszeugnis">
+      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage>&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+BBiG, HwO, Pr&amp;uuml;fungsordnungen der zust&amp;auml;ndigen Stellen&lt;/body&gt;
+&lt;/html&gt;</rechtsgrundlage>
          </xs:appinfo>
          <xs:documentation>Diese Nachricht bildet das Prüfungszeugnis der Abschlussprüfung der dualen Ausbildung nach BBiG und HwO ab. Ein Prüfungszeugnis ist ein offizielles Dokument, das die erfolgreiche Teilnahme an einer Prüfung oder einer Ausbildung bescheinigt und die erlangten Qualifikationen sowie die erreichten Leistungen des Prüflings dokumentiert. Dieses enthält Angaben zum Prüfling, zum Prüfungsergebnis, zum erworbenen Abschluss, zur Rechtsgrundlage, zur ausstellenden Stelle, zum Datum der Prüfung und ggf. weitere zusätzliche Angaben.</xs:documentation>
       </xs:annotation>
@@ -71,12 +273,12 @@
                   </xs:element>
                   <xs:element name="gesamtergebnis" type="xbd:Benotung">
                      <xs:annotation>
-                        <xs:documentation>Das Element fasst die Berechnung der erreichten Durchschnittsnote zusammen. Das Gesamtergebnis ist die zusammenfassende Bewertung der Leistungen eines Prüflings, die aus den Einzelbewertungen der verschiedenen Prüfungsteile errechnet wird und den Erfolg oder Misserfolg der gesamten Prüfung widerspiegelt.</xs:documentation>
+                        <xs:documentation>Das Element fasst die Berechnung der erreichten Note zusammen. Das Gesamtergebnis ist die zusammenfassende Bewertung der Leistungen eines Prüflings, die aus den Einzelbewertungen der verschiedenen Prüfungsteile errechnet wird und den Erfolg oder Misserfolg der gesamten Prüfung widerspiegelt.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="allgemeineAngaben">
                      <xs:annotation>
-                        <xs:documentation>Das Element enthält Informationen zum Ausbildungsberuf, eine Übersicht der Prüfungsteile und -bereiche sowie deren Benotung, das DQR-Niveau und ggf. die Befreiung von vergleichbaren Prüfungsbestandteilen.</xs:documentation>
+                        <xs:documentation>Das Element enthält Informationen zum Ausbildungsberuf, eine Übersicht der Prüfungsteile und -bereiche sowie deren Benotung, das DQR-Niveau und ggf. die Berufsschulnote.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
                         <xs:sequence>
@@ -99,7 +301,7 @@
                            </xs:element>
                            <xs:element name="berufsschulnote" minOccurs="0" type="xbd:Benotung">
                               <xs:annotation>
-                                 <xs:documentation>Das Element gibt den Durchschnitt der schulischen Leistungen während der dualen Ausbildung an, der auf Antrag des Prüflings auf dem IHK-Prüfungszeugnis ausgewiesen wird. Der Wert der Berufsschulnote wird üblicherweise als Dezimalzahl mit einer Nachkommastelle angegeben.</xs:documentation>
+                                 <xs:documentation>Das Element gibt das Ergebnis der berufsschulischen Leistungsfeststellungen des Prüflings an, das auf Antrag des Prüflings auf dem Prüfungszeugnis ausgewiesen wird. Der Wert der Berufsschulnote wird üblicherweise als Dezimalzahl mit einer Nachkommastelle angegeben (z. B. 2,3).</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                         </xs:sequence>
@@ -107,17 +309,22 @@
                   </xs:element>
                   <xs:element name="zusaetzlicheAngaben" minOccurs="0" type="xbbd:Bemerkung">
                      <xs:annotation>
-                        <xs:documentation>Das Element enthält Informationen zu besonderen Leistungen und kann eine Vielzahl von weiteren strukturierten und unstrukturierten Informationen zu den erbrachten Leistungen erfassen, z. B. Befreiung von vergleichbaren Prüfungsbestandteilen bei der Umschulungsprüfung oder einer Zweitausbildung.</xs:documentation>
+                        <xs:documentation>Das Element kann eine Vielzahl strukturierter und unstrukturierter Informationen zu den erbrachten Leistungen enthalten, z. B. eine Befreiung von vergleichbaren Prüfungsbestandteilen.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="pruefungsdatum" type="xs:date">
                      <xs:annotation>
-                        <xs:documentation>Das Element enthält das spezifische Datum, an dem eine einzelne Prüfung im Rahmen der Abschlussprüfungen für einen Ausbildungsberuf stattfindet.</xs:documentation>
+                        <xs:documentation>Das Element enthält das Datum des Bestehens der Abschlussprüfung.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="aussteller" type="xbbd:NameOrganisation">
                      <xs:annotation>
-                        <xs:documentation>Das Element enthält Angaben zu einer Institution oder Behörde, die offizielle Dokumente, Zertifikate oder Nachweise erstellt und ausstellt.</xs:documentation>
+                        <xs:documentation>Das Element enthält den Namen der zuständigen Stelle, die offizielle Dokumente, Zertifikate oder Nachweise erstellt und ausstellt.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element ref="ds:Signature" minOccurs="0">
+                     <xs:annotation>
+                        <xs:documentation>Hier kann eine digitale Signatur angegeben werden.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                </xs:sequence>
@@ -125,88 +332,11 @@
          </xs:complexContent>
       </xs:complexType>
    </xs:element>
-   <xs:element name="pruefling.fortbildungszeugnis.0002">
+   <xs:element name="pruefling.zeugnisAEVO">
       <xs:annotation>
-         <xs:documentation>Diese Nachricht bildet das Fortbildungszeugnis nach BBiG und HwO ab, das die erfolgreiche Teilnahme an einer Fortbildungsprüfung bescheinigt. Diese enthält Angaben zum Prüfling, zum Fortbildungsabschluss, zum Prüfungsergebnis, zur Fortbildungsordnung, zur ausstellenden Stelle, zum Datum des Bestehens der Prüfung und ggf. weitere zusätzliche Angaben.</xs:documentation>
-      </xs:annotation>
-      <xs:complexType>
-         <xs:complexContent>
-            <xs:extension base="xbd:Dokument">
-               <xs:sequence>
-                  <xs:element name="pruefling" type="xbbd:Pruefling">
-                     <xs:annotation>
-                        <xs:documentation>Das Element beschreibt eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (in einer Ausbildungs- oder Weiterbildungsstätte) Wissen und Kompetenzen erworben hat, die mit Bildungsnachweisen wie beispielsweise Zeugnissen beurkundet oder bescheinigt werden können.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="allgemeineAngaben">
-                     <xs:annotation>
-                        <xs:documentation>Das Element enthält Informationen zur abgeschlossenen Fortbildung, eine Übersicht der Prüfungsteile und -bereiche sowie deren Benotung, das DQR-Niveau und ggf. die Befreiung von vergleichbaren Prüfungsbestandteilen.</xs:documentation>
-                     </xs:annotation>
-                     <xs:complexType>
-                        <xs:sequence>
-                           <xs:element name="fortbildungsabschluss" type="xbbd:Fortbildungsabschluss">
-                              <xs:annotation>
-                                 <xs:documentation>Das Element enthält die Bezeichnung des Berufs, die Fundstelle der Fortbildungsordnung und ggf. den Schwerpunkt der jeweiligen Fortbildung.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="pruefungsteil"
-                                       maxOccurs="unbounded"
-                                       type="xbbd:PruefungsteilFortbildungszeugnis">
-                              <xs:annotation>
-                                 <xs:documentation>Das Element enthält Angaben zu den Prüfungsteilen und -bereichen sowie deren Bewertung.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="handlungsbereich"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xs:string">
-                              <xs:annotation>
-                                 <xs:documentation>Das Element beschreibt einen spezifischen Kompetenzbereich, in dem die zu prüfende Person Fachwissen und Fähigkeiten nachweisen muss. Jeder Handlungsbereich umfasst bestimmte Aufgaben oder Themenfelder, die in der Prüfungssituation abgedeckt werden, wie z. B. „Jahresabschlüsse aufbereiten und auswerten“ oder „Betriebliche Sachverhalte steuerlich darstellen“.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="befreiung"
-                                       minOccurs="0"
-                                       maxOccurs="unbounded"
-                                       type="xs:string">
-                              <xs:annotation>
-                                 <xs:documentation>Das Element enthält die Angabe zur Befreiung von einzelnen, rechtlich selbstständigen Prüfungsbestandteilen der jeweiligen Fortbildungsprüfung (Prüfungsteile, Prüfungsbereiche, Prüfungsfächer oder Handlungsfächer).</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                           <xs:element name="niveauDQR" minOccurs="0" type="xbd:Code.EQF">
-                              <xs:annotation>
-                                 <xs:documentation>Das Element enthält die Einordnung des erworbenen Abschlusses in den Deutschen Qualifikationsrahmen. Das Kernstück des DQR sind acht Referenzniveaus, die den acht Niveaus des Europäischen Qualifikationsrahmens (EQR) entsprechen.</xs:documentation>
-                              </xs:annotation>
-                           </xs:element>
-                        </xs:sequence>
-                     </xs:complexType>
-                  </xs:element>
-                  <xs:element name="zusaetzlicheAngaben" minOccurs="0" type="xbbd:Bemerkung">
-                     <xs:annotation>
-                        <xs:documentation>Das Element enthält zusätzliche Angaben und kann eine Vielzahl von weiteren strukturierten und unstrukturierten Informationen zu den erbrachten Leistungen erfassen, z. B. Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="gesamtergebnis" type="xbd:Benotung">
-                     <xs:annotation>
-                        <xs:documentation>Das Element fasst die Berechnung der erreichten Durchschnittsnote zusammen. Das Gesamtergebnis ist die zusammenfassende Bewertung der Leistungen eines Prüflings, die aus den Einzelbewertungen der verschiedenen Prüfungsteile errechnet wird und den Erfolg oder Misserfolg der gesamten Prüfung widerspiegelt.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="pruefungsdatum" type="xs:date">
-                     <xs:annotation>
-                        <xs:documentation>Das Element enthält das spezifische Datum, an dem eine einzelne Prüfung im Rahmen der Abschlussprüfungen für einen Ausbildungsberuf stattfindet.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="aussteller" type="xbbd:NameOrganisation">
-                     <xs:annotation>
-                        <xs:documentation>Das Element enthält Angaben zu einer Institution oder Behörde, die offizielle Dokumente, Zertifikate oder Nachweise erstellt und ausstellt.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-               </xs:sequence>
-            </xs:extension>
-         </xs:complexContent>
-      </xs:complexType>
-   </xs:element>
-   <xs:element name="pruefling.zeugnisAEVO.0003">
-      <xs:annotation>
+         <xs:appinfo>
+            <rechtsgrundlage>BBiG, AEVO, Prüfungsordnungen der zuständigen Stellen</rechtsgrundlage>
+         </xs:appinfo>
          <xs:documentation>Diese Nachricht bildet das Zeugnis nach der Ausbilder-Eignungsverordnung (AEVO) vom 21.01.2009 (BGBl. I 2009 S. 88), aus dem hervorgeht, dass der Ausbilder oder die Ausbilderin die berufs- und arbeitspädagogische Qualifikation für die Ausbildung in anerkannten Ausbildungsberufen nach dem Berufsbildungsgesetz nachgewiesen hat.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
@@ -232,7 +362,7 @@
                   </xs:element>
                   <xs:element name="pruefungsdatum" type="xs:date">
                      <xs:annotation>
-                        <xs:documentation>Das Element enthält das spezifische Datum der Feststellung des Gesamtergebnisses der Prüfung.</xs:documentation>
+                        <xs:documentation>Das Element enthält das Datum der Feststellung des Gesamtergebnisses der Prüfung.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="aussteller" type="xbbd:NameOrganisation">
@@ -240,52 +370,9 @@
                         <xs:documentation>Das Element enthält Angaben zu einer Institution oder Behörde, die offizielle Dokumente, Zertifikate oder Nachweise erstellt und ausstellt.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-               </xs:sequence>
-            </xs:extension>
-         </xs:complexContent>
-      </xs:complexType>
-   </xs:element>
-   <xs:element name="auszubildender.eintragungsbestaetigung.0004">
-      <xs:annotation>
-         <xs:documentation>Diese Nachricht bildet die Eintragungsbestätigung der zuständigen Stelle nach BBiG und HwO ab. Die Eintragung des Ausbildungsvertrags in das Verzeichnis der Berufsausbildungsverhältnisse wird dem Ausbildungsbetrieb und dem/der Auszubildenden mit einer schriftlichen Eintragungsbestätigung angezeigt. Diese enthält Angaben zur Ausbildung (personenbezogene Daten zum Auszubildenden, Ausbildungsberuf, Ausbildungszeitraum) und Informationen zum Ausbildungsbetrieb (Name, Anschrift).</xs:documentation>
-      </xs:annotation>
-      <xs:complexType>
-         <xs:complexContent>
-            <xs:extension base="xbd:Dokument">
-               <xs:sequence>
-                  <xs:element name="auszubildender" type="xbbd:Auszubildender">
+                  <xs:element ref="ds:Signature" minOccurs="0">
                      <xs:annotation>
-                        <xs:documentation>Das Element enthält Angaben zur auszubildenden Person, für die eine Eintragungsbestätigung durch die zuständige Stelle ausgestellt wird. Ein Auszubildender ist eine Person, die eine berufliche Ausbildung durchläuft, um theoretische und praktische Kenntnisse sowie Fähigkeiten in einem bestimmten Berufsfeld zu erwerben.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="angabenGesetzlicherVertreter"
-                              minOccurs="0"
-                              maxOccurs="2"
-                              type="xbbd:GesetzlicherVertreter">
-                     <xs:annotation>
-                        <xs:documentation>Das Element bildet Daten des gesetzlichen Vertreters der betroffenen Person ab. Ein gesetzlicher Vertreter eines Auszubildenden ist eine Person, die kraft Gesetzes oder gerichtlicher Anordnung befugt ist, die rechtlichen Angelegenheiten des minderjährigen oder betreuten Auszubildenden zu regeln und zu vertreten.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="angabenAusbildung" type="xbbd:AngabenAusbildung">
-                     <xs:annotation>
-                        <xs:documentation>Das Element enthält die Bezeichnung des Berufs, Informationen zur Vergütung, zum Zeitraum und Prüfungstermin der Berufsausbildung.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="ausbildungsbetrieb"
-                              minOccurs="0"
-                              type="xbbd:Ausbildungsbetrieb">
-                     <xs:annotation>
-                        <xs:documentation>Das Element enthält den Namen Ausbildungsbetriebs. Ein Ausbildungsbetrieb ist ein Unternehmen oder eine Einrichtung, die nach gesetzlichen Vorschriften dazu berechtigt ist, Auszubildende im Rahmen eines anerkannten Ausbildungsberufes praktisch auszubilden.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="aussteller" type="xbbd:StelleAusstellend">
-                     <xs:annotation>
-                        <xs:documentation>Das Element enthält Angaben zu einer Institution oder Behörde, die die Eintragung eines Ausbildungsverhältnisses in das Verzeichnis in die Beufsausbildungsverhältnisse vornimmt und eine Eintragungsbestätigung erstellt und ausstellt.</xs:documentation>
-                     </xs:annotation>
-                  </xs:element>
-                  <xs:element name="eintragungsnummer" type="xbbd:Identifikation">
-                     <xs:annotation>
-                        <xs:documentation>Das Element enthält die zumeist organisationsinterne Nummer der ausstellenden Stelle, unter der der Lehrvertrag geführt wird. Die Eintragungsbestätigung wird mit einer Eintragungsnummer versehen. Diese dient insbesondere dem Schriftverkehr und wird nur einmal vergeben.</xs:documentation>
+                        <xs:documentation>Hier kann eine digitale Signatur angegeben werden.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                </xs:sequence>

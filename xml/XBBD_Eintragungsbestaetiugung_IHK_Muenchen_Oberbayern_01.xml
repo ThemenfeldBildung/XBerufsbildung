@@ -2,16 +2,19 @@
 
 <!-- 
         Nichtnormative Beispielinstanz für eine Eintragungsbestätigung basierend auf einem Musternachweis der IHK München und Oberbayern im Rahmen des Vorhabens XBerufsbildunng
-        Version: XBerufsbildung 0.4 
-        Letzte Aktualisierung: 14.10.2024
+        Version: XBerufsbildung 0.5
+        Letzte Aktualisierung: 04.06.2025
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
-<xbbd:auszubildender.eintragungsbestaetigung.0004
+<xbbd:auszubildender.eintragungsbestaetigung
     xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.4/xsd http://xberufsbildung.de/def/xberufsbildung/0.4/xsd/xberufsbildung.xsd">
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd http://xberufsbildung.de/def/xberufsbildung/0.5/xsd/xberufsbildung.xsd">
     
     <xbd:titel>Eintragung eines Berufsausbildungsvertrags</xbd:titel>
     <xbd:ausstellung>
@@ -49,7 +52,7 @@
                 <xbbd:name>Maier Hoch</xbbd:name>
             </xbbd:familienname>
             <xbbd:vorname>
-                <xbbd:name>Friedrich</xbbd:name>
+                <xbbd:name>Rüdiger</xbbd:name>
             </xbbd:vorname>
         </xbbd:name>
     </xbbd:angabenGesetzlicherVertreter>
@@ -63,7 +66,7 @@
         </xbbd:ausbildungsberuf>
         <xbbd:ausbildungszeitraum>
             <xbbd:beginn>2022-09-01</xbbd:beginn>
-            <xbbd:ende>2024-08-31</xbbd:ende>
+            <xbbd:ende>2025-08-31</xbbd:ende>
         </xbbd:ausbildungszeitraum>
     </xbbd:angabenAusbildung>
 
@@ -94,4 +97,4 @@
         <xbbd:id>3241646 / 1</xbbd:id>
     </xbbd:eintragungsnummer>
     
-</xbbd:auszubildender.eintragungsbestaetigung.0004>
+</xbbd:auszubildender.eintragungsbestaetigung>

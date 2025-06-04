@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XBerufsbildung.Baukasten.Kernkomponenten.Berufsschule">
+   <title>Berufsschule</title>
+   <subtitle>Typ: <emphasis role="codebf">Berufsschule</emphasis>
+   </subtitle><para>Die Klasse beschreibt die Berufsschule als schulischen Lernort in der dualen Ausbildung, an dem sowohl berufsbezogene als auch berufsübergreifende Lerninhalte vermittelt werden.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.Berufsschule">
+      <title>Berufsschule</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../../zeichnungen/XBerufsbildung/Baukasten/Kernkomponenten/Berufsschule.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XBerufsbildung.Baukasten.Kernkomponenten.Berufsschule">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Berufsschule</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">name</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">NameOrganisation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zum offiziellen Namen einer Organisation.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">schulart</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element beinhaltet die Schulart, die eine Schule anbietet. Die Begriffe Schulart und Schulform werden hier synonym verwendet.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ArtDerSchule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Wert aus der Codeliste.</para>
+</entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">identifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Identifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die "identifikation" einer "Organisation" fasst alle Elemente zusammen, die eine Organisation in einem fachlichen Kontext eindeutig unter anderen Organisationen identifiziert.</para>
+
+<para>Anmerkung: Neben der konkreten ID wird der fachliche Typ der ID  wie z. B. Steuernummer,  UmsatzsteuerID festgelegt.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">anschrift</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Anschrift</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Anschrift"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Anschrift"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Anschrift der Berufsschule.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">kommunikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Kommunikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Kommunikation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Kommunikation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Unter "kommunikation" werden Angaben zur Erreichbarkeit einer Organisation über elektronische Kommunikationskanäle zusammengefasst.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../../anhang/verwendung/complexTypes/berufsschule_list.xml"/>
+   <section>
+      <title>Geschäftsregeln</title>
+      <informaltable xml:id="table.XBerufsbildung.Baukasten.Kernkomponenten.Berufsschule.rules">
+         <tgroup cols="2">
+            <colspec colname="id" colnum="1" colwidth="20mm"/>
+            <colspec colname="regel" colnum="2" colwidth="140mm"/>
+            <thead>
+               <row>
+                  <entry>ID</entry>
+                  <entry>Regel / XPath</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">xbbd:schulart</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;B&#x200B;B&#x200B;D&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;</entry>
+                  <entry>XBBD-1000-0002-WNIL_RA: Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </informaltable>
+   </section>
+</section>

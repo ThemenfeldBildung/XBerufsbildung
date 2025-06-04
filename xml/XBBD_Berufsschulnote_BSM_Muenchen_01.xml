@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+        Nichtnormative Beispielinstanz für die Übermittlung der Berufsschulnote im Rahmen des Vorhabens XBerufsbildung
+        Version: XBerufsbildung 0.5
+        Letzte Aktualisierung: 04.06.2025
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+    -->
+
+<xbbd:pruefling.berufsschulnote xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd http://xberufsbildung.de/def/xberufsbildung/0.5/xsd/xberufsbildung.xsd">
+
+    <xbd:titel xml:lang="en-US">Berufsschulnote</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2025-05-04</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>München</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
+    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+        listVersionID="20240925-0">
+        <code>DE</code>
+    </xbd:sprache>
+    <xbbd:berufsschule>
+        <xbbd:name>
+            <xbbd:name>Berufliche Schule am Musterberg</xbbd:name>
+            <xbbd:kurzbezeichnung>BSM</xbbd:kurzbezeichnung>
+        </xbbd:name>
+        <xbbd:schulart>
+            <xbbd:code listURI="urn:xbildung-de:kmk:codeliste:artderschule" listVersionID="1.0">
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/berufsfachschule</code>
+            </xbbd:code>
+        </xbbd:schulart>
+        <xbbd:anschrift>
+            <xbbd:strasse>Am Musterberg</xbbd:strasse>
+            <xbbd:hausnummer>12</xbbd:hausnummer>
+            <xbbd:postfach>1234</xbbd:postfach>
+            <xbbd:postleitzahl>54321</xbbd:postleitzahl>
+            <xbbd:ort>München</xbbd:ort>
+        </xbbd:anschrift>
+        <xbbd:kommunikation>
+            <xbbd:kanal>
+                <code>01</code>
+            </xbbd:kanal>
+            <xbbd:kennung>berufsschule-musterberg@bsm.de</xbbd:kennung>
+        </xbbd:kommunikation>
+    </xbbd:berufsschule>
+
+    <xbbd:zustaendigeStelle>
+        <xbbd:name>
+            <xbbd:name>Industrie- und Handelskammer für Musterstadt</xbbd:name>
+            <xbbd:kurzbezeichnung>IHK Musterstadt</xbbd:kurzbezeichnung>
+        </xbbd:name>
+        <xbbd:anschrift>
+            <xbbd:strasse>Musterstraße</xbbd:strasse>
+            <xbbd:hausnummer>1</xbbd:hausnummer>
+            <xbbd:postfach>2312</xbbd:postfach>
+            <xbbd:postleitzahl>12321</xbbd:postleitzahl>
+            <xbbd:ort>Musterstadt</xbbd:ort>
+        </xbbd:anschrift>
+
+        <xbbd:kommunikation>
+            <xbbd:kanal>
+                <code>01</code>
+            </xbbd:kanal>
+            <xbbd:kennung>ihk-musterstadt@ihkm.de</xbbd:kennung>
+        </xbbd:kommunikation>
+    </xbbd:zustaendigeStelle>
+    <xbbd:pruefling>
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:familienname>
+                <xbbd:name>Musterfrau</xbbd:name>
+            </xbbd:familienname>
+            <xbbd:vorname>
+                <xbbd:name>Erika</xbbd:name>
+            </xbbd:vorname>
+        </xbbd:nameNatuerlichePerson>
+        <xbbd:geburt>
+            <xbbd:datum>
+                <xbd:jahrMonatTag>2006-05-04</xbd:jahrMonatTag>
+            </xbbd:datum>
+            <xbbd:geburtsort>
+                <xbbd:ort>Stadt am Musterfluß</xbbd:ort>
+            </xbbd:geburtsort>
+        </xbbd:geburt>
+    </xbbd:pruefling>
+    <xbbd:ausbildungsberuf>
+        <xbbd:bezeichnung>Elektronikerin für Maschinen und Antriebstechnik</xbbd:bezeichnung>
+        <xbbd:fundstelle>BGBl. I S. 662, 714</xbbd:fundstelle>        
+    </xbbd:ausbildungsberuf>
+    <xbbd:benotung>
+        <xbd:note>2</xbd:note>
+        <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+    </xbbd:benotung>
+
+</xbbd:pruefling.berufsschulnote>

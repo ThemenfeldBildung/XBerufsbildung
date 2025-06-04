@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><!ENTITY nachricht.berufsschulnote "pruefling.berufsschulnote">
+                    <!ENTITY nachricht.title.berufsschulnote "pruefling.berufsschulnote">
+                    <!ENTITY nachricht.ref.berufsschulnote "<link linkend='XBerufsbildung.Nachweise.pruefling.berufsschulnote'>Nachricht berufsschulnote</link>">
+                    <!ENTITY nachricht.eintragungsbestaetigung "auszubildender.eintragungsbestaetigung">
+                    <!ENTITY nachricht.title.eintragungsbestaetigung "auszubildender.eintragungsbestaetigung">
+                    <!ENTITY nachricht.ref.eintragungsbestaetigung "<link linkend='XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung'>Nachricht eintragungsbestaetigung</link>">
+                    <!ENTITY nachricht.fortbildungszeugnis "pruefling.fortbildungszeugnis">
+                    <!ENTITY nachricht.title.fortbildungszeugnis "pruefling.fortbildungszeugnis">
+                    <!ENTITY nachricht.ref.fortbildungszeugnis "<link linkend='XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis'>Nachricht fortbildungszeugnis</link>">
+                    <!ENTITY nachricht.pruefungszeugnis "pruefling.pruefungszeugnis">
+                    <!ENTITY nachricht.title.pruefungszeugnis "pruefling.pruefungszeugnis">
+                    <!ENTITY nachricht.ref.pruefungszeugnis "<link linkend='XBerufsbildung.Nachweise.pruefling.pruefungszeugnis'>Nachricht pruefungszeugnis</link>">
+                    <!ENTITY nachricht.zeugnisAEVO "pruefling.zeugnisAEVO">
+                    <!ENTITY nachricht.title.zeugnisAEVO "pruefling.zeugnisAEVO">
+                    <!ENTITY nachricht.ref.zeugnisAEVO "<link linkend='XBerufsbildung.Nachweise.pruefling.zeugnisAEVO'>Nachricht zeugnisAEVO</link>">
+                    

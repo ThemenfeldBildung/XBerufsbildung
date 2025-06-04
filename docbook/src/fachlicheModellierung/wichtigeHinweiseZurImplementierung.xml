@@ -11,6 +11,29 @@
     </info>
     <variablelist>
         <varlistentry>
+            <term>Grundlegende Designentscheidungen</term>
+            <listitem>
+                <para>Das Teilmodul XBerufsschule ist in verschiedener Weise mit anderen
+                    Standardisierungsvorhaben verknüpft. Grundlegende Designentscheidungen des
+                    Standards XBerufsschule lassen sich aus der <link
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="https://xbildung.de/web/spezifikation">Spezifikation
+                        XBildung</link> entnehmen. Um den folgenden Abschnitt zu verstehen, sind
+                    dabei zwei Aspekte hervorzuheben:</para>
+                    <orderedlist>
+                        <listitem>
+                            <para>Die Nachnutzung von Komponenten aus dem XÖV-Baukasten der Koordinierungsstelle für IT-Standards (KOSIT): Diese enthalten grundlegende Klassen des Datenaustauschs, die für alle
+                                XÖV-Standards nutzbar und für XBerufsschule spezifisch beschränkt oder erweitert werden.</para>
+                        </listitem>
+                        <listitem>
+                            <para>Die gemeinsame Basis von XBildung für alle XÖV-Vorhaben im Bildungsbereich: XBerufsschule verwendet gemeinsam mit anderen Teilmodulen semantisch übergeordnete Klassen, die für XBerufsschule spezifisch beschränkt oder erweitert werden. Ein Beispiel hierfür ist die Klasse „Benotung“,
+                                die für alle Bereiche der Bildung nutzbar ist.</para>
+                        </listitem>
+                    </orderedlist>
+                <para/>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
             <term>Versionierung</term>
             <listitem>
                 <para>Die Version einer XML-Nachricht wird über den verwendeten Namespace

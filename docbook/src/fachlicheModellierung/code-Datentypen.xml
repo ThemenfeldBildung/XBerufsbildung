@@ -13,6 +13,9 @@
         href="../../build/docBook/dokumente/anhang/codes/code-uebersichtstabelle.xml"/>
     
     <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/anhang/codes/code.pruefungsteilaevo.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
         href="../../build/docBook/dokumente/anhang/codes/code.rechtsgrundlageabschlusszeugnis.xml"/>
 
 </chapter>
