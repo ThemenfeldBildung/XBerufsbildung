@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    Testdatei: T01_pruefungszeugnis_min_positiv.xml
+    Datei enthält alle Pflichtfelder eines Abschluss-Prüfungszeugnisses nach XBBD v0.5
+    Letzte Aktualisierung: 11.06.2025
+    Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+-->
+
+<xbbd:pruefling.pruefungszeugnis
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd http://xberufsbildung.de/def/xberufsbildung/0.5/xsd/xberufsbildung.xsd">
+    
+    <xbd:sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+    
+    <xbbd:rechtsgrundlage>
+        <xbbd:code>
+            <code>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig</code>
+        </xbbd:code>
+    </xbbd:rechtsgrundlage>
+    
+    <xbbd:pruefling>
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:familienname>
+                <xbbd:name>Musterfrau</xbbd:name>
+            </xbbd:familienname>
+            <xbbd:vorname>
+                <xbbd:name>Magdalena</xbbd:name>
+            </xbbd:vorname>
+        </xbbd:nameNatuerlichePerson>
+        <xbbd:geburt>
+            <xbbd:datum>
+                <xbd:jahrMonatTag>1997-04-01</xbd:jahrMonatTag>
+            </xbbd:datum>
+        </xbbd:geburt>
+    </xbbd:pruefling>
+    
+    <xbbd:gesamtergebnis>
+        <xbd:punkte>81</xbd:punkte>
+    </xbbd:gesamtergebnis>
+    
+    <xbbd:allgemeineAngaben>
+        <xbbd:ausbildungsberuf>
+            <xbbd:bezeichnung>Elektronikerin für Maschinen und Antriebstechnik</xbbd:bezeichnung>
+        </xbbd:ausbildungsberuf>
+        <xbbd:pruefungsteil>
+            <xbbd:bezeichnung>Teil 1 der Abschlussprüfung</xbbd:bezeichnung>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Arbeitsauftrag</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+        </xbbd:pruefungsteil>
+    </xbbd:allgemeineAngaben>
+    
+    <xbbd:pruefungsdatum>2019-09-13</xbbd:pruefungsdatum>
+    
+    <xbbd:aussteller>
+        <xbbd:name>IHK München Oberbayern</xbbd:name>
+    </xbbd:aussteller>
+    
+</xbbd:pruefling.pruefungszeugnis>

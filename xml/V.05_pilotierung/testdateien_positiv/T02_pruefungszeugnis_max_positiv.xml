@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    Testdatei:T02_pruefungszeugnis_max_positiv
+    Datei enthält exemplarisch alle möglichen Felder eines Abschluss-Prüfungszeugnisses nach XBBD v0.5
+    Letzte Aktualisierung: 11.06.2025
+    Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt 
+-->
+
+<xbbd:pruefling.pruefungszeugnis
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd http://xberufsbildung.de/def/xberufsbildung/0.5/xsd/xberufsbildung.xsd">
+    
+    <!-- Angaben zum Dokument -->
+        <xbd:titel>Prüfungszeugnis</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2019-05-13</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>München</xbd:ort>
+            <xbd:staat
+                listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
+                listVersionID="listVersionID0">
+                <code>000</code>
+                <name>deutsch</name>
+            </xbd:staat>
+        </xbd:ort>
+    </xbd:ausstellung>
+    <xbd:gueltigkeitsdatum>2019-05-13</xbd:gueltigkeitsdatum>
+    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20240925-0">
+        <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+    
+    <!-- Rechtsgrundlage -->
+    <xbbd:rechtsgrundlage>
+        <xbbd:code>
+            <code>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste</code>
+        </xbbd:code>
+        <xbbd:nichtGelisteterWert>§37 Abs. 2 BBiG</xbbd:nichtGelisteterWert>
+    </xbbd:rechtsgrundlage>
+    
+    <!-- Angaben zum Prüfling -->
+    <xbbd:pruefling>
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:titel>Dr</xbbd:titel>
+            <xbbd:anrede>Frau</xbbd:anrede>
+            <xbbd:familienname>
+                <xbbd:name>Musterfrau</xbbd:name>
+                <xbbd:nichtVorhanden>false</xbbd:nichtVorhanden>
+            </xbbd:familienname>     
+            <xbbd:geburtsname>
+                <xbbd:name>Mustermann</xbbd:name>
+                <xbbd:nichtVorhanden>false</xbbd:nichtVorhanden>
+            </xbbd:geburtsname>
+            
+            <xbbd:vorname>    
+                <xbbd:name>Magdalena</xbbd:name>
+                <xbbd:nichtVorhanden>false</xbbd:nichtVorhanden>
+            </xbbd:vorname>  
+        </xbbd:nameNatuerlichePerson>
+        <xbbd:geburt>
+            <xbbd:datum>
+                <xbd:jahrMonatTag>1997-04-01</xbd:jahrMonatTag>
+            </xbbd:datum>
+            <xbbd:geburtsort>
+                <xbbd:ort>Berlin</xbbd:ort>
+                <xbbd:staat
+                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit" listVersionID="listVersionID15">
+                    <code>000</code>
+                    <name>deutsch</name>
+                </xbbd:staat>
+            </xbbd:geburtsort>
+        </xbbd:geburt>
+        <xbbd:identifikationsnummer>
+            <xbbd:id>68095632719</xbbd:id>
+            <xbbd:beschreibung>ID nach Identifikationsnummerngesetz (abgeleitet von SteuerID)</xbbd:beschreibung>
+            <xbbd:gueltigkeit>
+                <xbbd:beginn>1997-04-01</xbbd:beginn>
+                <xbbd:zusatz>Diese Nummer gilt für unbegrenzte Zeit</xbbd:zusatz>
+            </xbbd:gueltigkeit>
+        </xbbd:identifikationsnummer>
+    </xbbd:pruefling>
+    
+    <!-- Angaben zum Gesamtergebnis -->
+    <xbbd:gesamtergebnis>
+        <xbd:note>2</xbd:note>
+        <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+        <xbd:punkte>81</xbd:punkte>
+        <xbd:bewertungsschemaNote>
+            <xbd:schemaURI>https://www.bundesanzeiger.de/pub/de/amtliche-veroeffentlichung?5</xbd:schemaURI>
+            <xbd:beschreibung>
+                100-90 Punkte Note 1 = sehr gut
+                unter 92 - 81 Punkte Note 2 = gut
+                unter 81 - 67 Punkte Note 3 = befriedigend
+                unter 67 - 50 Punkte Note 4 = ausreichend
+                unter 50 - 30 Punkte Note 5 = mangelhaft
+                unter 30 Punkte Note 6 = ungenügend
+            </xbd:beschreibung>
+            <xbd:weitereInformationen>BAnz AT 14.09.2022 S2</xbd:weitereInformationen>
+            <xbd:besteBewertung>1</xbd:besteBewertung>
+            <xbd:bestandenAbBewertung>4</xbd:bestandenAbBewertung>
+            <xbd:schlechtesteBewertung>6</xbd:schlechtesteBewertung>
+        </xbd:bewertungsschemaNote>
+        <xbd:bewertungsschemaPunkte>
+            <xbd:schemaURI>https://www.bundesanzeiger.de/pub/de/amtliche-veroeffentlichung?5</xbd:schemaURI>
+            <xbd:beschreibung>
+                100-90 Punkte Note 1 = sehr gut,
+                unter 92 - 81 Punkte Note 2 = gut
+                unter 81 - 67 Punkte Note 3 = befriedigend
+                unter 67 - 50 Punkte Note 4 = ausreichend
+                unter 50 - 30 Punkte Note 5 = mangelhaft
+                unter 30 Punkte Note 6 = ungenügend
+            </xbd:beschreibung>
+            <xbd:weitereInformationen>BAnz AT 14.09.2022 S2</xbd:weitereInformationen>
+            <xbd:besteBewertung>100</xbd:besteBewertung>
+            <xbd:bestandenAbBewertung>50</xbd:bestandenAbBewertung>
+            <xbd:schlechtesteBewertung>0</xbd:schlechtesteBewertung>
+        </xbd:bewertungsschemaPunkte>
+    </xbbd:gesamtergebnis>
+    
+    <!-- Angaben zum Beruf -->
+    <xbbd:allgemeineAngaben>
+        <xbbd:ausbildungsberuf>
+            <xbbd:bezeichnung>Elektronikerin für Maschinen und Antriebstechnik</xbbd:bezeichnung>
+            <xbbd:fundstelle>BGBl. I, 2008, S. 1490</xbbd:fundstelle>
+            <xbbd:binnendifferenzierung>
+                <xbbd:fachrichtung>Beispielfachrichtung</xbbd:fachrichtung>
+            </xbbd:binnendifferenzierung>
+        </xbbd:ausbildungsberuf>
+        
+        <!-- Angaben zur Prüfungsleistungen -->
+        <xbbd:pruefungsteil>
+            <xbbd:bezeichnung>Teil 1 der Abschlussprüfung</xbbd:bezeichnung>
+            <xbbd:benotung>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+            </xbbd:benotung>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Arbeitsauftrag</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                    <xbd:punkte>78</xbd:punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+        </xbbd:pruefungsteil>
+        <xbbd:pruefungsteil>
+            <xbbd:bezeichnung>Teil 2 der Abschlussprüfung</xbbd:bezeichnung>
+            <xbbd:benotung>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+            </xbbd:benotung>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Betrieblicher Auftrag</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                    <xbd:punkte>90</xbd:punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Systementwurf</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>ausreichend</xbd:wortbezeichnung>
+                    <xbd:punkte>56</xbd:punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Funktions- und Systemanalyse</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                    <xbd:punkte>100</xbd:punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+            <xbbd:pruefungsbereich>
+                <xbbd:bezeichnung>Wirtschafts- und Sozialkunde</xbbd:bezeichnung>
+                <xbbd:benotung>
+                    <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                    <xbd:punkte>78</xbd:punkte>
+                </xbbd:benotung>
+            </xbbd:pruefungsbereich>
+        </xbbd:pruefungsteil>   
+        
+        <!-- DQR-Niveau -->
+        <xbbd:niveauDQR>
+            <code>http://data.europa.eu/snb/eqf/4</code>
+        </xbbd:niveauDQR>
+        
+        <!-- Berufsschulnote -->
+        <xbbd:berufsschulnote>
+            <xbd:note>1.5</xbd:note>
+            <xbd:bewertungsschemaNote>
+                <xbd:schemaURI>https://www.bundesanzeiger.de/pub/de/amtliche-veroeffentlichung?8</xbd:schemaURI>
+            </xbd:bewertungsschemaNote>
+        </xbbd:berufsschulnote>
+    </xbbd:allgemeineAngaben>
+    
+    <!-- zusaetzliche Angaben - Befreiung -->
+    <xbbd:zusaetzlicheAngaben>
+        <xbbd:art>
+            <code>http://xbildung.de/def/xbildung/2025-02-04/code/artderbemerkung/befreiung</code>
+        </xbbd:art>
+        <xbbd:beschreibung>Frau Magdalena Musterfrau ist nach § 5 der Beispiel-Verordnung vom schriftlichen Teil einer Prüfung befreit.</xbbd:beschreibung>
+    </xbbd:zusaetzlicheAngaben>
+
+    <xbbd:pruefungsdatum>2019-04-15</xbbd:pruefungsdatum>
+    
+    <xbbd:aussteller>
+        <xbbd:name>Industrie- und Handelskammer für München und Oberbayern</xbbd:name>
+        <xbbd:kurzbezeichnung>IHK München Oberbayern</xbbd:kurzbezeichnung>
+    </xbbd:aussteller>
+
+</xbbd:pruefling.pruefungszeugnis>
