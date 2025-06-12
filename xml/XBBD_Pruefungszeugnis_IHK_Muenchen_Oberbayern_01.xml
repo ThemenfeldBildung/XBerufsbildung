@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.5/sch/xberufsbildung-schematron.sch" 
+<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.3/sch/xberufsbildung-schematron.sch" 
             type="application/xml" 
             schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <!-- 
-        Nichtnormative Beispielinstanz für ein Prüfungszeugnis basierend auf einem Musterzeugnis der IHK München-Oberbayern im Rahmen des Vorhabens XBerufsbildung
-        Musternachweis: https://xbildung.de/def/rep/by/example/Pruefungszeugnis_IHK_Muenchen_mit_Erlauuterung_2.pdf
-        Version: XBerufsbildung 0.5
-        Letzte Aktualisierung: 04.06.2025
+        Nichtnormative Beispielinstanz für ein Prüfungszeugnis basierend auf einem Musterzeugnis der IHK München-Oberbayern im Rahmen des Vorhabens XBerufsbildunng
+        Version: XBerufsbildung 0.3
+        Letzte Aktualisierung: 23.05.2024
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
-<xbbd:pruefling.pruefungszeugnis
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+<xbbd:pruefling.pruefungszeugnis.0001 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
-    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd http://xberufsbildung.de/def/xberufsbildung/0.5/xsd/xberufsbildung.xsd">
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd http://xberufsbildung.de/def/xberufsbildung/0.3/xsd/xberufsbildung.xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd">
     
-    <xbd:titel>Prüfungszeugnis</xbd:titel>
-    <xbd:ausstellung>
-        <xbd:datum>2019-05-13</xbd:datum>
-        <xbd:ort>
-            <xbd:ort>München</xbd:ort>
-        </xbd:ort>
-    </xbd:ausstellung>
-    <xbd:sprache>
+    <titel>Prüfungszeugnis</titel>
+    
+    <ausstellung>
+        <datum>2023-11-21</datum>
+        <ort>
+            <ort>München</ort>
+        </ort>
+    </ausstellung>
+    
+    <sprache>
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
-    </xbd:sprache>
-
+    </sprache>
+    
     <xbbd:rechtsgrundlage>
         <xbbd:code>
-            <code>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig</code>
+            <code>http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37_bbig</code>
         </xbbd:code>
     </xbbd:rechtsgrundlage>
     
@@ -48,26 +46,39 @@
         </xbbd:nameNatuerlichePerson>
         <xbbd:geburt>
             <xbbd:datum>
-                <xbd:jahrMonatTag>1997-04-01</xbd:jahrMonatTag>
+                <jahrMonatTag>1997-04-01</jahrMonatTag>
             </xbbd:datum>
         </xbbd:geburt>
     </xbbd:pruefling>
     
     <xbbd:gesamtergebnis>
-        <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
-        <xbd:punkte>81</xbd:punkte>
-        <xbd:bewertungsschemaPunkte>
-            <xbd:beschreibung>
+        <wortbezeichnung>gut</wortbezeichnung>
+        <punkte>81</punkte>
+        <bewertungsschemaNote>
+            <beschreibung>
                 100-90 Punkte Note 1 = sehr gut,
                 unter 92 - 81 Punkte Note 2 = gut,
                 unter 81 - 67 Punkte Note 3 = befriedigend,
                 unter 67 - 50 Punkte Note 4 = ausreichend,
                 unter 50 - 30 Punkte Note 5 = mangelhaft,
-                unter 30 Punkte Note 6 = ungenügend</xbd:beschreibung>
-            <xbd:besteBewertung>100</xbd:besteBewertung>
-            <xbd:bestandenAbBewertung>50</xbd:bestandenAbBewertung>
-            <xbd:schlechtesteBewertung>0</xbd:schlechtesteBewertung>
-        </xbd:bewertungsschemaPunkte>
+                unter 30 Punkte Note 6 = ungenügend
+            </beschreibung>
+            <besteBewertung>1</besteBewertung>
+            <bestandenAbBewertung>4</bestandenAbBewertung>
+            <schlechtesteBewertung>6</schlechtesteBewertung>
+        </bewertungsschemaNote>
+        <bewertungsschemaPunkte>
+            <beschreibung>
+                100-90 Punkte Note 1 = sehr gut,
+                unter 92 - 81 Punkte Note 2 = gut,
+                unter 81 - 67 Punkte Note 3 = befriedigend,
+                unter 67 - 50 Punkte Note 4 = ausreichend,
+                unter 50 - 30 Punkte Note 5 = mangelhaft,
+                unter 30 Punkte Note 6 = ungenügend</beschreibung>
+            <besteBewertung>100</besteBewertung>
+            <bestandenAbBewertung>50</bestandenAbBewertung>
+            <schlechtesteBewertung>00</schlechtesteBewertung>
+        </bewertungsschemaPunkte>
     </xbbd:gesamtergebnis>
     
     <xbbd:allgemeineAngaben>
@@ -75,53 +86,55 @@
             <xbbd:bezeichnung>Elektronikerin für Maschinen und Antriebstechnik</xbbd:bezeichnung>
             <xbbd:fundstelle>BGBl. I S. 662, 714</xbbd:fundstelle>            
         </xbbd:ausbildungsberuf>
-        <xbbd:pruefungsteil>
-            <xbbd:bezeichnung>Teil 1 der Abschlussprüfung</xbbd:bezeichnung>
-            <xbbd:pruefungsbereich>
-                <xbbd:bezeichnung>Arbeitsauftrag</xbbd:bezeichnung>
-                <xbbd:benotung>
-                    <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                    <xbd:punkte>78</xbd:punkte>
-                </xbbd:benotung>
-            </xbbd:pruefungsbereich>
-        </xbbd:pruefungsteil>    
-     <xbbd:pruefungsteil>
-         <xbbd:bezeichnung>Teil 2 der Abschlussprüfung</xbbd:bezeichnung>
-         <xbbd:pruefungsbereich>
-             <xbbd:bezeichnung>Betrieblicher Auftrag</xbbd:bezeichnung>
-             <xbbd:benotung>
-                 <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
-                 <xbd:punkte>90</xbd:punkte>
-             </xbbd:benotung>
-         </xbbd:pruefungsbereich>
-         <xbbd:pruefungsbereich>
-             <xbbd:bezeichnung>Systementwurf</xbbd:bezeichnung>
-             <xbbd:benotung>
-                 <xbd:wortbezeichnung>ausreichend</xbd:wortbezeichnung>
-                 <xbd:punkte>56</xbd:punkte>
-             </xbbd:benotung>
-         </xbbd:pruefungsbereich>
-         <xbbd:pruefungsbereich>
-             <xbbd:bezeichnung>Funktions- und Systemanalyse</xbbd:bezeichnung>
-             <xbbd:benotung>
-                 <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
-                 <xbd:punkte>100</xbd:punkte>
-             </xbbd:benotung>
-         </xbbd:pruefungsbereich>
-         <xbbd:pruefungsbereich>
-             <xbbd:bezeichnung>Wirtschafts- und Sozialkunde</xbbd:bezeichnung>
-             <xbbd:benotung>
-                 <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                 <xbd:punkte>78</xbd:punkte>
-             </xbbd:benotung>
-         </xbbd:pruefungsbereich>
-     </xbbd:pruefungsteil>
+        
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 1 der Abschlussprüfung</xbbd:pruefungsteil>
+            <xbbd:pruefungsbereich>Arbeitsauftrag</xbbd:pruefungsbereich>
+            <xbbd:benotung>
+                <wortbezeichnung>befriedigend</wortbezeichnung>
+                <punkte>78</punkte>
+            </xbbd:benotung>
+        </xbbd:pruefungsuebersicht>
+        
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 2 der Abschlussprüfung</xbbd:pruefungsteil>
+            <xbbd:pruefungsbereich>Betrieblicher Auftrag</xbbd:pruefungsbereich>
+            <xbbd:benotung>
+                <wortbezeichnung>gut</wortbezeichnung>
+                <punkte>90</punkte>
+            </xbbd:benotung>
+        </xbbd:pruefungsuebersicht>
+        
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 2 der Abschlussprüfung</xbbd:pruefungsteil>
+            <xbbd:pruefungsbereich>Systementwurf</xbbd:pruefungsbereich>
+            <xbbd:benotung>
+                <wortbezeichnung>ausreichend</wortbezeichnung>
+                <punkte>56</punkte>
+            </xbbd:benotung>   
+        </xbbd:pruefungsuebersicht>
+        
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 2 der Abschlussprüfung</xbbd:pruefungsteil>
+            <xbbd:pruefungsbereich>Funktions- und Systemanalyse</xbbd:pruefungsbereich>
+            <xbbd:benotung>
+                <wortbezeichnung>sehr gut</wortbezeichnung>
+                <punkte>100</punkte>
+            </xbbd:benotung>
+        </xbbd:pruefungsuebersicht>
+        
+        <xbbd:pruefungsuebersicht>
+            <xbbd:pruefungsteil>Teil 2 der Abschlussprüfung</xbbd:pruefungsteil>
+            <xbbd:pruefungsbereich>Wirtschafts- und Sozialkunde</xbbd:pruefungsbereich>
+            <xbbd:benotung>
+                <wortbezeichnung>befriedigend</wortbezeichnung>
+                <punkte>78</punkte>
+            </xbbd:benotung>
+        </xbbd:pruefungsuebersicht>
+        
         <xbbd:niveauDQR listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
             <code>4</code>
         </xbbd:niveauDQR>
-        <xbbd:berufsschulnote>
-            <xbd:note>1.5</xbd:note>
-        </xbbd:berufsschulnote>
     </xbbd:allgemeineAngaben>
     
     <xbbd:pruefungsdatum>2019-05-13</xbbd:pruefungsdatum>
@@ -130,4 +143,4 @@
         <xbbd:name>IHK München Oberbayern</xbbd:name>
     </xbbd:aussteller>
     
-</xbbd:pruefling.pruefungszeugnis>
+</xbbd:pruefling.pruefungszeugnis.0001>

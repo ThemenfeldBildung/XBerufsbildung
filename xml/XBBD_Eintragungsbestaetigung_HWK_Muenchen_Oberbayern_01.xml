@@ -2,37 +2,35 @@
 
 <!-- 
         Nichtnormative Beispielinstanz für eine Eintragungsbestätigung basierend auf einem Musternachweis der HWK München und Oberbayern im Rahmen des Vorhabens XBerufsbildunng
-        Musternachweis: https://xbildung.de/def/rep/by/example/eintragungsbestaetigung_lehrlingsrolle_muenchen_oberbayern.pdf
-        Version: XBerufsbildung 0.5
-        Letzte Aktualisierung: 04.06.2025
+        Version: XBerufsbildung 0.3
+        Letzte Aktualisierung: 23.05.2024
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
-<xbbd:auszubildender.eintragungsbestaetigung
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
-    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
-    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+<xbbd:auszubildender.eintragungsbestaetigung.0003
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd http://xberufsbildung.de/def/xberufsbildung/0.5/xsd/xberufsbildung.xsd">
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd http://xberufsbildung.de/def/xberufsbildung/0.3/xsd/xberufsbildung.xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd">
     
-    <xbd:titel>Eintragungsbestätigung</xbd:titel>
-    <xbd:ausstellung>
-        <xbd:datum>2015-08-18</xbd:datum>
-        <xbd:ort>
-            <xbd:ort>München</xbd:ort>
-            <xbd:staat listVersionID="2024-08-01">
+    <titel>Eintragungsbestätigung</titel>
+    <ausstellung>
+        <datum>2012-08-18</datum>
+        <ort>
+            <ort>München</ort>
+            <staat listVersionID="2023-04-24">
                 <code>000</code>
                 <name>Deutschland</name>
-            </xbd:staat>
-        </xbd:ort>
-    </xbd:ausstellung>
-    <xbd:sprache>
+            </staat>
+        </ort>
+    </ausstellung>
+   
+    <sprache>
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
-    </xbd:sprache>
+    </sprache>
     
     <xbbd:auszubildender>
+        
         <xbbd:nameNatuerlichePerson>
             <xbbd:anrede>Herr</xbbd:anrede>
             <xbbd:familienname>
@@ -42,32 +40,39 @@
                 <xbbd:name>Tom</xbbd:name>
             </xbbd:vorname>
         </xbbd:nameNatuerlichePerson>
+        
         <xbbd:geburt>
             <xbbd:datum>
-                <xbd:jahrMonatTag>1985-12-31</xbd:jahrMonatTag>
+                <jahrMonatTag>1985-12-31</jahrMonatTag>
             </xbbd:datum>
             <xbbd:geburtsort>
                 <xbbd:ort>Testhausen</xbbd:ort>
             </xbbd:geburtsort>
-        </xbbd:geburt>  
+        </xbbd:geburt>
+        
         <xbbd:geschlecht> 
             <code>m</code>
         </xbbd:geschlecht>
+        
     </xbbd:auszubildender>
     
-    <xbbd:angabenAusbildung>  
+    <xbbd:angabenAusbildung>
+        
         <xbbd:ausbildungsberuf>
             <xbbd:bezeichnung>Bürokaufmann</xbbd:bezeichnung>
         </xbbd:ausbildungsberuf>
+        
         <xbbd:ausbildungszeitraum>
             <xbbd:beginn>2013-09-01</xbbd:beginn>
-            <xbbd:ende>2016-08-31</xbbd:ende>
+            <xbbd:ende>2013-08-31</xbbd:ende>
         </xbbd:ausbildungszeitraum>
+        
     </xbbd:angabenAusbildung>
     
-    <xbbd:ausbildungsbetrieb>    
+    <xbbd:ausbildungsbetrieb>
+        
         <xbbd:name>
-            <xbbd:name>Trinkhallen GmbH</xbbd:name>
+            <xbbd:name>Testfirma</xbbd:name>
         </xbbd:name>
         
         <xbbd:anschrift>
@@ -91,8 +96,8 @@
     </xbbd:aussteller>
     
     <xbbd:eintragungsnummer>
-        <xbbd:id>99999999999</xbbd:id>
+        <xbbd:id>99999999999999</xbbd:id>
         <xbbd:beschreibung>Nummer des Lehrvertrags</xbbd:beschreibung>
     </xbbd:eintragungsnummer>
     
-</xbbd:auszubildender.eintragungsbestaetigung>
+</xbbd:auszubildender.eintragungsbestaetigung.0003>
