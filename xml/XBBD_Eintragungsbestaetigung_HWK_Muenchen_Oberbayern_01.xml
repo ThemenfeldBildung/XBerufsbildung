@@ -2,15 +2,15 @@
 
 <!-- 
         Nichtnormative Beispielinstanz für eine Eintragungsbestätigung basierend auf einem Musternachweis der HWK München und Oberbayern im Rahmen des Vorhabens XBerufsbildunng
-        Version: XBerufsbildung 0.3
-        Letzte Aktualisierung: 23.05.2024
+        Version: XBerufsbildung 0.2
+        Letzte Aktualisierung: 14.03.2024
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
 <xbbd:auszubildender.eintragungsbestaetigung.0003
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd http://xberufsbildung.de/def/xberufsbildung/0.3/xsd/xberufsbildung.xsd"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd http://xberufsbildung.de/def/xberufsbildung/0.2/xsd/xberufsbildung.xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd"
     xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd">
     
     <titel>Eintragungsbestätigung</titel>
@@ -51,7 +51,10 @@
         </xbbd:geburt>
         
         <xbbd:geschlecht> 
-            <code>m</code>
+            <xbbd:geschlecht>
+                <code>m</code>
+                <name>männlich</name>
+            </xbbd:geschlecht>
         </xbbd:geschlecht>
         
     </xbbd:auszubildender>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <!-- 
         Nichtnormative Beispielinstanz für ein Fortbildungszeugnis basierend auf einem Musterzeugnis der IHK Saarland im Rahmen des Vorhabens XBerufsbildunng
-        Version: XBerufsbildung 0.3 
-        Letzte Aktualisierung: 23.05.2024
+        Version: XBerufsbildung 0.2 
+        Letzte Aktualisierung: 14.03.2024
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
 <xbbd:pruefling.fortbildungszeugnis.0002
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd http://xberufsbildung.de/def/xberufsbildung/0.3/xsd/xberufsbildung.xsd"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd http://xberufsbildung.de/def/xberufsbildung/0.2/xsd/xberufsbildung.xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd"
     xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd">
     
     <titel>Zeugnis</titel>
@@ -56,36 +56,36 @@
            <xbbd:benotung>
                <wortbezeichnung>befriedigend</wortbezeichnung>
            </xbbd:benotung>
-           <xbbd:qualifikationsinhalt>
+           <xbbd:pruefungsbereich>
                <xbbd:bezeichnung>Marketing-Management</xbbd:bezeichnung>
                <xbbd:benotung>
                    <punkte>63</punkte>
                </xbbd:benotung>
-           </xbbd:qualifikationsinhalt>
-           <xbbd:qualifikationsinhalt>
+           </xbbd:pruefungsbereich>
+           <xbbd:pruefungsbereich>
                <xbbd:bezeichnung>Bilanz- und Steuerpolitik des Unternehmens</xbbd:bezeichnung>
                <xbbd:benotung>
                    <punkte>67</punkte>
                </xbbd:benotung>
-           </xbbd:qualifikationsinhalt>
-           <xbbd:qualifikationsinhalt>
+           </xbbd:pruefungsbereich>
+           <xbbd:pruefungsbereich>
                <xbbd:bezeichnung>Finanzwirtschaftliche Steuerung des Unternehmens</xbbd:bezeichnung>
                <xbbd:benotung>
                    <punkte>69</punkte>
                </xbbd:benotung>
-           </xbbd:qualifikationsinhalt>
-           <xbbd:qualifikationsinhalt>
+           </xbbd:pruefungsbereich>
+           <xbbd:pruefungsbereich>
                <xbbd:bezeichnung>Rechtliche Rahmenbedingungen der Unternehmensführung</xbbd:bezeichnung>
                <xbbd:benotung>
                    <punkte>82</punkte>
                </xbbd:benotung>
-           </xbbd:qualifikationsinhalt>
-           <xbbd:qualifikationsinhalt>
+           </xbbd:pruefungsbereich>
+           <xbbd:pruefungsbereich>
                <xbbd:bezeichnung>Europäische und Internationale Wirtschaftsbeziehungen</xbbd:bezeichnung>
                <xbbd:benotung>
                    <punkte>85</punkte>
                </xbbd:benotung>
-           </xbbd:qualifikationsinhalt>      
+           </xbbd:pruefungsbereich>
        </xbbd:pruefungsuebersicht>
        
        <xbbd:pruefungsuebersicht>
@@ -93,24 +93,24 @@
            <xbbd:benotung>
                <wortbezeichnung>befriedigend</wortbezeichnung>
            </xbbd:benotung>
-           <xbbd:qualifikationsinhalt>
+           <xbbd:pruefungsbereich>
                <xbbd:bezeichnung>Schriftliche Situationsaufgabe mit Schwerpunkt im Handlungsbereich: Unternehmensführung</xbbd:bezeichnung>
                <xbbd:benotung>
                    <punkte>75</punkte>
                </xbbd:benotung>
-           </xbbd:qualifikationsinhalt>
-           <xbbd:qualifikationsinhalt>
+           </xbbd:pruefungsbereich>
+           <xbbd:pruefungsbereich>
                <xbbd:bezeichnung>Schriftliche Situationsaufgabe mit Schwerpunkt im Handlungsbereich: Unternehmensorganisation und Projektmanagement</xbbd:bezeichnung>
                <xbbd:benotung>
                    <punkte>62</punkte>
                </xbbd:benotung>
-           </xbbd:qualifikationsinhalt>
-           <xbbd:qualifikationsinhalt>
+           </xbbd:pruefungsbereich>
+           <xbbd:pruefungsbereich>
                <xbbd:bezeichnung>Situationsbezogenes Fachgespräch mit Schwerpunkt im Handlungsbereich: Personalmanagement</xbbd:bezeichnung>
                <xbbd:benotung>
                    <punkte>87</punkte>
                </xbbd:benotung>
-           </xbbd:qualifikationsinhalt>
+           </xbbd:pruefungsbereich>
        </xbbd:pruefungsuebersicht>
        
        <xbbd:pruefungsuebersicht>
@@ -118,18 +118,18 @@
            <xbbd:benotung>
                <wortbezeichnung>befriedigend</wortbezeichnung>
            </xbbd:benotung>
-           <xbbd:qualifikationsinhalt>
-               <xbbd:bezeichnung>Projektarbeitung des Prozesses bei der Bearbeitung der Wareneingangsrechnungen</xbbd:bezeichnung>
+           <xbbd:pruefungsbereich> 
+               <xbbd:bezeichnung>Projektarbeit Optimierung des Prozesses bei der Bearbeitung der Wareneingangsrechnungen</xbbd:bezeichnung>
                <xbbd:benotung>
                    <punkte>75</punkte>
                </xbbd:benotung>
-           </xbbd:qualifikationsinhalt>
-           <xbbd:qualifikationsinhalt>
+           </xbbd:pruefungsbereich>
+           <xbbd:pruefungsbereich> 
                <xbbd:bezeichnung>Projektarbeitsbezogenes Fachgespräch</xbbd:bezeichnung>
                <xbbd:benotung>
                    <punkte>78</punkte>
                </xbbd:benotung>
-           </xbbd:qualifikationsinhalt>
+           </xbbd:pruefungsbereich>     
        </xbbd:pruefungsuebersicht>
       
        <xbbd:niveauDQR listVersionID="20230118-0" listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf"> 
@@ -144,7 +144,9 @@
     <xbbd:pruefungsdatum>2023-05-28</xbbd:pruefungsdatum>
     
     <xbbd:aussteller>
-        <xbbd:name>IHK Saarland</xbbd:name>
+        <xbbd:name>
+            <xbbd:name>IHK Saarland</xbbd:name>
+        </xbbd:name>
     </xbbd:aussteller>
     
 </xbbd:pruefling.fortbildungszeugnis.0002>

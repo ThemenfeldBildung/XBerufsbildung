@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.3/sch/xberufsbildung-schematron.sch" 
-            type="application/xml" 
-            schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
     <!-- 
         Nichtnormative Beispielinstanz für ein Prüfüungszeugnis basierend auf einem Musterzeugnis der Landesapothekerkammer Baden-Württemberg im Rahmen des Vorhabens XBerufsbildunng
-        Version: XBerufsbildung 0.3
-        Letzte Aktualisierung: 23.05.2024
+        Version: XBerufsbildung 0.2
+        Letzte Aktualisierung: 14.03.2024
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
 <xbbd:pruefling.pruefungszeugnis.0001 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd http://xberufsbildung.de/def/xberufsbildung/0.3/xsd/xberufsbildung.xsd"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd http://xberufsbildung.de/def/xberufsbildung/0.2/xsd/xberufsbildung.xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.2/xsd"
     xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd">
     
     <titel>Prüfungszeugnis</titel>
@@ -32,7 +27,7 @@
     
     <xbbd:rechtsgrundlage>
         <xbbd:code>
-            <code>http://xberufsbildung.de/def/xberufsbildung/0.3/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig</code>
+            <code>http://xberufsbildung.de/def/xberufsbildung/0.1/code/rechtsgrundlageabschlusszeugnis/37_bbig</code>
         </xbbd:code>
     </xbbd:rechtsgrundlage>
 
@@ -62,51 +57,57 @@
        <xbbd:ausbildungsberuf>
            <xbbd:bezeichnung>Pharmazeutisch-kaufmännische Angestellte</xbbd:bezeichnung>
            <xbbd:fundstelle>BGBl. I S. 1456</xbbd:fundstelle>
+       
        </xbbd:ausbildungsberuf>
-       
        <xbbd:pruefungsuebersicht>
            <xbbd:pruefungsteil>Schriftlicher Teil</xbbd:pruefungsteil>
-           <xbbd:pruefungsbereich>Warensortiment</xbbd:pruefungsbereich>
-           <xbbd:benotung>
-               <note>1,7</note>
-               <punkte>89</punkte>
-           </xbbd:benotung>
+           <xbbd:pruefungsbereich>
+               <xbbd:bezeichnung>Warensortiment</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <note>1,7</note>
+                   <punkte>89</punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsbereich>
        </xbbd:pruefungsuebersicht>
-       
        <xbbd:pruefungsuebersicht>
            <xbbd:pruefungsteil>Schriftlicher Teil</xbbd:pruefungsteil>
-           <xbbd:pruefungsbereich>Geschäfts- und Leistungsprozesse</xbbd:pruefungsbereich>
-           <xbbd:benotung>
-               <note>1,5</note>
-               <punkte>91</punkte>
-           </xbbd:benotung>
+           <xbbd:pruefungsbereich>
+               <xbbd:bezeichnung>Geschäfts- und Leistungsprozesse</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <note>1,5</note>
+                   <punkte>91</punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsbereich>
        </xbbd:pruefungsuebersicht>
-       
        <xbbd:pruefungsuebersicht>
            <xbbd:pruefungsteil>Schriftlicher Teil</xbbd:pruefungsteil>
-           <xbbd:pruefungsbereich>Wirtschafts- und Sozialkunde</xbbd:pruefungsbereich>
-           <xbbd:benotung>
-               <note>1,8</note>
-               <punkte>88</punkte>
-           </xbbd:benotung>
+           <xbbd:pruefungsbereich>
+               <xbbd:bezeichnung>Wirtschafts- und Sozialkunde</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <note>1,8</note>
+                   <punkte>88</punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsbereich>
        </xbbd:pruefungsuebersicht>
-       
        <xbbd:pruefungsuebersicht>
            <xbbd:pruefungsteil>Praktischer Teil</xbbd:pruefungsteil>
-           <xbbd:pruefungsbereich>Warenbewirtschaftung</xbbd:pruefungsbereich>
-           <xbbd:benotung>
-               <note>1,1</note>
-               <punkte>98</punkte>
-           </xbbd:benotung>
+           <xbbd:pruefungsbereich>
+               <xbbd:bezeichnung>Warenbewirtschaftung</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <note>1,1</note>
+                   <punkte>98</punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsbereich>
        </xbbd:pruefungsuebersicht>
-       
        <xbbd:pruefungsuebersicht>
            <xbbd:pruefungsteil>Praktischer Teil</xbbd:pruefungsteil>
-           <xbbd:pruefungsbereich>Beratungsgespräch</xbbd:pruefungsbereich>
-           <xbbd:benotung>
-               <note>1,1</note>
-               <punkte>98</punkte>
-           </xbbd:benotung>
+           <xbbd:pruefungsbereich>
+               <xbbd:bezeichnung>Beratungsgespräch</xbbd:bezeichnung>
+               <xbbd:benotung>
+                   <note>1,1</note>
+                   <punkte>98</punkte>
+               </xbbd:benotung>
+           </xbbd:pruefungsbereich>
        </xbbd:pruefungsuebersicht>
        
        <xbbd:niveauDQR listVersionID="20230118-0" listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf">
@@ -117,7 +118,9 @@
     <xbbd:pruefungsdatum>2020-07-20</xbbd:pruefungsdatum>
     
     <xbbd:aussteller>
-        <xbbd:name>Landesapothekerkammer Baden-Württemberg</xbbd:name>
+        <xbbd:name>
+            <xbbd:name>Landesapothekerkammer Baden-Württemberg</xbbd:name>
+        </xbbd:name>
     </xbbd:aussteller>
     
 </xbbd:pruefling.pruefungszeugnis.0001>
