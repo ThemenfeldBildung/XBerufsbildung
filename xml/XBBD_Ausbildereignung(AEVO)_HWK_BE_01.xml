@@ -2,26 +2,32 @@
 
 <!-- 
         Nichtnormative Beispielinstanz für ein Prüfungszeugnis Ausbildereignung(AEVO) basierend auf einem Musterzeugnis der HWK Berlin im Rahmen des Vorhabens XBerufsbildunng
-        Version: XBerufsbildung 0.4
-        Letzte Aktualisierung: 11.07.2024
+        Musternachweis: https://xbildung.de/def/rep/be/example/Pruefungszeugnis_Ausbildereignung_HWK_AEVO.pdf
+        Version: XBerufsbildung 0.6
+        Letzte Aktualisierung: 14.11.2025
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
-<xbbd:pruefling.zeugnisAEVO.0003 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd ../../build/xsd/xberufsbildung-nachweise.xsd"
- xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.3/xsd" xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd">
+<xbbd:pruefling.zeugnisAEVO
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd http://xberufsbildung.de/def/xberufsbildung/0.6/xsd/xberufsbildung.xsd">
     
-    <titel>Prüfungszeugnis</titel>
-    <ausstellung>
-        <datum>2019-05-19</datum>
-        <ort>
-            <ort>Berlin</ort>
-        </ort>
-    </ausstellung>
+    <xbd:titel>Prüfungszeugnis</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2019-05-19</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Berlin</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
     
-    <sprache>
+    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20240925-0">
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
-    </sprache>
+    </xbd:sprache>
     
     <xbbd:pruefling>
         <xbbd:nameNatuerlichePerson>
@@ -35,53 +41,64 @@
         </xbbd:nameNatuerlichePerson>
         <xbbd:geburt>
             <xbbd:datum>
-                <jahrMonatTag>1989-07-15</jahrMonatTag>
+                <xbd:jahrMonatTag>1989-07-15</xbd:jahrMonatTag>
             </xbbd:datum>
             <xbbd:geburtsort>
-                <xbbd:ort>Hamburg</xbbd:ort>
+                <xbbd:ort>Schleswig</xbbd:ort>
             </xbbd:geburtsort>
         </xbbd:geburt>
     </xbbd:pruefling>
     
     <xbbd:pruefungsteil>
-        <xbbd:bezeichnung>Schriftlicher Prüfungsteil</xbbd:bezeichnung>
+        <xbbd:bezeichnung>
+            <code>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/pruefungsteilaevo/schriftlicher_pruefungsteil</code>
+        </xbbd:bezeichnung>
         <xbbd:benotung>
-            <wortbezeichnung>gut</wortbezeichnung>
-            <punkte>84</punkte>
-            <bewertungsschemaPunkte>
-                <beschreibung>
-                    100-92 Punkte - Note 1,
+            <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+            <xbd:punkte>84</xbd:punkte>
+            <xbd:bewertungsschemaPunkte>
+                <xbd:beschreibung>
+                    1100-92 Punkte - Note 1,
                     91-81 Punkte - Note 2,
                     80-67 Punkte - Note 3,
                     66-50 Punkte - Note 4
                     Die Gewichtung einzelner Prüfungsleistungen zueinander ergibt sich aus der Fortbildungsprüfungsordnung.
-                </beschreibung>
-                <besteBewertung>100</besteBewertung>
-                <bestandenAbBewertung>50</bestandenAbBewertung>
-                <schlechtesteBewertung>00</schlechtesteBewertung>
-            </bewertungsschemaPunkte>
+                </xbd:beschreibung>
+                <xbd:besteBewertung>100</xbd:besteBewertung>
+                <xbd:bestandenAbBewertung>50</xbd:bestandenAbBewertung>
+                <xbd:schlechtesteBewertung>0</xbd:schlechtesteBewertung>
+            </xbd:bewertungsschemaPunkte>
         </xbbd:benotung>
-        
     </xbbd:pruefungsteil>
+    
     <xbbd:pruefungsteil>
-        <xbbd:bezeichnung>Praktischer Prüfungsteil</xbbd:bezeichnung>
+        <xbbd:bezeichnung>
+            <code>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/pruefungsteilaevo/praktischer_pruefungsteil</code>
+        </xbbd:bezeichnung>
         <xbbd:benotung>
-            <wortbezeichnung>sehr gut</wortbezeichnung>
-            <punkte>95</punkte>
-            <bewertungsschemaPunkte>
-                <beschreibung>
-                    100-92 Punkte - Note 1,
-                    91-81 Punkte - Note 2,
-                    80-67 Punkte - Note 3,
-                    66-50 Punkte - Note 4
-                    Die Gewichtung einzelner Prüfungsleistungen zueinander ergibt sich aus der Fortbildungsprüfungsordnung.
-                </beschreibung>
-                <besteBewertung>100</besteBewertung>
-                <bestandenAbBewertung>50</bestandenAbBewertung>
-                <schlechtesteBewertung>00</schlechtesteBewertung>
-            </bewertungsschemaPunkte>
-        </xbbd:benotung>
+        <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+        <xbd:punkte>95</xbd:punkte>
+        <xbd:bewertungsschemaPunkte>
+            <xbd:beschreibung>
+                100-92 Punkte - Note 1,
+                91-81 Punkte - Note 2,
+                80-67 Punkte - Note 3,
+                66-50 Punkte - Note 4
+                Die Gewichtung einzelner Prüfungsleistungen zueinander ergibt sich aus der Fortbildungsprüfungsordnung.
+            </xbd:beschreibung>
+            <xbd:besteBewertung>100</xbd:besteBewertung>
+            <xbd:bestandenAbBewertung>50</xbd:bestandenAbBewertung>
+            <xbd:schlechtesteBewertung>0</xbd:schlechtesteBewertung>
+        </xbd:bewertungsschemaPunkte>
+        </xbbd:benotung>     
     </xbbd:pruefungsteil>
+    
+    <xbbd:zusaetzlicheAngaben>
+        <xbbd:art>
+            <code>http://xbildung.de/def/xbildung/2025-02-04/code/artderbemerkung/rechtsgrundlage</code>
+        </xbbd:art>
+        <xbbd:beschreibung>Ausbilder-Eignungsverordnung vom 21. Januar 2009 (BGBl. I S. 88)</xbbd:beschreibung>
+    </xbbd:zusaetzlicheAngaben>
     
     <xbbd:pruefungsdatum>2019-05-10</xbbd:pruefungsdatum>
     
@@ -89,4 +106,4 @@
         <xbbd:name>Handwerkskammer Berlin</xbbd:name>
     </xbbd:aussteller>
     
-</xbbd:pruefling.zeugnisAEVO.0003>
+</xbbd:pruefling.zeugnisAEVO>

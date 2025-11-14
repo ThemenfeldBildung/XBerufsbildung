@@ -14,62 +14,62 @@
    <section xmlns:xlink="http://www.w3.org/1999/xlink"
             xml:id="externe.modelle.XBildung">
       <title>XBildung</title>
-      <para>XBildung; Version 1.1</para>
+      <para>XBD; Version 1.2</para>
       <para>Folgende Datentypen aus dem externen Modell werden in dieser Spezifikation verwendet:</para>
       <itemizedlist>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Benotung">Benotung</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.Benotung">Benotung</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.ArtDerBemerkung">Code.ArtDerBemerkung</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.Codes.Code.ArtDerBemerkung">Code.ArtDerBemerkung</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.ArtDerSchule">Code.ArtDerSchule</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.Codes.Code.ArtDerSchule">Code.ArtDerSchule</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.EQF">Code.EQF</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.Codes.Code.EQF">Code.EQF</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.Erreichbarkeit">Code.Erreichbarkeit</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.Codes.Code.Erreichbarkeit">Code.Erreichbarkeit</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.Geschlecht">Code.Geschlecht</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.Codes.Code.Geschlecht">Code.Geschlecht</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.GesetzlicherVertreter">Code.GesetzlicherVertreter</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.Codes.Code.GesetzlicherVertreter">Code.GesetzlicherVertreter</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.Staat">Code.Staat</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.Codes.Code.Staat">Code.Staat</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.Staatsangehoerigkeit">Code.Staatsangehoerigkeit</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.Codes.Code.Staatsangehoerigkeit">Code.Staatsangehoerigkeit</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Dokument">Dokument</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.Dokument">Dokument</link>
             </para>
          </listitem>
          <listitem>
             <para>
-               <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.TeilbekanntesDatum">TeilbekanntesDatum</link>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.TeilbekanntesDatum">TeilbekanntesDatum</link>
             </para>
          </listitem>
       </itemizedlist>
@@ -82,6 +82,9 @@
       <itemizedlist>
          <listitem>
             <para>Code</para>
+         </listitem>
+         <listitem>
+            <para>Nachrichtenkopf.G2GType</para>
          </listitem>
          <listitem>
             <para>datatypeB</para>

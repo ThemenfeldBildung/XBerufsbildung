@@ -9,15 +9,55 @@
 	<info>
 		<title>Versionshistorie</title>
 	</info>
-	<para>In der Versionshistorie werden die Änderungen der aktuellen Version zur Vorversion der
-		Spezifikation dargestellt. Es werden die Änderungen der letzten zwei Versionen
-		aufgeführt.</para>
+	<para>In der Versionshistorie werden die Änderungen der aktuellen Version zu den Vorversionen der
+		Spezifikation dargestellt.</para>
 
 	<section>
 		<info>
 			<title>Version &version;</title>
 		</info>
 		<para>Veröffentlichungsdatum: &fassung;</para>
+		
+		<section>
+			<title>Änderungen im Kontext der XÖV-Zertifizierung</title>
+			<para>Im Kontext des Antrags zur XÖV-Zertifizierung wurden einige Änderungen vorgenommen, um Konformität zu den Kriterien des <link xlink:href="https://docs.xoev.de/xoev-handbuch/%C3%BCbersicht">XÖV-Handbuchs</link> und des <link xlink:href="https://docs.xoev.de/codelistenhandbuch/%C3%BCbersicht">XÖV-Codelisten-Handbuchs</link> herzustellen. 
+                Die Änderungen haben keine fachlichen Auswirkungen.</para>
+		</section>
+		<section>
+			<title>Aufnahme des Nachrichtenkopfes in "pruefling.berufsschulnote"</title>
+			<para>Der Nachweis <link
+					linkend="XBerufsbildung.Nachweise.pruefling.berufsschulnote">pruefling.berufsschulnote</link> wurde um den Nachrichtenkopf aus der XÖV-Bibliothek ergänzt, um den standardkonformen Transport sicherzustellen.</para>
+		</section>
+		
+							
+		<section>
+			<title>Liste der umgesetzten Tickets</title>
+			<para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
+			<itemizedlist>
+				<listitem>
+					<para>XBBD-651: Prüfen, ob bereitgestellte Bestandteile autonom validieren</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-653: Metadaten der Standard-Version anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-655: Language-Eigenschaften in Codelisten umsetzen (NDR-33/K-11)</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-656: Nachrichtenkopf in pruefling.berufsschulnote aufnehmen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-657: Nutzung der XÖV-Kernkomponenten inkl. Abweichungen im Modell dokumentieren</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</section>
+
+	<section>
+		<info>
+			<title>Version 0.5</title>
+		</info>
+		<para>Veröffentlichungsdatum: 04.06.2025</para>
 		
 		<section>
 			<title>Aufnahme der Nachricht pruefling.berufsschulnote</title>
@@ -231,70 +271,5 @@
 			</itemizedlist>
 		</section>
 	</section>
-
-	<section>
-		<info>
-			<title>Version 0.3</title>
-		</info>
-		<para>Veröffentlichungsdatum: 23.05.2024</para>
-		<para>Mit der Version 0.3 wurden die Kernkomponenten überarbeitet und an ihre
-			Anwendungsfälle angepasst. Zudem wurde die Spezifikation inhaltlich überarbeitet und
-			geschärft.</para>
-		<simplesect>
-			<title>Liste der umgesetzten Tickets</title>
-			<para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
-			<itemizedlist>
-				<listitem>
-					<para>XBBD-514: "beschreibung" aus Klasse Prüfungsübersicht entfernen</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-513: XBD V1.0 einbinden</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-504: Neues Kapitel "Fachliche Beschreibung des Datenmodells" für XBBD
-						übernehmen</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-503: Klassen zur Prüfungsübersicht anpassen</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-501: Text für Schematron-Fehlermeldung erstellen</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-489: Angabe DQR-Niveau vorhabensübergreifend klären</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-488: Fehler in der Spezifikation korrigieren</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-484: Typ der Eigenschaft „geschlecht" ändern</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-483: Typ der Eigenschaft "aussteller" ändern</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-463: Multiplizität der Eigenschaft "niveauDQR" auf 1 setzen</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-461: nicht genutzte Kernkomponenten entfernen</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-458: Klasse "Binnendifferenzierung" überarbeiten</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-455: Multiplizität der Eigenschaft "niveauDQR" auf 1 setzen</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-454: Multiplizität der Eigenschaft "rechtsgrundlage" auf 1
-						setzen</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-430: Benotung in der Beispielinstanz anpassen</para>
-				</listitem>
-				<listitem>
-					<para>XBBD-429: Schematron-Regel für das Prüfungszeugnis anpassen</para>
-				</listitem>
-			</itemizedlist>
-		</simplesect>
-	</section>
+	
 </appendix>

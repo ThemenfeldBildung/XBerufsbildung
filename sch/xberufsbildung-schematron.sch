@@ -4,7 +4,7 @@
             queryBinding="xslt2">
    <sch:ns prefix="bn-beh"
            uri="http://xoev.de/schemata/basisnachricht/behoerde/1_0"/>
-   <sch:ns prefix="bn-g2g" uri="http://xoev.de/schemata/basisnachricht/g2g/1_0"/>
+   <sch:ns prefix="bn-g2g" uri="http://xoev.de/schemata/basisnachricht/g2g/1_1"/>
    <sch:ns prefix="bn-kom"
            uri="http://xoev.de/schemata/basisnachricht/kommunikation/1_0"/>
    <sch:ns prefix="bn-uq-g2g"
@@ -15,8 +15,8 @@
            uri="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"/>
    <sch:ns prefix="ds" uri="http://www.w3.org/2000/09/xmldsig#"/>
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
-   <sch:ns prefix="xbbd" uri="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"/>
-   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/1.1/xsd"/>
+   <sch:ns prefix="xbbd" uri="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd"/>
+   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/1.2/xsd"/>
    <sch:ns prefix="xml" uri="http://www.w3.org/XML/1998/namespace"/>
    <sch:ns prefix="xoev-code" uri="http://xoev.de/schemata/code/1_0"/>
    <sch:ns prefix="xoev-lc" uri="http://xoev.de/latinchars/1_1/datatypes"/>

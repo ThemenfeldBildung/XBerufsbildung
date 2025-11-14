@@ -7,12 +7,13 @@
 <book xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de" status="&specstatus;">
 	<info revision="1.0">
 		<title>Spezifikation &fachmodul; </title>
-		<subtitle>Version &version;</subtitle>		
+		<subtitle>Version &version;&version_title;</subtitle>		
 		<abstract>
 			<para>Fassung: &fassung;</para>
 			<para>Herausgeber: Land Sachsen-Anhalt</para>
-			<para>Bezugsort: <link xmlns:xlink="http://www.w3.org/1999/xlink"
-				xlink:href="https://xberufsbildung.de/def/xberufsbildung/0.5/spec/xbbd_spezifikation_0.5.pdf">https://xberufsbildung.de/def/xberufsbildung/0.5/spec/xbbd_spezifikation_0.5.pdf</link></para>
+			<para>Lizenz: CC BY 4.0 „]init[ AG im Auftrag des Landes Sachsen-Anhalt“</para>
+			<para>Bezugsort: <link xlink:href="http://&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/spec/&fachmodul_kurz;_spezifikation_&version;.pdf" xmlns:xlink="http://www.w3.org/1999/xlink"
+                >http://&fachmodul_in_uri;.de/def/&fachmodul_in_uri;/&version;/spec/&fachmodul_kurz;_spezifikation_&version;.pdf</link></para>
 		</abstract>
 	</info>
 

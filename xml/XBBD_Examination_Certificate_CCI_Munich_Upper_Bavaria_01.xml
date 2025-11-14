@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.5/sch/xberufsbildung-schematron.sch" 
+<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.6/sch/xberufsbildung-schematron.sch" 
             type="application/xml" 
             schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <!-- 
         Nichtnormative Beispielinstanz für ein Prüfungszeugnis in englischer Sprache basierend auf einem Musterzeugnis der IHK München-Oberbayern im Rahmen des Vorhabens XBerufsbildung
-        Version: XBerufsbildung 0.5
-        Letzte Aktualisierung: 04.06.2025
+        Version: XBerufsbildung 0.6
+        Letzte Aktualisierung: 14.11.2025
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
 <xbbd:pruefling.pruefungszeugnis
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
     xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd http://xberufsbildung.de/def/xberufsbildung/0.5/xsd/xberufsbildung.xsd">
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd http://xberufsbildung.de/def/xberufsbildung/0.6/xsd/xberufsbildung.xsd">
     
     <xbd:titel>Examination Certificate</xbd:titel>
     <xbd:ausstellung>
@@ -27,7 +27,7 @@
             <xbd:ort>Munich</xbd:ort>
         </xbd:ort>
     </xbd:ausstellung>
-    <xbd:sprache>
+    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20240925-0">
         <code>http://publications.europa.eu/resource/authority/language/ENG</code>
     </xbd:sprache>
 

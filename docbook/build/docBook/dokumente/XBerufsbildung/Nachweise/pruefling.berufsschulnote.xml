@@ -49,6 +49,26 @@
          <tbody>
             <row>
                <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">nachrichtenkopf</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Nachrichtenkopf.G2GType</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Nachrichtenkopf für Nachrichten zwischen den Berufsschulen und zuständigen Stellen. Der Nachrichtenkopf umfasst Angaben zur eindeutigen Identifikation des Autors und des Lesers der Nachricht sowie der Nachricht selbst.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
                   <emphasis role="bold">berufsschule</emphasis>
                </entry>
                <entry>

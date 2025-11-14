@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.5/sch/xberufsbildung-schematron.sch" 
+<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.6/sch/xberufsbildung-schematron.sch" 
             type="application/xml" 
             schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <!-- 
         Nichtnormative Beispielinstanz für ein Prüfungszeugnis basierend auf einem Musterzeugnis der IHK Regensburg für Oberpfalz / Kelheim im Rahmen des Vorhabens XBerufsbildunng
-        Version: XBerufsbildung 0.5
-        Letzte Aktualisierung: 04.06.2025
+        Version: XBerufsbildung 0.6
+        Letzte Aktualisierung: 14.11.2025
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
 <xbbd:pruefling.pruefungszeugnis
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
     xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd http://xberufsbildung.de/def/xberufsbildung/0.5/xsd/xberufsbildung.xsd">
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd http://xberufsbildung.de/def/xberufsbildung/0.6/xsd/xberufsbildung.xsd">
     
     <xbd:titel>Prüfungszeugnis</xbd:titel>
     <xbd:ausstellung>
-        <xbd:datum>2023-10-25</xbd:datum>
+        <xbd:datum>2025-10-25</xbd:datum>
         <xbd:ort>
             <xbd:ort>Regensburg</xbd:ort>
         </xbd:ort>
     </xbd:ausstellung>
-    <xbd:sprache>
+    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language" listVersionID="20240925-0">
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
     
@@ -48,7 +48,7 @@
         </xbbd:nameNatuerlichePerson>
         <xbbd:geburt>
             <xbbd:datum>
-                <xbd:jahrMonatTag>2001-01-01</xbd:jahrMonatTag>
+                <xbd:jahrMonatTag>2003-01-01</xbd:jahrMonatTag>
             </xbbd:datum>
         </xbbd:geburt>
     </xbbd:pruefling>
@@ -117,14 +117,14 @@
             </xbbd:pruefungsbereich>
         </xbbd:pruefungsteil>
         <xbbd:niveauDQR listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
-            <code>4</code>
+            <code>http://data.europa.eu/snb/eqf/4</code>
         </xbbd:niveauDQR>
         <xbbd:berufsschulnote>
             <xbd:note>1</xbd:note>
         </xbbd:berufsschulnote> 
     </xbbd:allgemeineAngaben>
     
-    <xbbd:pruefungsdatum>2023-10-10</xbbd:pruefungsdatum>
+    <xbbd:pruefungsdatum>2025-10-10</xbbd:pruefungsdatum>
     
     <xbbd:aussteller>
         <xbbd:name>IHK Regensburg für Oberpfalz / Kelheim</xbbd:name>

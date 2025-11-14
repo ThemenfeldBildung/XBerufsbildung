@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
+           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd"
+           xmlns:bn-g2g="http://xoev.de/schemata/basisnachricht/g2g/1_1"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
            xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-           xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.5/xsd"
-           version="0.5"
+           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd"
+           version="0.6"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -16,11 +17,11 @@
             <nameKurz>XBerufsbildung</nameKurz>
             <nameTechnisch>xberufsbildung</nameTechnisch>
             <kennung>urn:xoev-de:kosit:standard:xberufsbildung</kennung>
-            <beschreibung>Der XBerufsbildung-Standard ist ein XML-basierter Standard für die Erstellung von elektronischen Bildungsnachweisen sowie den Datenaustausch im Kontext der Berufsbildung.</beschreibung>
+            <beschreibung>XBerufsbildung ist ein föderaler IT-Standard, der für die Erstellung von elektronischen Bildungsnachweisen sowie den Datenaustausch im Berufsbildungswesen entwickelt wird. Er ist Teil der Standard-Familie XBildung. </beschreibung>
          </standard>
          <versionStandard>
-            <version>0.5</version>
-            <beschreibung>Mit der Version 0.5 wurde in XBerufsbildung der Nachweis pruefling.berufsschulnote hinzugefügt. Diese Nachricht dient der Übermittlung der Berufsschulnote von der Berufsschule an die zuständige Kammer. Die Codeliste "Prüfungsteil AEVO" wurde in den Standard aufgenommen. In allen Nachrichten wurde eine Enveloped Signature gemäß XÖV-Spezifikation umgesetzt. Die Dokumentationstexte in der Spezifikation wurden zur besseren Verständlichkeit überarbeitet und korrigiert.</beschreibung>
+            <version>0.6</version>
+            <beschreibung>Diese Version 0.6 des Standards XBerufsbildung beinhaltet die zur XÖV-Zertifizierung notwendigen Anpassungen am Modell und an weiteren standardbezogenen Artefakten.</beschreibung>
             <versionXOEVProfil>3.0.3</versionXOEVProfil>
             <versionXOEVHandbuch>3.0.2</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
@@ -32,8 +33,10 @@
    <xs:include schemaLocation="xberufsbildung-baukasten.xsd"/>
    <xs:import schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"
               namespace="http://www.w3.org/2000/09/xmldsig#"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.1/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/1.1/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.2/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/1.2/xsd"/>
+   <xs:import schemaLocation="http://xoev.de/schemata/basisnachricht/g2g/1_1/xoev-basisnachricht-g2g_1.1.xsd"
+              namespace="http://xoev.de/schemata/basisnachricht/g2g/1_1"/>
    <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
               namespace="http://xoev.de/schemata/code/1_0"/>
    <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
@@ -49,6 +52,13 @@
          <xs:complexContent>
             <xs:extension base="xbd:Dokument">
                <xs:sequence>
+                  <xs:element name="nachrichtenkopf"
+                              minOccurs="0"
+                              type="bn-g2g:Nachrichtenkopf.G2GType">
+                     <xs:annotation>
+                        <xs:documentation>Nachrichtenkopf für Nachrichten zwischen den Berufsschulen und zuständigen Stellen. Der Nachrichtenkopf umfasst Angaben zur eindeutigen Identifikation des Autors und des Lesers der Nachricht sowie der Nachricht selbst.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
                   <xs:element name="berufsschule" type="xbbd:Berufsschule">
                      <xs:annotation>
                         <xs:documentation>Das Element beschreibt die Berufsschule, an der der Prüfling seine schulische Berufsbildung absolviert hat. Die Berufsschule ist die Versenderin der Nachricht und übermittelt die Berufsschulnote an die für die Berufsbildung des Prüflings zuständige Stelle.</xs:documentation>
