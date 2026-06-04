@@ -13,9 +13,9 @@
         <varlistentry>
             <term>Grundlegende Designentscheidungen</term>
             <listitem>
-                <para>Das Teilmodul XBerufsschule ist in verschiedener Weise mit anderen
+                <para>Das Teilmodul XBerufsbildung ist in verschiedener Weise mit anderen
                     Standardisierungsvorhaben verknüpft. Grundlegende Designentscheidungen des
-                    Standards XBerufsschule lassen sich aus der <link
+                    Standards XBerufsbildung lassen sich aus der <link
                         xmlns:xlink="http://www.w3.org/1999/xlink"
                         xlink:href="https://xbildung.de/web/spezifikation">Spezifikation
                         XBildung</link> entnehmen. Um den folgenden Abschnitt zu verstehen, sind
@@ -23,10 +23,10 @@
                     <orderedlist>
                         <listitem>
                             <para>Die Nachnutzung von Komponenten aus dem XÖV-Baukasten der Koordinierungsstelle für IT-Standards (KOSIT): Diese enthalten grundlegende Klassen des Datenaustauschs, die für alle
-                                XÖV-Standards nutzbar und für XBerufsschule spezifisch beschränkt oder erweitert werden.</para>
+                                XÖV-Standards nutzbar und für XBerufsbildung spezifisch beschränkt oder erweitert werden.</para>
                         </listitem>
                         <listitem>
-                            <para>Die gemeinsame Basis von XBildung für alle XÖV-Vorhaben im Bildungsbereich: XBerufsschule verwendet gemeinsam mit anderen Teilmodulen semantisch übergeordnete Klassen, die für XBerufsschule spezifisch beschränkt oder erweitert werden. Ein Beispiel hierfür ist die Klasse „Benotung“,
+                            <para>Die gemeinsame Basis von XBildung für alle XÖV-Vorhaben im Bildungsbereich: XBerufsbildung verwendet gemeinsam mit anderen Teilmodulen semantisch übergeordnete Klassen, die für XBerufsbildung spezifisch beschränkt oder erweitert werden. Ein Beispiel hierfür ist die Klasse „Benotung“,
                                 die für alle Bereiche der Bildung nutzbar ist.</para>
                         </listitem>
                     </orderedlist>
@@ -36,10 +36,10 @@
         <varlistentry>
             <term>Versionierung</term>
             <listitem>
-                <para>Die Version einer XML-Nachricht wird über den verwendeten Namespace
-                    festgelegt. Die Versionsnummer bereits in Version 1.0 oder höher vorliegender
-                    XBildung-Teilvorhaben entspricht dabei immer der vorab veröffentlichten
-                    Versionsnummer der XBildung-Spezifikation.</para>
+                <para>Die Version des XML-Schemas und der darauf basierenden Dokumente wird über den
+                    Namespace festgelegt. Die Versionsnummer bereits in Version 1.0 oder höher
+                    vorliegender XBildung-Teilvorhaben entspricht dabei immer der vorab
+                    veröffentlichten Versionsnummer der XBildung-Spezifikation.</para>
                 <para/>
             </listitem>
         </varlistentry>
@@ -50,13 +50,14 @@
                     XML-Schema abgebildet werden können (z.B. das Verbieten leerer Felder). Hierzu
                     werden mittels Schematron Geschäftsregeln festgelegt. Diese Geschäftsregeln
                     werden mittels Schematron- und XSLT-Dateien gemeinsam mit jedem Release zur
-                    Verfügung gestellt. Erhaltene Nachrichten können mittels frei lizensierbarer
+                    Verfügung gestellt. Erhaltene XML-Dokumente können mittels frei lizensierbarer
                     Programme (Microsoft XML Notepad; Saxon Home Edition) gegen diese XSLT-Dateien
                     validiert werden. Eine Validierung allein gegen das XML-Schema genügt nicht, um
-                    den gesamten logischen Umfang des Datenmodells abzubilden. XML-Schema und Schematron werden beide zur Validierung eines XBD-konformen Dokuments benötigt. <link
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                    den gesamten logischen Umfang des Datenmodells abzubilden. XML-Schema und
+                    Schematron werden beide zur Validierung eines XBD-konformen Dokuments benötigt.
+                        <link xmlns:xlink="http://www.w3.org/1999/xlink"
                         xlink:href="https://xbildung.de/web/validierung">Anleitung zur Validierung
-                        mit Schematron</link></para>
+                        mit Schematron</link>.</para>
                 <para/>
             </listitem>
         </varlistentry>

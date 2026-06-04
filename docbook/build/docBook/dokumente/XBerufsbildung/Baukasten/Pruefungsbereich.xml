@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Pruefungsbereich">
    <title>Pruefungsbereich</title>
    <subtitle>Typ: <emphasis role="codebf">Pruefungsbereich</emphasis>
-   </subtitle><para>Die Klasse enthält die Bezeichnung und Benotung eines Prüfungsbereichs. Der Prüfungsbereich fungiert als strukturelle Einheit zur Gliederung von Prüfungen, indem er sich an den relevanten Tätigkeitsfeldern der Berufspraxis orientiert und die entsprechenden Anforderungen an die Prüflinge definiert.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Pruefungsbereich">
+   </subtitle><para>Die Klasse enthält Angaben zur Bezeichnung und Bewertung eines Prüfungsbereichs. Der Prüfungsbereich fungiert als strukturelle Einheit zur Gliederung von Prüfungen, indem er sich an den relevanten Tätigkeitsfeldern der Berufspraxis orientiert und die entsprechenden Anforderungen an die Prüflinge definiert.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Pruefungsbereich">
       <title>Pruefungsbereich</title>
       <mediaobject>
          <imageobject>
@@ -51,16 +51,20 @@
                   <emphasis role="bold">bezeichnung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung eines Prüfungsbereichs, z. B. Arbeitsauftrag, Wirtschafts- und Sozialkunde.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Bezeichnung eines Prüfungsbereichs, z. B. Arbeitsauftrag oder Wirtschafts- und Sozialkunde.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -80,7 +84,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Angabe der Note bzw. Bewertung für einen Prüfungsbereich, basierend auf der Leistung einer Person.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Note bzw. Bewertung eines Prüfungsbereichs.</para></entry>
             </row>
          </tbody>
       </tgroup>

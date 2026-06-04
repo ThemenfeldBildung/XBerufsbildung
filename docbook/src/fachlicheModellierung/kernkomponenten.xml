@@ -4,27 +4,71 @@
     <!ENTITY % complete SYSTEM "../../ent/complete.ent">
     %complete;
 ]>
-<chapter xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5" xml:lang="de"
     xml:id="spezifikation.kernkomponenten">
     <info>
         <title>Kernkomponenten</title>
     </info>
     
-    <para> Mit der Version 1.0 von XBildung wurde ein neues Konzept zur Einbindung von
-        Kernkomponenten erstellt. Dieses Konzept sieht vor, dass die Teilmodule die
-        Kernkomponenten direkt einbinden, diese jedoch so angepasst werden, wie es das jeweilige
-        Teilmodul erfordert. </para>
-    <para>Für XBerufsbildung wurde beispielsweise die Kernkomponente NatuerlichePerson in Auszubildender und Pruefling umbenannt. Die Kernkomponente Organisation wurde für den spezifischen Anwendungsfall von
-        XBerufsbildung in StelleZustaendig umbenannt.</para>
+    <para>Mit der Version 1.0 von XBildung wurde ein neues Konzept zur Einbindung von
+        Kernkomponenten eingeführt. Dieses Konzept sieht vor, dass Teilmodule die
+        XÖV-Kernkomponenten direkt verwenden und diese bei Bedarf fachlich an den jeweiligen
+        Anwendungskontext anpassen. </para>
+    <para>XBerufsbildung nutzt die XÖV-Kernkomponenten grundsätzlich entsprechend der <link xlink:href="https://docs.xoev.de/downloads/downloads#_bibliothek">
+        XÖV-Bibliothek
+    </link>. Für ausgewählte fachliche Anwendungsfälle wurden jedoch spezifische
+        Varianten mit angepasster Benennung modelliert.</para>
+    <para>Dies betrifft insbesondere die Kernkomponenten:</para>
+    <para><emphasis role="bold">Organisation</emphasis><itemizedlist>
+            <listitem>
+                <para><link
+                    linkend="XBerufsbildung.Baukasten.Kernkomponenten.Ausbildungsstaette"
+                    >Ausbildungsstaette</link></para>    
+            </listitem>
+            <listitem>
+                <para><link
+                    linkend="XBerufsbildung.Baukasten.Kernkomponenten.Berufsschule"
+                    >Berufsschule</link></para>
+            </listitem>
+            <listitem>
+                <para><link
+                    linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig"
+                    >StelleZustaendig</link></para>
+            </listitem>
+        </itemizedlist></para>
+    <para><emphasis role="bold">NatuerlichePerson</emphasis><itemizedlist>
+            <listitem>
+                <para><link
+                    linkend="XBerufsbildung.Baukasten.Kernkomponenten.AntragstellendePerson"
+                    >AntragstellendePerson</link></para>
+            </listitem>
+            <listitem>
+                <para><link
+                    linkend="XBerufsbildung.Baukasten.Kernkomponenten.AuszubildendePerson"
+                    >AuszubildendePerson</link></para>
+            </listitem>
+            <listitem>
+                <para><link
+                    linkend="XBerufsbildung.Baukasten.Kernkomponenten.GesetzlicheVertretung"
+                    >GesetzlicheVertretung</link></para>
+            </listitem>
+            <listitem>
+                <para><link
+                    linkend="XBerufsbildung.Baukasten.Kernkomponenten.Pruefling"
+                    >Pruefling</link></para>
+            </listitem>
+        </itemizedlist></para>
     <para>Im Folgenden sind alle XBerufsbildung-spezifischen Kernkomponenten aufgelistet:</para>
 
     <!--<include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/AusstellendeStelle.xml"/>-->
     <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/AllgemeinerName.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Anschrift.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/AntragstellendePerson.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Ausbildungsstaette.xml"/>
-    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Auszubildender.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/AuszubildendePerson.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Berufsschule.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Geburt.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/GesetzlicheVertretung.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Identifikation.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/Kommunikation.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/XBerufsbildung/Baukasten/Kernkomponenten/NameNatuerlichePerson.xml"/>

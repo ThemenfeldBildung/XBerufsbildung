@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><!ENTITY nachricht.berufsschulnote "pruefling.berufsschulnote">
+<?xml version="1.0" encoding="UTF-8"?><!ENTITY nachricht.anerkennungsbescheid "antragstellende.anerkennungsbescheid">
+                    <!ENTITY nachricht.title.anerkennungsbescheid "antragstellende.anerkennungsbescheid">
+                    <!ENTITY nachricht.ref.anerkennungsbescheid "<link linkend='XBerufsbildung.Nachweise.antragstellende.anerkennungsbescheid'>Nachricht anerkennungsbescheid</link>">
+                    <!ENTITY nachricht.berufsschulnote "pruefling.berufsschulnote">
                     <!ENTITY nachricht.title.berufsschulnote "pruefling.berufsschulnote">
                     <!ENTITY nachricht.ref.berufsschulnote "<link linkend='XBerufsbildung.Nachweise.pruefling.berufsschulnote'>Nachricht berufsschulnote</link>">
                     <!ENTITY nachricht.eintragungsbestaetigung "auszubildender.eintragungsbestaetigung">

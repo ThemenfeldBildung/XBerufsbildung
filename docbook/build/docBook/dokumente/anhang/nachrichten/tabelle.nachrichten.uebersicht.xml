@@ -24,9 +24,19 @@
          </row>
          <row>
             <entry align="left">
+               <para>antragstellende.anerkennungsbescheid</para>
+            </entry>
+            <entry><para>Dieses Dokument bildet den Bescheid über die Feststellung der Gleichwertigkeit der im Ausland erworbenen Berufsqualifikationen ab, z. B. nach BQFG, HwO.</para></entry>
+            <entry align="center">
+               <xref role="Seite"
+                     linkend="XBerufsbildung.Nachweise.antragstellende.anerkennungsbescheid"/>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
                <para>pruefling.berufsschulnote</para>
             </entry>
-            <entry><para>Diese Nachricht dient der Übermittlung der Berufsschulnote von der Berufsschule an die für die Berufsbildung des Prüflings zuständige Stelle. Sie enthält die relevanten Informationen zum Prüfling, zur besuchten Berufsschule, zur für die Berufsbildung des Prüflings zuständigen Stelle sowie zur erreichten Gesamtnote und der Bezeichnung des Ausbildungsberufs. Die Übermittlung erfolgt im Rahmen der gesetzlichen Vorgaben gemäß § 37 Abs. 3 BBiG sowie den jeweiligen landesrechtlichen Vorgaben.</para></entry>
+            <entry><para>Dieses Dokument dient der Übermittlung der Berufsschulnote von der Berufsschule an die für die Berufsbildung des Prüflings zuständige Stelle. Sie enthält die relevanten Informationen zum Prüfling, zur besuchten Berufsschule, zur für die Berufsbildung des Prüflings zuständigen Stelle sowie zur erreichten Gesamtnote und der Bezeichnung des Ausbildungsberufs. Die Übermittlung erfolgt im Rahmen der gesetzlichen Vorgaben gemäß § 37 Abs. 3 BBiG sowie den jeweiligen landesrechtlichen Vorgaben.</para></entry>
             <entry align="center">
                <xref role="Seite"
                      linkend="XBerufsbildung.Nachweise.pruefling.berufsschulnote"/>
@@ -36,7 +46,7 @@
             <entry align="left">
                <para>auszubildender.eintragungsbestaetigung</para>
             </entry>
-            <entry><para>Diese Nachricht bildet die Eintragungsbestätigung der zuständigen Stelle nach BBiG und HwO ab. Die Eintragung des Ausbildungsvertrags in das Verzeichnis der Berufsausbildungsverhältnisse wird dem Ausbildungsbetrieb und der auszubildenden Person mit einer schriftlichen Eintragungsbestätigung angezeigt. Diese enthält Angaben zur Ausbildung (personenbezogene Daten zum Auszubildenden, Ausbildungsberuf, Ausbildungszeitraum) und Informationen zum Ausbildungsbetrieb (Name, Anschrift).</para></entry>
+            <entry><para>Dieses Dokument bildet die Eintragungsbestätigung der zuständigen Stelle nach BBiG und HwO ab. Die Eintragung des Ausbildungsvertrags in das Verzeichnis der Berufsausbildungsverhältnisse wird dem Ausbildungsbetrieb und der auszubildenden Person mit einer schriftlichen Eintragungsbestätigung angezeigt. Diese enthält Angaben zur Ausbildung (personenbezogene Daten zum Auszubildenden, Ausbildungsberuf, Ausbildungszeitraum) und Informationen zum Ausbildungsbetrieb (Name, Anschrift).</para></entry>
             <entry align="center">
                <xref role="Seite"
                      linkend="XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung"/>
@@ -46,7 +56,7 @@
             <entry align="left">
                <para>pruefling.fortbildungszeugnis</para>
             </entry>
-            <entry><para>Diese Nachricht bildet das Fortbildungszeugnis nach BBiG und HwO ab, das die erfolgreiche Teilnahme an einer Fortbildungsprüfung bescheinigt. Diese enthält Angaben zum Prüfling, zum Fortbildungsabschluss, zum Prüfungsergebnis, zur Fortbildungsordnung, zur ausstellenden Stelle, zum Datum des Bestehens der Prüfung und ggf. weitere zusätzliche Angaben.</para></entry>
+            <entry><para>Dieses Dokument bildet ein Fortbildungszeugnis nach BBiG oder HwO ab. Es enthält die für das Zeugnis erforderlichen Angaben zur geprüften Person, zum Fortbildungsabschluss, zu den Prüfungsteilen und Prüfungsleistungen einschließlich deren Bewertungen, zum Gesamtergebnis, zur zugrunde liegenden Fortbildungsordnung, zum Datum des Bestehens der Prüfung sowie zur ausstellenden zuständigen Stelle.</para></entry>
             <entry align="center">
                <xref role="Seite"
                      linkend="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis"/>
@@ -56,7 +66,7 @@
             <entry align="left">
                <para>pruefling.pruefungszeugnis</para>
             </entry>
-            <entry><para>Diese Nachricht bildet das Prüfungszeugnis der Abschlussprüfung der dualen Ausbildung nach BBiG und HwO ab. Ein Prüfungszeugnis ist ein offizielles Dokument, das die erfolgreiche Teilnahme an einer Prüfung oder einer Ausbildung bescheinigt und die erlangten Qualifikationen sowie die erreichten Leistungen des Prüflings dokumentiert. Dieses enthält Angaben zum Prüfling, zum Prüfungsergebnis, zum erworbenen Abschluss, zur Rechtsgrundlage, zur ausstellenden Stelle, zum Datum der Prüfung und ggf. weitere zusätzliche Angaben.</para></entry>
+            <entry><para>Dieses Dokument bildet das Prüfungszeugnis der Abschlussprüfung der dualen Ausbildung nach BBiG und HwO ab. Ein Prüfungszeugnis ist ein offizieller Nachweis, der die erfolgreiche Teilnahme an einer Prüfung oder einer Ausbildung bescheinigt und die erlangten Qualifikationen sowie die erreichten Leistungen des Prüflings dokumentiert. Dieses enthält Angaben zum Prüfling, zum Prüfungsergebnis, zum erworbenen Abschluss, zur Rechtsgrundlage, zur ausstellenden Stelle, zum Datum der Prüfung und ggf. weitere zusätzliche Angaben.</para></entry>
             <entry align="center">
                <xref role="Seite"
                      linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis"/>
@@ -66,7 +76,7 @@
             <entry align="left">
                <para>pruefling.zeugnisAEVO</para>
             </entry>
-            <entry><para>Diese Nachricht bildet das Zeugnis nach der Ausbilder-Eignungsverordnung (AEVO) vom 21.01.2009 (BGBl. I 2009 S. 88), aus dem hervorgeht, dass der Ausbilder oder die Ausbilderin die berufs- und arbeitspädagogische Qualifikation für die Ausbildung in anerkannten Ausbildungsberufen nach dem Berufsbildungsgesetz nachgewiesen hat.</para></entry>
+            <entry><para>Dieses Dokument bildet das Zeugnis nach der Ausbilder-Eignungsverordnung (AEVO) vom 21.01.2009 (BGBl. I 2009 S. 88), aus dem hervorgeht, dass der Ausbilder oder die Ausbilderin die berufs- und arbeitspädagogische Qualifikation für die Ausbildung in anerkannten Ausbildungsberufen nach dem Berufsbildungsgesetz nachgewiesen hat.</para></entry>
             <entry align="center">
                <xref role="Seite" linkend="XBerufsbildung.Nachweise.pruefling.zeugnisAEVO"/>
             </entry>

@@ -52,6 +52,11 @@
 			Für die Jahre 2023, 2024 und 2025 sind daran anknüpfend themenspezifische Arbeitskreise
 			umgesetzt worden, in denen die Anwendungsfälle und Anforderungen an den Datenaustausch
 			im Berufsbildungswesen analysiert und der Fokus von XBerufsbildung geschärft wurde. </para>
+		<para>In der <link xlink:href="https://www.it-planungsrat.de/beschluss/b-2025-43-it"
+				xml:id="menurale">48. Sitzung, die am 26. November 2025</link> stattfand, hat der
+			IT-Planungsrat beschlossen u.a. XBerufsbildung als Teilvorhaben von XBildung mit Beginn
+			des Jahres 2029 für den Anwendungsbereich „digitale Zeugnisausstellung“ als verbindlich
+			für die Nutzung zu erklären.</para>
 		<para>Das methodische Vorgehen der Datenmodellierung ist an zwei bewährte Methoden angelehnt: </para>
 		<itemizedlist>
 			<listitem>
@@ -101,11 +106,11 @@
 			werden, wobei X die Untergrenze und Y die Obergrenze ist (z.B. 0..3 oder 10..15). Wenn
 			keine Obergrenze festgelegt werden soll, kann dies durch die Angabe des Platzhalters n
 			definiert werden (z. B. 0..n oder 0..*).</para>
-		<para>Die im Datenmodell dargestellten Nachweise, wie beispielsweise das Prüfungszeugnis,
-			sind selbst komplexe Datentypen, die auf die gleiche Weise wie andere komplexe
-			Datentypen definiert sind. Sie sind besonders, weil sie einen Datensatz auf der obersten
-			Hierarchieebene (Wurzelelement) und damit einen fachlich vollständigen Datensatz
-			(Nachricht) umfassen.</para>
+		<para>Im Datenmodell sind bestimmte Datenfelder zu fachlich abgegrenzten Datensätzen gebündelt.
+			Diese Datensätze entsprechen auf fachlicher Ebene beispielsweise einem Bescheid oder
+			einem Zeugnis. Solche Nachweise von Sachverhalten - etwa ein Prüfungszeugnis - sind
+			selbst komplexe Datentypen, die nach denselben Modellierungsprinzipien definiert werden
+			wie andere komplexe Datentypen.</para>
 		<para>Die Darstellung der Datentypen in den folgenden Unterkapiteln folgt dieser Logik: Es wird
 			immer zuerst ein Datentyp vorgestellt und die enthaltenen Datenfelder darunter
 			aufgeführt. Die Datenfelder der Datentypen selbst werden in Bezug auf ihre Funktion

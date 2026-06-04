@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Kernkomponenten.Pruefling">
    <title>Pruefling</title>
    <subtitle>Typ: <emphasis role="codebf">Pruefling</emphasis>
-   </subtitle><para>Der Prüfling ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen wie Zeugnissen beurkunden oder bescheinigen kann.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.Pruefling">
+   </subtitle><para>Angaben zu einer natürlichen Person, die an einer Prüfung teilnimmt oder teilgenommen hat.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.Pruefling">
       <title>Pruefling</title>
       <mediaobject>
          <imageobject>
@@ -66,7 +66,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier werden Informationen zu den Namen einer natürlichen Person zusammengefasst.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zum Namen der Person.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -88,7 +88,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier werden Angaben zur Geburt einer natürlichen Person gemacht.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Geburt des Prüflings.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -110,7 +110,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Persönliche Identifikationsnummer einer natürlichen Person, die sie kontextbezogen von allen anderen Personen eindeutig unterscheidet. Eine natürliche Person kann mehrere Identifikationsnummern haben.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zu Identifikationsmerkmalen des Prüflings. Mehrere Identifikationen sind möglich.</para></entry>
             </row>
          </tbody>
       </tgroup>

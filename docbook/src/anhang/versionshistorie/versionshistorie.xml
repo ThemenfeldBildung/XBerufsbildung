@@ -1,11 +1,10 @@
 <?xml version="1.0" standalone="yes"?>
 <?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<!DOCTYPE appendix [
+<!DOCTYPE appendix[
 	<!ENTITY % complete SYSTEM "../../../ent/complete.ent">
 	%complete;
 ]>
-<appendix xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
-	xml:id="spezifikation.anhang.versionshistorie" xmlns:xlink="http://www.w3.org/1999/xlink">
+<appendix xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de" xml:id="spezifikation.anhang.versionshistorie" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<info>
 		<title>Versionshistorie</title>
 	</info>
@@ -19,15 +18,207 @@
 		<para>Veröffentlichungsdatum: &fassung;</para>
 		
 		<section>
+			<title>Aufnahme des Nachweises antragstellende.anerkennungsbescheid</title>
+			<para>Mit der Version 0.7 wurde in XBerufsbildung der Nachweis <link
+					linkend="XBerufsbildung.Nachweise.antragstellende.anerkennungsbescheid"
+					>antragstellende.anerkennungsbescheid</link> neu aufgenommen. Der Nachweis dient
+				der strukturierten Abbildung eines Anerkennungsbescheids zur Feststellung der
+				Gleichwertigkeit von Berufsqualifikationen. Die Ausgestaltung und Implementierung
+				basieren auf den Ergebnissen einer fachlichen Umfrage sowie den Erkenntnissen aus
+				dem begleitenden Arbeitskreis.</para>
+			<para>Im Zuge der Einführung wurde das Datenmodell um zusätzliche,
+				bescheidspezifische Klassen erweitert. Hierzu zählen folgende Klassen:</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						<link linkend="XBerufsbildung.Baukasten.Kernkomponenten.AntragstellendePerson">
+							<emphasis role="bold">AntragstellendePerson</emphasis>
+						</link>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<link linkend="XBerufsbildung.Baukasten.Ausbildung">
+							<emphasis role="bold">Ausbildung</emphasis>
+						</link>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<link linkend="XBerufsbildung.Baukasten.EinschlaegigeBerufserfahrung">
+							<emphasis role="bold">EinschlaegigeBerufserfahrung</emphasis>
+						</link>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<link linkend="XBerufsbildung.Baukasten.Entscheidungsgrundlage">
+							<emphasis role="bold">Entscheidungsgrundlage</emphasis>
+						</link>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<link linkend="XBerufsbildung.Baukasten.Nachweis">
+							<emphasis role="bold">Nachweis</emphasis>
+						</link>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<link linkend="XBerufsbildung.Baukasten.RechtlicheWuerdigung">
+							<emphasis role="bold">RechtlicheWuerdigung</emphasis>
+						</link>
+					</para>
+				</listitem>
+				<listitem>
+					<para>Anonyme Klasse <emphasis role="bold">berufsqualifikationen</emphasis></para>
+				</listitem>
+				<listitem>
+					<para>Anonyme Klasse <emphasis role="bold">referenzqualifikation</emphasis></para>
+				</listitem>
+				<listitem>
+					<para>Anonyme Klasse <emphasis role="bold">unterschiedZumReferenzberuf</emphasis></para>
+				</listitem>
+				<listitem>
+					<para>Anonyme Klasse <emphasis role="bold">ausgleichsangabe</emphasis></para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Änderungen mit möglichen Auswirkungen auf die Implementierung</title>
+			<itemizedlist>
+				<listitem>
+					<para>String-basierte Eigenschaften wurden fachlich geprüft und gemäß den Vorgaben von XBildung auf passende Datentypen umgestellt. Fachliche Bezeichnungen verwenden nun überwiegend <emphasis role="codebf">din91379:datatypeE</emphasis>, fachliche Freitexte <emphasis role="codebf">din91379:datatypeC</emphasis> bzw. <emphasis role="codebf">xbd:String.Localized</emphasis>.</para>
+				</listitem>
+				<listitem>
+					<para>Die Kernkomponente <link linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig">StelleZustaendig</link> wurde 
+						um das Attribut <emphasis role="codebf">ansprechperson</emphasis> vom Typ NameNatuerlichePerson ergänzt. Das
+						Attribut dient der strukturierten Abbildung einer Ansprechperson bei der
+						zuständigen Stelle im Rahmen der fachlichen Kommunikation.</para>
+				</listitem>
+				<listitem>
+					<para>Die Klasse GesetzlicherVertreter wurde in <link
+						linkend="XBerufsbildung.Baukasten.Kernkomponenten.GesetzlicheVertretung"
+						>GesetzlicheVertretung</link> umbenannt und in die Kernkomponenten verschoben. In diesem Zusammenhang wurde
+						die Klasse um die Attribute <emphasis role="codebf">identifikationsnummer</emphasis> und <emphasis role="codebf">geburt</emphasis> erweitert.</para>
+				</listitem>
+				<listitem>
+					<para>Die Multiplizität des Attributs <emphasis role="codebf">fundstelle</emphasis> in den
+						Klassen <link linkend="XBerufsbildung.Baukasten.Ausbildungsberuf"
+							>Ausbildungsberuf</link> und <link linkend="XBerufsbildung.Baukasten.Fortbildungsabschluss"
+								>Fortbildungsabschluss</link> wurde von [0..*] auf
+						[1..*] angepasst, um die Angabe mindestens einer Fundstelle fachlich verbindlich vorzugeben.</para>
+				</listitem>
+				<listitem>
+					<para>In der anonymen Klasse <emphasis role="bold">binnendifferenzierung</emphasis> wurde das
+						Stereotyp Choice entfernt, sodass mehrere Angaben parallel übermittelt
+						werden können. Zudem wurde die Multiplizität des Attributs <emphasis role="codebf">sonstiges</emphasis> von
+						[0..1] auf [0..*] angepasst.</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		
+		<section>
+			<title>Redaktionelle Änderungen</title>
+			<itemizedlist>
+				<listitem>
+					<para>Die fachliche Beschreibung des Datenmodells in <emphasis role="bold">Kapitel I.3.3 Fachliche Beschreibung 
+						des Datenmodells</emphasis> wurde redaktionell überarbeitet und präzisiert.</para>
+				</listitem>
+				<listitem>
+					<para>Die Dokumentation der Attribute wurde klassenübergreifend vereinheitlicht und fachlich
+						präzisiert. Dies betrifft insbesondere die Attribute der Klassen <link
+							linkend="XBerufsbildung.Baukasten.Ausbildungsberuf"
+							>Ausbildungsberuf</link>, <link
+							linkend="XBerufsbildung.Baukasten.Ausbildungsbetrieb"
+								>Ausbildungsbetrieb</link>, <link
+									linkend="XBerufsbildung.Baukasten.Fortbildungsabschluss"
+									>Fortbildungsabschluss</link>, <link
+										linkend="XBerufsbildung.Baukasten.Kernkomponenten.GesetzlicheVertretung"
+										>GesetzlicheVertretung</link>
+						sowie der anonymen Klasse <emphasis role="bold"
+							>binnendifferenzierung</emphasis>.</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		
+		<section>
+			<title>Liste der umgesetzten Tickets</title>
+			<para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
+			<itemizedlist>
+				<listitem>
+					<para>XBBD-687: Multiplizitäten in den Kernkomponenten Identifikation und Kommunikation verschärfen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-686: Datentypen string-basierter Eigenschaften fachlich umstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-683: Terminologie von "Nachricht" auf "Dokument" umstellen</para>
+				</listitem> 
+				<listitem>
+					<para>XBBD-682: Klasse „AntragstellendePerson“ einführen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-680: Dokumentation von Attributen vereinheitlichen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-679: anonyme Klasse „binnendifferenzierung“ zur Mehrfachangabe anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-678: Multiplizität des Attributs „fundstelle“ auf [1..*] anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-677: StelleZustaendig um das Attribut „ansprechperson“ erweitern</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-676: Klasse „GesetzlicherVertreter“ umbenennen und erweitern</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-671: Klasse „Nachweis“ einführen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-670: Klasse „Entscheidungsgrundlage“ einführen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-669: Klasse „RechtlicheWuerdigung“ einführen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-668: Klasse „EinschlaegigeBerufserfahrung“ einführen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-667: anonyme Klasse „referenzqualifikation“ einführen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-666: Klasse „Ausbildung“ einführen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-665: anonyme Klasse „berufsqualifikationen“ einführen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-664: neues Dokument „antragstellende.anerkennungsbescheid“ aufnehmen</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</section>
+		
+
+	<section>
+		<info>
+			<title>Version 0.6</title>
+		</info>
+		<para>Veröffentlichungsdatum: 14.11.2025</para>
+		
+		<section>
 			<title>Änderungen im Kontext der XÖV-Zertifizierung</title>
 			<para>Im Kontext des Antrags zur XÖV-Zertifizierung wurden einige Änderungen vorgenommen, um Konformität zu den Kriterien des <link xlink:href="https://docs.xoev.de/xoev-handbuch/%C3%BCbersicht">XÖV-Handbuchs</link> und des <link xlink:href="https://docs.xoev.de/codelistenhandbuch/%C3%BCbersicht">XÖV-Codelisten-Handbuchs</link> herzustellen. 
                 Die Änderungen haben keine fachlichen Auswirkungen.</para>
 		</section>
 		<section>
 			<title>Aufnahme des Nachrichtenkopfes in "pruefling.berufsschulnote"</title>
-			<para>Der Nachweis <link
-					linkend="XBerufsbildung.Nachweise.pruefling.berufsschulnote">pruefling.berufsschulnote</link> wurde um den Nachrichtenkopf aus der XÖV-Bibliothek ergänzt, um den standardkonformen Transport sicherzustellen.</para>
+			<para>Der Nachweis <link linkend="XBerufsbildung.Nachweise.pruefling.berufsschulnote">pruefling.berufsschulnote</link> wurde um den Nachrichtenkopf aus der XÖV-Bibliothek ergänzt, um den standardkonformen Transport sicherzustellen.</para>
 		</section>
+		
 		
 							
 		<section>
@@ -61,9 +252,7 @@
 		
 		<section>
 			<title>Aufnahme der Nachricht pruefling.berufsschulnote</title>
-			<para>Mit der Version 0.5 wurde in XBerufsbildung der Nachweis <link
-					linkend="XBerufsbildung.Nachweise.pruefling.berufsschulnote"
-					>pruefling.berufsschulnote</link> hinzugefügt. Diese Nachricht dient der
+			<para>Mit der Version 0.5 wurde in XBerufsbildung der Nachweis <link linkend="XBerufsbildung.Nachweise.pruefling.berufsschulnote">pruefling.berufsschulnote</link> hinzugefügt. Diese Nachricht dient der
 				Übermittlung der Berufsschulnote von der Berufsschule an die zuständige Kammer.
 				Neben der Gesamtnote enthält die Nachricht auch Angaben zur Berufsschule, zur
 				zuständigen Kammer und zum Prüfling. Die Implementierung basierte auf den
@@ -72,26 +261,20 @@
 		
 		<section>
 			<title>Änderungen an Codelisten</title>
-			<para>Die Codeliste <link linkend="XBerufsbildung.Baukasten.Codes.Code.PruefungsteilAEVO"
-					>Code.PruefungsteilAEVO</link> wurde in der Version 2025-06-04 veröffentlicht.</para>
+			<para>Die Codeliste <link linkend="XBerufsbildung.Baukasten.Codes.Code.PruefungsteilAEVO">Code.PruefungsteilAEVO</link> wurde in der Version 2025-06-04 veröffentlicht.</para>
 		</section>
 		
 		<section>
 			<title>Einbindung der XML-Signatur</title>
 			<para>In allen Nachrichten wurde eine Enveloped Signature gemäß
-				XÖV-Spezifikation umgesetzt. Dabei wurde das Element <emphasis role="codebf"
-					>ds:Signature</emphasis> in die jeweiligen Nachweise aufgenommen, wobei es auf
-				die Signaturklasse verweist und mit der Kardinalität <emphasis role="codebf"
-					>0..1</emphasis> versehen wurde.</para>
+				XÖV-Spezifikation umgesetzt. Dabei wurde das Element <emphasis role="codebf">ds:Signature</emphasis> in die jeweiligen Nachweise aufgenommen, wobei es auf
+				die Signaturklasse verweist und mit der Kardinalität <emphasis role="codebf">0..1</emphasis> versehen wurde.</para>
 		</section>
 		<section>
 			<title>Inhaltliche Änderungen an der Spezifikation</title>
 			<para>Das ursprüngliche Kapitel "Grundlegende Designentscheidungen" wurde verkürzt, in das
-				Kapitel <link xlink:href="#spezifikation.wichtigeHinweiseZurImplementierung"
-					>Wichtige Hinweise zur Implementierung </link> eingegliedert und verweist nun
-				auf das ausführliche und übergreifend gültige Kapitel mit selbem Titel in der <link
-					xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#%5B%7B%22num%22%3A121%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C70.866%2C727.937%2Cnull%5D"
-					>Spezifikation von XBildung</link>.</para>
+				Kapitel <link xlink:href="#spezifikation.wichtigeHinweiseZurImplementierung">Wichtige Hinweise zur Implementierung </link> eingegliedert und verweist nun
+				auf das ausführliche und übergreifend gültige Kapitel mit selbem Titel in der <link xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#%5B%7B%22num%22%3A121%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C70.866%2C727.937%2Cnull%5D">Spezifikation von XBildung</link>.</para>
 		</section>
 		<section>
 			<title>Aktualisierung auf gültige XÖV-Konfiguration</title>
@@ -181,9 +364,7 @@
 
 		<section>
 			<title>Aufnahme des AEVO-Zeugnisses</title>
-			<para>Mit der Version 0.4 wurde in XBerufsbildung der Nachweis <link
-					linkend="XBerufsbildung.Nachweise.pruefling.zeugnisAEVO"
-					>AEVO-Zeugnis</link> umgesetzt. Dieser Nachweis bildet das Zeugnis nach der
+			<para>Mit der Version 0.4 wurde in XBerufsbildung der Nachweis <link linkend="XBerufsbildung.Nachweise.pruefling.zeugnisAEVO">AEVO-Zeugnis</link> umgesetzt. Dieser Nachweis bildet das Zeugnis nach der
 				Ausbilder-Eignungsverordnung (AEVO) vom 21.01.2009 (BGBl. I 2009 S. 88) ab, aus dem
 				hervorgeht, dass der Ausbilder oder die Ausbilderin die berufs- und
 				arbeitspädagogische Qualifikation für die Ausbildung in anerkannten
@@ -197,11 +378,7 @@
 		</section>
 		<section>
 			<title>Sonstige Änderungen</title>
-			<para>Für die Nachweise <link
-					linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis"
-					>Prüfungszeugnis</link> und <link
-					linkend="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis"
-					>Fortbildungszeugnis</link> wurden die Strukturen der Prüfungsübersicht
+			<para>Für die Nachweise <link linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis">Prüfungszeugnis</link> und <link linkend="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis">Fortbildungszeugnis</link> wurden die Strukturen der Prüfungsübersicht
 				überarbeitet.</para>
 			<para>Der <link linkend="XBerufsbildung.Baukasten.Ausbildungsbetrieb">Ausbildungsbetrieb</link> kann nun eine Betriebsnummer enthalten.</para>
 			<para>Die Eigenschaft Befreiung wurde aus den allgemeinen Angaben des <link linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis">Prüfungszeugnisses</link> entfernt. Sollte eine Befreiung vorliegen, wird diese als Bemerkung in den zusätzlichen Angaben angegeben.</para>

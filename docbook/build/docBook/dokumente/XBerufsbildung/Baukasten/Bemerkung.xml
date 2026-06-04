@@ -54,6 +54,26 @@
                   <emphasis role="codebf">Code.ArtDerBemerkung</emphasis>
                </entry>
                <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angabe der Art der Bemerkung.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">beschreibung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
@@ -64,23 +84,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element gibt die Art der Bemerkung an.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">beschreibung</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Das Element ergänzt die Bemerkung um weitere Informationen. Ob und welche Inhalte hier notwendig sind, hängt von der Art der Bemerkung ab.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angabe zum Inhalt der Bemerkung. Ob und welche Inhalte hier notwendig sind, hängt von der Art der Bemerkung ab.</para></entry>
             </row>
          </tbody>
       </tgroup>

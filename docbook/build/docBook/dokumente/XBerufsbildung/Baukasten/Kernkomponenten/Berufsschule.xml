@@ -66,7 +66,73 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zum offiziellen Namen einer Organisation.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zum offiziellen Namen der Berufsschule.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">kommunikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Kommunikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Kommunikation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Kommunikation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Erreichbarkeit der Berufsschule über elektronische Kommunikationskanäle.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">anschrift</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Anschrift</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Anschrift"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Anschrift"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Anschrift der Berufsschule.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">identifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Identifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angabe einer eindeutigen Identifikation der Berufsschule.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -80,7 +146,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element beinhaltet die Schulart, die eine Schule anbietet. Die Begriffe Schulart und Schulform werden hier synonym verwendet.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angabe der Schulart.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -122,74 +188,6 @@
             <row>
                <entry rowsep="1" colsep="1"/>
                <entry namest="indent1" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">identifikation</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Identifikation</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Die "identifikation" einer "Organisation" fasst alle Elemente zusammen, die eine Organisation in einem fachlichen Kontext eindeutig unter anderen Organisationen identifiziert.</para>
-
-<para>Anmerkung: Neben der konkreten ID wird der fachliche Typ der ID  wie z. B. Steuernummer,  UmsatzsteuerID festgelegt.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">anschrift</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Anschrift</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Anschrift"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Anschrift"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zur Anschrift der Berufsschule.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">kommunikation</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Kommunikation</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Kommunikation"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Kommunikation"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Unter "kommunikation" werden Angaben zur Erreichbarkeit einer Organisation über elektronische Kommunikationskanäle zusammengefasst.</para></entry>
             </row>
          </tbody>
       </tgroup>

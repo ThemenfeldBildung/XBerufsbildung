@@ -8,9 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Ausbildungsbetrieb">
    <title>Ausbildungsbetrieb</title>
    <subtitle>Typ: <emphasis role="codebf">Ausbildungsbetrieb</emphasis>
-   </subtitle><para>Die Klasse enthält den Namen und die Anschrift des Ausbildungsbetriebs. Ein Ausbildungsbetrieb ist ein Unternehmen oder eine Einrichtung, die nach gesetzlichen Vorschriften dazu berechtigt ist, Auszubildende im Rahmen eines anerkannten Ausbildungsberufs praktisch auszubilden. In diesem Kontext bezieht sich der Ausbildungsbetrieb auf den Hauptsitz des Unternehmens bzw. der Einrichtung.</para>
-
-<para>Befindet sich der Ort der praktischen Ausbildung an einem anderen Standort, sind die entsprechenden Angaben unter <emphasis role="codebf">ausbildungsstaette</emphasis> zu erfassen.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Ausbildungsbetrieb">
+   </subtitle><para>Die Klasse enthält Angaben zum Ausbildungsbetrieb mit Name und Anschrift. Sofern die praktische Ausbildung an einer vom Hauptsitz des Ausbildungsbetriebs abweichenden Ausbildungsstätte erfolgt, sind die Angaben zur <emphasis role="codebf">ausbildungsstaette</emphasis> gesondert zu erfassen.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Ausbildungsbetrieb">
       <title>Ausbildungsbetrieb</title>
       <mediaobject>
          <imageobject>
@@ -68,7 +66,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element gibt den Namen des Ausbildungsbetriebs an. Der Name eines Ausbildungsbetriebs ist die offizielle Bezeichnung des Unternehmens oder der Einrichtung, die eine Berufsausbildung durchführt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zum Namen des Ausbildungsbetriebs. Der Name eines Ausbildungsbetriebs ist die offizielle Bezeichnung des Unternehmens oder der Einrichtung, die eine Berufsausbildung durchführt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -90,9 +88,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur Anschrift des Ausbildungsbetriebs.</para>
-
-</entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Anschrift des Ausbildungsbetriebs.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -114,7 +110,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur Ausbildungsstätte des Ausbildungsbetriebs. Eine Ausbildungsstätte ist anzugeben, wenn sich der Hauptsitz eines Unternehmens an einem anderen Ort befindet als der Standort, an dem die Berufsausbildung absolviert wird. Beim Ausbildungsbetrieb wird in diesem Fall der Hauptsitz angegeben. Die Angaben zum Standort, an dem die Ausbildung größtenteils absolviert wird, werden unter der Ausbildungsstätte erfasst.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Ausbildungsstätte, sofern diese vom Hauptsitz des Ausbildungsbetriebs abweicht.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -130,7 +126,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Betriebsnummer, bestehend aus acht Ziffern, die in Deutschland jeder Arbeitgeber zur Meldung von Sozialversicherungsdaten an die Sozialversicherungsträger benötigt. Aufgrund der in diesen Meldungen verwendeten Betriebsnummer erstellt die Bundesagentur für Arbeit die amtliche Beschäftigungsstatistik.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur achtstelligen Betriebsnummer des Ausbildungsbetriebs.</para></entry>
             </row>
          </tbody>
       </tgroup>

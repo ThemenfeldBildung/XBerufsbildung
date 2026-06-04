@@ -63,5 +63,18 @@
 		vorgestellt. Diese DoR legt Anforderungen für einen XÖV-konformen Datenaustausch im
 		deutschen Berufsbildungsbereich fest. Sie umfasst technische Spezifikationen,
 		Sicherheitsstandards und organisatorische Vorgaben, vereinfacht damit den Austausch von
-		Bildungsdaten und erhöht ihre Verlässlichkeit und Sicherheit.</para>
+		Bildungsdaten und erhöht ihre Verlässlichkeit und Sicherheit.^</para>
+	<para>In <link xlink:href="https://www.it-planungsrat.de/beschluss/b-2025-43-it" xml:id="menura6h"
+			>seiner 48. Sitzung </link>, die am 26. November 2025 stattfand, hat der IT-Planungsrat
+		den Beschluss getroffen, "die verbindliche Nutzung von XBildung mit Beginn des Jahres 2029
+		für den Anwendungsbereich „digitale Zeugnisausstellung“ auf Basis der verfügbaren
+		Spezifikationen im Geltungsbereich deutscher Schulen, Hochschulen und zuständiger Stellen
+		nach HWO und BBiG mit einem Übergangszeitraum von zwei Jahren ab 2027" vorzuschreiben. </para>
+	<para>Der IT-Planungsrat bittet die Kultusministerkonferenz in der Standardfamilie "XBildung"
+		mit den Spezifikationen „XSchule“, „XHochschule“ und „XBerufsbildung“ ab 2027 die
+		Anforderungen aller Fachbereiche der Verwaltung im Bildungsbereich zu berücksichtigen und
+		den Standard bei Bedarf entsprechend fortzuschreiben. Dies gilt insbesondere für Vorhaben
+		des Onlinezugangsgesetzes, der Registermodernisierung, der Umsetzung der SDG-VO und des
+		IDNrG.</para>
+	
 </chapter>

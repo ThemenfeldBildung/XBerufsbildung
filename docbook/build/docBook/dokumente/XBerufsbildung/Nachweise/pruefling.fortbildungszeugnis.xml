@@ -7,8 +7,8 @@
          xml:lang="de"
          xml:id="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis">
    <title>pruefling.fortbildungszeugnis</title>
-   <subtitle>Nachricht: <emphasis role="codebf">pruefling.fortbildungszeugnis</emphasis>
-   </subtitle><para>Diese Nachricht bildet das Fortbildungszeugnis nach BBiG und HwO ab, das die erfolgreiche Teilnahme an einer Fortbildungsprüfung bescheinigt. Diese enthält Angaben zum Prüfling, zum Fortbildungsabschluss, zum Prüfungsergebnis, zur Fortbildungsordnung, zur ausstellenden Stelle, zum Datum des Bestehens der Prüfung und ggf. weitere zusätzliche Angaben.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis">
+   <subtitle>Dokument: <emphasis role="codebf">pruefling.fortbildungszeugnis</emphasis>
+   </subtitle><para>Dieses Dokument bildet ein Fortbildungszeugnis nach BBiG oder HwO ab. Es enthält die für das Zeugnis erforderlichen Angaben zur geprüften Person, zum Fortbildungsabschluss, zu den Prüfungsteilen und Prüfungsleistungen einschließlich deren Bewertungen, zum Gesamtergebnis, zur zugrunde liegenden Fortbildungsordnung, zum Datum des Bestehens der Prüfung sowie zur ausstellenden zuständigen Stelle.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis">
       <title>pruefling.fortbildungszeugnis</title>
       <mediaobject>
          <imageobject>
@@ -19,7 +19,7 @@
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <para>Das Dokument <emphasis role="codebf">pruefling.fortbildungszeugnis</emphasis> ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
    <informaltable xml:id="table.XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
@@ -67,7 +67,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element beschreibt eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (in einer Ausbildungs- oder Weiterbildungsstätte) Wissen und Kompetenzen erworben hat, die mit Bildungsnachweisen wie beispielsweise Zeugnissen beurkundet oder bescheinigt werden können.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält identifizierende Angaben zur natürlichen Person, die geprüft wurde.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -105,7 +105,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Das Element enthält die Bezeichnung des Fortbildungsabschlusses, die Fundstelle der Fortbildungsordnung und ggf. den Schwerpunkt der jeweiligen Fortbildung.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält Angaben zur Bezeichnung des Fortbildungsabschlusses, zur Fundstelle der jeweiligen Fortbildungsordnung und ggf. zum Schwerpunkt der Fortbildung.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -129,7 +129,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Das Element enthält Angaben zu den Prüfungsteilen und -bereichen sowie deren Bewertung.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält Angaben zu den Prüfungsteilen und Prüfungsleistungen sowie deren Bewertung.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -137,13 +137,17 @@
                   <emphasis role="bold">handlungsbereich</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..n</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -156,17 +160,21 @@
                   <emphasis role="bold">befreiungAEVO</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..n</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Das Element enthält die Angabe zur Befreiung vom schriftlichen Teil der Prüfung nach der Ausbilder-Eignungsverordnung.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Das Element enthält Angaben zur Befreiung vom schriftlichen Teil der Prüfung nach der Ausbilder-Eignungsverordnung.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -198,7 +206,7 @@
                   <emphasis role="codebf">Bemerkung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">0..n</emphasis>
                </entry>
                <entry>
                   <xref linkend="XBerufsbildung.Baukasten.Bemerkung" role="AbschnittNummer"/>
@@ -208,7 +216,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element kann eine Vielzahl strukturierter und unstrukturierter Informationen zu den erbrachten Leistungen enthalten, z. B. eine Befreiung von vergleichbaren Prüfungsbestandteilen.</para>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält ergänzende Angaben zu den erbrachten Leistungen, die nicht in anderen Elementen abgebildet werden, z. B. eine Befreiung von vergleichbaren Prüfungsbestandteilen.</para>
 
 <para>Eine Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung wird gesondert in der Eigenschaft <emphasis role="codebf">befreiungAEVO</emphasis> angegeben.</para></entry>
             </row>
@@ -268,7 +276,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält den Namen der zuständigen Stelle, die offizielle Dokumente, Zertifikate oder Nachweise erstellt und ausstellt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung der zuständigen Stelle, die das Fortbildungszeugnis ausstellt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -285,7 +293,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier kann eine digitale Signatur angegeben werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die digitale Signatur des Fortbildungszeugnisses.</para></entry>
             </row>
          </tbody>
       </tgroup>

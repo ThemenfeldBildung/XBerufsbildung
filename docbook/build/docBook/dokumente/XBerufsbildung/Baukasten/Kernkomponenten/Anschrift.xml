@@ -51,7 +51,7 @@
                   <emphasis role="bold">strasse</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -76,7 +76,7 @@
                   <emphasis role="bold">hausnummer</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -101,7 +101,7 @@ Da manche Gebäude oder Organisationen sich als Einheit über mehrere Hausnummer
                   <emphasis role="bold">postfach</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -123,7 +123,7 @@ Da manche Gebäude oder Organisationen sich als Einheit über mehrere Hausnummer
                   <emphasis role="bold">postleitzahl</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -147,7 +147,7 @@ Eine Beschränkung auf deutsche Postleitzahlen (5-stellig) wurde bewusst nicht v
                   <emphasis role="bold">ort</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -169,7 +169,7 @@ Eine Beschränkung auf deutsche Postleitzahlen (5-stellig) wurde bewusst nicht v
                   <emphasis role="bold">zusatz</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>

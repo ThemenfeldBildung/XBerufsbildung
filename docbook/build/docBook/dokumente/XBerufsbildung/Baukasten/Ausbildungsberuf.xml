@@ -51,32 +51,40 @@
                   <emphasis role="bold">bezeichnung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die offizielle Bezeichnung des Ausbildungsberufs laut Ausbildungsordnung unter dem eine spezifische Berufsausbildung anerkannt und durchgeführt wird, z. B. Fachkraft für Metalltechnik.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angabe der offiziellen Bezeichnung des Ausbildungsberufs gemäß Ausbildungsordnung, z. B. Fachkraft für Metalltechnik.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">fundstelle</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">1..n</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Fundstelle der berufsspezifischen Verordnung eines Ausbildungsberufs in entsprechender Rechtsgrundlage. Die Fundstelle des Ausbildungsberufs ist die genaue rechtliche Quelle, wie ein Gesetz oder eine Verordnung, in der die Ausbildungsvorschriften und Rahmenbedingungen für diesen Beruf festgelegt sind. z. B. BGBl. I S. 628.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Fundstelle der rechtlichen Regelungen zu einem Ausbildungsberuf. Die Fundstelle des Ausbildungsberufs ist die genaue rechtliche Quelle, wie ein Gesetz oder eine Verordnung, in der die Ausbildungsvorschriften und Rahmenbedingungen für diesen Beruf festgelegt sind, z. B. BGBl. I S. 628. Optional können auch verbindliche Rahmenlehrpläne und Prüfungsordnungen angegeben werden.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -84,13 +92,13 @@
                </entry>
                <entry/>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">0..n</emphasis>
                </entry>
                <entry/>
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Fachrichtung, den Schwerpunkt oder weitere prüfungsrelevante Differenzierung des Ausbildungsberufs. Die Binnendifferenzierung des Ausbildungsberufs bezeichnet die Möglichkeit, innerhalb eines Ausbildungsberufs durch verschiedene Wahlqualifikationen, Fachrichtungen oder Spezialisierungen spezifische Kenntnisse und Fähigkeiten zu vertiefen.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben über Fachrichtung, Schwerpunkt oder weitere prüfungsrelevante Differenzierung des Ausbildungsberufs. Die Binnendifferenzierung des Ausbildungsberufs bezeichnet die Möglichkeit, innerhalb eines Ausbildungsberufs durch verschiedene Wahlqualifikationen, Fachrichtungen oder Spezialisierungen spezifische Kenntnisse und Fähigkeiten zu vertiefen.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -98,17 +106,21 @@
                   <emphasis role="bold">fachrichtung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Das Element enthält die Fachrichtung des Ausbildungsberufs, z. B. Montagetechnik.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Angabe der Fachrichtung des Ausbildungsberufs, z. B. Montagetechnik.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -116,17 +128,21 @@
                   <emphasis role="bold">schwerpunkt</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Das Element enthält den prüfungsrelevanten Schwerpunkt des Ausbildungsberufs, z. B. Zerspanungstechnik.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Angabe des prüfungsrelevanten Schwerpunkts des Ausbildungsberufs, z. B. Zerspanungstechnik.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -134,17 +150,21 @@
                   <emphasis role="bold">sonstiges</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">0..n</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
                <entry rowsep="1" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Das Element enthält weitere prüfungsrelevante Differenzierungen, wie Einsatzgebiet, Wahlqualifikationen oder Handlungsfelder.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Angabe weiterer prüfungsrelevanter Differenzierungen, wie Einsatzgebiet, Wahlqualifikationen oder Handlungsfelder.</para></entry>
             </row>
          </tbody>
       </tgroup>

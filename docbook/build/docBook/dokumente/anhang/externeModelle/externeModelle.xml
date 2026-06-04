@@ -69,6 +69,11 @@
          </listitem>
          <listitem>
             <para>
+               <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Basisdatentypen.String.Localized">String.Localized</link>
+            </para>
+         </listitem>
+         <listitem>
+            <para>
                <link xlink:href="http://xbildung.de/def/xbildung/1.2/spec/xbd_spezifikation_1.2.pdf#XBildung.Baukasten.TeilbekanntesDatum">TeilbekanntesDatum</link>
             </para>
          </listitem>
@@ -85,9 +90,6 @@
          </listitem>
          <listitem>
             <para>Nachrichtenkopf.G2GType</para>
-         </listitem>
-         <listitem>
-            <para>datatypeB</para>
          </listitem>
          <listitem>
             <para>datatypeC</para>

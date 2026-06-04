@@ -336,7 +336,7 @@
             fill="black"
             x="53"
             y="400"
-            text-anchor="end">0..1</text>
+            text-anchor="end">0..*</text>
       <line x1="33"
             y1="210"
             x2="33"

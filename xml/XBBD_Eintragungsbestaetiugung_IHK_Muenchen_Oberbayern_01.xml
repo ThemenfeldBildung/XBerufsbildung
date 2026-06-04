@@ -2,19 +2,21 @@
 
 <!-- 
         Nichtnormative Beispielinstanz für eine Eintragungsbestätigung basierend auf einem Musternachweis der IHK München und Oberbayern im Rahmen des Vorhabens XBerufsbildunng
-        Version: XBerufsbildung 0.6
-        Letzte Aktualisierung: 14.11.2025
+        Version: XBerufsbildung 0.7
+        Letzte Aktualisierung: 04.06.2026
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
-<xbbd:auszubildender.eintragungsbestaetigung
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
-    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+<xbbd:auszubildender.eintragungsbestaetigung xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:bn-beh="http://xoev.de/schemata/basisnachricht/behoerde/1_1"
+    xmlns:bn-kom="http://xoev.de/schemata/basisnachricht/kommunikation/1_1"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+    xmlns:bn-g2g="http://xoev.de/schemata/basisnachricht/g2g/1_1"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd http://xberufsbildung.de/def/xberufsbildung/0.6/xsd/xberufsbildung.xsd">
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd http://xberufsbildung.de/def/xberufsbildung/0.7/xsd/xberufsbildung.xsd">
     
     <xbd:titel>Eintragung eines Berufsausbildungsvertrags</xbd:titel>
     <xbd:ausstellung>
@@ -24,7 +26,7 @@
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
 
-    <xbbd:auszubildender>
+    <xbbd:auszubildendePerson>
         <xbbd:nameNatuerlichePerson>
             <xbbd:familienname>
                 <xbbd:name>Maier Hoch</xbbd:name>
@@ -33,33 +35,35 @@
                 <xbbd:name>Friedrich</xbbd:name>
             </xbbd:vorname>
         </xbbd:nameNatuerlichePerson>
+        <xbbd:geschlecht>
+            <code>m</code>
+        </xbbd:geschlecht>
         <xbbd:geburt>
             <xbbd:datum>
                 <xbd:jahrMonatTag>2007-04-01</xbd:jahrMonatTag>
             </xbbd:datum>
         </xbbd:geburt>
-        <xbbd:geschlecht>
-            <code>m</code>
-        </xbbd:geschlecht>
-    </xbbd:auszubildender>
+    </xbbd:auszubildendePerson>
     
-    <xbbd:angabenGesetzlicherVertreter>
-        <xbbd:gesetzlicherVertreterSchluessel>
+    <xbbd:gesetzlicheVertretung>
+        <xbbd:schluessel>
             <code>1</code>
-        </xbbd:gesetzlicherVertreterSchluessel>
-        <xbbd:name>
+        </xbbd:schluessel>
+        <xbbd:nameNatuerlichePerson>
             <xbbd:familienname>
                 <xbbd:name>Maier Hoch</xbbd:name>
             </xbbd:familienname>
             <xbbd:vorname>
                 <xbbd:name>Rüdiger</xbbd:name>
             </xbbd:vorname>
-        </xbbd:name>
-    </xbbd:angabenGesetzlicherVertreter>
+        </xbbd:nameNatuerlichePerson>
+        
+    </xbbd:gesetzlicheVertretung>
 
     <xbbd:angabenAusbildung>
         <xbbd:ausbildungsberuf>
             <xbbd:bezeichnung>Fachkraft für Metalltechnik</xbbd:bezeichnung>
+            <xbbd:fundstelle>BGBl. I S. 628</xbbd:fundstelle>
             <xbbd:binnendifferenzierung>
                 <xbbd:fachrichtung>Montagetechnik</xbbd:fachrichtung>
             </xbbd:binnendifferenzierung>
@@ -95,6 +99,7 @@
     
     <xbbd:eintragungsnummer>
         <xbbd:id>3241646 / 1</xbbd:id>
+        <xbbd:beschreibung>Eintragungsnummer des Lehrvertrags</xbbd:beschreibung>
     </xbbd:eintragungsnummer>
     
 </xbbd:auszubildender.eintragungsbestaetigung>

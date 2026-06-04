@@ -3,19 +3,21 @@
 <!-- 
         Nichtnormative Beispielinstanz für eine Eintragungsbestätigung basierend auf einem Musternachweis der HWK München und Oberbayern im Rahmen des Vorhabens XBerufsbildunng
         Musternachweis: https://xbildung.de/def/rep/by/example/eintragungsbestaetigung_lehrlingsrolle_muenchen_oberbayern.pdf
-        Version: XBerufsbildung 0.6
-        Letzte Aktualisierung: 14.11.2025
+        Version: XBerufsbildung 0.7
+        Letzte Aktualisierung: 04.06.2026
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
-<xbbd:auszubildender.eintragungsbestaetigung
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
-    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+<xbbd:auszubildender.eintragungsbestaetigung xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:bn-beh="http://xoev.de/schemata/basisnachricht/behoerde/1_1"
+    xmlns:bn-kom="http://xoev.de/schemata/basisnachricht/kommunikation/1_1"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+    xmlns:bn-g2g="http://xoev.de/schemata/basisnachricht/g2g/1_1"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd http://xberufsbildung.de/def/xberufsbildung/0.6/xsd/xberufsbildung.xsd">
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd http://xberufsbildung.de/def/xberufsbildung/0.7/xsd/xberufsbildung.xsd">
     
     <xbd:titel>Eintragungsbestätigung</xbd:titel>
     <xbd:ausstellung>
@@ -32,7 +34,7 @@
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
     
-    <xbbd:auszubildender>
+    <xbbd:auszubildendePerson>
         <xbbd:nameNatuerlichePerson>
             <xbbd:anrede>Herr</xbbd:anrede>
             <xbbd:familienname>
@@ -42,6 +44,9 @@
                 <xbbd:name>Tom</xbbd:name>
             </xbbd:vorname>
         </xbbd:nameNatuerlichePerson>
+        <xbbd:geschlecht> 
+            <code>m</code>
+        </xbbd:geschlecht>
         <xbbd:geburt>
             <xbbd:datum>
                 <xbd:jahrMonatTag>1985-12-31</xbd:jahrMonatTag>
@@ -50,14 +55,12 @@
                 <xbbd:ort>Testhausen</xbbd:ort>
             </xbbd:geburtsort>
         </xbbd:geburt>  
-        <xbbd:geschlecht> 
-            <code>m</code>
-        </xbbd:geschlecht>
-    </xbbd:auszubildender>
+    </xbbd:auszubildendePerson>
     
     <xbbd:angabenAusbildung>  
         <xbbd:ausbildungsberuf>
             <xbbd:bezeichnung>Bürokaufmann</xbbd:bezeichnung>
+            <xbbd:fundstelle>BGBl. 2025 I Nr. 62, S. 8</xbbd:fundstelle>
         </xbbd:ausbildungsberuf>
         <xbbd:ausbildungszeitraum>
             <xbbd:beginn>2013-09-01</xbbd:beginn>

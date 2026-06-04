@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.PruefungsteilPruefungszeugnis">
    <title>PruefungsteilPruefungszeugnis</title>
    <subtitle>Typ: <emphasis role="codebf">PruefungsteilPruefungszeugnis</emphasis>
-   </subtitle><para>Die Klasse beinhaltet Angaben zum Prüfungsteil, einschließlich der Bezeichnung, der Benotung sowie der Angaben zu den einzelnen Prüfungsbereichen.</para><figure xml:id="figure.XBerufsbildung.Baukasten.PruefungsteilPruefungszeugnis">
+   </subtitle><para>Die Klasse enthält Angaben zur Bezeichnung, Bewertung und zugehörigen Prüfungsbereichen eines Prüfungsteils.</para><figure xml:id="figure.XBerufsbildung.Baukasten.PruefungsteilPruefungszeugnis">
       <title>PruefungsteilPruefungszeugnis</title>
       <mediaobject>
          <imageobject>
@@ -51,18 +51,20 @@
                   <emphasis role="bold">bezeichnung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung eines Prüfungsteils, z. B. Teil A der Prüfung, Teil 1 der Abschlussprüfung. Mit der Einführung der gestreckten Abschluss- bzw. Gesellenprüfung (GAP)
-wurde festgelegt, dass die Bezeichnung Prüfungsteil nur noch für die beiden
-zeitlich auseinanderfallenden Teile (Teil 1 und Teil 2 der GAP) dieser Prüfungsstruktur benutzt werden soll.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Bezeichnung des Prüfungsteils, z. B. Teil 1 der Abschlussprüfung. Bei gestreckten Abschlussprüfungen oder Gesellenprüfungen sind dies regelmäßig Teil 1 und Teil 2. In anderen Prüfungsstrukturen können abweichende Bezeichnungen verwendet werden.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -82,7 +84,7 @@ zeitlich auseinanderfallenden Teile (Teil 1 und Teil 2 der GAP) dieser Prüfungs
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Angabe der zusammengefassten Note bzw. Bewertung für einen Prüfungsteil.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Note bzw. Bewertung eines Prüfungsteils.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -103,7 +105,7 @@ zeitlich auseinanderfallenden Teile (Teil 1 und Teil 2 der GAP) dieser Prüfungs
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zum Prüfungsbereich innerhalb eines Prüfungsteils, z. B. Arbeitsauftrag oder Wirtschafts- und Sozialkunde. Der Prüfungsbereich fungiert als Strukturelement zur Untergliederung von Prüfungen, indem er sich an den Tätigkeitsfeldern der Berufspraxis orientiert und die Anforderungen an den Prüfling definiert.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zum Prüfungsbereich innerhalb eines Prüfungsteils, z. B. Arbeitsauftrag oder Wirtschafts- und Sozialkunde. Prüfungsbereiche strukturieren die Prüfung nach den in der Ausbildungsordnung festgelegten Anforderungen und Inhalten.</para></entry>
             </row>
          </tbody>
       </tgroup>

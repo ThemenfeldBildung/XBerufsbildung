@@ -7,8 +7,8 @@
          xml:lang="de"
          xml:id="XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung">
    <title>auszubildender.eintragungsbestaetigung</title>
-   <subtitle>Nachricht: <emphasis role="codebf">auszubildender.eintragungsbestaetigung</emphasis>
-   </subtitle><para>Diese Nachricht bildet die Eintragungsbestätigung der zuständigen Stelle nach BBiG und HwO ab. Die Eintragung des Ausbildungsvertrags in das Verzeichnis der Berufsausbildungsverhältnisse wird dem Ausbildungsbetrieb und der auszubildenden Person mit einer schriftlichen Eintragungsbestätigung angezeigt. Diese enthält Angaben zur Ausbildung (personenbezogene Daten zum Auszubildenden, Ausbildungsberuf, Ausbildungszeitraum) und Informationen zum Ausbildungsbetrieb (Name, Anschrift).</para><figure xml:id="figure.XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung">
+   <subtitle>Dokument: <emphasis role="codebf">auszubildender.eintragungsbestaetigung</emphasis>
+   </subtitle><para>Dieses Dokument bildet die Eintragungsbestätigung der zuständigen Stelle nach BBiG und HwO ab. Die Eintragung des Ausbildungsvertrags in das Verzeichnis der Berufsausbildungsverhältnisse wird dem Ausbildungsbetrieb und der auszubildenden Person mit einer schriftlichen Eintragungsbestätigung angezeigt. Diese enthält Angaben zur Ausbildung (personenbezogene Daten zum Auszubildenden, Ausbildungsberuf, Ausbildungszeitraum) und Informationen zum Ausbildungsbetrieb (Name, Anschrift).</para><figure xml:id="figure.XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung">
       <title>auszubildender.eintragungsbestaetigung</title>
       <mediaobject>
          <imageobject>
@@ -19,7 +19,7 @@
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <para>Das Dokument <emphasis role="codebf">auszubildender.eintragungsbestaetigung</emphasis> ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
    <informaltable xml:id="table.XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
@@ -49,53 +49,47 @@
          <tbody>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">auszubildender</emphasis>
+                  <emphasis role="bold">auszubildendePerson</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Auszubildender</emphasis>
+                  <emphasis role="codebf">AuszubildendePerson</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Auszubildender"
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.AuszubildendePerson"
                         role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Auszubildender"
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.AuszubildendePerson"
                         role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur auszubildenden Person, für die eine Eintragungsbestätigung durch die zuständige Stelle ausgestellt wird. Ein Auszubildender ist eine Person, die eine berufliche Ausbildung durchläuft, um theoretische und praktische Kenntnisse sowie Fähigkeiten in einem bestimmten Berufsfeld zu erwerben.
-
-
-
-
-
-&#xD;</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die personenbezogenen Angaben zur auszubildenden Person.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">angabenGesetzlicherVertreter</emphasis>
+                  <emphasis role="bold">gesetzlicheVertretung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">GesetzlicherVertreter</emphasis>
+                  <emphasis role="codebf">GesetzlicheVertretung</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..2</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.GesetzlicherVertreter"
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.GesetzlicheVertretung"
                         role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.GesetzlicherVertreter"
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.GesetzlicheVertretung"
                         role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element bildet Daten des gesetzlichen Vertreters der betroffenen Person ab. Ein gesetzlicher Vertreter eines Auszubildenden ist eine Person, die kraft Gesetzes oder gerichtlicher Anordnung befugt ist, die rechtlichen Angelegenheiten des minderjährigen oder betreuten Auszubildenden zu regeln und zu vertreten.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur gesetzlichen Vertretung der auszubildenden Person.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -116,7 +110,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zum Ausbildungsberuf und zum Zeitraum der Berufsausbildung.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur eingetragenen Berufsausbildung.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -137,7 +131,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zum Ausbildungsbetrieb. Ein Ausbildungsbetrieb ist ein Unternehmen oder eine Einrichtung, die nach gesetzlichen Vorgaben zur praktischen Ausbildung im Rahmen eines anerkannten Ausbildungsberufs befugt ist.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zum Ausbildungsbetrieb.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -159,7 +153,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zu einer Institution oder Behörde, die die Eintragung eines Ausbildungsverhältnisses in das Verzeichnis der Berufsausbildungsverhältnisse vornimmt und eine Eintragungsbestätigung erstellt und ausstellt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur zuständigen Stelle, die die Eintragungsbestätigung ausstellt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -181,7 +175,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die zumeist organisationsinterne Nummer der ausstellenden Stelle, unter der der Lehrvertrag geführt wird. Die Eintragungsbestätigung wird mit einer Eintragungsnummer versehen. Diese dient insbesondere dem Schriftverkehr und wird nur einmal vergeben.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Eintragungsnummer des Berufsausbildungsverhältnisses bei der ausstellenden Stelle.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -198,7 +192,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier kann eine digitale Signatur angegeben werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die digitale Signatur der Eintragungsbestätigung.</para></entry>
             </row>
          </tbody>
       </tgroup>

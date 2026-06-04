@@ -5,21 +5,21 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XBerufsbildung.Baukasten.Kernkomponenten.Auszubildender">
-   <title>Auszubildender</title>
-   <subtitle>Typ: <emphasis role="codebf">Auszubildender</emphasis>
-   </subtitle><para>Ein Auszubildender bzw. eine Auszubildende ist eine natürliche Person, die auf der Grundlage eines Berufsausbildungsvertrages im Rahmen des dualen Ausbildungssystems nach Berufsbildungsgesetz (BBiG) oder Handwerksordnung (HwO) eine Berufsausbildung durchläuft.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.Auszubildender">
-      <title>Auszubildender</title>
+         xml:id="XBerufsbildung.Baukasten.Kernkomponenten.AntragstellendePerson">
+   <title>AntragstellendePerson</title>
+   <subtitle>Typ: <emphasis role="codebf">AntragstellendePerson</emphasis>
+   </subtitle><para>Die Klasse beschreibt die antragstellende Person in einem Verwaltungsverfahren.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.AntragstellendePerson">
+      <title>AntragstellendePerson</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
                        scale="110"
-                       fileref="../../../../zeichnungen/XBerufsbildung/Baukasten/Kernkomponenten/Auszubildender.svg"/>
+                       fileref="../../../../zeichnungen/XBerufsbildung/Baukasten/Kernkomponenten/AntragstellendePerson.svg"/>
          </imageobject>
       </mediaobject>
    </figure>
-   <informaltable xml:id="table.XBerufsbildung.Baukasten.Kernkomponenten.Auszubildender">
+   <informaltable xml:id="table.XBerufsbildung.Baukasten.Kernkomponenten.AntragstellendePerson">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
          <colspec colname="indent1" colnum="2" colwidth="5mm"/>
@@ -34,7 +34,7 @@
          <colspec colname="page" colnum="11" colwidth="12mm"/>
          <thead>
             <row>
-               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Auszubildender</emphasis>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">AntragstellendePerson</emphasis>
                </entry>
             </row>
             <row>
@@ -66,49 +66,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier werden Informationen zu den Namen einer natürlichen Person zusammengefasst.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">geburt</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Geburt</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geburt"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geburt"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Hier werden Angaben zur Geburt einer natürlichen Person gemacht.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">staatsangehoerigkeit</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Code.Staatsangehoerigkeit</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Die "staatsangehoerigkeit" einer natürlichen Person gibt an, welchem Staat die Person angehört. Die Staatsangehörigkeit ist das rechtliche Band zwischen dem Staat und dem Staatsangehörigen und bestimmt Rechte wie Pflichten zwischen Staat und Staatsangehörigen.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zum Namen der antragstellenden Person.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -130,29 +88,29 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier werden Angaben zur Anschrift einer natürlichen Person gemacht.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Anschrift der antragstellenden Person.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">identifikationsnummer</emphasis>
+                  <emphasis role="bold">geburt</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Identifikation</emphasis>
+                  <emphasis role="codebf">Geburt</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..n</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geburt"
                         role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geburt"
                         role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Persönliche Identifikationsnummer einer natürlichen Person, die sie kontextbezogen von allen anderen Personen eindeutig unterscheidet. Eine natürliche Person kann mehrere Identifikationsnummern haben.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Geburt der antragstellenden Person.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -174,33 +132,35 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>"Kommunikation" fasst Angaben zur Erreichbarkeit über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</para>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Erreichbarkeit der antragstellenden Person über elektronische Kommunikationskanäle.</para>
 </entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">geschlecht</emphasis>
+                  <emphasis role="bold">identifikationsnummer</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Code.Geschlecht</emphasis>
+                  <emphasis role="codebf">Identifikation</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">0..n</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
+                        role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Die Komponente "geschlecht" repräsentiert die Angaben zum Geschlecht einer natürlichen Person.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zu Identifikationsmerkmalen der antragstellenden Person. Mehrere Identifikationen sind möglich.</para></entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <para/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../../anhang/verwendung/complexTypes/auszubildender_list.xml"/>
+            href="../../../anhang/verwendung/complexTypes/antragstellendeperson_list.xml"/>
 </section>

@@ -51,16 +51,20 @@
                   <emphasis role="bold">bezeichnung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung eines Prüfungsteils. Ein Prüfungsteil ist ein spezifischer Abschnitt oder Teil einer Prüfung, der sich auf bestimmte Inhalte, Fähigkeiten oder Kompetenzen konzentriert und separat bewertet wird, z. B. Projektarbeit und projektbezogenes Fachgespräch.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Bezeichnung eines Prüfungsteils. Ein Prüfungsteil ist ein spezifischer Abschnitt oder Teil einer Prüfung, der sich auf bestimmte Inhalte, Fähigkeiten oder Kompetenzen konzentriert und separat bewertet wird, z. B. Projektarbeit und projektbezogenes Fachgespräch.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -80,7 +84,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Angabe der zusammengefassten Note bzw. Bewertung für einen Prüfungsteil basierend auf der Leistung einer Person in diesem spezifischen Abschnitt der Prüfung.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Note bzw. Bewertung eines Prüfungsteils.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -101,7 +105,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur Prüfungsleitung innerhalb eines Prüfungsteils. Eine Prüfungsleitung beschreibt somit die spezifischen Kenntnisse, Fähigkeiten oder Kompetenzen, z. B. Marketing-Management.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Prüfungsleistung innerhalb eines Prüfungsteils. Eine Prüfungsleistung beschreibt somit die spezifischen Kenntnisse, Fähigkeiten oder Kompetenzen, z. B. Marketing-Management.</para></entry>
             </row>
          </tbody>
       </tgroup>

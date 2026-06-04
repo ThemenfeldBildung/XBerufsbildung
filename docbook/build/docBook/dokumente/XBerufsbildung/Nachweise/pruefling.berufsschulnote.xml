@@ -7,8 +7,8 @@
          xml:lang="de"
          xml:id="XBerufsbildung.Nachweise.pruefling.berufsschulnote">
    <title>pruefling.berufsschulnote</title>
-   <subtitle>Nachricht: <emphasis role="codebf">pruefling.berufsschulnote</emphasis>
-   </subtitle><para>Diese Nachricht dient der Übermittlung der Berufsschulnote von der Berufsschule an die für die Berufsbildung des Prüflings zuständige Stelle. Sie enthält die relevanten Informationen zum Prüfling, zur besuchten Berufsschule, zur für die Berufsbildung des Prüflings zuständigen Stelle sowie zur erreichten Gesamtnote und der Bezeichnung des Ausbildungsberufs. Die Übermittlung erfolgt im Rahmen der gesetzlichen Vorgaben gemäß § 37 Abs. 3 BBiG sowie den jeweiligen landesrechtlichen Vorgaben.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.berufsschulnote">
+   <subtitle>Dokument: <emphasis role="codebf">pruefling.berufsschulnote</emphasis>
+   </subtitle><para>Dieses Dokument dient der Übermittlung der Berufsschulnote von der Berufsschule an die für die Berufsbildung des Prüflings zuständige Stelle. Sie enthält die relevanten Informationen zum Prüfling, zur besuchten Berufsschule, zur für die Berufsbildung des Prüflings zuständigen Stelle sowie zur erreichten Gesamtnote und der Bezeichnung des Ausbildungsberufs. Die Übermittlung erfolgt im Rahmen der gesetzlichen Vorgaben gemäß § 37 Abs. 3 BBiG sowie den jeweiligen landesrechtlichen Vorgaben.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.berufsschulnote">
       <title>pruefling.berufsschulnote</title>
       <mediaobject>
          <imageobject>
@@ -19,7 +19,7 @@
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <para>Das Dokument <emphasis role="codebf">pruefling.berufsschulnote</emphasis> ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
    <informaltable xml:id="table.XBerufsbildung.Nachweise.pruefling.berufsschulnote">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
@@ -87,7 +87,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element beschreibt die Berufsschule, an der der Prüfling seine schulische Berufsbildung absolviert hat. Die Berufsschule ist die Versenderin der Nachricht und übermittelt die Berufsschulnote an die für die Berufsbildung des Prüflings zuständige Stelle.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur Berufsschule, an der der Prüfling seine schulische Berufsbildung absolviert hat.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -109,7 +109,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element beschreibt die für die Berufsbildung des Prüflings zuständige Stelle (z. B. Industrie- und Handelskammer oder Handwerkskammer). Die für die Berufsbildung des Prüflings zuständige Stelle ist Empfängerin der Nachricht und verarbeitet die übermittelten Daten für die Ausstellung des Zeugnisses.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur für die Berufsbildung zuständigen Stelle, z. B. einer Industrie- und Handelskammer oder einer Handwerkskammer.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -131,28 +131,27 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die personenbezogenen Daten des Prüflings und dient der Zuordnung der Berufsschulnote zur entsprechenden Person.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält identifizierende Angaben zur natürlichen Person, für die die Berufsschulnote übermittelt wird.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">ausbildungsberuf</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Ausbildungsberuf</emphasis>
+                  <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsberuf"
-                        role="AbschnittNummer"/>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsberuf" role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung des Ausbildungsberufs, den der Prüfling erlernt hat. Optional können die Fundstelle sowie eine Binnendifferenzierung angegeben werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung des erlernten Ausbildungsberufs.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -189,7 +188,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier kann eine digitale Signatur angegeben werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die digitale Signatur des Dokuments.</para></entry>
             </row>
          </tbody>
       </tgroup>

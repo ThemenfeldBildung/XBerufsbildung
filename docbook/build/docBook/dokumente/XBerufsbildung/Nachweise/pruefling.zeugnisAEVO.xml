@@ -7,8 +7,8 @@
          xml:lang="de"
          xml:id="XBerufsbildung.Nachweise.pruefling.zeugnisAEVO">
    <title>pruefling.zeugnisAEVO</title>
-   <subtitle>Nachricht: <emphasis role="codebf">pruefling.zeugnisAEVO</emphasis>
-   </subtitle><para>Diese Nachricht bildet das Zeugnis nach der Ausbilder-Eignungsverordnung (AEVO) vom 21.01.2009 (BGBl. I 2009 S. 88), aus dem hervorgeht, dass der Ausbilder oder die Ausbilderin die berufs- und arbeitspädagogische Qualifikation für die Ausbildung in anerkannten Ausbildungsberufen nach dem Berufsbildungsgesetz nachgewiesen hat.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.zeugnisAEVO">
+   <subtitle>Dokument: <emphasis role="codebf">pruefling.zeugnisAEVO</emphasis>
+   </subtitle><para>Dieses Dokument bildet das Zeugnis nach der Ausbilder-Eignungsverordnung (AEVO) vom 21.01.2009 (BGBl. I 2009 S. 88), aus dem hervorgeht, dass der Ausbilder oder die Ausbilderin die berufs- und arbeitspädagogische Qualifikation für die Ausbildung in anerkannten Ausbildungsberufen nach dem Berufsbildungsgesetz nachgewiesen hat.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.zeugnisAEVO">
       <title>pruefling.zeugnisAEVO</title>
       <mediaobject>
          <imageobject>
@@ -19,7 +19,7 @@
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <para>Das Dokument <emphasis role="codebf">pruefling.zeugnisAEVO</emphasis> ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
    <informaltable xml:id="table.XBerufsbildung.Nachweise.pruefling.zeugnisAEVO">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
@@ -67,7 +67,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element beschreibt eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (in einer Ausbildungs- oder Weiterbildungsstätte) Wissen und Kompetenzen erworben hat, die mit Bildungsnachweisen wie beispielsweise Zeugnissen beurkundet oder bescheinigt werden können.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält identifizierende Angaben zur natürlichen Person, die geprüft wurde.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -108,7 +108,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält zusätzliche Angaben und kann eine Vielzahl von weiteren strukturierten und unstrukturierten Informationen zu den erbrachten Leistungen erfassen.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält ergänzende Angaben zu den erbrachten Leistungen oder zum Prüfungszeugnis, die nicht in anderen Elementen abgebildet werden.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -146,7 +146,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zu einer Institution oder Behörde, die offizielle Dokumente, Zertifikate oder Nachweise erstellt und ausstellt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung der zuständigen Stelle, die den Nachweis ausstellt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -163,7 +163,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier kann eine digitale Signatur angegeben werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die digitale Signatur des Prüfungszeugnisses nach AEVO.</para></entry>
             </row>
          </tbody>
       </tgroup>

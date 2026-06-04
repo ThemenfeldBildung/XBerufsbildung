@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XBerufsbildung.Nachweise.antragstellende.anerkennungsbescheid">
+   <title>antragstellende.anerkennungsbescheid</title>
+   <subtitle>Dokument: <emphasis role="codebf">antragstellende.anerkennungsbescheid</emphasis>
+   </subtitle><para>Dieses Dokument bildet den Bescheid über die Feststellung der Gleichwertigkeit der im Ausland erworbenen Berufsqualifikationen ab, z. B. nach BQFG, HwO.</para><figure xml:id="figure.XBerufsbildung.Nachweise.antragstellende.anerkennungsbescheid">
+      <title>antragstellende.anerkennungsbescheid</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XBerufsbildung/Nachweise/antragstellende.anerkennungsbescheid.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <para>Das Dokument <emphasis role="codebf">antragstellende.anerkennungsbescheid</emphasis> ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <informaltable xml:id="table.XBerufsbildung.Nachweise.antragstellende.anerkennungsbescheid">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">antragstellende.anerkennungsbescheid</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">antragsnummer</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält eine spezifische Nummer zur eindeutigen Identifikation des zum Bescheid gehörenden Antrags.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">zustaendigeStelle</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">StelleZustaendig</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element beschreibt die zuständige Stelle, die den Antrag  bearbeitet und den Bescheid über die Feststellung der Gleichwertigkeit erstellt hat.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">antragstellendePerson</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">AntragstellendePerson</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.AntragstellendePerson"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.AntragstellendePerson"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur Person, die einen Antrag auf einen Bescheid über die Feststellung der Gleichwertigkeit stellt.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">referenzberuf</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zum deutschen Referenzberuf, der für die Feststellung der Gleichwertigkeit herangezogen wird.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">referenzausbildungsberuf</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Ausbildungsberuf</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsberuf"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsberuf" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zum Ausbildungsberuf, der als Referenz für die Feststellung der Gleichwertigkeit dient, einschließlich Bezeichnung, Fundstelle und optionaler Binnendifferenzierung.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">referenzfortbildungsabschluss</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Fortbildungsabschluss</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Fortbildungsabschluss"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Fortbildungsabschluss"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zum Fortbildungsabschluss, der als Referenz für die Feststellung der Gleichwertigkeit dient, einschließlich Bezeichnung, Fundstelle und optionalem Schwerpunkt.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">berufsqualifikation</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält Angaben zur Berufsqualifikation.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">ausbildung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Ausbildung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Ausbildung" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Ausbildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zur absolvierten Ausbildung.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">einschlaegigeBerufserfahrung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">EinschlaegigeBerufserfahrung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.EinschlaegigeBerufserfahrung"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.EinschlaegigeBerufserfahrung"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zu einschlägiger Berufserfahrung.</para>
+</entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">befaehigungsnachweis</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeE</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Bezeichnung oder Art eines vorgelegten Befähigungsnachweises, der zur Beurteilung der fachlichen Qualifikation herangezogen wird (z. B. Weiterbildung, Arbeitsprobe, Fachgespräch oder sonstige Qualifikationsnachweise).</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">rechtlicheWuerdigung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">RechtlicheWuerdigung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.RechtlicheWuerdigung"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.RechtlicheWuerdigung"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element beschreibt die rechtliche Würdigung der vorgelegten Berufsqualifikationen im Rahmen der Entscheidung über die Gleichwertigkeit.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">rechtsbehelfsbelehrung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Rechtsbehelfsbelehrung zur getroffenen Entscheidung, die dem Bescheid gemäß § 7 Absatz 3 BQFG beizufügen ist.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">Signature</emphasis> (ref)</entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die digitale Signatur des Bescheids über die Feststellung der Gleichwertigkeit.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+</section>

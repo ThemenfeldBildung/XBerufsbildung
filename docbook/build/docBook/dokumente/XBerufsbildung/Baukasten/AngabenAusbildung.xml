@@ -65,7 +65,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung des Berufs, die Fundstelle der Ausbildungsverordnung sowie weitere prüfungsrelevante Binnendifferenzierungen.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zum Ausbildungsberuf, einschließlich Bezeichnung, Fundstelle der Ausbildungsverordnung sowie prüfungsrelevanter Binnendifferenzierungen.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -87,7 +87,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element gibt den Zeitraum an, in dem eine berufliche Ausbildung stattfindet. Es umfasst ein Startdatum, das den offiziellen Beginn des Ausbildungsverhältnisses kennzeichnet, und ein Enddatum, das das reguläre oder vorzeitige Ende festlegt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zum Zeitraum der Berufsausbildung. Der Zeitraum umfasst ein Startdatum, das den offiziellen Beginn des Ausbildungsverhältnisses kennzeichnet, sowie ein Enddatum, das das reguläre oder vorzeitige Ende festlegt.</para></entry>
             </row>
          </tbody>
       </tgroup>

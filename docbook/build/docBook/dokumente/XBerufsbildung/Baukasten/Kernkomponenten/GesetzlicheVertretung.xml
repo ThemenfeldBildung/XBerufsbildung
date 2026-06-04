@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
-<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent">
 %complete;]><section xmlns="http://docbook.org/ns/docbook"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XBerufsbildung.Baukasten.GesetzlicherVertreter">
-   <title>GesetzlicherVertreter</title>
-   <subtitle>Typ: <emphasis role="codebf">GesetzlicherVertreter</emphasis>
-   </subtitle><para>Diese Klasse enthält Daten des gesetzlichen Vertreters der betroffenen Person. Gesetzliche Vertreter sind Personen, die gemäß gesetzlichen Bestimmungen befugt sind, im Namen anderer zu handeln und deren Rechte sowie Pflichten zu vertreten.</para><figure xml:id="figure.XBerufsbildung.Baukasten.GesetzlicherVertreter">
-      <title>GesetzlicherVertreter</title>
+         xml:id="XBerufsbildung.Baukasten.Kernkomponenten.GesetzlicheVertretung">
+   <title>GesetzlicheVertretung</title>
+   <subtitle>Typ: <emphasis role="codebf">GesetzlicheVertretung</emphasis>
+   </subtitle><para>Angaben zu einer Person, die die betroffene Person gesetzlich vertritt.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.GesetzlicheVertretung">
+      <title>GesetzlicheVertretung</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
                        scale="110"
-                       fileref="../../../zeichnungen/XBerufsbildung/Baukasten/GesetzlicherVertreter.svg"/>
+                       fileref="../../../../zeichnungen/XBerufsbildung/Baukasten/Kernkomponenten/GesetzlicheVertretung.svg"/>
          </imageobject>
       </mediaobject>
    </figure>
-   <informaltable xml:id="table.XBerufsbildung.Baukasten.GesetzlicherVertreter">
+   <informaltable xml:id="table.XBerufsbildung.Baukasten.Kernkomponenten.GesetzlicheVertretung">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
          <colspec colname="indent1" colnum="2" colwidth="5mm"/>
@@ -34,7 +34,7 @@
          <colspec colname="page" colnum="11" colwidth="12mm"/>
          <thead>
             <row>
-               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">GesetzlicherVertreter</emphasis>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">GesetzlicheVertretung</emphasis>
                </entry>
             </row>
             <row>
@@ -48,7 +48,7 @@
          <tbody>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">gesetzlicherVertreterSchluessel</emphasis>
+                  <emphasis role="bold">schluessel</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">Code.GesetzlicherVertreter</emphasis>
@@ -64,11 +64,11 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält eine Schlüsseltabelle, in der die verschiedenen Arten der gesetzlichen Vertretung dargestellt sind.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angabe der Art der gesetzlichen Vertretung.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">name</emphasis>
+                  <emphasis role="bold">nameNatuerlichePerson</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">NameNatuerlichePerson</emphasis>
@@ -86,7 +86,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält Namensinformationen des gesetzlichen Vertreters.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zum Namen der gesetzlichen Vertretung.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -108,12 +108,56 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Hauptanschrift des gesetzlichen Vertreters.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Anschrift der gesetzlichen Vertretung.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">geburt</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Geburt</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geburt"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geburt"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Geburt der gesetzlichen Vertretung.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">identifikationsnummer</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Identifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zu Identifikationsmerkmalen der gesetzlichen Vertretung. Mehrere Identifikationen sind möglich.</para></entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <para/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../anhang/verwendung/complexTypes/gesetzlichervertreter_list.xml"/>
+            href="../../../anhang/verwendung/complexTypes/gesetzlichevertretung_list.xml"/>
 </section>

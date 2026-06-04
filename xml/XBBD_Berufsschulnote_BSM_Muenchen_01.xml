@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
         Nichtnormative Beispielinstanz für die Übermittlung der Berufsschulnote im Rahmen des Vorhabens XBerufsbildung
-        Version: XBerufsbildung 0.6
-        Letzte Aktualisierung: 14.11.2025
+        Version: XBerufsbildung 0.7
+        Letzte Aktualisierung: 04.06.2026
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
-<xbbd:pruefling.berufsschulnote xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
-    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+<xbbd:pruefling.berufsschulnote xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:bn-beh="http://xoev.de/schemata/basisnachricht/behoerde/1_1"
+    xmlns:bn-kom="http://xoev.de/schemata/basisnachricht/kommunikation/1_1"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+    xmlns:bn-g2g="http://xoev.de/schemata/basisnachricht/g2g/1_1"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.6/xsd http://xberufsbildung.de/def/xberufsbildung/0.6/xsd/xberufsbildung.xsd">
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd http://xberufsbildung.de/def/xberufsbildung/0.7/xsd/xberufsbildung.xsd">
 
     <xbd:titel xml:lang="en-US">Berufsschulnote</xbd:titel>
     <xbd:ausstellung>
@@ -30,11 +33,12 @@
             <xbbd:name>Berufliche Schule am Musterberg</xbbd:name>
             <xbbd:kurzbezeichnung>BSM</xbbd:kurzbezeichnung>
         </xbbd:name>
-        <xbbd:schulart>
-            <xbbd:code listURI="urn:xbildung-de:kmk:codeliste:artderschule" listVersionID="1.0">
-                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/berufsfachschule</code>
-            </xbbd:code>
-        </xbbd:schulart>
+        <xbbd:kommunikation>
+            <xbbd:kanal>
+                <code>01</code>
+            </xbbd:kanal>
+            <xbbd:kennung>berufsschule-musterberg@bsm.de</xbbd:kennung>
+        </xbbd:kommunikation>        
         <xbbd:anschrift>
             <xbbd:strasse>Am Musterberg</xbbd:strasse>
             <xbbd:hausnummer>12</xbbd:hausnummer>
@@ -42,12 +46,11 @@
             <xbbd:postleitzahl>54321</xbbd:postleitzahl>
             <xbbd:ort>München</xbbd:ort>
         </xbbd:anschrift>
-        <xbbd:kommunikation>
-            <xbbd:kanal>
-                <code>01</code>
-            </xbbd:kanal>
-            <xbbd:kennung>berufsschule-musterberg@bsm.de</xbbd:kennung>
-        </xbbd:kommunikation>
+        <xbbd:schulart>
+            <xbbd:code listURI="urn:xbildung-de:kmk:codeliste:artderschule" listVersionID="1.0">
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/berufsfachschule</code>
+            </xbbd:code>
+        </xbbd:schulart>
     </xbbd:berufsschule>
 
     <xbbd:zustaendigeStelle>
@@ -55,6 +58,12 @@
             <xbbd:name>Industrie- und Handelskammer für Musterstadt</xbbd:name>
             <xbbd:kurzbezeichnung>IHK Musterstadt</xbbd:kurzbezeichnung>
         </xbbd:name>
+        <xbbd:kommunikation>
+            <xbbd:kanal>
+                <code>01</code>
+            </xbbd:kanal>
+            <xbbd:kennung>ihk-musterstadt@ihkm.de</xbbd:kennung>
+        </xbbd:kommunikation>
         <xbbd:anschrift>
             <xbbd:strasse>Musterstraße</xbbd:strasse>
             <xbbd:hausnummer>1</xbbd:hausnummer>
@@ -62,13 +71,7 @@
             <xbbd:postleitzahl>12321</xbbd:postleitzahl>
             <xbbd:ort>Musterstadt</xbbd:ort>
         </xbbd:anschrift>
-
-        <xbbd:kommunikation>
-            <xbbd:kanal>
-                <code>01</code>
-            </xbbd:kanal>
-            <xbbd:kennung>ihk-musterstadt@ihkm.de</xbbd:kennung>
-        </xbbd:kommunikation>
+        
     </xbbd:zustaendigeStelle>
     <xbbd:pruefling>
         <xbbd:nameNatuerlichePerson>
@@ -88,10 +91,9 @@
             </xbbd:geburtsort>
         </xbbd:geburt>
     </xbbd:pruefling>
-    <xbbd:ausbildungsberuf>
-        <xbbd:bezeichnung>Elektronikerin für Maschinen und Antriebstechnik</xbbd:bezeichnung>
-        <xbbd:fundstelle>BGBl. I S. 662, 714</xbbd:fundstelle>        
-    </xbbd:ausbildungsberuf>
+   
+    <xbbd:ausbildungsberuf>Elektronikerin für Maschinen und Antriebstechnik</xbbd:ausbildungsberuf>
+    
     <xbbd:benotung>
         <xbd:note>2</xbd:note>
         <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>

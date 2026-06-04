@@ -28,7 +28,7 @@
       <Column Id="description-de-DE" Use="required">
          <ShortName>description-de-DE</ShortName>
          <LongName>Rechtsgrundlage Abschlusszeugnis</LongName>
-         <Data Type="string"/>
+         <Data Type="string" Lang="de-DE"/>
       </Column>
       <Key Id="codeKey">
          <Annotation>
@@ -75,7 +75,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/rechtsgrundlageabschlusszeugnis/66_ivm_ 37(2)_bbig</SimpleValue>
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/rechtsgrundlageabschlusszeugnis/66_ivm_37(2)_bbig</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>§ 66 i.V.m. § 37 Abs. 2 BBiG</SimpleValue>

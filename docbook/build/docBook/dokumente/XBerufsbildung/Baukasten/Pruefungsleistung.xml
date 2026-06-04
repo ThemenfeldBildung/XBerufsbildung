@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Pruefungsleistung">
    <title>Pruefungsleistung</title>
    <subtitle>Typ: <emphasis role="codebf">Pruefungsleistung</emphasis>
-   </subtitle><para>Die Klasse beinhaltet die Bezeichnung und Benotung einer Prüfungsleistung. Eine Prüfungsleistung wird unter anderem als Qualifikationsinhalt, Qualifikationsbereich, Handlungsfeld, Prüfungsfach oder als eine andere prüfungsrelevante Kategorie je nach Fortbildungsordnung definiert.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Pruefungsleistung">
+   </subtitle><para>Die Klasse enthält Angaben zur Bezeichnung und Benotung einer Prüfungsleistung. Eine Prüfungsleistung wird unter anderem als Qualifikationsinhalt, Qualifikationsbereich, Handlungsfeld, Prüfungsfach oder als eine andere prüfungsrelevante Kategorie je nach Fortbildungsordnung definiert.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Pruefungsleistung">
       <title>Pruefungsleistung</title>
       <mediaobject>
          <imageobject>
@@ -51,16 +51,20 @@
                   <emphasis role="bold">bezeichnung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Bezeichnung einer Prüfungsleitung. Eine Prüfungsleitung bezeichnet die spezifischen Kenntnisse, Fähigkeiten oder Kompetenzen, die für eine bestimmte berufliche Qualifikation erforderlich sind und in einem Ausbildungs- oder Prüfungsrahmen festgelegt werden, z. B. Wirtschafts- und Sozialkunde.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Bezeichnung einer Prüfungsleistung. Eine Prüfungsleistung bezeichnet die spezifischen Kenntnisse, Fähigkeiten oder Kompetenzen, die für eine bestimmte berufliche Qualifikation erforderlich sind und in einem Ausbildungs- oder Prüfungsrahmen festgelegt werden, z. B. Wirtschafts- und Sozialkunde.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -80,7 +84,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält die Angabe einer Note bzw. einer Bewertung für einen Qualifikationsinhalt, basierend auf der Leistung einer Person in diesem spezifischen Abschnitt der Prüfung.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Note bzw. Bewertung einer Prüfungsleistung.</para></entry>
             </row>
          </tbody>
       </tgroup>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="359.92812499999997"
+     width="422.29999999999995"
      height="286">
    <defs>
       <style type="text/css">
@@ -39,7 +39,7 @@
                         } 
                     </style>
    </defs>
-   <rect width="349.92812499999997"
+   <rect width="412.29999999999995"
          height="276"
          stroke-dasharray="3,3"
          rx="1"
@@ -48,14 +48,14 @@
    <text font-size="14" x="3.6" y="18" font-weight="bold">complexType Ausbildungsberuf</text>
    <g transform="translate(10,34)">
       <g transform="translate(55,0)">
-         <rect width="83.734375" height="18" class="element-upper"/>
-         <rect width="83.734375" height="18" y="18" class="element-lower"/>
+         <rect width="146.90625" height="18" class="element-upper"/>
+         <rect width="146.90625" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">bezeichnung</text>
-         <line x1="0" y1="18" x2="83.734375" y2="18"/>
+         <line x1="0" y1="18" x2="146.90625" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xs:string</text>
-         <g transform="translate(83.734375,0)"/>
+         <text font-size="12" x="35.353125" y="30">din91379:datatypeE</text>
+         <g transform="translate(146.90625,0)"/>
       </g>
       <line x1="33"
             y1="18"
@@ -69,26 +69,26 @@
             y2="18"
             class="type-structure-required"/>
       <g transform="translate(55,48)">
-         <rect width="83.734375" height="18" class="element-upper"/>
-         <rect width="83.734375" height="18" y="18" class="element-lower"/>
+         <rect width="147.734375" height="18" class="element-upper"/>
+         <rect width="147.734375" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">fundstelle</text>
-         <line x1="0" y1="18" x2="83.734375" y2="18"/>
+         <line x1="0" y1="18" x2="147.734375" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xs:string</text>
-         <g transform="translate(83.734375,0)"/>
+         <text font-size="12" x="35.353125" y="30">din91379:datatypeC</text>
+         <g transform="translate(147.734375,0)"/>
       </g>
       <line x1="33"
             y1="66"
             x2="55"
             y2="66"
-            class="type-structure-optional"/>
-      <text font-size="11" fill="black" x="53" y="64" text-anchor="end">0..1</text>
+            class="type-structure-required"/>
+      <text font-size="11" fill="black" x="53" y="64" text-anchor="end">1..*</text>
       <line x1="33"
             y1="18"
             x2="33"
             y2="66"
-            class="type-structure-optional"/>
+            class="type-structure-required"/>
       <g transform="translate(55,96)">
          <rect width="133.56562499999998" height="18" class="element-upper"/>
          <rect width="133.56562499999998"
@@ -101,14 +101,14 @@
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
          <g transform="translate(133.56562499999998,0)">
             <g transform="translate(55,0)">
-               <rect width="83.734375" height="18" class="element-upper"/>
-               <rect width="83.734375" height="18" y="18" class="element-lower"/>
+               <rect width="146.90625" height="18" class="element-upper"/>
+               <rect width="146.90625" height="18" y="18" class="element-lower"/>
                <text font-size="12" x="3.6" y="12" font-weight="bold">fachrichtung</text>
-               <line x1="0" y1="18" x2="83.734375" y2="18"/>
+               <line x1="0" y1="18" x2="146.90625" y2="18"/>
                <text font-size="12" fill="grey" x="3.6" y="30">type</text>
                <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-               <text font-size="12" x="35.353125" y="30">xs:string</text>
-               <g transform="translate(83.734375,0)"/>
+               <text font-size="12" x="35.353125" y="30">din91379:datatypeE</text>
+               <g transform="translate(146.90625,0)"/>
             </g>
             <line x1="33"
                   y1="18"
@@ -122,14 +122,14 @@
                   y2="18"
                   class="type-structure-optional"/>
             <g transform="translate(55,48)">
-               <rect width="85.3625" height="18" class="element-upper"/>
-               <rect width="85.3625" height="18" y="18" class="element-lower"/>
+               <rect width="146.90625" height="18" class="element-upper"/>
+               <rect width="146.90625" height="18" y="18" class="element-lower"/>
                <text font-size="12" x="3.6" y="12" font-weight="bold">schwerpunkt</text>
-               <line x1="0" y1="18" x2="85.3625" y2="18"/>
+               <line x1="0" y1="18" x2="146.90625" y2="18"/>
                <text font-size="12" fill="grey" x="3.6" y="30">type</text>
                <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-               <text font-size="12" x="35.353125" y="30">xs:string</text>
-               <g transform="translate(85.3625,0)"/>
+               <text font-size="12" x="35.353125" y="30">din91379:datatypeE</text>
+               <g transform="translate(146.90625,0)"/>
             </g>
             <line x1="33"
                   y1="66"
@@ -143,14 +143,14 @@
                   y2="66"
                   class="type-structure-optional"/>
             <g transform="translate(55,96)">
-               <rect width="83.734375" height="18" class="element-upper"/>
-               <rect width="83.734375" height="18" y="18" class="element-lower"/>
+               <rect width="147.734375" height="18" class="element-upper"/>
+               <rect width="147.734375" height="18" y="18" class="element-lower"/>
                <text font-size="12" x="3.6" y="12" font-weight="bold">sonstiges</text>
-               <line x1="0" y1="18" x2="83.734375" y2="18"/>
+               <line x1="0" y1="18" x2="147.734375" y2="18"/>
                <text font-size="12" fill="grey" x="3.6" y="30">type</text>
                <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-               <text font-size="12" x="35.353125" y="30">xs:string</text>
-               <g transform="translate(83.734375,0)"/>
+               <text font-size="12" x="35.353125" y="30">din91379:datatypeC</text>
+               <g transform="translate(147.734375,0)"/>
             </g>
             <line x1="33"
                   y1="114"
@@ -161,7 +161,7 @@
                   fill="black"
                   x="53"
                   y="112"
-                  text-anchor="end">0..1</text>
+                  text-anchor="end">0..*</text>
             <line x1="33"
                   y1="66"
                   x2="33"
@@ -183,10 +183,9 @@
                   y2="18"
                   class="type-structure-optional"/>
             <circle cx="10" cy="18" r="1.2" stroke="black" fill="black"/>
-            <circle cx="18" cy="14" r="1.2" stroke="black" fill="black"/>
-            <circle cx="18" cy="18" r="1.2" stroke="black" fill="black"/>
-            <circle cx="18" cy="22" r="1.2" stroke="black" fill="black"/>
-            <line x1="10" y1="18" x2="18" y2="14"/>
+            <circle cx="15" cy="18" r="1.2" stroke="black" fill="black"/>
+            <circle cx="20" cy="18" r="1.2" stroke="black" fill="black"/>
+            <line x1="7" y1="18" x2="23" y2="18"/>
          </g>
       </g>
       <line x1="33"
@@ -198,7 +197,7 @@
             fill="black"
             x="53"
             y="112"
-            text-anchor="end">0..1</text>
+            text-anchor="end">0..*</text>
       <line x1="33"
             y1="66"
             x2="33"

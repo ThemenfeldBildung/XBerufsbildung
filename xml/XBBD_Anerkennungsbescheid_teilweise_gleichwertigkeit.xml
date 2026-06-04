@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+        Nichtnormative Beispielinstanz für einen Bescheid über die Feststellung der teilweisen Gleichwertigkeit
+        nach § 4 Berufsqualifikationsfeststellungsgesetz (BQFG) basierend auf einem Musterbescheid der IHK Foreign Skills Approval (IHK FOSA)
+        zum Referenzberuf "Zerspanungsmechaniker" im Rahmen des Vorhabens XBerufsbildung.
+        Version: XBerufsbildung 0.7
+        Letzte Aktualisierung: 04.06.2026
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+    -->
+
+<xbbd:antragstellende.anerkennungsbescheid xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+ xmlns:bn-beh="http://xoev.de/schemata/basisnachricht/behoerde/1_1"
+ xmlns:bn-kom="http://xoev.de/schemata/basisnachricht/kommunikation/1_1"
+ xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+ xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+ xmlns:bn-g2g="http://xoev.de/schemata/basisnachricht/g2g/1_1"
+ xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd"
+ xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd http://xberufsbildung.de/def/xberufsbildung/0.7/xsd/xberufsbildung.xsd">
+    <xbd:titel>Bescheid über Gleichwertigkeit</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2025-03-11</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Nürnberg</xbd:ort>
+            <xbd:staat listVersionID="listVersionID0">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xbd:staat>
+        </xbd:ort>
+    </xbd:ausstellung>
+    <xbd:gueltigkeitsdatum>2035-03-11</xbd:gueltigkeitsdatum>
+    <xbd:sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+    <xbd:nonce>nonce0</xbd:nonce>
+    <xbbd:antragsnummer>25.000000</xbbd:antragsnummer>
+    <xbbd:zustaendigeStelle>
+        <xbbd:name>
+            <xbbd:name>IHK Foreign Skills Approval</xbbd:name>
+            <xbbd:kurzbezeichnung>IHK FOSA</xbbd:kurzbezeichnung>
+        </xbbd:name>
+        <xbbd:kommunikation>
+            <xbbd:kanal>
+                <code>02</code>
+            </xbbd:kanal>
+            <xbbd:kennung>+49 (000) 0000 - 00</xbbd:kennung>
+            <xbbd:istDienstlich>true</xbbd:istDienstlich>
+        </xbbd:kommunikation>
+        <xbbd:kommunikation>
+            <xbbd:kanal>
+                <code>01</code>
+            </xbbd:kanal>
+            <xbbd:kennung>maxmustermann@ihk-fosa.de</xbbd:kennung>
+            <xbbd:istDienstlich>true</xbbd:istDienstlich>
+        </xbbd:kommunikation>   
+        <xbbd:anschrift>
+            <xbbd:strasse>Ulmensstraße</xbbd:strasse>
+            <xbbd:hausnummer>52g</xbbd:hausnummer>
+            <xbbd:postleitzahl>90443</xbbd:postleitzahl>
+            <xbbd:ort>Nürnberg</xbbd:ort>
+            <xbbd:staat listVersionID="listVersionID3">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xbbd:staat>
+        </xbbd:anschrift>
+        <xbbd:identifikation>
+            <xbbd:id>0074787</xbbd:id>
+            <xbbd:beschreibung>ID Organisation</xbbd:beschreibung>
+            <xbbd:gueltigkeit>
+                <xbbd:beginn>1998-05-04</xbbd:beginn>
+                <xbbd:ende>2040-05-04</xbbd:ende>
+            </xbbd:gueltigkeit>
+        </xbbd:identifikation>
+        <xbbd:ansprechperson>
+            <xbbd:anrede>Herr</xbbd:anrede>
+            <xbbd:familienname>
+                <xbbd:name>Mustermann</xbbd:name>
+                <xbbd:nichtVorhanden>false</xbbd:nichtVorhanden>
+            </xbbd:familienname>
+            <xbbd:geburtsname>
+                <xbbd:nichtVorhanden>true</xbbd:nichtVorhanden>
+            </xbbd:geburtsname>
+            <xbbd:vorname>
+                <xbbd:name>Max</xbbd:name>
+                <xbbd:nichtVorhanden>false</xbbd:nichtVorhanden>
+            </xbbd:vorname>
+        </xbbd:ansprechperson>
+    </xbbd:zustaendigeStelle>
+    <xbbd:antragstellendePerson>
+        <xbbd:nameNatuerlichePerson>
+            <xbbd:anrede>Herr</xbbd:anrede>
+            <xbbd:familienname>
+                <xbbd:name>Mustermann</xbbd:name>
+                <xbbd:nichtVorhanden>false</xbbd:nichtVorhanden>
+            </xbbd:familienname>
+            <xbbd:geburtsname>
+                <xbbd:nichtVorhanden>true</xbbd:nichtVorhanden>
+            </xbbd:geburtsname>
+            <xbbd:vorname>
+                <xbbd:name>Max</xbbd:name>
+                <xbbd:nichtVorhanden>false</xbbd:nichtVorhanden>
+            </xbbd:vorname>
+        </xbbd:nameNatuerlichePerson>
+        <xbbd:geburt>
+            <xbbd:datum>
+                <xbd:jahr>1990</xbd:jahr>
+            </xbbd:datum>
+        </xbbd:geburt>
+        <xbbd:identifikationsnummer>
+            <xbbd:id>hk92749400ß</xbbd:id>
+            <xbbd:beschreibung>ID Ausweis</xbbd:beschreibung>
+            <xbbd:gueltigkeit>
+                <xbbd:beginn>2006-05-04</xbbd:beginn>
+                <xbbd:ende>2030-05-04</xbbd:ende>
+            </xbbd:gueltigkeit>
+        </xbbd:identifikationsnummer>
+    </xbbd:antragstellendePerson>
+    <xbbd:referenzberuf>
+        <xbbd:referenzausbildungsberuf>
+            <xbbd:bezeichnung>Zerspanungsmechaniker</xbbd:bezeichnung>
+            <xbbd:fundstelle>BGBl. I 2007, 1607</xbbd:fundstelle>
+        </xbbd:referenzausbildungsberuf>
+    </xbbd:referenzberuf>
+    <xbbd:berufsqualifikation>
+        <xbbd:ausbildung>
+            <xbbd:bezeichnungDE>Maschinentechnologe</xbbd:bezeichnungDE>
+            <xbbd:bezeichnungAusland>Technologue en machines</xbbd:bezeichnungAusland>
+            <xbbd:staat listVersionID="listVersionID12">
+                <code>129</code>
+                <name>Frankreich</name>
+            </xbbd:staat>
+            <xbbd:abschlussdatum>
+                <xbd:jahr>2023</xbd:jahr>
+            </xbbd:abschlussdatum>
+            <xbbd:dauer>P2Y</xbbd:dauer>
+            <xbbd:dauerRegel>P4Y</xbbd:dauerRegel>
+        </xbbd:ausbildung>
+        <xbbd:einschlaegigeBerufserfahrung>
+            <xbbd:dauerInsgesamt>1 Jahr</xbbd:dauerInsgesamt>
+            <xbbd:ausgeuebteTaetigkeit>Automobilmechaniker</xbbd:ausgeuebteTaetigkeit>
+        </xbbd:einschlaegigeBerufserfahrung>
+        <xbbd:befaehigungsnachweis>Weiterbildung im Bereich Maschinentechnik</xbbd:befaehigungsnachweis>
+    </xbbd:berufsqualifikation>
+    <xbbd:rechtlicheWuerdigung>
+        <xbbd:rechtsgrundlage>§ 4 Berufsqualifikationsfeststellungsgesetz</xbbd:rechtsgrundlage>
+        <xbbd:ergebnisGleichwertigkeitspruefung>teilweise</xbbd:ergebnisGleichwertigkeitspruefung>
+        <xbbd:entscheidungsgrundlage>
+            <xbbd:begruendung>Berufsausbildung in Frankreich</xbbd:begruendung>
+            <xbbd:beruecksichtigterNachweis>
+                <xbbd:bezeichnung>Ausbildungszeugnis</xbbd:bezeichnung>
+                <xbbd:ausstellungsdatum>
+                    <xbd:jahrMonatTag>2024-10-01</xbd:jahrMonatTag>
+                </xbbd:ausstellungsdatum>
+            </xbbd:beruecksichtigterNachweis>
+        </xbbd:entscheidungsgrundlage>
+        <xbbd:unterschiedeZumReferenzberuf>
+            <xbbd:wesentlicherUnterschied>Digitalisierung der Arbeit, Datenschutz und Informationssicherheit</xbbd:wesentlicherUnterschied>
+            <xbbd:ausgleichsangabe>
+                <xbbd:ausgleichsmassnahme>Anpassungsqualifizierung im Bereich Digitalisierung der Arbeit, Datenschutz und Informationssicherheit</xbbd:ausgleichsmassnahme>
+            </xbbd:ausgleichsangabe>
+        </xbbd:unterschiedeZumReferenzberuf>
+        <xbbd:unterschiedeZumReferenzberuf>
+            <xbbd:wesentlicherUnterschied>Überwachen und Optimieren von Fertigungsabläufen</xbbd:wesentlicherUnterschied>
+            <xbbd:ausgleichsangabe>
+                <xbbd:ausgleichsmassnahme>Anpassungsqualifizierung im Bereich Überwachen und Optimieren von Fertigungsabläufen</xbbd:ausgleichsmassnahme>
+            </xbbd:ausgleichsangabe>
+        </xbbd:unterschiedeZumReferenzberuf>
+    </xbbd:rechtlicheWuerdigung>
+    <xbbd:rechtsbehelfsbelehrung>Gegen diesen Bescheid können Sie innerhalb eines Monats nach seiner Bekanntgabe Widerspruch einlegen oder unmittelbar Klage erheben...</xbbd:rechtsbehelfsbelehrung>
+    <ds:Signature>
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.oxygenxml.com/">
+            </ds:CanonicalizationMethod>
+            <ds:SignatureMethod Algorithm="http://www.oxygenxml.com/">
+                <ds:HMACOutputLength>0</ds:HMACOutputLength>
+            </ds:SignatureMethod>
+            <ds:Reference>
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.oxygenxml.com/">
+                        <ds:XPath>XPath0</ds:XPath>
+                    </ds:Transform>
+                    <ds:Transform Algorithm="http://www.oxygenxml.com/">
+                        <ds:XPath>XPath1</ds:XPath>
+                        <ds:XPath>XPath2</ds:XPath>
+                    </ds:Transform>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.oxygenxml.com/">
+                </ds:DigestMethod>
+                <ds:DigestValue>ZGVmYXVsdA==</ds:DigestValue>
+            </ds:Reference>
+            <ds:Reference>
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.oxygenxml.com/">
+                        <ds:XPath>XPath3</ds:XPath>
+                        <ds:XPath>XPath4</ds:XPath>
+                    </ds:Transform>
+                    <ds:Transform Algorithm="http://www.oxygenxml.com/">
+                        <ds:XPath>XPath5</ds:XPath>
+                        <ds:XPath>XPath6</ds:XPath>
+                    </ds:Transform>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.oxygenxml.com/">
+                </ds:DigestMethod>
+                <ds:DigestValue>ZGVmYXVsdA==</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>ZGVmYXVsdA==</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>ZGVmYXVsdA==</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+        <ds:Object>
+        </ds:Object>
+        <ds:Object>
+        </ds:Object>
+    </ds:Signature>
+</xbbd:antragstellende.anerkennungsbescheid>
