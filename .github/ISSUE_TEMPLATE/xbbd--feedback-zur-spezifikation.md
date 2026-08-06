@@ -8,5 +8,6 @@ assignees: ''
 ---
 
 Autor: [bitte angeben]
-Art der Organisation: [ Kammer / Hersteller/ Berufsschule / andere ]
+Name der Organisation
+Art der Organisation: [ Kammer / Hersteller/ Landesministerium / andere ]
 Beschreibung: [bitte Beschreibung der Rückmeldung angeben]
