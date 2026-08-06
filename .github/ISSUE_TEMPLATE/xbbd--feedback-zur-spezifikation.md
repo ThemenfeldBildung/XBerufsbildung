@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Autor: [bitte angeben]
-Name der Organisation
+Autor:in: [bitte angeben]
+Name der Organisation:
 Art der Organisation: [ Kammer / Hersteller/ Landesministerium / andere ]
 Beschreibung: [bitte Beschreibung der Rückmeldung angeben]
