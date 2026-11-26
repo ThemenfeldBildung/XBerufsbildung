@@ -15,18 +15,22 @@
             <listitem>
                 <para>Das Teilmodul XBerufsbildung ist in verschiedener Weise mit anderen
                     Standardisierungsvorhaben verknüpft. Grundlegende Designentscheidungen des
-                    Standards XBerufsbildung lassen sich aus der <link
+                    Standards XBerufsbildung lassen sich der <link
                         xmlns:xlink="http://www.w3.org/1999/xlink"
                         xlink:href="https://xbildung.de/web/spezifikation">Spezifikation
                         XBildung</link> entnehmen. Um den folgenden Abschnitt zu verstehen, sind
                     dabei zwei Aspekte hervorzuheben:</para>
                     <orderedlist>
                         <listitem>
-                            <para>Die Nachnutzung von Komponenten aus dem XÖV-Baukasten der Koordinierungsstelle für IT-Standards (KOSIT): Diese enthalten grundlegende Klassen des Datenaustauschs, die für alle
-                                XÖV-Standards nutzbar und für XBerufsbildung spezifisch beschränkt oder erweitert werden.</para>
+                            <para>XBerufsbildung verwendet Komponenten aus dem XÖV-Baukasten der
+                            Koordinierungsstelle für IT-Standards (KoSIT). Bei Bedarf werden diese
+                            Komponenten für den Datenaustausch in der Berufsbildung eingeschränkt
+                            oder erweitert.</para>
                         </listitem>
                         <listitem>
-                            <para>Die gemeinsame Basis von XBildung für alle XÖV-Vorhaben im Bildungsbereich: XBerufsbildung verwendet gemeinsam mit anderen Teilmodulen semantisch übergeordnete Klassen, die für XBerufsbildung spezifisch beschränkt oder erweitert werden. Ein Beispiel hierfür ist die Klasse „Benotung“,
+                            <para>Die gemeinsame Basis von XBildung für alle XÖV-Vorhaben im Bildungsbereich: 
+                                XBerufsbildung verwendet gemeinsam mit anderen Teilmodulen semantisch übergeordnete Klassen, 
+                                die für XBerufsbildung spezifisch beschränkt oder erweitert werden. Ein Beispiel hierfür ist die Klasse „Benotung“,
                                 die für alle Bereiche der Bildung nutzbar ist.</para>
                         </listitem>
                     </orderedlist>
@@ -36,26 +40,28 @@
         <varlistentry>
             <term>Versionierung</term>
             <listitem>
-                <para>Die Version des XML-Schemas und der darauf basierenden Dokumente wird über den
-                    Namespace festgelegt. Die Versionsnummer bereits in Version 1.0 oder höher
-                    vorliegender XBildung-Teilvorhaben entspricht dabei immer der vorab
-                    veröffentlichten Versionsnummer der XBildung-Spezifikation.</para>
+                <para>Die Version des XML-Schemas von XBerufsbildung und der darauf basierenden
+                    Dokumente wird über den Namespace festgelegt. Die Version der nachgenutzten
+                    XBildung-Spezifikation wird unabhängig davon in Abschnitt II.1.1
+                    angegeben.</para>
+                <para>Bei Codelisten des Nutzungstyps 3 legt der Standard die Codeliste fest. Die
+                    verwendete Version ist bei der Übermittlung im XML-Attribut listVersionID
+                    anzugeben. Enthält eine XBBD-Codeliste sowohl die Spalte <literal>code</literal> als 
+                    auch die Spalte <literal>amtlicherSchluessel</literal>, ist im XML-Element <literal>code</literal> 
+                    der vollständige Wert aus der Spalte <literal>code</literal> zu übermitteln.</para>
                 <para/>
             </listitem>
         </varlistentry>
         <varlistentry>
             <term>Notwendigkeit von Schematron</term>
             <listitem>
-                <para>Innerhalb der Teilvorhaben existieren Beschränkungen, die nicht über
-                    XML-Schema abgebildet werden können (z.B. das Verbieten leerer Felder). Hierzu
-                    werden mittels Schematron Geschäftsregeln festgelegt. Diese Geschäftsregeln
-                    werden mittels Schematron- und XSLT-Dateien gemeinsam mit jedem Release zur
-                    Verfügung gestellt. Erhaltene XML-Dokumente können mittels frei lizensierbarer
-                    Programme (Microsoft XML Notepad; Saxon Home Edition) gegen diese XSLT-Dateien
-                    validiert werden. Eine Validierung allein gegen das XML-Schema genügt nicht, um
-                    den gesamten logischen Umfang des Datenmodells abzubilden. XML-Schema und
-                    Schematron werden beide zur Validierung eines XBD-konformen Dokuments benötigt.
-                        <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                <para>Für die Validierung eines XBBD-Dokuments werden XML-Schema und Schematron
+                    benötigt. Das XML-Schema prüft die Struktur und die Datentypen. Die
+                    Schematron-Regeln prüfen ergänzende fachliche Bedingungen, etwa ob bei einem
+                    Anschlussvertrag der angerechnete Ausbildungsberuf angegeben ist. Mit jeder
+                    Version werden die Schematron-Regeln und die zugehörigen XSLT-Dateien
+                    bereitgestellt. Hinweise zur Anwendung enthält die <link
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
                         xlink:href="https://xbildung.de/web/validierung">Anleitung zur Validierung
                         mit Schematron</link>.</para>
                 <para/>
@@ -64,17 +70,22 @@
         <varlistentry>
             <term>Umgang mit Daten</term>
             <listitem>
-                <para>Grundsätzlich sollten bei der Informationsübertragung aus internen Systemen in
-                    XBildung-Dokumente stets der Grundsatz der Datensparsamkeit sowie etwaige
-                    gesetzliche Regeln zur Informationsfreizügigkeit beachtet werden. Weiterhin
-                    konnten in einigen Fällen im Rahmen der Bedarfserhebung für XBildung-Vorhaben
-                    keine föderal übergreifende Einheitlichkeit in Bezug auf erfasste oder bisher in
-                    Papierform bereitgestellte Daten festgestellt werden. Aus genannten Gründen
-                    enthalten XBildung-Datenmodelle nur wenige verpflichtende und viele optionale
-                    Felder. Für eine sinnvolle Nutzung sollte der Grundsatz gelten, Daten
-                    bereitzustellen, die für eine interne Nutzung eines eingehenden Dokuments
-                    ebenfalls benötigt werden.</para>
-                <para/>
+                <para>Bei der Übermittlung von Daten sind die jeweils einschlägigen Rechtsgrundlagen
+                    und der Grundsatz der Datenminimierung zu beachten. Übermittelt werden dürfen
+                    nur die für den jeweiligen Zweck erforderlichen und rechtlich zulässigen
+                    Angaben.</para>
+                <para>Die Kardinalitäten des Datenmodells legen fest, welche Angaben innerhalb eines
+                    XBBD-Dokuments verpflichtend oder optional sind. Optionale Elemente ermöglichen
+                    auch die Übermittlung von Datenbeständen, in denen einzelne Informationen nicht
+                    vorliegen. Das Fehlen eines optionalen Elements bedeutet zunächst nur, dass die
+                    betreffende Angabe nicht übermittelt wird. Daraus darf nicht ohne weitere
+                    fachliche Festlegung auf das Nichtvorliegen des Sachverhalts geschlossen
+                    werden.</para>
+                <para>Die Anforderungen des Datenmodells ersetzen nicht die fachrechtlichen
+                    Anforderungen an die Ausstellung eines vollständigen Zeugnisses oder Bescheids.
+                    Werden solche Dokumente auf Grundlage der übermittelten Daten erstellt, sind
+                    zusätzlich die jeweils einschlägigen Rechtsvorschriften und Prüfungsordnungen
+                    einzuhalten.</para>
             </listitem>
         </varlistentry>
         <!-- <varlistentry>

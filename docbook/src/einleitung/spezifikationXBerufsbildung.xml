@@ -35,8 +35,9 @@
 		<para>Das Vorgehen bei der Erarbeitung des Standards XBerufsbildung ist transparent und
 			partizipativ. Bereits zu Beginn der Vorarbeiten von XBerufsbildung wurden relevante
 			Stakeholder wie die Bildungsministerien der Länder und Kammern über gemeinsame virtuelle
-			Workshops einbezogen und aktiv informiert (z.B. mithilfe der Newsletter, Durchführung
-			von übergreifenden Veranstaltungen, etc.). Diese Vorarbeiten wurden in einer <link
+			Workshops einbezogen und aktiv informiert (z. B. mithilfe der Newsletter und
+			Durchführung von übergreifenden Veranstaltungen etc.). Diese Vorarbeiten wurden in einer
+				<link
 				xlink:href="https://www.xberufsbildung.de/studie/XBerufsbildung_Studie_V0.8.pdf"
 				>Standardisierungsstrategie (Studie)</link> zusammengeführt und die Strategie in
 			einer offenen Kommentierungsphase entsprechend abgestimmt. Auf Basis der Vorstudie wurde
@@ -54,9 +55,9 @@
 			im Berufsbildungswesen analysiert und der Fokus von XBerufsbildung geschärft wurde. </para>
 		<para>In der <link xlink:href="https://www.it-planungsrat.de/beschluss/b-2025-43-it"
 				xml:id="menurale">48. Sitzung, die am 26. November 2025</link> stattfand, hat der
-			IT-Planungsrat beschlossen u.a. XBerufsbildung als Teilvorhaben von XBildung mit Beginn
-			des Jahres 2029 für den Anwendungsbereich „digitale Zeugnisausstellung“ als verbindlich
-			für die Nutzung zu erklären.</para>
+			IT-Planungsrat beschlossen, u. a. XBerufsbildung als Teilvorhaben von XBildung mit
+			Beginn des Jahres 2029 für den Anwendungsbereich „digitale Zeugnisausstellung“ als
+			verbindlich für die Nutzung zu erklären.</para>
 		<para>Das methodische Vorgehen der Datenmodellierung ist an zwei bewährte Methoden angelehnt: </para>
 		<itemizedlist>
 			<listitem>
@@ -96,19 +97,22 @@
 			führt zu einem hierarchischen Datenmodell, in dem Datenfelder auf (theoretisch)
 			beliebige Ebenen verschachtelt werden können. Letztendlich werden alle Informationen auf
 			der untersten Ebene in einfache Werte aufgeschlüsselt.</para>
-		<para>Bei der Definition von Datenfeldern werden Kardinalitäten (oder Multiplizitäten) angegeben.
-			Diese legen fest, wie häufig ein Datenfeld innerhalb eines Datentyps angegeben werden
-			kann oder muss. In der Regel muss ein Datenfeld genau einmal angegeben werden (1), was
-			das Feld obligatorisch macht. Die Angabe kann aber auch optional sein (0..1), d. h. das
-			Feld kann, muss aber nicht verwendet werden. In beiden Fällen kann das Feld höchstens
-			einmal verwendet werden. Um eine bestimmte Anzahl von möglichen Verwendungen
-			festzulegen, kann die Kardinalität von Elementen in Form eines Bereichs X..Y angegeben
-			werden, wobei X die Untergrenze und Y die Obergrenze ist (z.B. 0..3 oder 10..15). Wenn
-			keine Obergrenze festgelegt werden soll, kann dies durch die Angabe des Platzhalters n
-			definiert werden (z. B. 0..n oder 0..*).</para>
+		<para>Die Kardinalität (auch Multiplizität genannt) gibt an, wie häufig ein Datenfeld innerhalb
+			eines Datentyps vorkommen darf oder muss. Bei der Kardinalität 1 muss das Datenfeld
+			genau einmal angegeben werden. Bei 0..1 ist die Angabe optional und darf höchstens
+			einmal vorkommen. Bei einem Bereich X..Y bezeichnet X die Mindestanzahl und Y die
+			Höchstanzahl. So erlaubt 0..3 bis zu drei Angaben, während 10..15 mindestens zehn und
+			höchstens fünfzehn Angaben verlangt. Steht anstelle der Höchstanzahl n oder *, ist die
+			Anzahl nach oben unbegrenzt (z. B. 0..n oder 0..*).</para>
+		<para>Bei einer Auswahl (xs:choice) wird je Auswahlvorgang genau eine der vorgesehenen
+			Alternativen verwendet. Die für diese Alternative angegebene Kardinalität bestimmt, wie
+			häufig sie innerhalb dieser Auswahl vorkommen darf oder muss. Ist für einen
+			Ausbildungsberuf beispielsweise die Auswahl zwischen einem Code aus der Codeliste und
+			einer manuellen Angabe vorgesehen, wird der Ausbildungsberuf auf genau einem dieser
+			beiden Wege übermittelt.</para>
 		<para>Im Datenmodell sind bestimmte Datenfelder zu fachlich abgegrenzten Datensätzen gebündelt.
 			Diese Datensätze entsprechen auf fachlicher Ebene beispielsweise einem Bescheid oder
-			einem Zeugnis. Solche Nachweise von Sachverhalten - etwa ein Prüfungszeugnis - sind
+			einem Zeugnis. Solche Nachweise von Sachverhalten – etwa ein Prüfungszeugnis – sind
 			selbst komplexe Datentypen, die nach denselben Modellierungsprinzipien definiert werden
 			wie andere komplexe Datentypen.</para>
 		<para>Die Darstellung der Datentypen in den folgenden Unterkapiteln folgt dieser Logik: Es wird
@@ -126,13 +130,16 @@
 				<para><emphasis role="bold">Spezifikationsdokument</emphasis></para>
 			</listitem>
 			<listitem>
-				<para><emphasis role="bold">XML Schema-Definitionen</emphasis></para>
+				<para><emphasis role="bold">XML-Schema-Definitionen</emphasis></para>
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Codelisten</emphasis></para>
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Beispielnachweise</emphasis></para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Schematron-Regeln</emphasis></para>
 			</listitem>
 		</itemizedlist>
 	</section>

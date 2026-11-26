@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Art der beruflichen Vorbildung</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Die Codeliste enthält die Arten der beruflichen Vorbildung von Auszubildenden gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe c BBiG. Erfasst werden vorherige duale und schulische Berufsausbildungen sowie Studiengänge unter Berücksichtigung des jeweiligen Abschlussstatus. Die Ausprägungen entsprechen den Erhebungsmerkmalen der amtlichen Berufsbildungsstatistik. Mehrfachnennungen sind zulässig.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XBerufsbildung</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>ArtDerBeruflichenVorbildung-Codes</ShortName>
+      <LongName>Art der beruflichen Vorbildung</LongName>
+      <Version>2026-11-26</Version>
+      <CanonicalUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderberuflichenvorbildung</CanonicalUri>
+      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderberuflichenvorbildung_2026-11-26</CanonicalVersionUri>
+      <Agency>
+         <LongName>XBerufsbildung</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Art der beruflichen Vorbildung</LongName>
+         <Data Type="string" Lang="de-DE"/>
+      </Column>
+      <Column Id="erhebungsposition" Use="required">
+         <ShortName>erhebungsposition</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+      <Key Id="erhebungspositionKey">
+         <ShortName>erhebungspositionKey</ShortName>
+         <ColumnRef Ref="erhebungsposition"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/duale_berufsausbildung_erfolgreich_beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Duale Berufsausbildung erfolgreich beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="erhebungsposition">
+            <SimpleValue>2</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/duale_berufsausbildung_nicht_erfolgreich_beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Duale Berufsausbildung nicht erfolgreich beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="erhebungsposition">
+            <SimpleValue>3</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/schulische_berufsausbildung_erfolgreich_beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Schulische Berufsausbildung erfolgreich beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="erhebungsposition">
+            <SimpleValue>4</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/schulische_berufsausbildung_nicht_erfolgreich_beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Schulische Berufsausbildung nicht erfolgreich beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="erhebungsposition">
+            <SimpleValue>5</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/studium_erfolgreich_beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Studium erfolgreich beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="erhebungsposition">
+            <SimpleValue>6</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/studium_nicht_erfolgreich_beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Studium nicht erfolgreich beendet</SimpleValue>
+         </Value>
+         <Value ColumnRef="erhebungsposition">
+            <SimpleValue>7</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

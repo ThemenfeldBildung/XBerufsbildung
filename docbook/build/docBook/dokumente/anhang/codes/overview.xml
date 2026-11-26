@@ -6,7 +6,22 @@
          status="&specstatus;"
          revision="&xrecent;">
    <title xmlns:xlink="http://www.w3.org/1999/xlink">Übersicht über die Code-Datentypen</title>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="code.artderberuflichenvorbildung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="code.artderberufsvorbereitung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="code.artderfachlicheneignung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude" href="code.artderfoerderung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="code.artderpruefungszulassung.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude" href="code.ausbildungsberufe.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="code.idnrgzustaendigestellenachbbig.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude" href="code.pruefungserfolg.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude" href="code.pruefungsteilaevo.xml"/>
    <include xmlns="http://www.w3.org/2001/XInclude"
             href="code.rechtsgrundlageabschlusszeugnis.xml"/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="code.versionwirtschaftszweigklassifikation.xml"/>
 </section>

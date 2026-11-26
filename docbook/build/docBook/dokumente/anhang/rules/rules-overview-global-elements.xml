@@ -14,6 +14,79 @@
       <tbody>
          <row>
             <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Globales Element erhebung.berufsausbildungsverhaeltnis</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">xbbd:vertrag/xbbd:anschlussvertrag</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;B&#x200B;B&#x200B;D&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;4&#x200B;-&#x200B;A&#x200B;V&#x200B;</entry>
+            <entry>XBBD-1000-0004-AV: Liegt ein Anschlussvertrag vor, muss der angerechnete Ausbildungsberuf angegeben werden. Liegt kein Anschlussvertrag vor, darf kein angerechneter Ausbildungsberuf angegeben werden.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(*:liegtVor = true() and exists(*:angerechneterAusbildungsberuf))</emphasis>
+               </para>
+               <para>
+                  <emphasis role="codebf">or</emphasis>
+               </para>
+               <para>
+                  <emphasis role="codebf">(*:liegtVor = false() and empty(*:angerechneterAusbildungsberuf))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">xbbd:vorbildung/xbbd:beruflicheVorbildung</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;B&#x200B;B&#x200B;D&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;6&#x200B;-&#x200B;B&#x200B;V&#x200B;V&#x200B;</entry>
+            <entry>XBBD-1000-0006-BVV: Wenn eine vorherige Berufsausbildung oder ein vorheriges Studium vorliegt (vorhanden = true), muss mindestens eine Art der beruflichen Vorbildung angegeben werden. Liegt keine berufliche Vorbildung vor (vorhanden = false), darf keine Art angegeben werden.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(*:vorhanden = true() and exists(*:artDerBeruflichenVorbildung))</emphasis>
+               </para>
+               <para>
+                  <emphasis role="codebf">or</emphasis>
+               </para>
+               <para>
+                  <emphasis role="codebf">(*:vorhanden = false() and empty(*:artDerBeruflichenVorbildung))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">xbbd:vorbildung/xbbd:berufsvorbereitendeQualifizierungOderGrundbildung</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;B&#x200B;B&#x200B;D&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;B&#x200B;V&#x200B;</entry>
+            <entry>XBBD-1000-0005-BV: Wenn eine vorausgegangene berufsvorbereitende Qualifizierung oder berufliche Grundbildung vorliegt (teilnahmeVorhanden = true), muss mindestens eine Art der Berufsvorbereitung angegeben werden. Liegt keine Teilnahme vor (teilnahmeVorhanden = false), darf keine Art angegeben werden.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(*:teilnahmeVorhanden = true() and exists(*:artDerBerufsvorbereitung))</emphasis>
+               </para>
+               <para>
+                  <emphasis role="codebf">or</emphasis>
+               </para>
+               <para>
+                  <emphasis role="codebf">(*:teilnahmeVorhanden = false() and empty(*:artDerBerufsvorbereitung))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
                <emphasis role="bold">Globales Element pruefling.pruefungszeugnis</emphasis>
                <?dbhtml bgcolor="#EEEEEE"?>
                <?dbfo bgcolor="#EEEEEE"?>
@@ -26,7 +99,7 @@
          </row>
          <row>
             <entry morerows="1">X&#x200B;B&#x200B;B&#x200B;D&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;1&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;R&#x200B;A&#x200B;</entry>
-            <entry>XBBD-1000-0001-WNIL_RA: Wenn und nur wenn der Wert der Codeliste Rechtsgrundlage 'wert_nicht_in_liste' ist, soll das Freitextfeld 'nichtGelisteterWert' angegeben werden.</entry>
+            <entry>XBBD-1000-0001-WNIL_RA: Genau dann, wenn der ausgewählte Code den Wert „Wert nicht in Liste“ bezeichnet, muss das Element 'nichtGelisteterWert' vorhanden sein.</entry>
          </row>
          <row>
             <entry align="left">

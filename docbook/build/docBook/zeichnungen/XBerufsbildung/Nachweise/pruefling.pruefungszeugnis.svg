@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="539.58125" height="634">
+<svg xmlns="http://www.w3.org/2000/svg" width="676.1" height="730">
    <defs>
       <style type="text/css">
                         text {
@@ -37,8 +37,8 @@
                         } 
                     </style>
    </defs>
-   <rect width="529.58125"
-         height="624"
+   <rect width="666.1"
+         height="720"
          stroke-dasharray="3,3"
          rx="1"
          ry="1"
@@ -121,8 +121,8 @@
             y1="18"
             x2="55"
             y2="18"
-            class="type-structure-required"/>
-      <text font-size="11" fill="black" x="53" y="16" text-anchor="end"/>
+            class="type-structure-optional"/>
+      <text font-size="11" fill="black" x="53" y="16" text-anchor="end">0..1</text>
       <line x1="33"
             y1="18"
             x2="33"
@@ -187,14 +187,76 @@
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
          <g transform="translate(121.89375,0)">
             <g transform="translate(55,0)">
-               <rect width="165.609375" height="18" class="element-upper"/>
-               <rect width="165.609375" height="18" y="18" class="element-lower"/>
+               <rect width="109.721875" height="18" class="element-upper"/>
+               <rect width="109.721875" height="18" y="18" class="element-lower"/>
                <text font-size="12" x="3.6" y="12" font-weight="bold">ausbildungsberuf</text>
-               <line x1="0" y1="18" x2="165.609375" y2="18"/>
+               <line x1="0" y1="18" x2="109.721875" y2="18"/>
                <text font-size="12" fill="grey" x="3.6" y="30">type</text>
                <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-               <text font-size="12" x="35.353125" y="30">xbbd:Ausbildungsberuf</text>
-               <g transform="translate(165.609375,0)"/>
+               <g transform="translate(109.721875,0)">
+                  <g transform="translate(55,0)">
+                     <rect width="204.03125" height="18" class="element-upper"/>
+                     <rect width="204.03125" height="18" y="18" class="element-lower"/>
+                     <text font-size="12" x="3.6" y="12" font-weight="bold">ausbildungsberufCode</text>
+                     <line x1="0" y1="18" x2="204.03125" y2="18"/>
+                     <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+                     <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+                     <text font-size="12" x="35.353125" y="30">xbbd:Code.Ausbildungsberufe</text>
+                     <g transform="translate(204.03125,0)"/>
+                  </g>
+                  <line x1="33"
+                        y1="18"
+                        x2="55"
+                        y2="18"
+                        class="type-structure-required"/>
+                  <text font-size="11" fill="black" x="53" y="16" text-anchor="end"/>
+                  <line x1="33"
+                        y1="18"
+                        x2="33"
+                        y2="18"
+                        class="type-structure-required"/>
+                  <g transform="translate(55,48)">
+                     <rect width="165.609375" height="18" class="element-upper"/>
+                     <rect width="165.609375" height="18" y="18" class="element-lower"/>
+                     <text font-size="12" x="3.6" y="12" font-weight="bold">manuelleAngabe</text>
+                     <line x1="0" y1="18" x2="165.609375" y2="18"/>
+                     <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+                     <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+                     <text font-size="12" x="35.353125" y="30">xbbd:Ausbildungsberuf</text>
+                     <g transform="translate(165.609375,0)"/>
+                  </g>
+                  <line x1="33"
+                        y1="66"
+                        x2="55"
+                        y2="66"
+                        class="type-structure-required"/>
+                  <text font-size="11" fill="black" x="53" y="64" text-anchor="end"/>
+                  <line x1="33"
+                        y1="18"
+                        x2="33"
+                        y2="66"
+                        class="type-structure-required"/>
+                  <circle cx="15"
+                          cy="18"
+                          r="10"
+                          stroke="black"
+                          fill="rgb(251, 251, 251)"/>
+                  <line x1="0"
+                        y1="18"
+                        x2="5"
+                        y2="18"
+                        class="type-structure-required"/>
+                  <line x1="25"
+                        y1="18"
+                        x2="33"
+                        y2="18"
+                        class="type-structure-required"/>
+                  <circle cx="10" cy="18" r="1.2" stroke="black" fill="black"/>
+                  <circle cx="18" cy="14" r="1.2" stroke="black" fill="black"/>
+                  <circle cx="18" cy="18" r="1.2" stroke="black" fill="black"/>
+                  <circle cx="18" cy="22" r="1.2" stroke="black" fill="black"/>
+                  <line x1="10" y1="18" x2="18" y2="14"/>
+               </g>
             </g>
             <line x1="33"
                   y1="18"
@@ -207,36 +269,77 @@
                   x2="33"
                   y2="18"
                   class="type-structure-required"/>
-            <g transform="translate(55,48)">
-               <rect width="239.390625" height="18" class="element-upper"/>
-               <rect width="239.390625" height="18" y="18" class="element-lower"/>
-               <text font-size="12" x="3.6" y="12" font-weight="bold">pruefungsteil</text>
-               <line x1="0" y1="18" x2="239.390625" y2="18"/>
-               <text font-size="12" fill="grey" x="3.6" y="30">type</text>
-               <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-               <text font-size="12" x="35.353125" y="30">xbbd:PruefungsteilPruefungszeugnis</text>
-               <g transform="translate(239.390625,0)"/>
-            </g>
-            <line x1="33"
-                  y1="66"
-                  x2="55"
-                  y2="66"
-                  class="type-structure-required"/>
-            <text font-size="11" fill="black" x="53" y="64" text-anchor="end">1..*</text>
-            <line x1="33"
-                  y1="18"
-                  x2="33"
-                  y2="66"
-                  class="type-structure-required"/>
             <g transform="translate(55,96)">
-               <rect width="117.640625" height="18" class="element-upper"/>
-               <rect width="117.640625" height="18" y="18" class="element-lower"/>
-               <text font-size="12" x="3.6" y="12" font-weight="bold">niveauDQR</text>
-               <line x1="0" y1="18" x2="117.640625" y2="18"/>
+               <rect width="113.815625" height="18" class="element-upper"/>
+               <rect width="113.815625" height="18" y="18" class="element-lower"/>
+               <text font-size="12" x="3.6" y="12" font-weight="bold">pruefungsstruktur</text>
+               <line x1="0" y1="18" x2="113.815625" y2="18"/>
                <text font-size="12" fill="grey" x="3.6" y="30">type</text>
                <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-               <text font-size="12" x="35.353125" y="30">xbd:Code.EQF</text>
-               <g transform="translate(117.640625,0)"/>
+               <g transform="translate(113.815625,0)">
+                  <g transform="translate(55,0)">
+                     <rect width="239.390625" height="18" class="element-upper"/>
+                     <rect width="239.390625" height="18" y="18" class="element-lower"/>
+                     <text font-size="12" x="3.6" y="12" font-weight="bold">pruefungsteil</text>
+                     <line x1="0" y1="18" x2="239.390625" y2="18"/>
+                     <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+                     <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+                     <text font-size="12" x="35.353125" y="30">xbbd:PruefungsteilPruefungszeugnis</text>
+                     <g transform="translate(239.390625,0)"/>
+                  </g>
+                  <line x1="33"
+                        y1="18"
+                        x2="55"
+                        y2="18"
+                        class="type-structure-required"/>
+                  <text font-size="11" fill="black" x="53" y="16" text-anchor="end">1..*</text>
+                  <line x1="33"
+                        y1="18"
+                        x2="33"
+                        y2="18"
+                        class="type-structure-required"/>
+                  <g transform="translate(55,48)">
+                     <rect width="164.71875" height="18" class="element-upper"/>
+                     <rect width="164.71875" height="18" y="18" class="element-lower"/>
+                     <text font-size="12" x="3.6" y="12" font-weight="bold">pruefungsbereich</text>
+                     <line x1="0" y1="18" x2="164.71875" y2="18"/>
+                     <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+                     <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+                     <text font-size="12" x="35.353125" y="30">xbbd:Pruefungsbereich</text>
+                     <g transform="translate(164.71875,0)"/>
+                  </g>
+                  <line x1="33"
+                        y1="66"
+                        x2="55"
+                        y2="66"
+                        class="type-structure-required"/>
+                  <text font-size="11" fill="black" x="53" y="64" text-anchor="end">1..*</text>
+                  <line x1="33"
+                        y1="18"
+                        x2="33"
+                        y2="66"
+                        class="type-structure-required"/>
+                  <circle cx="15"
+                          cy="18"
+                          r="10"
+                          stroke="black"
+                          fill="rgb(251, 251, 251)"/>
+                  <line x1="0"
+                        y1="18"
+                        x2="5"
+                        y2="18"
+                        class="type-structure-required"/>
+                  <line x1="25"
+                        y1="18"
+                        x2="33"
+                        y2="18"
+                        class="type-structure-required"/>
+                  <circle cx="10" cy="18" r="1.2" stroke="black" fill="black"/>
+                  <circle cx="18" cy="14" r="1.2" stroke="black" fill="black"/>
+                  <circle cx="18" cy="18" r="1.2" stroke="black" fill="black"/>
+                  <circle cx="18" cy="22" r="1.2" stroke="black" fill="black"/>
+                  <line x1="10" y1="18" x2="18" y2="14"/>
+               </g>
             </g>
             <line x1="33"
                   y1="114"
@@ -249,11 +352,36 @@
                   y="112"
                   text-anchor="end">0..1</text>
             <line x1="33"
-                  y1="66"
+                  y1="18"
                   x2="33"
                   y2="114"
                   class="type-structure-optional"/>
-            <g transform="translate(55,144)">
+            <g transform="translate(55,192)">
+               <rect width="117.640625" height="18" class="element-upper"/>
+               <rect width="117.640625" height="18" y="18" class="element-lower"/>
+               <text font-size="12" x="3.6" y="12" font-weight="bold">niveauDQR</text>
+               <line x1="0" y1="18" x2="117.640625" y2="18"/>
+               <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+               <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+               <text font-size="12" x="35.353125" y="30">xbd:Code.EQF</text>
+               <g transform="translate(117.640625,0)"/>
+            </g>
+            <line x1="33"
+                  y1="210"
+                  x2="55"
+                  y2="210"
+                  class="type-structure-optional"/>
+            <text font-size="11"
+                  fill="black"
+                  x="53"
+                  y="208"
+                  text-anchor="end">0..1</text>
+            <line x1="33"
+                  y1="114"
+                  x2="33"
+                  y2="210"
+                  class="type-structure-optional"/>
+            <g transform="translate(55,240)">
                <rect width="112.734375" height="18" class="element-upper"/>
                <rect width="112.734375" height="18" y="18" class="element-lower"/>
                <text font-size="12" x="3.6" y="12" font-weight="bold">berufsschulnote</text>
@@ -264,19 +392,19 @@
                <g transform="translate(112.734375,0)"/>
             </g>
             <line x1="33"
-                  y1="162"
+                  y1="258"
                   x2="55"
-                  y2="162"
+                  y2="258"
                   class="type-structure-optional"/>
             <text font-size="11"
                   fill="black"
                   x="53"
-                  y="160"
+                  y="256"
                   text-anchor="end">0..1</text>
             <line x1="33"
-                  y1="114"
+                  y1="210"
                   x2="33"
-                  y2="162"
+                  y2="258"
                   class="type-structure-optional"/>
             <circle cx="15"
                     cy="18"
@@ -314,7 +442,7 @@
             x2="33"
             y2="210"
             class="type-structure-required"/>
-      <g transform="translate(55,384)">
+      <g transform="translate(55,480)">
          <rect width="131.11249999999998" height="18" class="element-upper"/>
          <rect width="131.11249999999998"
                height="18"
@@ -328,21 +456,21 @@
          <g transform="translate(131.11249999999998,0)"/>
       </g>
       <line x1="33"
-            y1="402"
+            y1="498"
             x2="55"
-            y2="402"
+            y2="498"
             class="type-structure-optional"/>
       <text font-size="11"
             fill="black"
             x="53"
-            y="400"
+            y="496"
             text-anchor="end">0..*</text>
       <line x1="33"
             y1="210"
             x2="33"
-            y2="402"
+            y2="498"
             class="type-structure-required"/>
-      <g transform="translate(55,432)">
+      <g transform="translate(55,528)">
          <rect width="102.878125" height="18" class="element-upper"/>
          <rect width="102.878125" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">pruefungsdatum</text>
@@ -353,21 +481,21 @@
          <g transform="translate(102.878125,0)"/>
       </g>
       <line x1="33"
-            y1="450"
+            y1="546"
             x2="55"
-            y2="450"
+            y2="546"
             class="type-structure-required"/>
       <text font-size="11"
             fill="black"
             x="53"
-            y="448"
+            y="544"
             text-anchor="end"/>
       <line x1="33"
-            y1="402"
+            y1="498"
             x2="33"
-            y2="450"
+            y2="546"
             class="type-structure-required"/>
-      <g transform="translate(55,480)">
+      <g transform="translate(55,576)">
          <rect width="171.703125" height="18" class="element-upper"/>
          <rect width="171.703125" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">aussteller</text>
@@ -378,21 +506,21 @@
          <g transform="translate(171.703125,0)"/>
       </g>
       <line x1="33"
-            y1="498"
+            y1="594"
             x2="55"
-            y2="498"
-            class="type-structure-required"/>
+            y2="594"
+            class="type-structure-optional"/>
       <text font-size="11"
             fill="black"
             x="53"
-            y="496"
-            text-anchor="end"/>
+            y="592"
+            text-anchor="end">0..1</text>
       <line x1="33"
-            y1="450"
+            y1="546"
             x2="33"
-            y2="498"
-            class="type-structure-required"/>
-      <g transform="translate(55,528)">
+            y2="594"
+            class="type-structure-optional"/>
+      <g transform="translate(55,624)">
          <rect width="108.675" height="18" class="element-upper"/>
          <rect width="108.675" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">ds:Signature (ref)</text>
@@ -403,19 +531,19 @@
          <g transform="translate(108.675,0)"/>
       </g>
       <line x1="33"
-            y1="546"
+            y1="642"
             x2="55"
-            y2="546"
+            y2="642"
             class="type-structure-optional"/>
       <text font-size="11"
             fill="black"
             x="53"
-            y="544"
+            y="640"
             text-anchor="end">0..1</text>
       <line x1="33"
-            y1="498"
+            y1="594"
             x2="33"
-            y2="546"
+            y2="642"
             class="type-structure-optional"/>
       <circle cx="15"
               cy="18"

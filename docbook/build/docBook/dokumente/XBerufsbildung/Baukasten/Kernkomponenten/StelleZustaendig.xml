@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig">
    <title>StelleZustaendig</title>
    <subtitle>Typ: <emphasis role="codebf">StelleZustaendig</emphasis>
-   </subtitle><para>Angaben zur für die Berufsbildung zuständigen Stelle gemäß Berufsbildungsgesetz (BBiG).</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig">
+   </subtitle><para>Angaben zu einer für den jeweiligen Vorgang zuständigen Stelle im Bereich der Berufsbildung oder der Anerkennung von Berufsqualifikationen. Die Zuständigkeit richtet sich nach den jeweils einschlägigen Rechtsvorschriften, insbesondere dem BBiG, der HwO oder dem BQFG.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig">
       <title>StelleZustaendig</title>
       <mediaobject>
          <imageobject>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Art der Förderung</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Die Codeliste enthält die Arten der Förderung von Berufsausbildungsverhältnissen gemäß § 34 Absatz 2 Nummer 9 und § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe j BBiG. Sie basiert auf der Klassifikation der amtlichen Berufsbildungsstatistik und unterscheidet zwischen überwiegend betrieblich finanzierten und überwiegend öffentlich geförderten Berufsausbildungsverhältnissen nach Art der Förderung. Eine überwiegende öffentliche Finanzierung liegt vor, wenn mehr als 50 Prozent der maßgeblichen Ausbildungskosten im ersten Ausbildungsjahr durch entsprechende öffentliche Fördermaßnahmen getragen werden.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XBerufsbildung</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>ArtDerFoerderung-Codes</ShortName>
+      <LongName>Art der Förderung von Berufsausbildungsverhältnissen</LongName>
+      <Version>2026-11-26</Version>
+      <CanonicalUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderfoerderung</CanonicalUri>
+      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderfoerderung_2026-11-26</CanonicalVersionUri>
+      <Agency>
+         <LongName>XBerufsbildung</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Art der Förderung</LongName>
+         <Data Type="string" Lang="de-DE"/>
+      </Column>
+      <Column Id="amtlicherSchluessel" Use="required">
+         <ShortName>amtlicherSchluessel</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+      <Key Id="amtlicherSchluesselKey">
+         <ShortName>amtlicherSchluesselKey</ShortName>
+         <ColumnRef Ref="amtlicherSchluessel"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/foerderung_berufsausbildung_menschen_mit_behinderungen</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Förderung der Berufsausbildung für Menschen mit Behinderungen (Reha)</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>3</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/foerderung_sozial_benachteiligter_oder_lernbeeintraechtigter</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Förderung für sozial Benachteiligte bzw. Lernbeeinträchtigte</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>2</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/sonderprogramm_bund_oder_laender</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sonderprogramm des Bundes oder der Länder</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/ueberwiegend_betriebliche_finanzierung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Keine Förderung (überwiegend betriebliche Finanzierung)</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>0</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

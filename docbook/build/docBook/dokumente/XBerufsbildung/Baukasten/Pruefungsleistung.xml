@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Pruefungsleistung">
    <title>Pruefungsleistung</title>
    <subtitle>Typ: <emphasis role="codebf">Pruefungsleistung</emphasis>
-   </subtitle><para>Die Klasse enthält Angaben zur Bezeichnung und Benotung einer Prüfungsleistung. Eine Prüfungsleistung wird unter anderem als Qualifikationsinhalt, Qualifikationsbereich, Handlungsfeld, Prüfungsfach oder als eine andere prüfungsrelevante Kategorie je nach Fortbildungsordnung definiert.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Pruefungsleistung">
+   </subtitle><para>Die Klasse beschreibt eine einzelne Prüfungsleistung, beispielsweise ein Prüfungsfach oder ein Handlungsfeld. Die Bezeichnung ist anzugeben. Eine Benotung kann ergänzt werden.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Pruefungsleistung">
       <title>Pruefungsleistung</title>
       <mediaobject>
          <imageobject>

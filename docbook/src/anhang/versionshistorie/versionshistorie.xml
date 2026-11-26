@@ -18,6 +18,186 @@
 		<para>Veröffentlichungsdatum: &fassung;</para>
 		
 		<section>
+			<title>Aufnahme des Dokuments erhebung.berufsausbildungsverhaeltnis</title>
+			<para>Mit Version 1.0 wurde das Dokument
+				<literal>erhebung.berufsausbildungsverhaeltnis</literal> zur strukturierten
+				Übermittlung ausgewählter Erhebungsmerkmale gemäß § 88 Absatz 1 Satz 1
+				Nummer 1 und 3 BBiG aufgenommen.</para>
+			<para>Hierfür wurden der Basistyp <literal>Registerabruf</literal>, die erforderlichen
+				Datenstrukturen und Codelisten für die Berufsbildungsstatistik eingeführt.
+				Wird ein Wirtschaftszweig übermittelt, ist neben dem Wirtschaftszweigschlüssel
+				auch die verwendete Klassifikationsversion anzugeben. Ergänzend wurden
+				Geschäftsregeln für Angaben zum Anschlussvertrag, zur beruflichen Vorbildung
+				und zur Berufsvorbereitung aufgenommen.</para>
+		</section>
+		
+		<section>
+			<title>Änderungen mit möglichen Auswirkungen auf die Implementierung</title>
+			<itemizedlist>
+				<listitem>
+					<para>Prüfungsstruktur im Prüfungszeugnis: Das bisher unmittelbar unter
+						<literal>allgemeineAngaben</literal> angeordnete Element
+						<literal>pruefungsteil</literal> wurde durch das optionale Element
+						<literal>pruefungsstruktur</literal> ersetzt. Bei nicht gestreckten
+						Abschluss- bzw. Gesellenprüfungen werden die Prüfungsbereiche unmittelbar
+						unter <literal>pruefungsstruktur</literal> angegeben. Bei gestreckten
+						Prüfungen werden dort die Prüfungsteile angegeben. Jedem Prüfungsteil
+						können Prüfungsbereiche zugeordnet werden.</para>
+				</listitem>
+				<listitem>
+					<para>Prüfungsteile im AEVO-Zeugnis: Im Dokument
+						<literal>pruefling.zeugnisAEVO</literal> wurde die Kardinalität des
+						Elements <literal>pruefungsteil</literal> von <literal>1..*</literal>
+						auf <literal>0..2</literal> geändert. Die Angabe der Prüfungsteile ist
+						damit optional. Dokumente mit mehr als zwei
+						<literal>pruefungsteil</literal>-Elementen sind nach dem Schema der
+						Version 1.0 nicht mehr gültig.</para>
+				</listitem>
+				<listitem>
+					<para>Codeliste der Ausbildungsberufe: Im Prüfungszeugnis, in der
+						Eintragungsbestätigung und beim Referenzausbildungsberuf im
+						Anerkennungsbescheid kann der Ausbildungsberuf über das Element
+						<literal>ausbildungsberufCode</literal> vom Typ
+						<literal>Code.Ausbildungsberufe</literal> oder manuell angegeben werden.
+						Bei der Umstellung von Version 0.7 auf 1.0 sind die bisherigen manuellen
+						Angaben in das neue Element <literal>manuelleAngabe</literal> zu
+						verschieben. Im Prüfungszeugnis ändert sich dadurch beispielsweise der
+						Pfad von <literal>allgemeineAngaben/ausbildungsberuf/bezeichnung</literal>
+						zu <literal>allgemeineAngaben/ausbildungsberuf/manuelleAngabe/bezeichnung</literal>.
+						Im neuen Erhebungsdokument stehen beide Varianten sowohl für den aktuellen
+						als auch für den bei einem Anschlussvertrag angerechneten Ausbildungsberuf
+						zur Verfügung.</para>
+				</listitem>
+				<listitem>
+					<para>Nachnutzung von XBildung-Komponenten: Die eingebundene XBildung-Version
+						wurde von 1.2 auf 1.3 aktualisiert. Die Eintragungsbestätigung verwendet
+						für das Element <literal>ausbildungsbetrieb</literal> nun den Datentyp
+						<literal>xbd:Ausbildungsbetrieb</literal>. Die XBBD-eigenen Datentypen
+						<literal>Ausbildungsbetrieb</literal> und <literal>Ausbildungsstaette</literal>
+						entfallen. Eine bisher im Element <literal>betriebsnummer</literal>
+						übermittelte Betriebsnummer kann im neuen Datentyp über
+						<literal>identifikation</literal> angegeben werden.</para>
+				</listitem>
+				<listitem>
+					<para>Erweiterung der Namenskomponente: Der Datentyp
+						<literal>AllgemeinerName</literal> wurde um das optionale, wiederholbare
+						Element <literal>alternativeRepraesentation</literal> ergänzt.</para>
+				</listitem>
+				<listitem>
+					<para>Anpassung der Elementreihenfolge: In den Kernkomponenten
+						<literal>AntragstellendePerson</literal>, <literal>AuszubildendePerson</literal>
+						und <literal>GesetzlicheVertretung</literal> steht das Element
+						<literal>geburt</literal> nun unmittelbar nach
+						<literal>nameNatuerlichePerson</literal> und vor
+						<literal>anschrift</literal>.</para>
+				</listitem>
+				<listitem>
+					<para>Neue Codelisten: Für die berufliche Vorbildung, die Berufsvorbereitung,
+						die fachliche Eignung, die Art der Förderung, die Art der Prüfungszulassung
+						und den Prüfungserfolg wurden Codelisten eingeführt. Hinzu kommt die
+						Codeliste <literal>IDNrGzustaendigeStelleNachBBiG</literal> für die
+						Zuordnung des Herkunftsregisters zu einem NOOTS-Registertyp.
+						Zusätzlich wird die XUnternehmen-Codeliste
+						„Wirtschaftszweigklassifikationsversion“ nachgenutzt.</para>
+				</listitem>
+				<listitem>
+					<para>Anpassung von Kardinalitäten: Für die Übermittlung unvollständiger
+						Registerdaten wurden ausgewählte Pflichtangaben optional. In den
+						Datentypen <literal>Ausbildungsberuf</literal> und
+						<literal>Fortbildungsabschluss</literal> wurde beispielsweise die
+						Kardinalität des Elements <literal>fundstelle</literal> von
+						<literal>1..*</literal> auf <literal>0..*</literal> geändert.</para>
+				</listitem>
+				<listitem>
+					<para>Bezeichnung der Ausbildung in der Quellsprache: Im Datentyp
+						<literal>Ausbildung</literal> wurde der Typ des Elements
+						<literal>bezeichnungAusland</literal> von <literal>din91379:datatypeE</literal>
+						auf <literal>xbd:String.Localized</literal> umgestellt.</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		
+		<section>
+			<title>Redaktionelle Änderungen</title>
+			<itemizedlist>
+				<listitem>
+					<para>Präzisierung der fachlichen Dokumentation, insbesondere zu optionalen
+						Angaben, zum Verwendungszweck des Erhebungsdokuments und zur Abgrenzung
+						gegenüber fachrechtlichen Anforderungen an Zeugnisse und Bescheide.</para>
+				</listitem>
+				<listitem>
+					<para>Aktualisierung rechtlicher Verweise, ausgewählter Glossareinträge
+						und der Hinweise zur Implementierung.</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		
+		<section>
+			<title>Liste der umgesetzten Tickets</title>
+			<para>Für das Pre-Release der Version 1.0 wurden folgende intern dokumentierte Tickets umgesetzt:</para>
+			<itemizedlist>
+				<listitem>
+					<para>XBBD-707: Datenfelder gemäß den GitHub-Anforderungen zur Registermodernisierung optional modellieren</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-705: Codeliste „Wirtschaftszweigklassifikationsversion“ für die Berufsbildungsstatistik nachnutzen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-704: Codeliste „Art der beruflichen Vorbildung“ für die Berufsbildungsstatistik erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-703: Codeliste „Art der Berufsvorbereitung“ für die Berufsbildungsstatistik erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-702: Codeliste „Art der fachlichen Eignung“ erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-701: Codeliste „Prüfungserfolg“ erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-700: Codeliste „Art der Prüfungszulassung“ erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-699: Codeliste „Art der Förderung“ erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-698: Reihenfolge der Eigenschaften in den Kernkomponenten anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-697: Angabe des Ausbildungsberufs als Auswahl zwischen Codelisteneintrag und manueller Angabe modellieren</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-694: Codeliste „IDNrGzustaendigeStelleNachBBiG“ erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-693: Dokument für den Registerabruf erstellen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-692: In den Codelisten eine Kontaktmöglichkeit des Projekts XBerufsbildung ohne init-Adresse angeben</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-691: Datentyp „Ausbildungsbetrieb“ aus XBildung nachnutzen und die Betriebsnummer abbilden</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-690: Kernkomponente „AllgemeinerName“ vereinheitlichen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-689: Prüfungsstruktur für gestreckte und nicht gestreckte Prüfungen anpassen</para>
+				</listitem>
+				<listitem>
+					<para>XBBD-688: „Liste der Ausbildungsberufe“ in XBerufsbildung bereitstellen und einbinden</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</section>
+
+	<section>
+		<info>
+			<title>Version 0.7</title>
+		</info>
+		<para>Veröffentlichungsdatum: 04.06.2026</para>
+		
+		<section>
 			<title>Aufnahme des Nachweises antragstellende.anerkennungsbescheid</title>
 			<para>Mit der Version 0.7 wurde in XBerufsbildung der Nachweis <link
 					linkend="XBerufsbildung.Nachweise.antragstellende.anerkennungsbescheid"
@@ -128,11 +308,7 @@
 				</listitem>
 				<listitem>
 					<para>Die Dokumentation der Attribute wurde klassenübergreifend vereinheitlicht und fachlich
-						präzisiert. Dies betrifft insbesondere die Attribute der Klassen <link
-							linkend="XBerufsbildung.Baukasten.Ausbildungsberuf"
-							>Ausbildungsberuf</link>, <link
-							linkend="XBerufsbildung.Baukasten.Ausbildungsbetrieb"
-								>Ausbildungsbetrieb</link>, <link
+						präzisiert. Dies betrifft insbesondere die Attribute der Klassen Ausbildungsbetrieb, <link
 									linkend="XBerufsbildung.Baukasten.Fortbildungsabschluss"
 									>Fortbildungsabschluss</link>, <link
 										linkend="XBerufsbildung.Baukasten.Kernkomponenten.GesetzlicheVertretung"
@@ -380,7 +556,7 @@
 			<title>Sonstige Änderungen</title>
 			<para>Für die Nachweise <link linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis">Prüfungszeugnis</link> und <link linkend="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis">Fortbildungszeugnis</link> wurden die Strukturen der Prüfungsübersicht
 				überarbeitet.</para>
-			<para>Der <link linkend="XBerufsbildung.Baukasten.Ausbildungsbetrieb">Ausbildungsbetrieb</link> kann nun eine Betriebsnummer enthalten.</para>
+			<para>Der Ausbildungsbetrieb kann nun eine Betriebsnummer enthalten.</para>
 			<para>Die Eigenschaft Befreiung wurde aus den allgemeinen Angaben des <link linkend="XBerufsbildung.Nachweise.pruefling.pruefungszeugnis">Prüfungszeugnisses</link> entfernt. Sollte eine Befreiung vorliegen, wird diese als Bemerkung in den zusätzlichen Angaben angegeben.</para>
 		</section>
 		<section>

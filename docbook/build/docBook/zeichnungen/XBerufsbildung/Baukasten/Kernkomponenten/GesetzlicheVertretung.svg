@@ -88,31 +88,6 @@
             y2="66"
             class="type-structure-required"/>
       <g transform="translate(55,96)">
-         <rect width="115.109375" height="18" class="element-upper"/>
-         <rect width="115.109375" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">anschrift</text>
-         <line x1="0" y1="18" x2="115.109375" y2="18"/>
-         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
-         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xbbd:Anschrift</text>
-         <g transform="translate(115.109375,0)"/>
-      </g>
-      <line x1="33"
-            y1="114"
-            x2="55"
-            y2="114"
-            class="type-structure-optional"/>
-      <text font-size="11"
-            fill="black"
-            x="53"
-            y="112"
-            text-anchor="end">0..*</text>
-      <line x1="33"
-            y1="66"
-            x2="33"
-            y2="114"
-            class="type-structure-optional"/>
-      <g transform="translate(55,144)">
          <rect width="105.109375" height="18" class="element-upper"/>
          <rect width="105.109375" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">geburt</text>
@@ -123,6 +98,31 @@
          <g transform="translate(105.109375,0)"/>
       </g>
       <line x1="33"
+            y1="114"
+            x2="55"
+            y2="114"
+            class="type-structure-optional"/>
+      <text font-size="11"
+            fill="black"
+            x="53"
+            y="112"
+            text-anchor="end">0..1</text>
+      <line x1="33"
+            y1="66"
+            x2="33"
+            y2="114"
+            class="type-structure-optional"/>
+      <g transform="translate(55,144)">
+         <rect width="115.109375" height="18" class="element-upper"/>
+         <rect width="115.109375" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">anschrift</text>
+         <line x1="0" y1="18" x2="115.109375" y2="18"/>
+         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+         <text font-size="12" x="35.353125" y="30">xbbd:Anschrift</text>
+         <g transform="translate(115.109375,0)"/>
+      </g>
+      <line x1="33"
             y1="162"
             x2="55"
             y2="162"
@@ -131,7 +131,7 @@
             fill="black"
             x="53"
             y="160"
-            text-anchor="end">0..1</text>
+            text-anchor="end">0..*</text>
       <line x1="33"
             y1="114"
             x2="33"

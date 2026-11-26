@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XBerufsbildung.Baukasten.Codes.Code.Ausbildungsberufe"
+         status="&specstatus;"
+         revision="&xrecent;">
+   <title>Code.Ausbildungsberufe</title>
+   <informaltable>
+      <tgroup cols="2">
+         <colspec colnum="1" colname="des" colwidth="22mm"/>
+         <colspec colnum="2" colname="val" colwidth="138mm"/>
+         <thead>
+            <row>
+               <entry>Codelisten</entry>
+               <entry/>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry>-beschreibung</entry>
+               <entry><para>Die Codeliste enthält Ausbildungsberufe einschließlich ihrer Bezeichnungen und – soweit vorhanden – Fachrichtungen, Schwerpunkte, Einsatzgebiete bzw. Wahlqualifikationen sowie Angaben zu Gültigkeit, Rechtsgrundlagen, Regelausbildungsdauer und zugehörigen Berufsschlüsseln. Die Codeliste basiert auf Daten des Bundesinstituts für Berufsbildung (BIBB) und der Bundesagentur für Arbeit (BA).</para>
+
+<para><emphasis role="bold">Link zur Webseite:</emphasis> <link
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="https://www.xrepository.de/details/urn:xberufsbildung-de:xberufsbildung:codeliste:ausbildungsberufe">https://www.xrepository.de/details/urn:xberufsbildung-de:xberufsbildung:codeliste:ausbildungsberufe</link></para>
+
+<para><emphasis role="bold">Code:</emphasis> Im XML-Element <literal>code</literal> wird der Wert aus der gleichnamigen Codespalte übermittelt. Dieser Wert identifiziert den Eintrag eindeutig.</para>
+
+<para><emphasis role="bold">Beispiele:</emphasis></para>
+<itemizedlist spacing="compact">
+  <listitem>
+    <para><emphasis role="bold">Landwirt/Landwirtin</emphasis>: <literal>11102-90000_19950131</literal></para>
+  </listitem>
+  <listitem>
+    <para><emphasis role="bold">Florist/Floristin</emphasis>: <literal>12202-90000_20250131</literal></para>
+  </listitem>
+</itemizedlist></entry>
+            </row>
+            <row>
+               <entry>-nutzung</entry>
+               <entry>Typ: 3, siehe Beschreibung</entry>
+            </row>
+            <row>
+               <entry>-kennung</entry>
+               <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:ausbildungsberufe</entry>
+            </row>
+            <row>
+               <entry>-version</entry>
+               <entry>unbestimmt</entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../verwendung/complexTypes/code.ausbildungsberufe_list.xml"/>
+</section>

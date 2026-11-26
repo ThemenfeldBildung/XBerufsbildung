@@ -71,20 +71,20 @@
                   <emphasis role="bold">bezeichnungAusland</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeE</emphasis>
+                  <emphasis role="codebf">String.Localized</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Ursprüngliche Bezeichnung des Berufs bzw. der Ausbildung in der Quellsprache.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Ursprüngliche Bezeichnung des Berufs bzw. der Ausbildung in der Quellsprache und Originalschreibweise. Die Angabe kann auch Schriftzeichen außerhalb des Zeichenvorrats der DIN 91379 enthalten. Weicht die Sprache der Bezeichnung von der Dokumentensprache ab, ist sie über das Attribut xml:lang anzugeben.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">

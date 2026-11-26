@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XBerufsbildung.Nachweise.erhebung.berufsausbildungsverhaeltnis">
+   <title>erhebung.berufsausbildungsverhaeltnis</title>
+   <subtitle>Dokument: <emphasis role="codebf">erhebung.berufsausbildungsverhaeltnis</emphasis>
+   </subtitle><para>Dieses Dokument dient der strukturierten Übermittlung ausgewählter Daten zu Berufsausbildungsverhältnissen sowie zu Ausbilderinnen und Ausbildern. Die fachliche Bedeutung der Merkmale orientiert sich an § 88 Absatz 1 Satz 1 Nummern 1 und 3 BBiG. Das Dokument bildet keine vollständige Meldung zur Berufsbildungsstatistik ab.</para>
+
+<para>Die Bezugnahme auf § 88 BBiG beschreibt die fachliche Grundlage der Merkmale. Sie begründet keine eigenständige Berechtigung zum Abruf oder zur Übermittlung der Daten. Die Zulässigkeit der Verarbeitung richtet sich nach den für den jeweiligen Anwendungsfall einschlägigen Rechtsgrundlagen.</para><figure xml:id="figure.XBerufsbildung.Nachweise.erhebung.berufsausbildungsverhaeltnis">
+      <title>erhebung.berufsausbildungsverhaeltnis</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="55"
+                       fileref="../../../zeichnungen/XBerufsbildung/Nachweise/erhebung.berufsausbildungsverhaeltnis.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <para>Das Dokument <emphasis role="codebf">erhebung.berufsausbildungsverhaeltnis</emphasis> ist eine Erweiterung des Basistyps <emphasis role="codebf">Registerabruf</emphasis> (siehe <xref linkend="XBerufsbildung.Baukasten.Registerabruf" role="AS"/>).</para>
+   <informaltable xml:id="table.XBerufsbildung.Nachweise.erhebung.berufsausbildungsverhaeltnis">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">erhebung.berufsausbildungsverhaeltnis</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">auszubildendePerson</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur auszubildenden Person gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstaben a und b BBiG.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">geburtsjahr</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:gYear</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe des Geburtsjahres der auszubildenden Person.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">geschlecht</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Geschlecht</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zum Geschlecht der auszubildenden Person.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">staatsangehoerigkeit</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Staatsangehoerigkeit</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zur Staatsangehörigkeit der auszubildenden Person.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">amtlicherGemeindeschluessel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.AmtlicherGemeindeschluessel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Amtlicher Gemeindeschlüssel des Wohnortes der auszubildenden Person bei Vertragsabschluss.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">vorbildung</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur schulischen und beruflichen Vorbildung der auszubildenden Person gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe c BBiG.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">allgemeinbildenderSchulabschluss</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ArtDesSchulabschlusses</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe des höchsten allgemeinbildenden Schulabschlusses der auszubildenden Person. Maßgeblich ist der höchste erworbene allgemeinbildende Schulabschluss, unabhängig von der Schulart, an der dieser erworben wurde.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">berufsvorbereitendeQualifizierungOderGrundbildung</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zur vorausgegangenen Teilnahme an berufsvorbereitender Qualifizierung oder beruflicher Grundbildung.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">teilnahmeVorhanden</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:boolean</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Angabe, ob die auszubildende Person zuvor eine berufsvorbereitende Qualifizierung oder berufliche Grundbildung mit einer Dauer von mindestens sechs Monaten abgeschlossen hat.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">artDerBerufsvorbereitung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ArtDerBerufsvorbereitung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBerufsvorbereitung"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBerufsvorbereitung"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Angabe der Art der vorausgegangenen berufsvorbereitenden Qualifizierung oder beruflichen Grundbildung. Berücksichtigt werden abgeschlossene Qualifizierungen mit einer Dauer von mindestens sechs Monaten. Mehrfachnennungen sind möglich.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">beruflicheVorbildung</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zu vorherigen Berufsausbildungen und Studiengängen der auszubildenden Person einschließlich des jeweiligen Abschlussstatus.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">vorhanden</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:boolean</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Angabe, ob die auszubildende Person vor Beginn des aktuellen Berufsausbildungsverhältnisses bereits eine Berufsausbildung oder ein Studium begonnen hat.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">artDerBeruflichenVorbildung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ArtDerBeruflichenVorbildung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBeruflichenVorbildung"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBeruflichenVorbildung"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Angabe der Art und des Abschlussstatus vorheriger dualer oder schulischer Berufsausbildungen beziehungsweise eines vorherigen Studiums. Mehrfachnennungen sind möglich.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ausbildungsberuf</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zum Ausbildungsberuf einschließlich der Fachrichtung gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe d BBiG. Die Angabe erfolgt entweder über die Codeliste „Ausbildungsberufe“ oder über eine manuelle Angabe des Ausbildungsberufs.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">ausbildungsberufCode</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Ausbildungsberufe</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.Ausbildungsberufe"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.Ausbildungsberufe"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe des Ausbildungsberufs über die bereitgestellte Codeliste „Ausbildungsberufe“.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">manuelleAngabe</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Ausbildungsberuf</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsberuf"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsberuf" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Manuelle Angabe des Ausbildungsberufs als Alternative zur Angabe über die Codeliste „Ausbildungsberufe“.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ausbildungsintegrierendesDualesStudium</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:boolean</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angabe, ob die Berufsausbildung im Rahmen eines ausbildungsintegrierenden dualen Studiums gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe l BBiG erfolgt.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">vertrag</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zum Berufsausbildungsvertrag gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstaben f bis i BBiG.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">probezeitdauer</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:nonNegativeInteger</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Dauer der vertraglich vereinbarten Probezeit in Monaten. Teilmonate sind auf volle Monate aufzurunden. Der Wert 0 bezeichnet einen Vertrag ohne erneute Probezeit nach vorheriger dualer Berufsausbildung. Ist die Dauer unbekannt, kann das Element entfallen.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">verkuerzungAusbildungsdauer</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:nonNegativeInteger</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Umfang der Verkürzung der Gesamtausbildungsdauer nach § 8 BBiG in vollen Monaten. Teilmonate sind auf volle Monate aufzurunden. Anrechnungen beruflicher Vorbildung nach § 7 BBiG sind ab dem Berichtsjahr 2026 nicht als Verkürzung zu erfassen.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">teilzeitberufsausbildung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:boolean</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe, ob eine Teilzeitberufsausbildung vereinbart wurde.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">verguetung</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zur bei Vertragsabschluss vereinbarten monatlichen Bruttoausbildungsvergütung je Ausbildungsjahr. Für jedes übermittelte Ausbildungsjahr sind das Ausbildungsjahr und der Betrag anzugeben. Bei überwiegend öffentlich geförderten Berufsausbildungsverhältnissen können Angaben zu einzelnen Ausbildungsjahren entfallen, wenn die Vergütungsinformationen unvollständig vorliegen.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">ausbildungsjahr</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:positiveInteger</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Angabe des Ausbildungsjahres, für das die Vergütung vereinbart wurde.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">betrag</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:nonNegativeInteger</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Höhe der bei Vertragsabschluss vereinbarten monatlichen Bruttoausbildungsvergütung für das angegebene Ausbildungsjahr in vollen Euro, einschließlich anrechenbarer Sachbezugswerte. Centbeträge sind kaufmännisch zu runden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">vereinbarterAusbildungszeitraum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Zeitraum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Zeitraum"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Zeitraum"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zum vertraglich vereinbarten Beginn und/oder Ende der aktuellen Berufsausbildung. Maßgeblich sind die im Ausbildungsvertrag festgelegten Daten. Das vereinbarte Enddatum wird bei einer nachträglichen Verkürzung oder Verlängerung der Ausbildungsdauer angepasst, nicht jedoch bei einer vorzeitigen Vertragsauflösung oder einem vorzeitigen Ausbildungsabschluss durch bestandene Prüfung.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">vertragsaufloesungDatum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:date</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Datum der vorzeitigen Auflösung des Berufsausbildungsverhältnisses nach Ausbildungsbeginn und vor dem vertraglich vereinbarten Ausbildungsende. Die Beendigung durch Bestehen der Abschlussprüfung sowie von Beginn an geplante Betriebswechsel gelten nicht als vorzeitige Vertragsauflösung.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">anschlussvertrag</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angaben zu einem Anschlussvertrag, bei dem eine zuvor erfolgreich abgeschlossene duale Berufsausbildung auf eine nachfolgende Berufsausbildung angerechnet wird. Voraussetzung ist, dass die Anrechnung ausdrücklich in der jeweiligen Ausbildungsordnung vorgesehen ist.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">liegtVor</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:boolean</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Angabe, ob ein Anschlussvertrag im Sinne der Berufsbildungsstatistik vorliegt, bei dem eine zuvor erfolgreich abgeschlossene duale Berufsausbildung gemäß Ausbildungsordnung angerechnet wird.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">angerechneterAusbildungsberuf</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Angaben zum Ausbildungsberuf der zuvor erfolgreich abgeschlossenen dualen Berufsausbildung, die gemäß Ausbildungsordnung auf den Anschlussvertrag angerechnet wird.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent3" nameend="child">
+                  <emphasis role="bold">ausbildungsberufCode</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Ausbildungsberufe</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.Ausbildungsberufe"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.Ausbildungsberufe"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent3" nameend="page"><para>Angabe des Ausbildungsberufs über die bereitgestellte Codeliste „Ausbildungsberufe“.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent3" nameend="child">
+                  <emphasis role="bold">manuelleAngabe</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Ausbildungsberuf</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsberuf"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsberuf" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="0"/>
+               <entry rowsep="1" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent3" nameend="page"><para>Manuelle Angabe des Ausbildungsberufs als Alternative zur Angabe über die Codeliste „Ausbildungsberufe“.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ausbildungsstaette</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Ausbildungsstätte gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe e BBiG.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">amtlicherGemeindeschluessel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.AmtlicherGemeindeschluessel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Amtlicher Gemeindeschlüssel der Ausbildungsstätte.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">geografischeGitterzelle</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeE</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe der geografischen Gitterzelle, der die Ausbildungsstätte nach dem für die amtliche Statistik verwendeten räumlichen Bezugssystem zugeordnet ist.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">wirtschaftszweig</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe des Wirtschaftszweigs, dem die Ausbildungsstätte zugeordnet ist.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">wirtschaftszweigschluessel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeC</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Angabe des Wirtschaftszweigschlüssels gemäß der verwendeten Klassifikation WZ 2008 oder WZ 2025 des Statistischen Bundesamtes.</para>
+
+<para><emphasis role="bold">Quelle:</emphasis> Die Klassifikationen und ihre Gliederungen sind auf dem <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://klassifikationsserver.de/klassService/thyme/home/">Klassifikationsserver der Statistischen Ämter des Bundes und der Länder</link> abrufbar.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">versionWirtschaftszweigklassifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.VersionWirtschaftszweigklassifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.VersionWirtschaftszweigklassifikation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.VersionWirtschaftszweigklassifikation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Angabe der verwendeten Klassifikation der Wirtschaftszweige, beispielsweise WZ 2008 oder WZ 2025. Die Angabe legt fest, nach welcher Klassifikation der übermittelte Wirtschaftszweigschlüssel zu interpretieren ist.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">oeffentlicherDienst</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:boolean</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe, ob die Ausbildungsstätte dem öffentlichen Dienst zugeordnet ist.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">foerderungsart</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ArtDerFoerderung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFoerderung"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFoerderung"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Finanzierung des Berufsausbildungsverhältnisses und gegebenenfalls zur Art der öffentlichen Förderung gemäß § 34 Absatz 2 Nummer 9 BBiG. Eine überwiegende öffentliche Finanzierung liegt vor, wenn mehr als 50 Prozent der maßgeblichen Ausbildungskosten im ersten Ausbildungsjahr durch entsprechende öffentliche Fördermaßnahmen finanziert werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">pruefung</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Abschlussprüfung und zu Wiederholungsprüfungen gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe k BBiG.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">abschlusspruefungDatum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:date</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Datum der ersten Abschlussprüfung. Bei gestreckten Abschlussprüfungen ist das Datum des letzten Prüfungsteils anzugeben. Bei mehrtägigen Prüfungen ist der letzte Prüfungstag maßgeblich.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">zulassungsart</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ArtDerPruefungszulassung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerPruefungszulassung"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerPruefungszulassung"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Art der Zulassung zur ersten Abschlussprüfung. Unterschieden wird zwischen fristgemäßer und vorzeitiger Zulassung. Die Angabe bleibt bei Wiederholungsprüfungen unverändert.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">ersteWiederholungspruefungDatum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:date</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Datum der ersten Wiederholungsprüfung nach nicht bestandener Abschlussprüfung. Bei gestreckten Wiederholungsprüfungen ist das Datum des letzten Prüfungsteils maßgeblich.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">zweiteWiederholungspruefungDatum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:date</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Datum der zweiten Wiederholungsprüfung nach nicht bestandener erster Wiederholungsprüfung. Bei gestreckten Wiederholungsprüfungen ist das Datum des letzten Prüfungsteils maßgeblich.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">pruefungserfolg</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Pruefungserfolg</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.Pruefungserfolg"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.Pruefungserfolg"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Ergebnis der zuletzt abgelegten Abschlussprüfung unter Berücksichtigung gegebenenfalls erfolgter Wiederholungsprüfungen.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ausbilder</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zu Ausbilderinnen und Ausbildern, die dem übermittelten Berufsausbildungsverhältnis im Herkunftssystem zugeordnet sind. Die Merkmale orientieren sich an § 88 Absatz 1 Satz 1 Nummer 3 BBiG.</para>
+
+<para>Eine Person kann mehreren Berufsausbildungsverhältnissen zugeordnet sein und deshalb in mehreren Dokumenten vorkommen. Die Angaben dürfen nicht ohne Prüfung auf Mehrfacherfassungen zur Ermittlung der Anzahl der Ausbilderinnen und Ausbilder verwendet werden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">geschlecht</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Geschlecht</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe des Geschlechts des Ausbilders oder der Ausbilderin.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">geburtsjahr</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:gYear</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe des Geburtsjahres des Ausbilders oder der Ausbilderin.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">artDerFachlichenEignung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ArtDerFachlichenEignung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFachlichenEignung"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFachlichenEignung"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Art der fachlichen Eignung nach der Systematik der amtlichen Berufsbildungsstatistik. Kommen mehrere Ausprägungen infrage, wird die von der zuständigen Stelle als wichtigste bzw. höherwertige eingestufte Ausprägung angegeben.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <section>
+      <title>Geschäftsregeln</title>
+      <informaltable xml:id="table.XBerufsbildung.Nachweise.erhebung.berufsausbildungsverhaeltnis.rules">
+         <tgroup cols="2">
+            <colspec colname="id" colnum="1" colwidth="20mm"/>
+            <colspec colname="regel" colnum="2" colwidth="140mm"/>
+            <thead>
+               <row>
+                  <entry>ID</entry>
+                  <entry>Regel / XPath</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">xbbd:vertrag/xbbd:anschlussvertrag</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;B&#x200B;B&#x200B;D&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;4&#x200B;-&#x200B;A&#x200B;V&#x200B;</entry>
+                  <entry>XBBD-1000-0004-AV: Liegt ein Anschlussvertrag vor, muss der angerechnete Ausbildungsberuf angegeben werden. Liegt kein Anschlussvertrag vor, darf kein angerechneter Ausbildungsberuf angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(*:liegtVor = true() and exists(*:angerechneterAusbildungsberuf))</emphasis>
+                     </para>
+                     <para>
+                        <emphasis role="codebf">or</emphasis>
+                     </para>
+                     <para>
+                        <emphasis role="codebf">(*:liegtVor = false() and empty(*:angerechneterAusbildungsberuf))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">xbbd:vorbildung/xbbd:beruflicheVorbildung</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;B&#x200B;B&#x200B;D&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;6&#x200B;-&#x200B;B&#x200B;V&#x200B;V&#x200B;</entry>
+                  <entry>XBBD-1000-0006-BVV: Wenn eine vorherige Berufsausbildung oder ein vorheriges Studium vorliegt (vorhanden = true), muss mindestens eine Art der beruflichen Vorbildung angegeben werden. Liegt keine berufliche Vorbildung vor (vorhanden = false), darf keine Art angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(*:vorhanden = true() and exists(*:artDerBeruflichenVorbildung))</emphasis>
+                     </para>
+                     <para>
+                        <emphasis role="codebf">or</emphasis>
+                     </para>
+                     <para>
+                        <emphasis role="codebf">(*:vorhanden = false() and empty(*:artDerBeruflichenVorbildung))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">xbbd:vorbildung/xbbd:berufsvorbereitendeQualifizierungOderGrundbildung</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;B&#x200B;B&#x200B;D&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;B&#x200B;V&#x200B;</entry>
+                  <entry>XBBD-1000-0005-BV: Wenn eine vorausgegangene berufsvorbereitende Qualifizierung oder berufliche Grundbildung vorliegt (teilnahmeVorhanden = true), muss mindestens eine Art der Berufsvorbereitung angegeben werden. Liegt keine Teilnahme vor (teilnahmeVorhanden = false), darf keine Art angegeben werden.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(*:teilnahmeVorhanden = true() and exists(*:artDerBerufsvorbereitung))</emphasis>
+                     </para>
+                     <para>
+                        <emphasis role="codebf">or</emphasis>
+                     </para>
+                     <para>
+                        <emphasis role="codebf">(*:teilnahmeVorhanden = false() and empty(*:artDerBerufsvorbereitung))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </informaltable>
+   </section>
+</section>

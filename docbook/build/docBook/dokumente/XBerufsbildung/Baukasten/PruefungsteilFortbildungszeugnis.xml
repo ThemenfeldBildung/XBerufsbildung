@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.PruefungsteilFortbildungszeugnis">
    <title>PruefungsteilFortbildungszeugnis</title>
    <subtitle>Typ: <emphasis role="codebf">PruefungsteilFortbildungszeugnis</emphasis>
-   </subtitle><para>Die Klasse beinhaltet Angaben zum Prüfungsteil, einschließlich der Bezeichnung, Benotung sowie der zugehörigen Prüfungsleistungen.</para><figure xml:id="figure.XBerufsbildung.Baukasten.PruefungsteilFortbildungszeugnis">
+   </subtitle><para>Die Klasse enthält die Bezeichnung und die Benotung eines Prüfungsteils. Einzelne Prüfungsleistungen können zusätzlich angegeben werden.</para><figure xml:id="figure.XBerufsbildung.Baukasten.PruefungsteilFortbildungszeugnis">
       <title>PruefungsteilFortbildungszeugnis</title>
       <mediaobject>
          <imageobject>

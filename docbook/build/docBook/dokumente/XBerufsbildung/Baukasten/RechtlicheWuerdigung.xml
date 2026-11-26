@@ -94,7 +94,7 @@
                   <emphasis role="codebf">Entscheidungsgrundlage</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XBerufsbildung.Baukasten.Entscheidungsgrundlage"
@@ -151,14 +151,14 @@
                </entry>
                <entry/>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry/>
                <entry/>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Angaben zur Ausgleichsentscheidung zu einem festgestellten wesentlichen Unterschied.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Angaben zu einem bereits erfolgten Ausgleich des wesentlichen Unterschieds oder zu einer vorgesehenen Ausgleichsmaßnahme. Das Element kann entfallen, wenn der Unterschied fortbesteht und hierzu keine Ausgleichsmaßnahme angegeben wird.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="0"/>

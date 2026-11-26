@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.7/sch/xberufsbildung-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/1.0/sch/xberufsbildung-schematron.sch"
+            type="application/xml"
+            schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <!--
     Testdatei: T01_pruefungszeugnis_min_positiv.xml
-    Datei enthält alle Pflichtfelder eines Abschluss-Prüfungszeugnisses nach XBerufsbildung v0.7
-    Letzte Aktualisierung: 14.07.2026
+    Datei enthält die minimal erforderlichen Angaben eines Abschlussprüfungszeugnisses
+    nach XBerufsbildung 1.0 Pre-Release.
+    Letzte Aktualisierung: 26.11.2026
     Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
 -->
 
-<xbbd:pruefling.pruefungszeugnis xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+<xbbd:pruefling.pruefungszeugnis
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
     xmlns:bn-beh="http://xoev.de/schemata/basisnachricht/behoerde/1_1"
     xmlns:bn-kom="http://xoev.de/schemata/basisnachricht/kommunikation/1_1"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.3/xsd"
     xmlns:bn-g2g="http://xoev.de/schemata/basisnachricht/g2g/1_1"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/1.0/xsd"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd http://xberufsbildung.de/def/xberufsbildung/0.7/xsd/xberufsbildung.xsd">
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/1.0/xsd http://xberufsbildung.de/def/xberufsbildung/1.0/xsd/xberufsbildung.xsd">
     
     <xbd:sprache
         listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
         listVersionID="20240925-0">
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
-    
-    <xbbd:rechtsgrundlage>
-        <xbbd:code>
-            <code>http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/rechtsgrundlageabschlusszeugnis/37(2)_bbig</code>
-        </xbbd:code>
-    </xbbd:rechtsgrundlage>
     
     <xbbd:pruefling>
         <xbbd:nameNatuerlichePerson>
@@ -53,25 +52,12 @@
     
     <xbbd:allgemeineAngaben>
         <xbbd:ausbildungsberuf>
-            <xbbd:bezeichnung>Elektronikerin für Maschinen und Antriebstechnik</xbbd:bezeichnung>
-            <xbbd:fundstelle>BGBl. I S. 662, 714</xbbd:fundstelle>
+            <xbbd:manuelleAngabe>
+                <xbbd:bezeichnung>Elektronikerin für Maschinen und Antriebstechnik</xbbd:bezeichnung>
+            </xbbd:manuelleAngabe>
         </xbbd:ausbildungsberuf>
-        
-        <xbbd:pruefungsteil>
-            <xbbd:bezeichnung>Teil 1 der Abschlussprüfung</xbbd:bezeichnung>
-            <xbbd:pruefungsbereich>
-                <xbbd:bezeichnung>Arbeitsauftrag</xbbd:bezeichnung>
-                <xbbd:benotung>
-                    <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                </xbbd:benotung>
-            </xbbd:pruefungsbereich>
-        </xbbd:pruefungsteil>
     </xbbd:allgemeineAngaben>
     
     <xbbd:pruefungsdatum>2025-05-13</xbbd:pruefungsdatum>
-    
-    <xbbd:aussteller>
-        <xbbd:name>IHK München Oberbayern</xbbd:name>
-    </xbbd:aussteller>
     
 </xbbd:pruefling.pruefungszeugnis>

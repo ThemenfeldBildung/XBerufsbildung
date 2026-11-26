@@ -56,6 +56,94 @@
                <row>
                   <entry align="left">
                      <link role="schwarz"
+                           linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderberufsvorbereitung.ArtDerBerufsvorbereitung-Codes">Art der Berufsvorbereitung</link>
+                  </entry>
+                  <entry align="left">2026-11-26</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBerufsvorbereitung">Code.ArtDerBerufsvorbereitung</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderfoerderung.ArtDerFoerderung-Codes">Art der Förderung</link>
+                  </entry>
+                  <entry align="left">2026-11-26</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFoerderung">Code.ArtDerFoerderung</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderpruefungszulassung.ArtDerPruefungszulassung-Codes">Art der Prüfungszulassung</link>
+                  </entry>
+                  <entry align="left">2026-11-26</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerPruefungszulassung">Code.ArtDerPruefungszulassung</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderberuflichenvorbildung.ArtDerBeruflichenVorbildung-Codes">Art der beruflichen Vorbildung</link>
+                  </entry>
+                  <entry align="left">2026-11-26</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBeruflichenVorbildung">Code.ArtDerBeruflichenVorbildung</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderfachlicheneignung.ArtDerFachlichenEignung-Codes">Art der fachlichen Eignung</link>
+                  </entry>
+                  <entry align="left">2026-11-26</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFachlichenEignung">Code.ArtDerFachlichenEignung</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.idnrgzustaendigestellenachbbig.IDNrGzustaendigeStelleNachBBiG-Codes">IDNrGzustaendigeStelleNachBBiG</link>
+                  </entry>
+                  <entry align="left">2026-11-26</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.IDNrGzustaendigeStelleNachBBiG">Code.IDNrGzustaendigeStelleNachBBiG</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.ausbildungsberufe.Ausbildungsberufe-Codes">Liste der Ausbildungsberufe</link>
+                  </entry>
+                  <entry align="left">--</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.Ausbildungsberufe">Code.Ausbildungsberufe</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.pruefungserfolg.Pruefungserfolg-Codes">Prüfungserfolg</link>
+                  </entry>
+                  <entry align="left">2026-11-26</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.Pruefungserfolg">Code.Pruefungserfolg</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
                            linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.pruefungsteilaevo.PruefungsteilAEVO-Codes">Prüfungsteil AEVO</link>
                   </entry>
                   <entry align="left">2025-06-04</entry>
@@ -75,6 +163,17 @@
                            linkend="XBerufsbildung.Baukasten.Codes.Code.RechtsgrundlageAbschlusszeugnis">Code.RechtsgrundlageAbschlusszeugnis</link>
                   </entry>
                </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xoev-de.xunternehmen.codeliste.wirtschaftszweigklassifikationsversion.VersionWirtschaftszweigklassifikation-Codes">Wirtschaftszweigklassifikationsversion</link>
+                  </entry>
+                  <entry align="left">--</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XBerufsbildung.Baukasten.Codes.Code.VersionWirtschaftszweigklassifikation">Code.VersionWirtschaftszweigklassifikation</link>
+                  </entry>
+               </row>
             </tbody>
          </tgroup>
       </informaltable>
@@ -82,6 +181,829 @@
    <section xmlns:xlink="http://www.w3.org/1999/xlink"
             xml:id="schluesseltabellen.details">
       <title>Details</title>
+      <section xml:id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderberufsvorbereitung.ArtDerBerufsvorbereitung-Codes">
+         <title>Art der Berufsvorbereitung</title><para>Die Codeliste enthält die Arten der vorausgegangenen berufsvorbereitenden Qualifizierung oder beruflichen Grundbildung gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe c BBiG. Die Ausprägungen entsprechen den Kategorien der amtlichen Berufsbildungsstatistik. Mehrfachnennungen sind zulässig.</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Art der Berufsvorbereitung</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Art der Berufsvorbereitung</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:artderberufsvorbereitung</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XBerufsbildung (XBerufsbildung)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>2026-11-26</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="3">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <colspec colnum="3" colname="desc"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code</entry>
+                        <entry align="left">description-de-DE (Art der Berufsvorbereitung)</entry>
+                        <entry align="left">erhebungsposition</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberufsvorbereitung/berufsfachschule_ohne_vollqualifizierenden_berufsabschluss">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​b​e​r​u​f​s​v​o​r​b​e​r​e​i​t​u​n​g​/​b​e​r​u​f​s​f​a​c​h​s​c​h​u​l​e​_​o​h​n​e​_​v​o​l​l​q​u​a​l​i​f​i​z​i​e​r​e​n​d​e​n​_​b​e​r​u​f​s​a​b​s​c​h​l​u​s​s</link>
+                        </entry>
+                        <entry align="left">Berufsfachschule ohne vollqualifizierenden Berufsabschluss</entry>
+                        <entry align="left">6</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberufsvorbereitung/berufsvorbereitungsmassnahme">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​b​e​r​u​f​s​v​o​r​b​e​r​e​i​t​u​n​g​/​b​e​r​u​f​s​v​o​r​b​e​r​e​i​t​u​n​g​s​m​a​s​s​n​a​h​m​e</link>
+                        </entry>
+                        <entry align="left">Berufsvorbereitungsmaßnahme</entry>
+                        <entry align="left">3</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberufsvorbereitung/betriebliche_qualifizierungsmassnahme">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​b​e​r​u​f​s​v​o​r​b​e​r​e​i​t​u​n​g​/​b​e​t​r​i​e​b​l​i​c​h​e​_​q​u​a​l​i​f​i​z​i​e​r​u​n​g​s​m​a​s​s​n​a​h​m​e</link>
+                        </entry>
+                        <entry align="left">Betriebliche Qualifizierungsmaßnahme</entry>
+                        <entry align="left">2</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberufsvorbereitung/schulisches_berufsgrundbildungsjahr">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​b​e​r​u​f​s​v​o​r​b​e​r​e​i​t​u​n​g​/​s​c​h​u​l​i​s​c​h​e​s​_​b​e​r​u​f​s​g​r​u​n​d​b​i​l​d​u​n​g​s​j​a​h​r</link>
+                        </entry>
+                        <entry align="left">Schulisches Berufsgrundbildungsjahr</entry>
+                        <entry align="left">5</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberufsvorbereitung/schulisches_berufsvorbereitungsjahr">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​b​e​r​u​f​s​v​o​r​b​e​r​e​i​t​u​n​g​/​s​c​h​u​l​i​s​c​h​e​s​_​b​e​r​u​f​s​v​o​r​b​e​r​e​i​t​u​n​g​s​j​a​h​r</link>
+                        </entry>
+                        <entry align="left">Schulisches Berufsvorbereitungsjahr</entry>
+                        <entry align="left">4</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderfoerderung.ArtDerFoerderung-Codes">
+         <title>Art der Förderung</title><para>Die Codeliste enthält die Arten der Förderung von Berufsausbildungsverhältnissen gemäß § 34 Absatz 2 Nummer 9 und § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe j BBiG. Sie basiert auf der Klassifikation der amtlichen Berufsbildungsstatistik und unterscheidet zwischen überwiegend betrieblich finanzierten und überwiegend öffentlich geförderten Berufsausbildungsverhältnissen nach Art der Förderung. Eine überwiegende öffentliche Finanzierung liegt vor, wenn mehr als 50 Prozent der maßgeblichen Ausbildungskosten im ersten Ausbildungsjahr durch entsprechende öffentliche Fördermaßnahmen getragen werden.</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Art der Förderung von Berufsausbildungsverhältnissen</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Art der Förderung</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:artderfoerderung</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XBerufsbildung (XBerufsbildung)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>2026-11-26</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="3">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <colspec colnum="3" colname="desc"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code</entry>
+                        <entry align="left">description-de-DE (Art der Förderung)</entry>
+                        <entry align="left">amtlicherSchluessel</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/foerderung_berufsausbildung_menschen_mit_behinderungen">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​o​e​r​d​e​r​u​n​g​/​f​o​e​r​d​e​r​u​n​g​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​_​m​e​n​s​c​h​e​n​_​m​i​t​_​b​e​h​i​n​d​e​r​u​n​g​e​n</link>
+                        </entry>
+                        <entry align="left">Förderung der Berufsausbildung für Menschen mit Behinderungen (Reha)</entry>
+                        <entry align="left">3</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/foerderung_sozial_benachteiligter_oder_lernbeeintraechtigter">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​o​e​r​d​e​r​u​n​g​/​f​o​e​r​d​e​r​u​n​g​_​s​o​z​i​a​l​_​b​e​n​a​c​h​t​e​i​l​i​g​t​e​r​_​o​d​e​r​_​l​e​r​n​b​e​e​i​n​t​r​a​e​c​h​t​i​g​t​e​r</link>
+                        </entry>
+                        <entry align="left">Förderung für sozial Benachteiligte bzw. Lernbeeinträchtigte</entry>
+                        <entry align="left">2</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/sonderprogramm_bund_oder_laender">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​o​e​r​d​e​r​u​n​g​/​s​o​n​d​e​r​p​r​o​g​r​a​m​m​_​b​u​n​d​_​o​d​e​r​_​l​a​e​n​d​e​r</link>
+                        </entry>
+                        <entry align="left">Sonderprogramm des Bundes oder der Länder</entry>
+                        <entry align="left">1</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/ueberwiegend_betriebliche_finanzierung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​o​e​r​d​e​r​u​n​g​/​u​e​b​e​r​w​i​e​g​e​n​d​_​b​e​t​r​i​e​b​l​i​c​h​e​_​f​i​n​a​n​z​i​e​r​u​n​g</link>
+                        </entry>
+                        <entry align="left">Keine Förderung (überwiegend betriebliche Finanzierung)</entry>
+                        <entry align="left">0</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderpruefungszulassung.ArtDerPruefungszulassung-Codes">
+         <title>Art der Prüfungszulassung</title><para>Die Codeliste enthält die Arten der Zulassung zur ersten Abschlussprüfung gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe k BBiG. Sie basiert auf den Ausprägungen der amtlichen Berufsbildungsstatistik und unterscheidet zwischen fristgemäßer und vorzeitiger Zulassung.</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Art der Prüfungszulassung</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Art der Prüfungszulassung</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:artderpruefungszulassung</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XBerufsbildung (XBerufsbildung)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>2026-11-26</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="3">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <colspec colnum="3" colname="desc"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code</entry>
+                        <entry align="left">description-de-DE (Art der Prüfungszulassung)</entry>
+                        <entry align="left">amtlicherSchluessel</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderpruefungszulassung/fristgemaesse_zulassung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​p​r​u​e​f​u​n​g​s​z​u​l​a​s​s​u​n​g​/​f​r​i​s​t​g​e​m​a​e​s​s​e​_​z​u​l​a​s​s​u​n​g</link>
+                        </entry>
+                        <entry align="left">Fristgemäße Zulassung</entry>
+                        <entry align="left">0</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderpruefungszulassung/vorzeitige_zulassung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​p​r​u​e​f​u​n​g​s​z​u​l​a​s​s​u​n​g​/​v​o​r​z​e​i​t​i​g​e​_​z​u​l​a​s​s​u​n​g</link>
+                        </entry>
+                        <entry align="left">Vorzeitige Zulassung</entry>
+                        <entry align="left">1</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderberuflichenvorbildung.ArtDerBeruflichenVorbildung-Codes">
+         <title>Art der beruflichen Vorbildung</title><para>Die Codeliste enthält die Arten der beruflichen Vorbildung von Auszubildenden gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe c BBiG. Erfasst werden vorherige duale und schulische Berufsausbildungen sowie Studiengänge unter Berücksichtigung des jeweiligen Abschlussstatus. Die Ausprägungen entsprechen den Erhebungsmerkmalen der amtlichen Berufsbildungsstatistik. Mehrfachnennungen sind zulässig.</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Art der beruflichen Vorbildung</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Art der beruflichen Vorbildung</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:artderberuflichenvorbildung</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XBerufsbildung (XBerufsbildung)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>2026-11-26</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="3">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <colspec colnum="3" colname="desc"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code</entry>
+                        <entry align="left">description-de-DE (Art der beruflichen Vorbildung)</entry>
+                        <entry align="left">erhebungsposition</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/duale_berufsausbildung_erfolgreich_beendet">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​b​e​r​u​f​l​i​c​h​e​n​v​o​r​b​i​l​d​u​n​g​/​d​u​a​l​e​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​_​e​r​f​o​l​g​r​e​i​c​h​_​b​e​e​n​d​e​t</link>
+                        </entry>
+                        <entry align="left">Duale Berufsausbildung erfolgreich beendet</entry>
+                        <entry align="left">2</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/duale_berufsausbildung_nicht_erfolgreich_beendet">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​b​e​r​u​f​l​i​c​h​e​n​v​o​r​b​i​l​d​u​n​g​/​d​u​a​l​e​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​_​n​i​c​h​t​_​e​r​f​o​l​g​r​e​i​c​h​_​b​e​e​n​d​e​t</link>
+                        </entry>
+                        <entry align="left">Duale Berufsausbildung nicht erfolgreich beendet</entry>
+                        <entry align="left">3</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/schulische_berufsausbildung_erfolgreich_beendet">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​b​e​r​u​f​l​i​c​h​e​n​v​o​r​b​i​l​d​u​n​g​/​s​c​h​u​l​i​s​c​h​e​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​_​e​r​f​o​l​g​r​e​i​c​h​_​b​e​e​n​d​e​t</link>
+                        </entry>
+                        <entry align="left">Schulische Berufsausbildung erfolgreich beendet</entry>
+                        <entry align="left">4</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/schulische_berufsausbildung_nicht_erfolgreich_beendet">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​b​e​r​u​f​l​i​c​h​e​n​v​o​r​b​i​l​d​u​n​g​/​s​c​h​u​l​i​s​c​h​e​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​_​n​i​c​h​t​_​e​r​f​o​l​g​r​e​i​c​h​_​b​e​e​n​d​e​t</link>
+                        </entry>
+                        <entry align="left">Schulische Berufsausbildung nicht erfolgreich beendet</entry>
+                        <entry align="left">5</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/studium_erfolgreich_beendet">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​b​e​r​u​f​l​i​c​h​e​n​v​o​r​b​i​l​d​u​n​g​/​s​t​u​d​i​u​m​_​e​r​f​o​l​g​r​e​i​c​h​_​b​e​e​n​d​e​t</link>
+                        </entry>
+                        <entry align="left">Studium erfolgreich beendet</entry>
+                        <entry align="left">6</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/studium_nicht_erfolgreich_beendet">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​b​e​r​u​f​l​i​c​h​e​n​v​o​r​b​i​l​d​u​n​g​/​s​t​u​d​i​u​m​_​n​i​c​h​t​_​e​r​f​o​l​g​r​e​i​c​h​_​b​e​e​n​d​e​t</link>
+                        </entry>
+                        <entry align="left">Studium nicht erfolgreich beendet</entry>
+                        <entry align="left">7</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderfachlicheneignung.ArtDerFachlichenEignung-Codes">
+         <title>Art der fachlichen Eignung</title><para>Die Codeliste enthält die Arten der fachlichen Eignung von Ausbilderinnen und Ausbildern gemäß § 88 Absatz 1 Satz 1 Nummer 3 BBiG. Die Ausprägungen entsprechen den Vorgaben der amtlichen Berufsbildungsstatistik und berücksichtigen die Anforderungen an die fachliche Eignung nach § 30 BBiG.</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Art der fachlichen Eignung</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Art der fachlichen Eignung</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:artderfachlicheneignung</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XBerufsbildung (XBerufsbildung)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>2026-11-26</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="3">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <colspec colnum="3" colname="desc"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code</entry>
+                        <entry align="left">description-de-DE (Art der fachlichen Eignung)</entry>
+                        <entry align="left">amtlicherSchluessel</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/ausbildereignungspruefung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​a​c​h​l​i​c​h​e​n​e​i​g​n​u​n​g​/​a​u​s​b​i​l​d​e​r​e​i​g​n​u​n​g​s​p​r​u​e​f​u​n​g</link>
+                        </entry>
+                        <entry align="left">Ausbildereignungsprüfung</entry>
+                        <entry align="left">6</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/befreiung_von_der_ausbildereignungspruefung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​a​c​h​l​i​c​h​e​n​e​i​g​n​u​n​g​/​b​e​f​r​e​i​u​n​g​_​v​o​n​_​d​e​r​_​a​u​s​b​i​l​d​e​r​e​i​g​n​u​n​g​s​p​r​u​e​f​u​n​g</link>
+                        </entry>
+                        <entry align="left">Befreiung von der Ausbildereignungsprüfung</entry>
+                        <entry align="left">7</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/berufsausbildungsabschluss">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​a​c​h​l​i​c​h​e​n​e​i​g​n​u​n​g​/​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​a​b​s​c​h​l​u​s​s</link>
+                        </entry>
+                        <entry align="left">Berufsausbildungsabschluss</entry>
+                        <entry align="left">1</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/berufszulassung_freie_berufe">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​a​c​h​l​i​c​h​e​n​e​i​g​n​u​n​g​/​b​e​r​u​f​s​z​u​l​a​s​s​u​n​g​_​f​r​e​i​e​_​b​e​r​u​f​e</link>
+                        </entry>
+                        <entry align="left">Berufszulassung, Freie Berufe</entry>
+                        <entry align="left">8</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/fachschulabschluss">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​a​c​h​l​i​c​h​e​n​e​i​g​n​u​n​g​/​f​a​c​h​s​c​h​u​l​a​b​s​c​h​l​u​s​s</link>
+                        </entry>
+                        <entry align="left">Fachschulabschluss</entry>
+                        <entry align="left">5</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/feststellungsverfahren_vollstaendige_vergleichbarkeit">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​a​c​h​l​i​c​h​e​n​e​i​g​n​u​n​g​/​f​e​s​t​s​t​e​l​l​u​n​g​s​v​e​r​f​a​h​r​e​n​_​v​o​l​l​s​t​a​e​n​d​i​g​e​_​v​e​r​g​l​e​i​c​h​b​a​r​k​e​i​t</link>
+                        </entry>
+                        <entry align="left">Feststellungsverfahren mit dem Ergebnis der vollständigen Vergleichbarkeit</entry>
+                        <entry align="left">9</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/fortsetzung_der_ausbildertaetigkeit">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​a​c​h​l​i​c​h​e​n​e​i​g​n​u​n​g​/​f​o​r​t​s​e​t​z​u​n​g​_​d​e​r​_​a​u​s​b​i​l​d​e​r​t​a​e​t​i​g​k​e​i​t</link>
+                        </entry>
+                        <entry align="left">Fortsetzung der Ausbildertätigkeit</entry>
+                        <entry align="left">4</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/hochschul_oder_fachhochschulabschluss">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​a​c​h​l​i​c​h​e​n​e​i​g​n​u​n​g​/​h​o​c​h​s​c​h​u​l​_​o​d​e​r​_​f​a​c​h​h​o​c​h​s​c​h​u​l​a​b​s​c​h​l​u​s​s</link>
+                        </entry>
+                        <entry align="left">Hochschul-/Fachhochschulabschluss</entry>
+                        <entry align="left">2</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/meisterpruefung_oder_gleichgestellte_pruefung">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​a​r​t​d​e​r​f​a​c​h​l​i​c​h​e​n​e​i​g​n​u​n​g​/​m​e​i​s​t​e​r​p​r​u​e​f​u​n​g​_​o​d​e​r​_​g​l​e​i​c​h​g​e​s​t​e​l​l​t​e​_​p​r​u​e​f​u​n​g</link>
+                        </entry>
+                        <entry align="left">Meisterprüfung oder gleichgestellte Prüfung</entry>
+                        <entry align="left">3</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.idnrgzustaendigestellenachbbig.IDNrGzustaendigeStelleNachBBiG-Codes">
+         <title>IDNrGzustaendigeStelleNachBBiG</title><para>Die Codeliste enthält die NOOTS-Registertypkennungen 24A bis 24U für die Verzeichnisse der Berufsausbildungsverhältnisse nach § 34 BBiG. Grundlage ist Nummer 24 der Anlage zu § 1 IDNrG. Die Kennungen unterscheiden die Registertypen nach den Kategorien der zuständigen Stellen.</para>
+
+<para>Für die Übermittlung ist der Wert der empfohlenen Codespalte "code" zu verwenden. Die zugehörige NOOTS-Registertypkennung (z. B. 24A) ist in der Spalte "id" hinterlegt.</para>
+
+<para><emphasis role="bold">Quelle:</emphasis> <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://noots.gov.de/anschluss/status-der-register">NOOTS – Übersicht der Registertypen gemäß IDNrG</link>.</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>IDNrGzustaendigeStelleNachBBiG</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>IDNrGzustaendigeStelleNachBBiG</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:idnrgzustaendigestellenachbbig</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XBerufsbildung (XBerufsbildung)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>2026-11-26</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="3">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <colspec colnum="3" colname="desc"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code</entry>
+                        <entry align="left">description-de-DE (IDNrGzustaendigeStelleNachBBiG)</entry>
+                        <entry align="left">id (IDNrGzustaendigeStelleNachBBiG)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_aerztekammern">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​a​e​r​z​t​e​k​a​m​m​e​r​n</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Ärztekammern</entry>
+                        <entry align="left">24I</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_apothekerkammern">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​a​p​o​t​h​e​k​e​r​k​a​m​m​e​r​n</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Apothekerkammern</entry>
+                        <entry align="left">24L</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_ba">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​b​a</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - BA</entry>
+                        <entry align="left">24O</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_bapersbw">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​b​a​p​e​r​s​b​w</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - BAPersBW</entry>
+                        <entry align="left">24P</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_bas">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​b​a​s</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - BAS</entry>
+                        <entry align="left">24N</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_bmdv">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​b​m​d​v</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - BMDV</entry>
+                        <entry align="left">24Q</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_bva">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​b​v​a</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - BVA</entry>
+                        <entry align="left">24M</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_evangelische_kirche">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​e​v​a​n​g​e​l​i​s​c​h​e​_​k​i​r​c​h​e</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - evangelische Kirche</entry>
+                        <entry align="left">24S</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_handwerkskammern">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​h​a​n​d​w​e​r​k​s​k​a​m​m​e​r​n</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Handwerkskammern</entry>
+                        <entry align="left">24A</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_hauswirtschaft">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​h​a​u​s​w​i​r​t​s​c​h​a​f​t</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Hauswirtschaft</entry>
+                        <entry align="left">24U</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_ihk">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​i​h​k</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - IHK</entry>
+                        <entry align="left">24B</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_katholische_kirche">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​k​a​t​h​o​l​i​s​c​h​e​_​k​i​r​c​h​e</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - katholische Kirche</entry>
+                        <entry align="left">24T</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_laender">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​l​a​e​n​d​e​r</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Länder</entry>
+                        <entry align="left">24R</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_landwirtschaftskammern">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​l​a​n​d​w​i​r​t​s​c​h​a​f​t​s​k​a​m​m​e​r​n</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Landwirtschaftskammern</entry>
+                        <entry align="left">24C</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_notarkammern">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​n​o​t​a​r​k​a​m​m​e​r​n</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Notarkammern</entry>
+                        <entry align="left">24F</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_patentanwaltskammern">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​p​a​t​e​n​t​a​n​w​a​l​t​s​k​a​m​m​e​r​n</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Patentanwaltskammern</entry>
+                        <entry align="left">24E</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_rechtsanwaltskammern">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​r​e​c​h​t​s​a​n​w​a​l​t​s​k​a​m​m​e​r​n</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Rechtsanwaltskammern</entry>
+                        <entry align="left">24D</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_steuerberaterkammern">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​s​t​e​u​e​r​b​e​r​a​t​e​r​k​a​m​m​e​r​n</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Steuerberaterkammern</entry>
+                        <entry align="left">24H</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_tieraerztekammern">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​t​i​e​r​a​e​r​z​t​e​k​a​m​m​e​r​n</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Tierärztekammern</entry>
+                        <entry align="left">24K</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_wirtschaftsprueferkammern">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​w​i​r​t​s​c​h​a​f​t​s​p​r​u​e​f​e​r​k​a​m​m​e​r​n</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Wirtschaftsprüferkammern</entry>
+                        <entry align="left">24G</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_zahnaerztekammern">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​i​d​n​r​g​z​u​s​t​a​e​n​d​i​g​e​s​t​e​l​l​e​n​a​c​h​b​b​i​g​/​v​e​r​z​e​i​c​h​n​i​s​_​d​e​r​_​b​e​r​u​f​s​a​u​s​b​i​l​d​u​n​g​s​v​e​r​h​a​e​l​t​n​i​s​s​e​_​z​a​h​n​a​e​r​z​t​e​k​a​m​m​e​r​n</link>
+                        </entry>
+                        <entry align="left">Verzeichnis der Berufsausbildungsverhältnisse - Zahnärztekammern</entry>
+                        <entry align="left">24J</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.ausbildungsberufe.Ausbildungsberufe-Codes">
+         <title>Liste der Ausbildungsberufe</title><para>Die Codeliste enthält Ausbildungsberufe einschließlich ihrer Bezeichnungen und – soweit vorhanden – Fachrichtungen, Schwerpunkte, Einsatzgebiete bzw. Wahlqualifikationen sowie Angaben zu Gültigkeit, Rechtsgrundlagen, Regelausbildungsdauer und zugehörigen Berufsschlüsseln. Die Codeliste basiert auf Daten des Bundesinstituts für Berufsbildung (BIBB) und der Bundesagentur für Arbeit (BA).</para>
+
+<para><emphasis role="bold">Link zur Webseite:</emphasis> <link
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="https://www.xrepository.de/details/urn:xberufsbildung-de:xberufsbildung:codeliste:ausbildungsberufe">https://www.xrepository.de/details/urn:xberufsbildung-de:xberufsbildung:codeliste:ausbildungsberufe</link></para>
+
+<para><emphasis role="bold">Code:</emphasis> Im XML-Element <literal>code</literal> wird der Wert aus der gleichnamigen Codespalte übermittelt. Dieser Wert identifiziert den Eintrag eindeutig.</para>
+
+<para><emphasis role="bold">Beispiele:</emphasis></para>
+<itemizedlist spacing="compact">
+  <listitem>
+    <para><emphasis role="bold">Landwirt/Landwirtin</emphasis>: <literal>11102-90000_19950131</literal></para>
+  </listitem>
+  <listitem>
+    <para><emphasis role="bold">Florist/Floristin</emphasis>: <literal>12202-90000_20250131</literal></para>
+  </listitem>
+</itemizedlist><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Liste der Ausbildungsberufe</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Liste der Ausbildungsberufe</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:ausbildungsberufe</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XBerufsbildung (XBerufsbildung)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>unbestimmt</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.pruefungserfolg.Pruefungserfolg-Codes">
+         <title>Prüfungserfolg</title><para>Die Codeliste enthält die möglichen Ergebnisse der zuletzt abgelegten Abschlussprüfung einschließlich gegebenenfalls erfolgter Wiederholungsprüfungen gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe k BBiG. Die Ausprägungen entsprechen den Vorgaben der amtlichen Berufsbildungsstatistik.</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Prüfungserfolg</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Prüfungserfolg</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:pruefungserfolg</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XBerufsbildung (XBerufsbildung)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>2026-11-26</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="3">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <colspec colnum="3" colname="desc"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code</entry>
+                        <entry align="left">description-de-DE (Prüfungserfolg)</entry>
+                        <entry align="left">amtlicherSchluessel</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/pruefungserfolg/bestanden">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​p​r​u​e​f​u​n​g​s​e​r​f​o​l​g​/​b​e​s​t​a​n​d​e​n</link>
+                        </entry>
+                        <entry align="left">Bestanden</entry>
+                        <entry align="left">1</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/pruefungserfolg/endgueltig_nicht_bestanden">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​p​r​u​e​f​u​n​g​s​e​r​f​o​l​g​/​e​n​d​g​u​e​l​t​i​g​_​n​i​c​h​t​_​b​e​s​t​a​n​d​e​n</link>
+                        </entry>
+                        <entry align="left">Endgültig nicht bestanden</entry>
+                        <entry align="left">3</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/pruefungserfolg/nicht_bestanden">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​6​-​1​1​-​2​6​/​c​o​d​e​/​p​r​u​e​f​u​n​g​s​e​r​f​o​l​g​/​n​i​c​h​t​_​b​e​s​t​a​n​d​e​n</link>
+                        </entry>
+                        <entry align="left">Nicht bestanden</entry>
+                        <entry align="left">2</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
       <section xml:id="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.pruefungsteilaevo.PruefungsteilAEVO-Codes">
          <title>Prüfungsteil AEVO</title><para>Die Codeliste stellt die beiden Teile der Prüfung gemäß der Ausbilder-Eignungsverordnung dar und wird zur Unterscheidung sowie Dokumentation der jeweiligen Prüfungsteile verwendet.</para><section>
             <title>Metadaten</title>
@@ -239,6 +1161,48 @@
                            <link xlink:href="http://xberufsbildung.de/def/xberufsbildung/2025-06-04/code/rechtsgrundlageabschlusszeugnis/~wert_nicht_in_liste">h​t​t​p​:​/​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​.​d​e​/​d​e​f​/​x​b​e​r​u​f​s​b​i​l​d​u​n​g​/​2​0​2​5​-​0​6​-​0​4​/​c​o​d​e​/​r​e​c​h​t​s​g​r​u​n​d​l​a​g​e​a​b​s​c​h​l​u​s​s​z​e​u​g​n​i​s​/​~​w​e​r​t​_​n​i​c​h​t​_​i​n​_​l​i​s​t​e</link>
                         </entry>
                         <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xoev-de.xunternehmen.codeliste.wirtschaftszweigklassifikationsversion.VersionWirtschaftszweigklassifikation-Codes">
+         <title>Wirtschaftszweigklassifikationsversion</title><para>Die Codeliste enthält die Versionen der Klassifikation der Wirtschaftszweige des Statistischen Bundesamtes, insbesondere WZ 2008 und WZ 2025.</para>
+
+<para><emphasis role="bold">Link zur Webseite:</emphasis> <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.xrepository.de/details/urn:xoev-de:xunternehmen:codeliste:wirtschaftszweigklassifikationsversion">https://www.xrepository.de/details/urn:xoev-de:xunternehmen:codeliste:wirtschaftszweigklassifikationsversion</link></para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Wirtschaftszweigklassifikationsversion</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Wirtschaftszweigklassifikationsversion</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xoev-de:xunternehmen:codeliste:wirtschaftszweigklassifikationsversion</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XUnternehmen (XUnternehmen)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>unbestimmt</entry>
                      </row>
                   </tbody>
                </tgroup>

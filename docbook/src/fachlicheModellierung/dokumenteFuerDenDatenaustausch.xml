@@ -30,5 +30,8 @@
     
     <include xmlns="http://www.w3.org/2001/XInclude"
         href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/antragstellende.anerkennungsbescheid.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/XBerufsbildung/Nachweise/erhebung.berufsausbildungsverhaeltnis.xml"/>
 
 </chapter>

@@ -70,28 +70,6 @@
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">anschrift</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Anschrift</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Anschrift"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Anschrift"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zur Anschrift der antragstellenden Person.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
                   <emphasis role="bold">geburt</emphasis>
                </entry>
                <entry>
@@ -111,6 +89,28 @@
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>Angaben zur Geburt der antragstellenden Person.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">anschrift</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Anschrift</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Anschrift"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Anschrift"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Anschrift der antragstellenden Person.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">

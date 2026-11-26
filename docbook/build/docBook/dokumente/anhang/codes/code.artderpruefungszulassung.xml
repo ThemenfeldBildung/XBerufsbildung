@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XBerufsbildung.Baukasten.Codes.Code.ArtDerPruefungszulassung"
+         status="&specstatus;"
+         revision="&xrecent;">
+   <title>Code.ArtDerPruefungszulassung</title>
+   <informaltable>
+      <tgroup cols="2">
+         <colspec colnum="1" colname="des" colwidth="22mm"/>
+         <colspec colnum="2" colname="val" colwidth="138mm"/>
+         <thead>
+            <row>
+               <entry>Codelisten</entry>
+               <entry/>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry>-beschreibung</entry>
+               <entry><para>Die Codeliste enthält die Arten der Zulassung zur ersten Abschlussprüfung gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe k BBiG. Sie basiert auf den Ausprägungen der amtlichen Berufsbildungsstatistik und unterscheidet zwischen fristgemäßer und vorzeitiger Zulassung.</para></entry>
+            </row>
+            <row>
+               <entry>-nutzung</entry>
+               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderpruefungszulassung.ArtDerPruefungszulassung-Codes"
+                        role="Seite"/>
+               </entry>
+            </row>
+            <row>
+               <entry>-kennung</entry>
+               <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:artderpruefungszulassung</entry>
+            </row>
+            <row>
+               <entry>-version</entry>
+               <entry>2026-11-26</entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../verwendung/complexTypes/code.artderpruefungszulassung_list.xml"/>
+</section>

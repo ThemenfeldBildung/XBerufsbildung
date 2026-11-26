@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/0.7/sch/xberufsbildung-schematron.sch"
+<?xml-model href="https://xberufsbildung.de/def/xberufsbildung/1.0/sch/xberufsbildung-schematron.sch"
             type="application/xml"
             schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <!--
-    Testdatei: T02_pruefungszeugnis_max_positiv
-    Datei enthält exemplarisch alle fachlich sinnvoll nutzbaren Felder eines
-    Abschluss-Prüfungszeugnisses nach XBerufsbildung 0.7.
-    Version: XBerufsbildung 0.7
-    Letzte Aktualisierung: 14.07.2026
+    Testdatei: T02_pruefungszeugnis_max_positiv.xml
+    Datei enthält exemplarisch die fachlich sinnvoll kombinierbaren Felder eines
+    Abschlussprüfungszeugnisses nach XBerufsbildung 1.0 Pre-Release.
+    Version: XBerufsbildung 1.0 Pre-Release
+    Letzte Aktualisierung: 26.11.2026
     Lizenz: Creative Commons 4.0 Namensnennung International,
              ]init[ AG im Auftrag des Landes Sachsen-Anhalt
 -->
@@ -19,18 +19,18 @@
     xmlns:bn-beh="http://xoev.de/schemata/basisnachricht/behoerde/1_1"
     xmlns:bn-kom="http://xoev.de/schemata/basisnachricht/kommunikation/1_1"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.3/xsd"
     xmlns:bn-g2g="http://xoev.de/schemata/basisnachricht/g2g/1_1"
-    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd"
+    xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/1.0/xsd"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd https://xberufsbildung.de/def/xberufsbildung/0.7/xsd/xberufsbildung.xsd">
+    xsi:schemaLocation="http://xberufsbildung.de/def/xberufsbildung/1.0/xsd https://xberufsbildung.de/def/xberufsbildung/1.0/xsd/xberufsbildung.xsd">
     
     <!-- Angaben zum Dokument -->
     <xbd:titel>Prüfungszeugnis</xbd:titel>
     <xbd:ausstellung>
         <xbd:datum>2025-05-13</xbd:datum>
-        <xbd:ort>
+        <xbd:ortsangabe>
             <xbd:ort>München</xbd:ort>
             <xbd:staat
                 listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
@@ -38,9 +38,13 @@
                 <code>000</code>
                 <name>Deutschland</name>
             </xbd:staat>
-        </xbd:ort>
+        </xbd:ortsangabe>
     </xbd:ausstellung>
-    <xbd:gueltigkeitsdatum>2025-05-13</xbd:gueltigkeitsdatum>
+    
+    <xbd:gueltigkeit>
+        <xbd:beginn>2025-05-13</xbd:beginn>
+    </xbd:gueltigkeit>
+    
     <xbd:sprache
         listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
         listVersionID="20240925-0">
@@ -75,6 +79,7 @@
                 <xbbd:nichtVorhanden>false</xbbd:nichtVorhanden>
             </xbbd:vorname>
         </xbbd:nameNatuerlichePerson>
+        
         <xbbd:geburt>
             <xbbd:datum>
                 <xbd:jahrMonatTag>1997-04-01</xbd:jahrMonatTag>
@@ -89,6 +94,7 @@
                 </xbbd:staat>
             </xbbd:geburtsort>
         </xbbd:geburt>
+        
         <xbbd:identifikationsnummer>
             <xbbd:id>IHK-MUC-2025-000123</xbbd:id>
             <xbbd:beschreibung>Prüflingsnummer der IHK für München und Oberbayern</xbbd:beschreibung>
@@ -105,6 +111,7 @@
         <xbd:note>2</xbd:note>
         <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
         <xbd:punkte>81</xbd:punkte>
+        
         <xbd:bewertungsschemaNote>
             <xbd:schemaURI>https://www.bundesanzeiger.de/pub/de/amtliche-veroeffentlichung?5</xbd:schemaURI>
             <xbd:beschreibung>Notenskala von Note 1 (sehr gut) bis Note 6 (ungenügend)</xbd:beschreibung>
@@ -113,6 +120,7 @@
             <xbd:bestandenAbBewertung>4</xbd:bestandenAbBewertung>
             <xbd:schlechtesteBewertung>6</xbd:schlechtesteBewertung>
         </xbd:bewertungsschemaNote>
+        
         <xbd:bewertungsschemaPunkte>
             <xbd:schemaURI>https://www.bundesanzeiger.de/pub/de/amtliche-veroeffentlichung?5</xbd:schemaURI>
             <xbd:beschreibung>100–92 Punkte: sehr gut; unter 92–81 Punkte: gut; unter 81–67 Punkte: befriedigend; unter 67–50 Punkte: ausreichend; unter 50–30 Punkte: mangelhaft; unter 30 Punkte: ungenügend</xbd:beschreibung>
@@ -121,85 +129,96 @@
             <xbd:bestandenAbBewertung>50</xbd:bestandenAbBewertung>
             <xbd:schlechtesteBewertung>0</xbd:schlechtesteBewertung>
         </xbd:bewertungsschemaPunkte>
+        
         <xbd:beschreibung>Gesamtergebnis der bestandenen Abschlussprüfung</xbd:beschreibung>
     </xbbd:gesamtergebnis>
     
     <!-- Angaben zum Beruf und zu den Prüfungsleistungen -->
     <xbbd:allgemeineAngaben>
         <xbbd:ausbildungsberuf>
-            <xbbd:bezeichnung>Elektronikerin für Maschinen und Antriebstechnik</xbbd:bezeichnung>
-            <xbbd:fundstelle>BGBl. I S. 662, 714</xbbd:fundstelle>
-            <xbbd:binnendifferenzierung>
-                <xbbd:fachrichtung>Maschinen- und Antriebstechnik</xbbd:fachrichtung>
-                <xbbd:schwerpunkt>Elektrische Maschinen und Antriebssysteme</xbbd:schwerpunkt>
-                <xbbd:sonstiges>Zusatzqualifikation Digitale Vernetzung</xbbd:sonstiges>
-            </xbbd:binnendifferenzierung>
+            <xbbd:manuelleAngabe>
+                <xbbd:bezeichnung>Elektronikerin für Maschinen und Antriebstechnik</xbbd:bezeichnung>
+                <xbbd:fundstelle>BGBl. I S. 662, 714</xbbd:fundstelle>
+                <xbbd:binnendifferenzierung>
+                    <xbbd:fachrichtung>Maschinen- und Antriebstechnik</xbbd:fachrichtung>
+                    <xbbd:schwerpunkt>Elektrische Maschinen und Antriebssysteme</xbbd:schwerpunkt>
+                    <xbbd:sonstiges>Zusatzqualifikation Digitale Vernetzung</xbbd:sonstiges>
+                </xbbd:binnendifferenzierung>
+            </xbbd:manuelleAngabe>
         </xbbd:ausbildungsberuf>
         
-        <xbbd:pruefungsteil>
-            <xbbd:bezeichnung>Teil 1 der Abschlussprüfung</xbbd:bezeichnung>
-            <xbbd:benotung>
-                <xbd:note>3</xbd:note>
-                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                <xbd:punkte>78</xbd:punkte>
-                <xbd:beschreibung>Ergebnis des ersten Teils der Abschlussprüfung</xbd:beschreibung>
-            </xbbd:benotung>
-            <xbbd:pruefungsbereich>
-                <xbbd:bezeichnung>Arbeitsauftrag</xbbd:bezeichnung>
+        <!-- Gestreckte Abschlussprüfung -->
+        <xbbd:pruefungsstruktur>
+            <xbbd:pruefungsteil>
+                <xbbd:bezeichnung>Teil 1 der Abschlussprüfung</xbbd:bezeichnung>
                 <xbbd:benotung>
                     <xbd:note>3</xbd:note>
                     <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
                     <xbd:punkte>78</xbd:punkte>
-                    <xbd:beschreibung>Bewertung des Prüfungsbereichs Arbeitsauftrag</xbd:beschreibung>
+                    <xbd:beschreibung>Ergebnis des ersten Teils der Abschlussprüfung</xbd:beschreibung>
                 </xbbd:benotung>
-            </xbbd:pruefungsbereich>
-        </xbbd:pruefungsteil>
-        
-        <xbbd:pruefungsteil>
-            <xbbd:bezeichnung>Teil 2 der Abschlussprüfung</xbbd:bezeichnung>
-            <xbbd:benotung>
-                <xbd:note>2</xbd:note>
-                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
-                <xbd:punkte>81</xbd:punkte>
-                <xbd:beschreibung>Ergebnis des zweiten Teils der Abschlussprüfung</xbd:beschreibung>
-            </xbbd:benotung>
-            <xbbd:pruefungsbereich>
-                <xbbd:bezeichnung>Betrieblicher Auftrag</xbbd:bezeichnung>
+                
+                <xbbd:pruefungsbereich>
+                    <xbbd:bezeichnung>Arbeitsauftrag</xbbd:bezeichnung>
+                    <xbbd:benotung>
+                        <xbd:note>3</xbd:note>
+                        <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                        <xbd:punkte>78</xbd:punkte>
+                        <xbd:beschreibung>Bewertung des Prüfungsbereichs Arbeitsauftrag</xbd:beschreibung>
+                    </xbbd:benotung>
+                </xbbd:pruefungsbereich>
+            </xbbd:pruefungsteil>
+            
+            <xbbd:pruefungsteil>
+                <xbbd:bezeichnung>Teil 2 der Abschlussprüfung</xbbd:bezeichnung>
                 <xbbd:benotung>
                     <xbd:note>2</xbd:note>
                     <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
-                    <xbd:punkte>90</xbd:punkte>
-                    <xbd:beschreibung>Bewertung des betrieblichen Auftrags</xbd:beschreibung>
+                    <xbd:punkte>81</xbd:punkte>
+                    <xbd:beschreibung>Ergebnis des zweiten Teils der Abschlussprüfung</xbd:beschreibung>
                 </xbbd:benotung>
-            </xbbd:pruefungsbereich>
-            <xbbd:pruefungsbereich>
-                <xbbd:bezeichnung>Systementwurf</xbbd:bezeichnung>
-                <xbbd:benotung>
-                    <xbd:note>4</xbd:note>
-                    <xbd:wortbezeichnung>ausreichend</xbd:wortbezeichnung>
-                    <xbd:punkte>56</xbd:punkte>
-                    <xbd:beschreibung>Bewertung des Prüfungsbereichs Systementwurf</xbd:beschreibung>
-                </xbbd:benotung>
-            </xbbd:pruefungsbereich>
-            <xbbd:pruefungsbereich>
-                <xbbd:bezeichnung>Funktions- und Systemanalyse</xbbd:bezeichnung>
-                <xbbd:benotung>
-                    <xbd:note>1</xbd:note>
-                    <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
-                    <xbd:punkte>100</xbd:punkte>
-                    <xbd:beschreibung>Bewertung des Prüfungsbereichs Funktions- und Systemanalyse</xbd:beschreibung>
-                </xbbd:benotung>
-            </xbbd:pruefungsbereich>
-            <xbbd:pruefungsbereich>
-                <xbbd:bezeichnung>Wirtschafts- und Sozialkunde</xbbd:bezeichnung>
-                <xbbd:benotung>
-                    <xbd:note>3</xbd:note>
-                    <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                    <xbd:punkte>78</xbd:punkte>
-                    <xbd:beschreibung>Bewertung des Prüfungsbereichs Wirtschafts- und Sozialkunde</xbd:beschreibung>
-                </xbbd:benotung>
-            </xbbd:pruefungsbereich>
-        </xbbd:pruefungsteil>
+                
+                <xbbd:pruefungsbereich>
+                    <xbbd:bezeichnung>Betrieblicher Auftrag</xbbd:bezeichnung>
+                    <xbbd:benotung>
+                        <xbd:note>2</xbd:note>
+                        <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                        <xbd:punkte>90</xbd:punkte>
+                        <xbd:beschreibung>Bewertung des betrieblichen Auftrags</xbd:beschreibung>
+                    </xbbd:benotung>
+                </xbbd:pruefungsbereich>
+                
+                <xbbd:pruefungsbereich>
+                    <xbbd:bezeichnung>Systementwurf</xbbd:bezeichnung>
+                    <xbbd:benotung>
+                        <xbd:note>4</xbd:note>
+                        <xbd:wortbezeichnung>ausreichend</xbd:wortbezeichnung>
+                        <xbd:punkte>56</xbd:punkte>
+                        <xbd:beschreibung>Bewertung des Prüfungsbereichs Systementwurf</xbd:beschreibung>
+                    </xbbd:benotung>
+                </xbbd:pruefungsbereich>
+                
+                <xbbd:pruefungsbereich>
+                    <xbbd:bezeichnung>Funktions- und Systemanalyse</xbbd:bezeichnung>
+                    <xbbd:benotung>
+                        <xbd:note>1</xbd:note>
+                        <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                        <xbd:punkte>100</xbd:punkte>
+                        <xbd:beschreibung>Bewertung des Prüfungsbereichs Funktions- und Systemanalyse</xbd:beschreibung>
+                    </xbbd:benotung>
+                </xbbd:pruefungsbereich>
+                
+                <xbbd:pruefungsbereich>
+                    <xbbd:bezeichnung>Wirtschafts- und Sozialkunde</xbbd:bezeichnung>
+                    <xbbd:benotung>
+                        <xbd:note>3</xbd:note>
+                        <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                        <xbd:punkte>78</xbd:punkte>
+                        <xbd:beschreibung>Bewertung des Prüfungsbereichs Wirtschafts- und Sozialkunde</xbd:beschreibung>
+                    </xbbd:benotung>
+                </xbbd:pruefungsbereich>
+            </xbbd:pruefungsteil>
+        </xbbd:pruefungsstruktur>
         
         <!-- DQR-/EQR-Niveau -->
         <xbbd:niveauDQR

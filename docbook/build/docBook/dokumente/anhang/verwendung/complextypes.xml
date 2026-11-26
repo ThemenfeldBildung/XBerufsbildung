@@ -18,6 +18,10 @@
    </itemizedlist>
    <section xmlns:xlink="http://www.w3.org/1999/xlink">
       <title>Nicht in Nachrichten verwendete Datentypen</title>
-      <itemizedlist/>
+      <itemizedlist>
+         <listitem>
+            <para>Registerabruf</para>
+         </listitem>
+      </itemizedlist>
    </section>
 </appendix>

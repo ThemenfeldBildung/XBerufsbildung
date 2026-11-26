@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Nachweise.pruefling.berufsschulnote">
    <title>pruefling.berufsschulnote</title>
    <subtitle>Dokument: <emphasis role="codebf">pruefling.berufsschulnote</emphasis>
-   </subtitle><para>Dieses Dokument dient der Übermittlung der Berufsschulnote von der Berufsschule an die für die Berufsbildung des Prüflings zuständige Stelle. Sie enthält die relevanten Informationen zum Prüfling, zur besuchten Berufsschule, zur für die Berufsbildung des Prüflings zuständigen Stelle sowie zur erreichten Gesamtnote und der Bezeichnung des Ausbildungsberufs. Die Übermittlung erfolgt im Rahmen der gesetzlichen Vorgaben gemäß § 37 Abs. 3 BBiG sowie den jeweiligen landesrechtlichen Vorgaben.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.berufsschulnote">
+   </subtitle><para>Dieses Dokument dient der Übermittlung der Berufsschulnote von der Berufsschule an die für die Berufsbildung zuständige Stelle. Es enthält Angaben zum Prüfling und zur zuständigen Stelle. Angaben zur besuchten Berufsschule, zum Ausbildungsberuf und zur erreichten Gesamtnote können übermittelt werden. Für die Übermittlung gelten die jeweils einschlägigen landesrechtlichen Bestimmungen. Für den Ausweis der berufsschulischen Leistungsfeststellung auf dem Prüfungszeugnis gilt § 37 Abs. 3 BBiG bzw. § 31 Abs. 3 HwO.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.berufsschulnote">
       <title>pruefling.berufsschulnote</title>
       <mediaobject>
          <imageobject>
@@ -75,7 +75,7 @@
                   <emphasis role="codebf">Berufsschule</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Berufsschule"
@@ -161,7 +161,7 @@
                   <emphasis role="codebf">Benotung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="externe.modelle.XBildung" role="Quelle"/>

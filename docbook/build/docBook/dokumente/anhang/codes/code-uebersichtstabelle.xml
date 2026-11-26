@@ -53,6 +53,102 @@
             <row>
                <entry align="left">
                   <link role="schwarz"
+                        linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBeruflichenVorbildung">Code.ArtDerBeruflichenVorbildung</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderberuflichenvorbildung.ArtDerBeruflichenVorbildung-Codes">Art der beruflichen Vorbildung</link>
+               </entry>
+               <entry align="left">2026-11-26</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBerufsvorbereitung">Code.ArtDerBerufsvorbereitung</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderberufsvorbereitung.ArtDerBerufsvorbereitung-Codes">Art der Berufsvorbereitung</link>
+               </entry>
+               <entry align="left">2026-11-26</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFachlichenEignung">Code.ArtDerFachlichenEignung</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderfachlicheneignung.ArtDerFachlichenEignung-Codes">Art der fachlichen Eignung</link>
+               </entry>
+               <entry align="left">2026-11-26</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFoerderung">Code.ArtDerFoerderung</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderfoerderung.ArtDerFoerderung-Codes">Art der Förderung</link>
+               </entry>
+               <entry align="left">2026-11-26</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerPruefungszulassung">Code.ArtDerPruefungszulassung</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderpruefungszulassung.ArtDerPruefungszulassung-Codes">Art der Prüfungszulassung</link>
+               </entry>
+               <entry align="left">2026-11-26</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XBerufsbildung.Baukasten.Codes.Code.Ausbildungsberufe">Code.Ausbildungsberufe</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.ausbildungsberufe.Ausbildungsberufe-Codes">Liste der Ausbildungsberufe</link>
+               </entry>
+               <entry align="left">--</entry>
+               <entry align="left">3</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XBerufsbildung.Baukasten.Codes.Code.IDNrGzustaendigeStelleNachBBiG">Code.IDNrGzustaendigeStelleNachBBiG</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.idnrgzustaendigestellenachbbig.IDNrGzustaendigeStelleNachBBiG-Codes">IDNrGzustaendigeStelleNachBBiG</link>
+               </entry>
+               <entry align="left">2026-11-26</entry>
+               <entry align="left">2</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XBerufsbildung.Baukasten.Codes.Code.Pruefungserfolg">Code.Pruefungserfolg</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.pruefungserfolg.Pruefungserfolg-Codes">Prüfungserfolg</link>
+               </entry>
+               <entry align="left">2026-11-26</entry>
+               <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
                         linkend="XBerufsbildung.Baukasten.Codes.Code.PruefungsteilAEVO">Code.PruefungsteilAEVO</link>
                </entry>
                <entry align="left">
@@ -73,6 +169,18 @@
                </entry>
                <entry align="left">2025-06-04</entry>
                <entry align="left">1</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XBerufsbildung.Baukasten.Codes.Code.VersionWirtschaftszweigklassifikation">Code.VersionWirtschaftszweigklassifikation</link>
+               </entry>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="tabelle.urn.xoev-de.xunternehmen.codeliste.wirtschaftszweigklassifikationsversion.VersionWirtschaftszweigklassifikation-Codes">Wirtschaftszweigklassifikationsversion</link>
+               </entry>
+               <entry align="left">--</entry>
+               <entry align="left">3</entry>
             </row>
          </tbody>
       </tgroup>

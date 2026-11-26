@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd"
+           xmlns:xbbd="http://xberufsbildung.de/def/xberufsbildung/1.0/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-           xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/1.3/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/0.7/xsd"
-           version="0.7"
+           targetNamespace="http://xberufsbildung.de/def/xberufsbildung/1.0/xsd"
+           version="1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -18,18 +18,18 @@
             <beschreibung>XBerufsbildung ist ein föderaler IT-Standard, der für die Erstellung von elektronischen Bildungsnachweisen sowie den Datenaustausch im Berufsbildungswesen entwickelt wird. Er ist Teil der Standard-Familie XBildung. </beschreibung>
          </standard>
          <versionStandard>
-            <version>0.7</version>
-            <beschreibung>Diese Version 0.7 des Standards XBerufsbildung beinhaltet die Aufnahme des Dokuments antragstellende.anerkennungsbescheid sowie Weiterentwicklungen am Datenmodell, fachliche Präzisierungen und redaktionelle Anpassungen.</beschreibung>
+            <version>1.0</version>
+            <beschreibung>Dieses Pre-Release der Version 1.0 des Standards XBerufsbildung umfasst die Aufnahme des Dokuments „erhebung.berufsausbildungsverhaeltnis“ gemäß § 88 BBiG, die Erweiterung der Prüfungsstruktur im Prüfungszeugnis, die Einführung neuer Codelisten sowie weitere Anpassungen und Verbesserungen der bestehenden Datenmodelle und Dokumentation.</beschreibung>
             <versionXOEVProfil>3.0.3</versionXOEVProfil>
-            <versionXOEVHandbuch>3.0.2</versionXOEVHandbuch>
-            <versionXGenerator>3.2.4</versionXGenerator>
+            <versionXOEVHandbuch>4.1.0</versionXOEVHandbuch>
+            <versionXGenerator>3.2.8</versionXGenerator>
             <versionModellierungswerkzeug>19.0 SP 4</versionModellierungswerkzeug>
             <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
          </versionStandard>
       </xs:appinfo>
    </xs:annotation>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.2/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/1.2/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.3/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/1.3/xsd"/>
    <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
               namespace="http://xoev.de/schemata/code/1_0"/>
    <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
@@ -46,24 +46,46 @@
          </xs:element>
          <xs:element name="nichtVorhanden" minOccurs="0" type="xs:boolean">
             <xs:annotation>
-               <xs:documentation>Diese Komponente beinhaltet eine Feststellung (wahr oder falsch), ob zu Recht kein Name angegeben wurde. Über das Setzen auf TRUE, wird angezeigt, dass zurecht kein Name angegeben wurde. Diese Komponente sollte nur bei der Verwendung der Komponente "AllgemeinerName" als Vorname oder Familienname verwendet werden.</xs:documentation>
+               <xs:documentation>Der Wert true gibt an, dass für die Person zu Recht kein Name der betreffenden Namensart angegeben wurde. Das Element sollte nur für Vornamen und Familiennamen verwendet werden.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="alternativeRepraesentation"
+                     minOccurs="0"
+                     maxOccurs="unbounded"
+                     type="din91379:datatypeC">
+            <xs:annotation>
+               <xs:documentation>Ergänzende Darstellung des im Element „name“ übermittelten Namens nach einer festgelegten Konvention. Die alternative Darstellung ersetzt die primäre Namensangabe nicht. Die verwendete Konvention ist im jeweiligen Anwendungskontext festzulegen. Der zulässige Zeichenvorrat richtet sich nach dem verwendeten Datentyp.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="AngabenAusbildung">
       <xs:annotation>
-         <xs:documentation>Die Klasse enthält Angaben zum Ausbildungsberuf und zum Zeitraum der Berufsausbildung.</xs:documentation>
+         <xs:documentation>Die Klasse enthält den Ausbildungsberuf. Der Zeitraum der Berufsausbildung kann zusätzlich angegeben werden.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="ausbildungsberuf" type="xbbd:Ausbildungsberuf">
+         <xs:element name="ausbildungsberuf">
             <xs:annotation>
-               <xs:documentation>Angaben zum Ausbildungsberuf, einschließlich Bezeichnung, Fundstelle der Ausbildungsverordnung sowie prüfungsrelevanter Binnendifferenzierungen.</xs:documentation>
+               <xs:documentation>Angaben zum Ausbildungsberuf. Die Angabe erfolgt entweder über die bereitgestellte Codeliste „Ausbildungsberufe“ oder über eine manuelle Angabe des Ausbildungsberufs.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:choice>
+                  <xs:element name="ausbildungsberufCode" type="xbbd:Code.Ausbildungsberufe">
+                     <xs:annotation>
+                        <xs:documentation>Angabe des Ausbildungsberufs über die bereitgestellte Codeliste „Ausbildungsberufe“.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="manuelleAngabe" type="xbbd:Ausbildungsberuf">
+                     <xs:annotation>
+                        <xs:documentation>Manuelle Angabe des Ausbildungsberufs als Alternative zur Angabe über die Codeliste „Ausbildungsberufe“.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:choice>
+            </xs:complexType>
          </xs:element>
          <xs:element name="ausbildungszeitraum" minOccurs="0" type="xbbd:Zeitraum">
             <xs:annotation>
-               <xs:documentation>Angaben zum Zeitraum der Berufsausbildung. Der Zeitraum umfasst ein Startdatum, das den offiziellen Beginn des Ausbildungsverhältnisses kennzeichnet, sowie ein Enddatum, das das reguläre oder vorzeitige Ende festlegt.</xs:documentation>
+               <xs:documentation>Angaben zum Zeitraum der Berufsausbildung. Der Zeitraum kann Angaben zum Beginn und/oder Ende des Ausbildungsverhältnisses enthalten. Der Beginn kennzeichnet den offiziellen Beginn, das Ende das reguläre oder vorzeitige Ende des Ausbildungsverhältnisses.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
@@ -120,17 +142,17 @@
                <xs:documentation>Angaben zum Namen der antragstellenden Person.</xs:documentation>
             </xs:annotation>
          </xs:element>
+         <xs:element name="geburt" type="xbbd:Geburt">
+            <xs:annotation>
+               <xs:documentation>Angaben zur Geburt der antragstellenden Person.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
          <xs:element name="anschrift"
                      minOccurs="0"
                      maxOccurs="unbounded"
                      type="xbbd:Anschrift">
             <xs:annotation>
                <xs:documentation>Angaben zur Anschrift der antragstellenden Person.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="geburt" type="xbbd:Geburt">
-            <xs:annotation>
-               <xs:documentation>Angaben zur Geburt der antragstellenden Person.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="kommunikation"
@@ -161,9 +183,9 @@
                <xs:documentation>Entsprechung der ursprünglichen Bezeichnung des Berufs bzw. der Ausbildung in deutscher Sprache.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="bezeichnungAusland" type="din91379:datatypeE">
+         <xs:element name="bezeichnungAusland" type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Ursprüngliche Bezeichnung des Berufs bzw. der Ausbildung in der Quellsprache.</xs:documentation>
+               <xs:documentation>Ursprüngliche Bezeichnung des Berufs bzw. der Ausbildung in der Quellsprache und Originalschreibweise. Die Angabe kann auch Schriftzeichen außerhalb des Zeichenvorrats der DIN 91379 enthalten. Weicht die Sprache der Bezeichnung von der Dokumentensprache ab, ist sie über das Attribut xml:lang anzugeben.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="staat" type="xbd:Code.Staat">
@@ -190,17 +212,20 @@
    </xs:complexType>
    <xs:complexType name="Ausbildungsberuf">
       <xs:annotation>
-         <xs:documentation>Die Klasse enthält die Bezeichnung des Berufs, die Fundstelle der Ausbildungsverordnung sowie weitere prüfungsrelevante Binnendifferenzierungen.</xs:documentation>
+         <xs:documentation>Die Klasse dient der manuellen Angabe eines Ausbildungsberufs. Sie enthält dessen Bezeichnung sowie gegebenenfalls Fundstellen der zugrunde liegenden rechtlichen Regelungen und Angaben zu Fachrichtung, Schwerpunkt oder weiteren Binnendifferenzierungen.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="bezeichnung" type="din91379:datatypeE">
             <xs:annotation>
-               <xs:documentation>Angabe der offiziellen Bezeichnung des Ausbildungsberufs gemäß Ausbildungsordnung, z. B. Fachkraft für Metalltechnik.</xs:documentation>
+               <xs:documentation>Offizielle Bezeichnung des Ausbildungsberufs gemäß der zugrunde liegenden Ausbildungsordnung oder Ausbildungsregelung, z. B. Fachkraft für Metalltechnik.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="fundstelle" maxOccurs="unbounded" type="din91379:datatypeC">
+         <xs:element name="fundstelle"
+                     minOccurs="0"
+                     maxOccurs="unbounded"
+                     type="din91379:datatypeC">
             <xs:annotation>
-               <xs:documentation>Angaben zur Fundstelle der rechtlichen Regelungen zu einem Ausbildungsberuf. Die Fundstelle des Ausbildungsberufs ist die genaue rechtliche Quelle, wie ein Gesetz oder eine Verordnung, in der die Ausbildungsvorschriften und Rahmenbedingungen für diesen Beruf festgelegt sind, z. B. BGBl. I S. 628. Optional können auch verbindliche Rahmenlehrpläne und Prüfungsordnungen angegeben werden.</xs:documentation>
+               <xs:documentation>Fundstelle einer rechtlichen Regelung zum Ausbildungsberuf, beispielsweise einer Ausbildungsordnung oder einer Ausbildungsregelung der zuständigen Stelle. Angegeben werden können insbesondere die Bezeichnung der Regelung, das Ausfertigungsdatum und die Fundstelle im amtlichen Veröffentlichungsorgan, z. B. BGBl. I S. 628. Optional können auch verbindliche Rahmenlehrpläne und Prüfungsordnungen angegeben werden.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="binnendifferenzierung" minOccurs="0" maxOccurs="unbounded">
@@ -232,52 +257,6 @@
          </xs:element>
       </xs:sequence>
    </xs:complexType>
-   <xs:complexType name="Ausbildungsbetrieb">
-      <xs:annotation>
-         <xs:documentation>Die Klasse enthält Angaben zum Ausbildungsbetrieb mit Name und Anschrift. Sofern die praktische Ausbildung an einer vom Hauptsitz des Ausbildungsbetriebs abweichenden Ausbildungsstätte erfolgt, sind die Angaben zur ausbildungsstaette gesondert zu erfassen.</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="name" type="xbbd:NameOrganisation">
-            <xs:annotation>
-               <xs:documentation>Angaben zum Namen des Ausbildungsbetriebs. Der Name eines Ausbildungsbetriebs ist die offizielle Bezeichnung des Unternehmens oder der Einrichtung, die eine Berufsausbildung durchführt.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="anschrift" minOccurs="0" type="xbbd:Anschrift">
-            <xs:annotation>
-               <xs:documentation>Angaben zur Anschrift des Ausbildungsbetriebs.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="ausbildungsstaette"
-                     minOccurs="0"
-                     type="xbbd:Ausbildungsstaette">
-            <xs:annotation>
-               <xs:documentation>Angaben zur Ausbildungsstätte, sofern diese vom Hauptsitz des Ausbildungsbetriebs abweicht.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="betriebsnummer" minOccurs="0" type="xs:integer">
-            <xs:annotation>
-               <xs:documentation>Angaben zur achtstelligen Betriebsnummer des Ausbildungsbetriebs.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType name="Ausbildungsstaette">
-      <xs:annotation>
-         <xs:documentation>Die Klasse enthält Informationen zur Ausbildungsstätte eines Ausbildungsbetriebs. Wenn der Hauptsitz des Unternehmens nicht mit dem Ausbildungsort übereinstimmt, wird der Hauptsitz als Ausbildungsbetrieb und der Ausbildungsort als Ausbildungsstätte angegeben.</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="name" type="xbbd:NameOrganisation">
-            <xs:annotation>
-               <xs:documentation>Angaben zum Namen einer Ausbildungsstätte. Die Ausbildungsstätte ist der Ort oder die Einrichtung, an dem die Auszubildenden die praktische Ausbildung für einen spezifischen Beruf erhalten.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="anschrift" minOccurs="0" type="xbbd:Anschrift">
-            <xs:annotation>
-               <xs:documentation>Angaben zur Anschrift der Ausbildungsstätte.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
    <xs:complexType name="AuszubildendePerson">
       <xs:annotation>
          <xs:documentation>Angaben zur auszubildenden Person im Kontext des Berufsausbildungsverhältnisses.</xs:documentation>
@@ -286,6 +265,11 @@
          <xs:element name="nameNatuerlichePerson" type="xbbd:NameNatuerlichePerson">
             <xs:annotation>
                <xs:documentation>Angaben zum Namen der auszubildenden Person.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="geburt" type="xbbd:Geburt">
+            <xs:annotation>
+               <xs:documentation>Angaben zur Geburt der auszubildenden Person.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="anschrift"
@@ -299,11 +283,6 @@
          <xs:element name="geschlecht" minOccurs="0" type="xbd:Code.Geschlecht">
             <xs:annotation>
                <xs:documentation>Angaben zum Geschlecht der auszubildenden Person.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="geburt" type="xbbd:Geburt">
-            <xs:annotation>
-               <xs:documentation>Angaben zur Geburt der auszubildenden Person.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="kommunikation"
@@ -354,7 +333,7 @@
          <xs:documentation>Die Klasse beschreibt die Berufsschule als schulischen Lernort in der dualen Ausbildung, an dem sowohl berufsbezogene als auch berufsübergreifende Lerninhalte vermittelt werden.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="name" type="xbbd:NameOrganisation">
+         <xs:element name="name" minOccurs="0" type="xbbd:NameOrganisation">
             <xs:annotation>
                <xs:documentation>Angaben zum offiziellen Namen der Berufsschule.</xs:documentation>
             </xs:annotation>
@@ -403,6 +382,442 @@
             </xs:complexType>
          </xs:element>
       </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Code.ArtDerBeruflichenVorbildung">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Art der beruflichen Vorbildung</nameLang>
+               <nameKurz>Art der beruflichen Vorbildung</nameKurz>
+               <nameTechnisch>ArtDerBeruflichenVorbildung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderberuflichenvorbildung</kennung>
+               <beschreibung>Die Codeliste enthält die Arten der beruflichen Vorbildung von Auszubildenden gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe c BBiG. Erfasst werden vorherige duale und schulische Berufsausbildungen sowie Studiengänge unter Berücksichtigung des jeweiligen Abschlussstatus. Die Ausprägungen entsprechen den Erhebungsmerkmalen der amtlichen Berufsbildungsstatistik. Mehrfachnennungen sind zulässig.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der beruflichen Vorbildung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <erhebungsposition>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </erhebungsposition>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code"
+                           form="unqualified"
+                           type="xbbd:ArtDerBeruflichenVorbildung-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xberufsbildung-de:xberufsbildung:codeliste:artderberuflichenvorbildung"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="2026-11-26"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.ArtDerBerufsvorbereitung">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Art der Berufsvorbereitung</nameLang>
+               <nameKurz>Art der Berufsvorbereitung</nameKurz>
+               <nameTechnisch>ArtDerBerufsvorbereitung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderberufsvorbereitung</kennung>
+               <beschreibung>Die Codeliste enthält die Arten der vorausgegangenen berufsvorbereitenden Qualifizierung oder beruflichen Grundbildung gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe c BBiG. Die Ausprägungen entsprechen den Kategorien der amtlichen Berufsbildungsstatistik. Mehrfachnennungen sind zulässig.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der Berufsvorbereitung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <erhebungsposition>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </erhebungsposition>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code"
+                           form="unqualified"
+                           type="xbbd:ArtDerBerufsvorbereitung-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xberufsbildung-de:xberufsbildung:codeliste:artderberufsvorbereitung"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="2026-11-26"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.ArtDerFachlichenEignung">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Art der fachlichen Eignung</nameLang>
+               <nameKurz>Art der fachlichen Eignung</nameKurz>
+               <nameTechnisch>ArtDerFachlichenEignung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderfachlicheneignung</kennung>
+               <beschreibung>Die Codeliste enthält die Arten der fachlichen Eignung von Ausbilderinnen und Ausbildern gemäß § 88 Absatz 1 Satz 1 Nummer 3 BBiG. Die Ausprägungen entsprechen den Vorgaben der amtlichen Berufsbildungsstatistik und berücksichtigen die Anforderungen an die fachliche Eignung nach § 30 BBiG.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der fachlichen Eignung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <amtlicherSchluessel>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </amtlicherSchluessel>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code"
+                           form="unqualified"
+                           type="xbbd:ArtDerFachlichenEignung-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xberufsbildung-de:xberufsbildung:codeliste:artderfachlicheneignung"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="2026-11-26"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.ArtDerFoerderung">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Art der Förderung von Berufsausbildungsverhältnissen</nameLang>
+               <nameKurz>Art der Förderung</nameKurz>
+               <nameTechnisch>ArtDerFoerderung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderfoerderung</kennung>
+               <beschreibung>Die Codeliste enthält die Arten der Förderung von Berufsausbildungsverhältnissen gemäß § 34 Absatz 2 Nummer 9 und § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe j BBiG. Sie basiert auf der Klassifikation der amtlichen Berufsbildungsstatistik und unterscheidet zwischen überwiegend betrieblich finanzierten und überwiegend öffentlich geförderten Berufsausbildungsverhältnissen nach Art der Förderung. Eine überwiegende öffentliche Finanzierung liegt vor, wenn mehr als 50 Prozent der maßgeblichen Ausbildungskosten im ersten Ausbildungsjahr durch entsprechende öffentliche Fördermaßnahmen getragen werden.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der Förderung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <amtlicherSchluessel>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </amtlicherSchluessel>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xbbd:ArtDerFoerderung-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xberufsbildung-de:xberufsbildung:codeliste:artderfoerderung"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="2026-11-26"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.ArtDerPruefungszulassung">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Art der Prüfungszulassung</nameLang>
+               <nameKurz>Art der Prüfungszulassung</nameKurz>
+               <nameTechnisch>ArtDerPruefungszulassung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderpruefungszulassung</kennung>
+               <beschreibung>Die Codeliste enthält die Arten der Zulassung zur ersten Abschlussprüfung gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe k BBiG. Sie basiert auf den Ausprägungen der amtlichen Berufsbildungsstatistik und unterscheidet zwischen fristgemäßer und vorzeitiger Zulassung.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der Prüfungszulassung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <amtlicherSchluessel>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </amtlicherSchluessel>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code"
+                           form="unqualified"
+                           type="xbbd:ArtDerPruefungszulassung-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xberufsbildung-de:xberufsbildung:codeliste:artderpruefungszulassung"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="2026-11-26"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Ausbildungsberufe">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Liste der Ausbildungsberufe</nameLang>
+               <nameKurz>Liste der Ausbildungsberufe</nameKurz>
+               <nameTechnisch>Ausbildungsberufe-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:ausbildungsberufe</kennung>
+               <beschreibung>Die Codeliste enthält Ausbildungsberufe einschließlich ihrer Bezeichnungen und – soweit vorhanden – Fachrichtungen, Schwerpunkte, Einsatzgebiete bzw. Wahlqualifikationen sowie Angaben zu Gültigkeit, Rechtsgrundlagen, Regelausbildungsdauer und zugehörigen Berufsschlüsseln. Die Codeliste basiert auf Daten des Bundesinstituts für Berufsbildung (BIBB) und der Bundesagentur für Arbeit (BA). Link zur Webseite: https://www.xrepository.de/details/urn:xberufsbildung-de:xberufsbildung:codeliste:ausbildungsberufe Code: Im XML-Element code wird der Wert aus der gleichnamigen Codespalte übermittelt. Dieser Wert identifiziert den Eintrag eindeutig. Beispiele: Landwirt/Landwirtin: 11102-90000_19950131 Florist/Floristin: 12202-90000_20250131</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" type="xs:token" form="unqualified"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xberufsbildung-de:xberufsbildung:codeliste:ausbildungsberufe"/>
+            <xs:attribute name="listVersionID" type="xs:normalizedString" use="required"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.IDNrGzustaendigeStelleNachBBiG">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>IDNrGzustaendigeStelleNachBBiG</nameLang>
+               <nameKurz>IDNrGzustaendigeStelleNachBBiG</nameKurz>
+               <nameTechnisch>idnrgzustaendigestellenachbbig-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:idnrgzustaendigestellenachbbig</kennung>
+               <beschreibung>Die Codeliste enthält die NOOTS-Registertypkennungen 24A bis 24U für die Verzeichnisse der Berufsausbildungsverhältnisse nach § 34 BBiG. Grundlage ist Nummer 24 der Anlage zu § 1 IDNrG. Die Kennungen unterscheiden die Registertypen nach den Kategorien der zuständigen Stellen. Für die Übermittlung ist der Wert der empfohlenen Codespalte "code" zu verwenden. Die zugehörige NOOTS-Registertypkennung (z. B. 24A) ist in der Spalte "id" hinterlegt. Quelle: NOOTS – Übersicht der Registertypen gemäß IDNrG.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>IDNrGzustaendigeStelleNachBBiG</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <id>
+                  <spaltennameLang>IDNrGzustaendigeStelleNachBBiG</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </id>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xs:token"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xberufsbildung-de:xberufsbildung:codeliste:idnrgzustaendigestellenachbbig"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="2026-11-26"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Pruefungserfolg">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Prüfungserfolg</nameLang>
+               <nameKurz>Prüfungserfolg</nameKurz>
+               <nameTechnisch>Pruefungserfolg-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:pruefungserfolg</kennung>
+               <beschreibung>Die Codeliste enthält die möglichen Ergebnisse der zuletzt abgelegten Abschlussprüfung einschließlich gegebenenfalls erfolgter Wiederholungsprüfungen gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe k BBiG. Die Ausprägungen entsprechen den Vorgaben der amtlichen Berufsbildungsstatistik.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Prüfungserfolg</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <amtlicherSchluessel>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </amtlicherSchluessel>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xbbd:Pruefungserfolg-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xberufsbildung-de:xberufsbildung:codeliste:pruefungserfolg"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="2026-11-26"/>
+         </xs:restriction>
+      </xs:complexContent>
    </xs:complexType>
    <xs:complexType name="Code.PruefungsteilAEVO">
       <xs:annotation>
@@ -508,6 +923,33 @@
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
+   <xs:complexType name="Code.VersionWirtschaftszweigklassifikation">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Wirtschaftszweigklassifikationsversion</nameLang>
+               <nameKurz>Wirtschaftszweigklassifikationsversion</nameKurz>
+               <nameTechnisch>VersionWirtschaftszweigklassifikation-Codes</nameTechnisch>
+               <kennung>urn:xoev-de:xunternehmen:codeliste:wirtschaftszweigklassifikationsversion</kennung>
+               <beschreibung>Die Codeliste enthält die Versionen der Klassifikation der Wirtschaftszweige des Statistischen Bundesamtes, insbesondere WZ 2008 und WZ 2025. Link zur Webseite: https://www.xrepository.de/details/urn:xoev-de:xunternehmen:codeliste:wirtschaftszweigklassifikationsversion</beschreibung>
+               <herausgebernameLang>XUnternehmen</herausgebernameLang>
+               <herausgebernameKurz>XUnternehmen</herausgebernameKurz>
+            </codeliste>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" type="xs:token" form="unqualified"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xoev-de:xunternehmen:codeliste:wirtschaftszweigklassifikationsversion"/>
+            <xs:attribute name="listVersionID" type="xs:normalizedString" use="required"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
    <xs:complexType name="EinschlaegigeBerufserfahrung">
       <xs:annotation>
          <xs:documentation>Die Klasse beschreibt Angaben zur einschlägigen Berufserfahrung einer Person.</xs:documentation>
@@ -530,7 +972,7 @@
    </xs:complexType>
    <xs:complexType name="Entscheidungsgrundlage">
       <xs:annotation>
-         <xs:documentation>Die Klasse enthält die Entscheidungsbegründung sowie die bei der Entscheidung berücksichtigten Nachweise.</xs:documentation>
+         <xs:documentation>Die Klasse enthält die Begründung der Entscheidung. Berücksichtigte Nachweise können zusätzlich angegeben werden.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="begruendung" type="xbd:String.Localized">
@@ -553,12 +995,15 @@
          <xs:documentation>Die Klasse beinhaltet Angaben zur Bezeichnung des Fortbildungsabschlusses, zur Fundstelle der jeweiligen Fortbildungsordnung und ggf. zum Schwerpunkt der Fortbildung.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="bezeichnung" type="din91379:datatypeE">
+         <xs:element name="bezeichnung" minOccurs="0" type="din91379:datatypeE">
             <xs:annotation>
                <xs:documentation>Bezeichnung des Fortbildungsabschlusses gemäß Fortbildungsordnung. Sie bezeichnet den spezifischen Titel oder die Qualifikation, die eine Person nach erfolgreichem Abschluss einer Fortbildung erhält, z. B. Bachelor Professional für Veranstaltungstechnik, Geprüfte Fachwirtin für Einkauf, Geprüfte/-r Meister/-in Medienproduktion Bild und Ton.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="fundstelle" maxOccurs="unbounded" type="din91379:datatypeC">
+         <xs:element name="fundstelle"
+                     minOccurs="0"
+                     maxOccurs="unbounded"
+                     type="din91379:datatypeC">
             <xs:annotation>
                <xs:documentation>Fundstelle der jeweiligen Fortbildungsordnung im Bundesgesetzblatt oder in anderen amtlichen Verkündungsorganen, z. B. BGBl. I S. 2977.</xs:documentation>
             </xs:annotation>
@@ -602,17 +1047,17 @@
                <xs:documentation>Angaben zum Namen der gesetzlichen Vertretung.</xs:documentation>
             </xs:annotation>
          </xs:element>
+         <xs:element name="geburt" minOccurs="0" type="xbbd:Geburt">
+            <xs:annotation>
+               <xs:documentation>Angaben zur Geburt der gesetzlichen Vertretung.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
          <xs:element name="anschrift"
                      minOccurs="0"
                      maxOccurs="unbounded"
                      type="xbbd:Anschrift">
             <xs:annotation>
                <xs:documentation>Angaben zur Anschrift der gesetzlichen Vertretung.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="geburt" minOccurs="0" type="xbbd:Geburt">
-            <xs:annotation>
-               <xs:documentation>Angaben zur Geburt der gesetzlichen Vertretung.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="identifikationsnummer"
@@ -632,12 +1077,12 @@
       <xs:sequence>
          <xs:element name="id" type="xs:string">
             <xs:annotation>
-               <xs:documentation>Die ID sichert die eindeutige Identifikation von Objekten, Dokumenten, Personen oder Organisationen in einem fachlichen Kontext. Dieses Feld beinhaltet die tatsächliche Angabe, die die fachliche Identifikationen ermöglicht. Es beinhaltet also zum Beispiel die Steuernummer, Krankenversicherungsnummer, Personalausweisnummer etc.</xs:documentation>
+               <xs:documentation>Die ID sichert die eindeutige Identifikation von Objekten, Dokumenten, Personen oder Organisationen in einem fachlichen Kontext. Dieses Feld beinhaltet die tatsächliche Angabe, die die fachliche Identifikation ermöglicht. Es beinhaltet also zum Beispiel die Steuernummer, Krankenversicherungsnummer, Personalausweisnummer etc.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="beschreibung" type="din91379:datatypeC">
             <xs:annotation>
-               <xs:documentation>Die "beschreibung" muss verwendet werden, um anzugeben, auf welches Identifikationsmittel es sich bei der "id" handelt. Mögliche Einträge können also zum Beispiel "Steuernummer", "Krankenversicherungsnummer" oder "Personalausweis" sein. Es wird angestrebt, eine Liste von erwarteten Werten anzugeben, damit die Identifikationsmittel einheitlich beschrieben werden. Wird die Klasse von einem Teilmodul für eine Eigenschaft verwendet, die den Kontext eindeutig beschreibt, kann auf die Befüllung der "beschreibung" verzichtet werden.</xs:documentation>
+               <xs:documentation>Die "beschreibung" muss verwendet werden, um anzugeben, auf welches Identifikationsmittel es sich bei der "id" handelt. Mögliche Einträge können also zum Beispiel "Steuernummer", "Krankenversicherungsnummer" oder "Personalausweis" sein. Es wird angestrebt, eine Liste von erwarteten Werten anzugeben, damit die Identifikationsmittel einheitlich beschrieben werden.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="gueltigkeit" minOccurs="0" type="xbbd:Zeitraum">
@@ -659,7 +1104,7 @@
          </xs:element>
          <xs:element name="kennung" type="din91379:datatypeC">
             <xs:annotation>
-               <xs:documentation>Die "kennung" beinhaltet die konkreten Angaben zur Erreichbarkeit über einen Kommunikationskanal, d.h. die Telefonnummer, Faxnummer, E-Mail-Adresse oder dergleichen. Die Kennung soll strukturiert erfasst werden. Anmerkung: Die Erfassung von Telefonnummern oder Faxnummern kann nach der Gliederungsvorschrift von DIN 5008 oder E.123 der internationalen Fernmeldeunion erfolgen. Als allgemeine Gliederungsvorschrift gilt nach DIN 5008 die Trennung von Ländervorwahl, Ortskennzahl und Teilnehmernummer durch ein Leerzeichen und die Abtrennung der Durchwahl durch einen Bindestrich. Nach E.123 werden Ländervorwahl, Ortskennzahl und Teilnehmernummer ebenfalls durch Leerzeichen getrennt, bei nationalen Rufnummern wird die Ortskennzahl als vernachlässigbarer Teil zusätzlich in Klammern gesetzt. Eine E-Mail-Adresse wird aufgeteilt in einen local-part und einen domain-part, die durch @(at)-Zeichen getrennt werden. Die zulässigen Zeichen für den local part definiert RFC 2822, für den domain-part gelten die Syntaxregeln des Domain Name Systems. Beispiele: +49 30 12345-67 (internationale Rufnummer nach DIN 5008) 030 12345-67 (nationale Rufnummern nach DIN 5008) +49 89 1234567 (internationale Rufnummer nach E.123) (089) 123456) (nationale Rufnummer nach E.123) tel:+49-30-1234567 (Uniform Resource Identifier nach RFC 3966)</xs:documentation>
+               <xs:documentation>Die "kennung" beinhaltet die konkreten Angaben zur Erreichbarkeit über einen Kommunikationskanal, d. h. die Telefonnummer, Faxnummer, E-Mail-Adresse oder dergleichen. Die Kennung soll strukturiert erfasst werden. Anmerkung: Die Erfassung von Telefonnummern oder Faxnummern kann nach der Gliederungsvorschrift von DIN 5008 oder E.123 der internationalen Fernmeldeunion erfolgen. Als allgemeine Gliederungsvorschrift gilt nach DIN 5008 die Trennung von Ländervorwahl, Ortskennzahl und Teilnehmernummer durch ein Leerzeichen und die Abtrennung der Durchwahl durch einen Bindestrich. Nach E.123 werden Ländervorwahl, Ortskennzahl und Teilnehmernummer ebenfalls durch Leerzeichen getrennt, bei nationalen Rufnummern wird die Ortskennzahl als vernachlässigbarer Teil zusätzlich in Klammern gesetzt. Eine E-Mail-Adresse wird aufgeteilt in einen local-part und einen domain-part, die durch @(at)-Zeichen getrennt werden. Die zulässigen Zeichen für den local part definiert RFC 2822, für den domain-part gelten die Syntaxregeln des Domain Name Systems. Beispiele: +49 30 12345-67 (internationale Rufnummer nach DIN 5008) 030 12345-67 (nationale Rufnummern nach DIN 5008) +49 89 1234567 (internationale Rufnummer nach E.123) (089) 123456) (nationale Rufnummer nach E.123) tel:+49-30-1234567 (Uniform Resource Identifier nach RFC 3966)</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="istDienstlich" minOccurs="0" type="xs:boolean">
@@ -718,7 +1163,7 @@
          </xs:element>
          <xs:element name="geburtsname" minOccurs="0" type="xbbd:AllgemeinerName">
             <xs:annotation>
-               <xs:documentation>Der Geburtsname ist der Nachname einer Person, der sich jeweils aus dem Geburtseintrag für diese Person ergibt. Der Geburtsname ist i.d.R. der Nachname, der vor der ersten Eheschließung oder Lebenspartnerschaft geführt wurde.</xs:documentation>
+               <xs:documentation>Der Geburtsname ist der Nachname einer Person, der sich jeweils aus dem Geburtseintrag für diese Person ergibt. Der Geburtsname ist i. d. R. der Nachname, der vor der ersten Eheschließung oder Lebenspartnerschaft geführt wurde.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="vorname" type="xbbd:AllgemeinerName">
@@ -792,12 +1237,12 @@
          <xs:documentation>Die Klasse enthält Angaben zur Bezeichnung und Bewertung eines Prüfungsbereichs. Der Prüfungsbereich fungiert als strukturelle Einheit zur Gliederung von Prüfungen, indem er sich an den relevanten Tätigkeitsfeldern der Berufspraxis orientiert und die entsprechenden Anforderungen an die Prüflinge definiert.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="bezeichnung" type="din91379:datatypeE">
+         <xs:element name="bezeichnung" minOccurs="0" type="din91379:datatypeE">
             <xs:annotation>
                <xs:documentation>Bezeichnung eines Prüfungsbereichs, z. B. Arbeitsauftrag oder Wirtschafts- und Sozialkunde.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="benotung" type="xbd:Benotung">
+         <xs:element name="benotung" minOccurs="0" type="xbd:Benotung">
             <xs:annotation>
                <xs:documentation>Angaben zur Note bzw. Bewertung eines Prüfungsbereichs.</xs:documentation>
             </xs:annotation>
@@ -806,7 +1251,7 @@
    </xs:complexType>
    <xs:complexType name="Pruefungsleistung">
       <xs:annotation>
-         <xs:documentation>Die Klasse enthält Angaben zur Bezeichnung und Benotung einer Prüfungsleistung. Eine Prüfungsleistung wird unter anderem als Qualifikationsinhalt, Qualifikationsbereich, Handlungsfeld, Prüfungsfach oder als eine andere prüfungsrelevante Kategorie je nach Fortbildungsordnung definiert.</xs:documentation>
+         <xs:documentation>Die Klasse beschreibt eine einzelne Prüfungsleistung, beispielsweise ein Prüfungsfach oder ein Handlungsfeld. Die Bezeichnung ist anzugeben. Eine Benotung kann ergänzt werden.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="bezeichnung" type="din91379:datatypeE">
@@ -840,7 +1285,7 @@
    </xs:complexType>
    <xs:complexType name="PruefungsteilFortbildungszeugnis">
       <xs:annotation>
-         <xs:documentation>Die Klasse beinhaltet Angaben zum Prüfungsteil, einschließlich der Bezeichnung, Benotung sowie der zugehörigen Prüfungsleistungen.</xs:documentation>
+         <xs:documentation>Die Klasse enthält die Bezeichnung und die Benotung eines Prüfungsteils. Einzelne Prüfungsleistungen können zusätzlich angegeben werden.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="bezeichnung" type="din91379:datatypeE">
@@ -868,9 +1313,9 @@
          <xs:documentation>Die Klasse enthält Angaben zur Bezeichnung, Bewertung und zugehörigen Prüfungsbereichen eines Prüfungsteils.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="bezeichnung" type="din91379:datatypeE">
+         <xs:element name="bezeichnung" minOccurs="0" type="din91379:datatypeE">
             <xs:annotation>
-               <xs:documentation>Bezeichnung des Prüfungsteils, z. B. Teil 1 der Abschlussprüfung. Bei gestreckten Abschlussprüfungen oder Gesellenprüfungen sind dies regelmäßig Teil 1 und Teil 2. In anderen Prüfungsstrukturen können abweichende Bezeichnungen verwendet werden.</xs:documentation>
+               <xs:documentation>Bezeichnung des Prüfungsteils einer gestreckten Abschluss- oder Gesellenprüfung, beispielsweise „Teil 1“ oder „Teil 2“.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="benotung" minOccurs="0" type="xbd:Benotung">
@@ -879,6 +1324,7 @@
             </xs:annotation>
          </xs:element>
          <xs:element name="pruefungsbereich"
+                     minOccurs="0"
                      maxOccurs="unbounded"
                      type="xbbd:Pruefungsbereich">
             <xs:annotation>
@@ -904,7 +1350,9 @@
                <xs:documentation>Ergebnis der Feststellung der Gleichwertigkeit.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="entscheidungsgrundlage" type="xbbd:Entscheidungsgrundlage">
+         <xs:element name="entscheidungsgrundlage"
+                     minOccurs="0"
+                     type="xbbd:Entscheidungsgrundlage">
             <xs:annotation>
                <xs:documentation>Grundlagen der getroffenen Entscheidung, insbesondere Begründung und berücksichtigte Nachweise.</xs:documentation>
             </xs:annotation>
@@ -922,9 +1370,9 @@
                         <xs:documentation>Beschreibung der wesentlichen Unterschiede zwischen den nachgewiesenen Berufsqualifikationen und der entsprechenden inländischen Berufsbildung.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
-                  <xs:element name="ausgleichsangabe">
+                  <xs:element name="ausgleichsangabe" minOccurs="0">
                      <xs:annotation>
-                        <xs:documentation>Angaben zur Ausgleichsentscheidung zu einem festgestellten wesentlichen Unterschied.</xs:documentation>
+                        <xs:documentation>Angaben zu einem bereits erfolgten Ausgleich des wesentlichen Unterschieds oder zu einer vorgesehenen Ausgleichsmaßnahme. Das Element kann entfallen, wenn der Unterschied fortbesteht und hierzu keine Ausgleichsmaßnahme angegeben wird.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
                         <xs:choice>
@@ -946,9 +1394,32 @@
          </xs:element>
       </xs:sequence>
    </xs:complexType>
+   <xs:complexType name="Registerabruf">
+      <xs:annotation>
+         <xs:documentation>Der Basistyp enthält Angaben zum Herkunftsregister der übermittelten Daten. Er unterscheidet die Bezeichnung und Identifikation des konkreten Registers von dessen Zuordnung zu einem NOOTS-Registertyp unter Nummer 24 der Anlage zu § 1 IDNrG.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="name" type="din91379:datatypeC">
+            <xs:annotation>
+               <xs:documentation>Bezeichnung des konkreten Registers, aus dem die übermittelten Daten stammen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="registeridentifikation" type="din91379:datatypeC">
+            <xs:annotation>
+               <xs:documentation>Angaben zur Identifikation des Registers im Nationalen Once-Only-Technical-System (NOOTS).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="zustaendigeStelleNachBBiG"
+                     type="xbbd:Code.IDNrGzustaendigeStelleNachBBiG">
+            <xs:annotation>
+               <xs:documentation>Zuordnung des Herkunftsregisters zu einem NOOTS-Registertyp unter Nummer 24 der Anlage zu § 1 IDNrG anhand der Kategorie der zuständigen Stelle. Die Angabe bezeichnet den Registertyp und identifiziert nicht die einzelne registerführende Stelle. Die Lehrlingsrolle nach § 28 HwO, die unter Nummer 18 geführt wird, ist durch diese Codeliste nicht abgedeckt.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
    <xs:complexType name="StelleZustaendig">
       <xs:annotation>
-         <xs:documentation>Angaben zur für die Berufsbildung zuständigen Stelle gemäß Berufsbildungsgesetz (BBiG).</xs:documentation>
+         <xs:documentation>Angaben zu einer für den jeweiligen Vorgang zuständigen Stelle im Bereich der Berufsbildung oder der Anerkennung von Berufsqualifikationen. Die Zuständigkeit richtet sich nach den jeweils einschlägigen Rechtsvorschriften, insbesondere dem BBiG, der HwO oder dem BQFG.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="name" type="xbbd:NameOrganisation">
@@ -996,12 +1467,12 @@
       <xs:sequence>
          <xs:element name="beginn" minOccurs="0" type="xs:date">
             <xs:annotation>
-               <xs:documentation>Der Beginn eines Zeitraums beschreibt den Zeitpunkt, ab dem ein Sachverhalt eintritt bzw. rechtskräftig wirksam ist. Der Beginn ist immer Teil der Dauer des Zeitraums. Anmerkung: Bei der Ableitung von Fachkomponenten sollten zusätzliche Festlegungen getroffen werden wie der Beginn des Zeitraums zu interpretieren ist. z. B.: "Wird ein Monat als Beginn angegeben, dann gilt der erste Tag des Monats als Beginn des Zeitraums" Beispiel: identisch mit *Fristbeginn (BKA) *Wirksamkeitsdatum der Änderung des Familiennamens (Personenstand) *Eheschließungsdatum (Personenstand)</xs:documentation>
+               <xs:documentation>Datum des Beginns des Zeitraums. Das Datum ist Bestandteil des Zeitraums. Die Angabe erfolgt als vollständiges Kalenderdatum. Die fachliche Bedeutung des Beginns wird im jeweiligen Verwendungskontext festgelegt. Das Element kann entfallen, wenn nur das Ende des Zeitraums übermittelt wird.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="ende" minOccurs="0" type="xs:date">
             <xs:annotation>
-               <xs:documentation>Das Ende eines Zeitraums beschreibt den Zeitpunkt, ab dem ein Sachverhalt endet bzw. nicht mehr rechtskräftig ist. Das Ende ist Teil der Dauer des Zeitraums. Anmerkung: Bei der Ableitung von Fachkomponenten sollten zusätzliche Festlegungen getroffen werden wie das Ende des Zeitraums zu interpretieren ist. z. B.: "Wird ein Monat als Ende angegeben, dann gilt der letzte Tag des Monats als Ende des Zeitraums" Beispiel: identisch mit *Fristdatum (Bau) *Ablaufdatum (Finanz) *Faelligkeitsdatum (Finanz) *Wirksamkeitsdatum der Aufhebung/Scheidung der Ehe (Personenstand)</xs:documentation>
+               <xs:documentation>Datum des letzten Tages des Zeitraums. Das Datum ist Bestandteil des Zeitraums. Die Angabe erfolgt als vollständiges Kalenderdatum. Die fachliche Bedeutung des Endes wird im jeweiligen Verwendungskontext festgelegt. Das Element kann entfallen, wenn nur der Beginn des Zeitraums übermittelt wird.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="zusatz" minOccurs="0" type="din91379:datatypeC">
@@ -1011,6 +1482,496 @@
          </xs:element>
       </xs:sequence>
    </xs:complexType>
+   <xs:simpleType name="ArtDerBeruflichenVorbildung-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Art der beruflichen Vorbildung</nameLang>
+               <nameKurz>Art der beruflichen Vorbildung</nameKurz>
+               <nameTechnisch>ArtDerBeruflichenVorbildung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderberuflichenvorbildung</kennung>
+               <beschreibung>Die Codeliste enthält die Arten der beruflichen Vorbildung von Auszubildenden gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe c BBiG. Erfasst werden vorherige duale und schulische Berufsausbildungen sowie Studiengänge unter Berücksichtigung des jeweiligen Abschlussstatus. Die Ausprägungen entsprechen den Erhebungsmerkmalen der amtlichen Berufsbildungsstatistik. Mehrfachnennungen sind zulässig.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der beruflichen Vorbildung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <erhebungsposition>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </erhebungsposition>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/duale_berufsausbildung_erfolgreich_beendet">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Duale Berufsausbildung erfolgreich beendet</description-de-DE>
+                  <erhebungsposition>2</erhebungsposition>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/duale_berufsausbildung_nicht_erfolgreich_beendet">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Duale Berufsausbildung nicht erfolgreich beendet</description-de-DE>
+                  <erhebungsposition>3</erhebungsposition>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/schulische_berufsausbildung_erfolgreich_beendet">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Schulische Berufsausbildung erfolgreich beendet</description-de-DE>
+                  <erhebungsposition>4</erhebungsposition>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/schulische_berufsausbildung_nicht_erfolgreich_beendet">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Schulische Berufsausbildung nicht erfolgreich beendet</description-de-DE>
+                  <erhebungsposition>5</erhebungsposition>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/studium_erfolgreich_beendet">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Studium erfolgreich beendet</description-de-DE>
+                  <erhebungsposition>6</erhebungsposition>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberuflichenvorbildung/studium_nicht_erfolgreich_beendet">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Studium nicht erfolgreich beendet</description-de-DE>
+                  <erhebungsposition>7</erhebungsposition>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ArtDerBerufsvorbereitung-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Art der Berufsvorbereitung</nameLang>
+               <nameKurz>Art der Berufsvorbereitung</nameKurz>
+               <nameTechnisch>ArtDerBerufsvorbereitung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderberufsvorbereitung</kennung>
+               <beschreibung>Die Codeliste enthält die Arten der vorausgegangenen berufsvorbereitenden Qualifizierung oder beruflichen Grundbildung gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe c BBiG. Die Ausprägungen entsprechen den Kategorien der amtlichen Berufsbildungsstatistik. Mehrfachnennungen sind zulässig.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der Berufsvorbereitung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <erhebungsposition>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </erhebungsposition>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberufsvorbereitung/berufsfachschule_ohne_vollqualifizierenden_berufsabschluss">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Berufsfachschule ohne vollqualifizierenden Berufsabschluss</description-de-DE>
+                  <erhebungsposition>6</erhebungsposition>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberufsvorbereitung/berufsvorbereitungsmassnahme">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Berufsvorbereitungsmaßnahme</description-de-DE>
+                  <erhebungsposition>3</erhebungsposition>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberufsvorbereitung/betriebliche_qualifizierungsmassnahme">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Betriebliche Qualifizierungsmaßnahme</description-de-DE>
+                  <erhebungsposition>2</erhebungsposition>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberufsvorbereitung/schulisches_berufsgrundbildungsjahr">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Schulisches Berufsgrundbildungsjahr</description-de-DE>
+                  <erhebungsposition>5</erhebungsposition>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderberufsvorbereitung/schulisches_berufsvorbereitungsjahr">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Schulisches Berufsvorbereitungsjahr</description-de-DE>
+                  <erhebungsposition>4</erhebungsposition>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ArtDerFachlichenEignung-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Art der fachlichen Eignung</nameLang>
+               <nameKurz>Art der fachlichen Eignung</nameKurz>
+               <nameTechnisch>ArtDerFachlichenEignung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderfachlicheneignung</kennung>
+               <beschreibung>Die Codeliste enthält die Arten der fachlichen Eignung von Ausbilderinnen und Ausbildern gemäß § 88 Absatz 1 Satz 1 Nummer 3 BBiG. Die Ausprägungen entsprechen den Vorgaben der amtlichen Berufsbildungsstatistik und berücksichtigen die Anforderungen an die fachliche Eignung nach § 30 BBiG.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der fachlichen Eignung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <amtlicherSchluessel>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </amtlicherSchluessel>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/ausbildereignungspruefung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Ausbildereignungsprüfung</description-de-DE>
+                  <amtlicherSchluessel>6</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/befreiung_von_der_ausbildereignungspruefung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Befreiung von der Ausbildereignungsprüfung</description-de-DE>
+                  <amtlicherSchluessel>7</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/berufsausbildungsabschluss">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Berufsausbildungsabschluss</description-de-DE>
+                  <amtlicherSchluessel>1</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/berufszulassung_freie_berufe">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Berufszulassung, Freie Berufe</description-de-DE>
+                  <amtlicherSchluessel>8</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/fachschulabschluss">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Fachschulabschluss</description-de-DE>
+                  <amtlicherSchluessel>5</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/feststellungsverfahren_vollstaendige_vergleichbarkeit">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Feststellungsverfahren mit dem Ergebnis der vollständigen Vergleichbarkeit</description-de-DE>
+                  <amtlicherSchluessel>9</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/fortsetzung_der_ausbildertaetigkeit">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Fortsetzung der Ausbildertätigkeit</description-de-DE>
+                  <amtlicherSchluessel>4</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/hochschul_oder_fachhochschulabschluss">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Hochschul-/Fachhochschulabschluss</description-de-DE>
+                  <amtlicherSchluessel>2</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/meisterpruefung_oder_gleichgestellte_pruefung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Meisterprüfung oder gleichgestellte Prüfung</description-de-DE>
+                  <amtlicherSchluessel>3</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ArtDerFoerderung-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Art der Förderung von Berufsausbildungsverhältnissen</nameLang>
+               <nameKurz>Art der Förderung</nameKurz>
+               <nameTechnisch>ArtDerFoerderung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderfoerderung</kennung>
+               <beschreibung>Die Codeliste enthält die Arten der Förderung von Berufsausbildungsverhältnissen gemäß § 34 Absatz 2 Nummer 9 und § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe j BBiG. Sie basiert auf der Klassifikation der amtlichen Berufsbildungsstatistik und unterscheidet zwischen überwiegend betrieblich finanzierten und überwiegend öffentlich geförderten Berufsausbildungsverhältnissen nach Art der Förderung. Eine überwiegende öffentliche Finanzierung liegt vor, wenn mehr als 50 Prozent der maßgeblichen Ausbildungskosten im ersten Ausbildungsjahr durch entsprechende öffentliche Fördermaßnahmen getragen werden.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der Förderung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <amtlicherSchluessel>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </amtlicherSchluessel>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/foerderung_berufsausbildung_menschen_mit_behinderungen">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Förderung der Berufsausbildung für Menschen mit Behinderungen (Reha)</description-de-DE>
+                  <amtlicherSchluessel>3</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/foerderung_sozial_benachteiligter_oder_lernbeeintraechtigter">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Förderung für sozial Benachteiligte bzw. Lernbeeinträchtigte</description-de-DE>
+                  <amtlicherSchluessel>2</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/sonderprogramm_bund_oder_laender">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sonderprogramm des Bundes oder der Länder</description-de-DE>
+                  <amtlicherSchluessel>1</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfoerderung/ueberwiegend_betriebliche_finanzierung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Keine Förderung (überwiegend betriebliche Finanzierung)</description-de-DE>
+                  <amtlicherSchluessel>0</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ArtDerPruefungszulassung-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Art der Prüfungszulassung</nameLang>
+               <nameKurz>Art der Prüfungszulassung</nameKurz>
+               <nameTechnisch>ArtDerPruefungszulassung-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:artderpruefungszulassung</kennung>
+               <beschreibung>Die Codeliste enthält die Arten der Zulassung zur ersten Abschlussprüfung gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe k BBiG. Sie basiert auf den Ausprägungen der amtlichen Berufsbildungsstatistik und unterscheidet zwischen fristgemäßer und vorzeitiger Zulassung.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Art der Prüfungszulassung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <amtlicherSchluessel>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </amtlicherSchluessel>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderpruefungszulassung/fristgemaesse_zulassung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Fristgemäße Zulassung</description-de-DE>
+                  <amtlicherSchluessel>0</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderpruefungszulassung/vorzeitige_zulassung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Vorzeitige Zulassung</description-de-DE>
+                  <amtlicherSchluessel>1</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Pruefungserfolg-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Prüfungserfolg</nameLang>
+               <nameKurz>Prüfungserfolg</nameKurz>
+               <nameTechnisch>Pruefungserfolg-Codes</nameTechnisch>
+               <kennung>urn:xberufsbildung-de:xberufsbildung:codeliste:pruefungserfolg</kennung>
+               <beschreibung>Die Codeliste enthält die möglichen Ergebnisse der zuletzt abgelegten Abschlussprüfung einschließlich gegebenenfalls erfolgter Wiederholungsprüfungen gemäß § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe k BBiG. Die Ausprägungen entsprechen den Vorgaben der amtlichen Berufsbildungsstatistik.</beschreibung>
+               <herausgebernameLang>XBerufsbildung</herausgebernameLang>
+               <herausgebernameKurz>XBerufsbildung</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>2026-11-26</version>
+               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>Prüfungserfolg</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <sprache>de-DE</sprache>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+               <amtlicherSchluessel>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </amtlicherSchluessel>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/pruefungserfolg/bestanden">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Bestanden</description-de-DE>
+                  <amtlicherSchluessel>1</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/pruefungserfolg/endgueltig_nicht_bestanden">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Endgültig nicht bestanden</description-de-DE>
+                  <amtlicherSchluessel>3</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/pruefungserfolg/nicht_bestanden">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Nicht bestanden</description-de-DE>
+                  <amtlicherSchluessel>2</amtlicherSchluessel>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
    <xs:simpleType name="PruefungsteilAEVO-Codes">
       <xs:annotation>
          <xs:appinfo>

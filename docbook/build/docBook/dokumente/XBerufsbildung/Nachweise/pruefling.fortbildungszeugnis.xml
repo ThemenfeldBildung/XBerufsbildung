@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis">
    <title>pruefling.fortbildungszeugnis</title>
    <subtitle>Dokument: <emphasis role="codebf">pruefling.fortbildungszeugnis</emphasis>
-   </subtitle><para>Dieses Dokument bildet ein Fortbildungszeugnis nach BBiG oder HwO ab. Es enthält die für das Zeugnis erforderlichen Angaben zur geprüften Person, zum Fortbildungsabschluss, zu den Prüfungsteilen und Prüfungsleistungen einschließlich deren Bewertungen, zum Gesamtergebnis, zur zugrunde liegenden Fortbildungsordnung, zum Datum des Bestehens der Prüfung sowie zur ausstellenden zuständigen Stelle.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis">
+   </subtitle><para>Dieses Dokument dient der strukturierten Übermittlung von Angaben zu einem Fortbildungszeugnis nach BBiG oder HwO. Übermittelt werden können insbesondere Angaben zur geprüften Person, zum Fortbildungsabschluss, zu Prüfungsteilen und Prüfungsleistungen einschließlich ihrer Bewertungen, zum Gesamtergebnis, zur zugrunde liegenden Fortbildungsordnung, zum Datum des Bestehens der Prüfung und zur ausstellenden zuständigen Stelle. Die Anforderungen an die Vollständigkeit eines ausgestellten Fortbildungszeugnisses richten sich nach den jeweils einschlägigen Rechtsvorschriften und Prüfungsordnungen.</para><figure xml:id="figure.XBerufsbildung.Nachweise.pruefling.fortbildungszeugnis">
       <title>pruefling.fortbildungszeugnis</title>
       <mediaobject>
          <imageobject>
@@ -81,7 +81,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element enthält allgemeine Angaben zur abgeschlossenen Fortbildung, einschließlich der Bezeichnung, einer Übersicht der Prüfungsteile und -leistungen sowie deren Benotung, dem DQR-Niveau, ggf. den Handlungsbereichen und einer Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element bündelt die allgemeinen Angaben zur abgeschlossenen Fortbildung. Angegeben werden können der Fortbildungsabschluss, die Prüfungsteile mit ihren Prüfungsleistungen, die Handlungsbereiche, eine Befreiung vom schriftlichen Teil der Ausbilder-Eignungsprüfung und das DQR-Niveau.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -92,7 +92,7 @@
                   <emphasis role="codebf">Fortbildungsabschluss</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XBerufsbildung.Baukasten.Fortbildungsabschluss"
@@ -105,7 +105,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Das Element enthält Angaben zur Bezeichnung des Fortbildungsabschlusses, zur Fundstelle der jeweiligen Fortbildungsordnung und ggf. zum Schwerpunkt der Fortbildung.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Angaben zur Bezeichnung des Fortbildungsabschlusses, zur Fundstelle der jeweiligen Fortbildungsordnung und ggf. zum Schwerpunkt der Fortbildung.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -116,7 +116,7 @@
                   <emphasis role="codebf">PruefungsteilFortbildungszeugnis</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1..n</emphasis>
+                  <emphasis role="bold">0..n</emphasis>
                </entry>
                <entry>
                   <xref linkend="XBerufsbildung.Baukasten.PruefungsteilFortbildungszeugnis"
@@ -129,7 +129,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Das Element enthält Angaben zu den Prüfungsteilen und Prüfungsleistungen sowie deren Bewertung.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Angaben zu den Prüfungsteilen und Prüfungsleistungen sowie deren Bewertung.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -151,8 +151,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Das Element beschreibt einen spezifischen Kompetenzbereich, in dem die zu prüfende Person Fachwissen und Fähigkeiten nachweisen muss. Jeder Handlungsbereich umfasst bestimmte Aufgaben oder Themenfelder, die in der Prüfungssituation abgedeckt werden, wie z. B. „Jahresabschlüsse aufbereiten und auswerten“ oder „Betriebliche Sachverhalte steuerlich darstellen“.</para>
-</entry>
+               <entry namest="indent1" nameend="page"><para>Bezeichnung eines spezifischen Kompetenzbereichs, in dem die zu prüfende Person Fachwissen und Fähigkeiten nachweisen muss. Ein Handlungsbereich umfasst bestimmte Aufgaben oder Themenfelder, die in der Prüfung abgedeckt werden, wie z. B. „Jahresabschlüsse aufbereiten und auswerten“ oder „Betriebliche Sachverhalte steuerlich darstellen“.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -174,7 +173,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Das Element enthält Angaben zur Befreiung vom schriftlichen Teil der Prüfung nach der Ausbilder-Eignungsverordnung.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Angaben zur Befreiung vom schriftlichen Teil der Prüfung nach der Ausbilder-Eignungsverordnung.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -196,7 +195,7 @@
             </row>
             <row>
                <entry rowsep="1" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Das Element enthält die Einordnung des erworbenen Abschlusses in den Deutschen Qualifikationsrahmen. Das Kernstück des DQR sind acht Referenzniveaus, die den acht Niveaus des Europäischen Qualifikationsrahmens (EQR) entsprechen.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Einordnung des erworbenen Abschlusses in den Deutschen Qualifikationsrahmen. Das Kernstück des DQR sind acht Referenzniveaus, die den acht Niveaus des Europäischen Qualifikationsrahmens (EQR) entsprechen.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -228,7 +227,7 @@
                   <emphasis role="codebf">Benotung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="externe.modelle.XBildung" role="Quelle"/>
@@ -238,7 +237,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das Element fasst die Berechnung der erreichten Note zusammen. Das Gesamtergebnis ist die zusammenfassende Bewertung der Leistungen eines Prüflings, die aus den Einzelbewertungen der verschiedenen Prüfungsteile errechnet wird und den Erfolg oder Misserfolg der gesamten Prüfung widerspiegelt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Das Element enthält die Gesamtbewertung der bestandenen Fortbildungsprüfung nach den Vorgaben der zugrunde liegenden Fortbildungsordnung, sofern eine solche Gesamtbewertung vorgesehen ist.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -264,7 +263,7 @@
                   <emphasis role="codebf">NameOrganisation</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation"

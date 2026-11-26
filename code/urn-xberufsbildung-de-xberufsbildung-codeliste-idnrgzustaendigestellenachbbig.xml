@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>IDNrGzustaendigeStelleNachBBiG</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Die Codeliste enthält die NOOTS-Registertypkennungen 24A bis 24U für die Verzeichnisse der Berufsausbildungsverhältnisse nach § 34 BBiG. Grundlage ist Nummer 24 der Anlage zu § 1 IDNrG. Die Kennungen unterscheiden die Registertypen nach den Kategorien der zuständigen Stellen. Für die Übermittlung ist der Wert der empfohlenen Codespalte "code" zu verwenden. Die zugehörige NOOTS-Registertypkennung (z. B. 24A) ist in der Spalte "id" hinterlegt. Quelle: NOOTS – Übersicht der Registertypen gemäß IDNrG.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XBerufsbildung</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>idnrgzustaendigestellenachbbig-Codes</ShortName>
+      <LongName>IDNrGzustaendigeStelleNachBBiG</LongName>
+      <Version>2026-11-26</Version>
+      <CanonicalUri>urn:xberufsbildung-de:xberufsbildung:codeliste:idnrgzustaendigestellenachbbig</CanonicalUri>
+      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:idnrgzustaendigestellenachbbig_2026-11-26</CanonicalVersionUri>
+      <Agency>
+         <LongName>XBerufsbildung</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>IDNrGzustaendigeStelleNachBBiG</LongName>
+         <Data Type="string" Lang="de-DE"/>
+      </Column>
+      <Column Id="id" Use="required">
+         <ShortName>id</ShortName>
+         <LongName>IDNrGzustaendigeStelleNachBBiG</LongName>
+         <Data Type="string" Lang="de-DE"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_aerztekammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Ärztekammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24I</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_apothekerkammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Apothekerkammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24L</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_ba</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - BA</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24O</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_bapersbw</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - BAPersBW</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24P</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_bas</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - BAS</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24N</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_bmdv</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - BMDV</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24Q</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_bva</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - BVA</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24M</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_evangelische_kirche</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - evangelische Kirche</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24S</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_handwerkskammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Handwerkskammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24A</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_hauswirtschaft</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Hauswirtschaft</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24U</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_ihk</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - IHK</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24B</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_katholische_kirche</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - katholische Kirche</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24T</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_laender</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Länder</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24R</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_landwirtschaftskammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Landwirtschaftskammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24C</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_notarkammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Notarkammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24F</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_patentanwaltskammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Patentanwaltskammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_rechtsanwaltskammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Rechtsanwaltskammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24D</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_steuerberaterkammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Steuerberaterkammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24H</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_tieraerztekammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Tierärztekammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24K</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_wirtschaftsprueferkammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Wirtschaftsprüferkammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24G</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/idnrgzustaendigestellenachbbig/verzeichnis_der_berufsausbildungsverhaeltnisse_zahnaerztekammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Verzeichnis der Berufsausbildungsverhältnisse - Zahnärztekammern</SimpleValue>
+         </Value>
+         <Value ColumnRef="id">
+            <SimpleValue>24J</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

@@ -7,15 +7,42 @@
 <chapter xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
     xml:id="spezifikation.code-Datentypen">
     
-    <title>Code-Datentypen</title>
+    <title>Code-Datentypen</title>   
 
     <include xmlns="http://www.w3.org/2001/XInclude"
         href="../../build/docBook/dokumente/anhang/codes/code-uebersichtstabelle.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/anhang/codes/code.artderberuflichenvorbildung.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/anhang/codes/code.artderberufsvorbereitung.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/anhang/codes/code.artderfachlicheneignung.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/anhang/codes/code.artderfoerderung.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/anhang/codes/code.artderpruefungszulassung.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/anhang/codes/code.ausbildungsberufe.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/anhang/codes/code.idnrgzustaendigestellenachbbig.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/anhang/codes/code.pruefungserfolg.xml"/>
     
     <include xmlns="http://www.w3.org/2001/XInclude"
         href="../../build/docBook/dokumente/anhang/codes/code.pruefungsteilaevo.xml"/>
     
     <include xmlns="http://www.w3.org/2001/XInclude"
         href="../../build/docBook/dokumente/anhang/codes/code.rechtsgrundlageabschlusszeugnis.xml"/>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docBook/dokumente/anhang/codes/code.versionwirtschaftszweigklassifikation.xml"/>
 
 </chapter>

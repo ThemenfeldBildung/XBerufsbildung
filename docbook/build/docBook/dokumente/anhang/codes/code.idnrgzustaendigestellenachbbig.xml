@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XBerufsbildung.Baukasten.Codes.Code.IDNrGzustaendigeStelleNachBBiG"
+         status="&specstatus;"
+         revision="&xrecent;">
+   <title>Code.IDNrGzustaendigeStelleNachBBiG</title>
+   <informaltable>
+      <tgroup cols="2">
+         <colspec colnum="1" colname="des" colwidth="22mm"/>
+         <colspec colnum="2" colname="val" colwidth="138mm"/>
+         <thead>
+            <row>
+               <entry>Codelisten</entry>
+               <entry/>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry>-beschreibung</entry>
+               <entry><para>Die Codeliste enthält die NOOTS-Registertypkennungen 24A bis 24U für die Verzeichnisse der Berufsausbildungsverhältnisse nach § 34 BBiG. Grundlage ist Nummer 24 der Anlage zu § 1 IDNrG. Die Kennungen unterscheiden die Registertypen nach den Kategorien der zuständigen Stellen.</para>
+
+<para>Für die Übermittlung ist der Wert der empfohlenen Codespalte "code" zu verwenden. Die zugehörige NOOTS-Registertypkennung (z. B. 24A) ist in der Spalte "id" hinterlegt.</para>
+
+<para><emphasis role="bold">Quelle:</emphasis> <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://noots.gov.de/anschluss/status-der-register">NOOTS – Übersicht der Registertypen gemäß IDNrG</link>.</para></entry>
+            </row>
+            <row>
+               <entry>-nutzung</entry>
+               <entry>Typ: 2, siehe Beschreibung</entry>
+            </row>
+            <row>
+               <entry>-kennung</entry>
+               <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:idnrgzustaendigestellenachbbig</entry>
+            </row>
+            <row>
+               <entry>-version</entry>
+               <entry>2026-11-26</entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../verwendung/complexTypes/code.idnrgzustaendigestellenachbbig_list.xml"/>
+</section>

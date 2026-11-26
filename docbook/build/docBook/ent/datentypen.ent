@@ -16,12 +16,6 @@
                     <!ENTITY datentyp.ref.ausbildungsberuf '<emphasis role="codebf">Ausbildungsberuf</emphasis>'>
                     <!ENTITY datentyp.ref.link.ausbildungsberuf '<link linkend="XBerufsbildung.Baukasten.Ausbildungsberuf">Ausbildungsberuf</link>'>
                     <!ENTITY datentyp.ref.xref.ausbildungsberuf '<xref linkend="XBerufsbildung.Baukasten.Ausbildungsberuf" role="AS"/>'>
-                    <!ENTITY datentyp.ref.ausbildungsbetrieb '<emphasis role="codebf">Ausbildungsbetrieb</emphasis>'>
-                    <!ENTITY datentyp.ref.link.ausbildungsbetrieb '<link linkend="XBerufsbildung.Baukasten.Ausbildungsbetrieb">Ausbildungsbetrieb</link>'>
-                    <!ENTITY datentyp.ref.xref.ausbildungsbetrieb '<xref linkend="XBerufsbildung.Baukasten.Ausbildungsbetrieb" role="AS"/>'>
-                    <!ENTITY datentyp.ref.ausbildungsstaette '<emphasis role="codebf">Ausbildungsstaette</emphasis>'>
-                    <!ENTITY datentyp.ref.link.ausbildungsstaette '<link linkend="XBerufsbildung.Baukasten.Kernkomponenten.Ausbildungsstaette">Ausbildungsstaette</link>'>
-                    <!ENTITY datentyp.ref.xref.ausbildungsstaette '<xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Ausbildungsstaette" role="AS"/>'>
                     <!ENTITY datentyp.ref.auszubildendeperson '<emphasis role="codebf">AuszubildendePerson</emphasis>'>
                     <!ENTITY datentyp.ref.link.auszubildendeperson '<link linkend="XBerufsbildung.Baukasten.Kernkomponenten.AuszubildendePerson">AuszubildendePerson</link>'>
                     <!ENTITY datentyp.ref.xref.auszubildendeperson '<xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.AuszubildendePerson" role="AS"/>'>
@@ -31,12 +25,39 @@
                     <!ENTITY datentyp.ref.berufsschule '<emphasis role="codebf">Berufsschule</emphasis>'>
                     <!ENTITY datentyp.ref.link.berufsschule '<link linkend="XBerufsbildung.Baukasten.Kernkomponenten.Berufsschule">Berufsschule</link>'>
                     <!ENTITY datentyp.ref.xref.berufsschule '<xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Berufsschule" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.artderberuflichenvorbildung '<emphasis role="codebf">Code.ArtDerBeruflichenVorbildung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.artderberuflichenvorbildung '<link linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBeruflichenVorbildung">Code.ArtDerBeruflichenVorbildung</link>'>
+                    <!ENTITY datentyp.ref.xref.code.artderberuflichenvorbildung '<xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBeruflichenVorbildung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.artderberufsvorbereitung '<emphasis role="codebf">Code.ArtDerBerufsvorbereitung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.artderberufsvorbereitung '<link linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBerufsvorbereitung">Code.ArtDerBerufsvorbereitung</link>'>
+                    <!ENTITY datentyp.ref.xref.code.artderberufsvorbereitung '<xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerBerufsvorbereitung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.artderfachlicheneignung '<emphasis role="codebf">Code.ArtDerFachlichenEignung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.artderfachlicheneignung '<link linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFachlichenEignung">Code.ArtDerFachlichenEignung</link>'>
+                    <!ENTITY datentyp.ref.xref.code.artderfachlicheneignung '<xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFachlichenEignung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.artderfoerderung '<emphasis role="codebf">Code.ArtDerFoerderung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.artderfoerderung '<link linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFoerderung">Code.ArtDerFoerderung</link>'>
+                    <!ENTITY datentyp.ref.xref.code.artderfoerderung '<xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerFoerderung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.artderpruefungszulassung '<emphasis role="codebf">Code.ArtDerPruefungszulassung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.artderpruefungszulassung '<link linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerPruefungszulassung">Code.ArtDerPruefungszulassung</link>'>
+                    <!ENTITY datentyp.ref.xref.code.artderpruefungszulassung '<xref linkend="XBerufsbildung.Baukasten.Codes.Code.ArtDerPruefungszulassung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.ausbildungsberufe '<emphasis role="codebf">Code.Ausbildungsberufe</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.ausbildungsberufe '<link linkend="XBerufsbildung.Baukasten.Codes.Code.Ausbildungsberufe">Code.Ausbildungsberufe</link>'>
+                    <!ENTITY datentyp.ref.xref.code.ausbildungsberufe '<xref linkend="XBerufsbildung.Baukasten.Codes.Code.Ausbildungsberufe" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.idnrgzustaendigestellenachbbig '<emphasis role="codebf">Code.IDNrGzustaendigeStelleNachBBiG</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.idnrgzustaendigestellenachbbig '<link linkend="XBerufsbildung.Baukasten.Codes.Code.IDNrGzustaendigeStelleNachBBiG">Code.IDNrGzustaendigeStelleNachBBiG</link>'>
+                    <!ENTITY datentyp.ref.xref.code.idnrgzustaendigestellenachbbig '<xref linkend="XBerufsbildung.Baukasten.Codes.Code.IDNrGzustaendigeStelleNachBBiG" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.pruefungserfolg '<emphasis role="codebf">Code.Pruefungserfolg</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.pruefungserfolg '<link linkend="XBerufsbildung.Baukasten.Codes.Code.Pruefungserfolg">Code.Pruefungserfolg</link>'>
+                    <!ENTITY datentyp.ref.xref.code.pruefungserfolg '<xref linkend="XBerufsbildung.Baukasten.Codes.Code.Pruefungserfolg" role="AS"/>'>
                     <!ENTITY datentyp.ref.code.pruefungsteilaevo '<emphasis role="codebf">Code.PruefungsteilAEVO</emphasis>'>
                     <!ENTITY datentyp.ref.link.code.pruefungsteilaevo '<link linkend="XBerufsbildung.Baukasten.Codes.Code.PruefungsteilAEVO">Code.PruefungsteilAEVO</link>'>
                     <!ENTITY datentyp.ref.xref.code.pruefungsteilaevo '<xref linkend="XBerufsbildung.Baukasten.Codes.Code.PruefungsteilAEVO" role="AS"/>'>
                     <!ENTITY datentyp.ref.code.rechtsgrundlageabschlusszeugnis '<emphasis role="codebf">Code.RechtsgrundlageAbschlusszeugnis</emphasis>'>
                     <!ENTITY datentyp.ref.link.code.rechtsgrundlageabschlusszeugnis '<link linkend="XBerufsbildung.Baukasten.Codes.Code.RechtsgrundlageAbschlusszeugnis">Code.RechtsgrundlageAbschlusszeugnis</link>'>
                     <!ENTITY datentyp.ref.xref.code.rechtsgrundlageabschlusszeugnis '<xref linkend="XBerufsbildung.Baukasten.Codes.Code.RechtsgrundlageAbschlusszeugnis" role="AS"/>'>
+                    <!ENTITY datentyp.ref.code.versionwirtschaftszweigklassifikation '<emphasis role="codebf">Code.VersionWirtschaftszweigklassifikation</emphasis>'>
+                    <!ENTITY datentyp.ref.link.code.versionwirtschaftszweigklassifikation '<link linkend="XBerufsbildung.Baukasten.Codes.Code.VersionWirtschaftszweigklassifikation">Code.VersionWirtschaftszweigklassifikation</link>'>
+                    <!ENTITY datentyp.ref.xref.code.versionwirtschaftszweigklassifikation '<xref linkend="XBerufsbildung.Baukasten.Codes.Code.VersionWirtschaftszweigklassifikation" role="AS"/>'>
                     <!ENTITY datentyp.ref.einschlaegigeberufserfahrung '<emphasis role="codebf">EinschlaegigeBerufserfahrung</emphasis>'>
                     <!ENTITY datentyp.ref.link.einschlaegigeberufserfahrung '<link linkend="XBerufsbildung.Baukasten.EinschlaegigeBerufserfahrung">EinschlaegigeBerufserfahrung</link>'>
                     <!ENTITY datentyp.ref.xref.einschlaegigeberufserfahrung '<xref linkend="XBerufsbildung.Baukasten.EinschlaegigeBerufserfahrung" role="AS"/>'>
@@ -91,6 +112,9 @@
                     <!ENTITY datentyp.ref.rechtlichewuerdigung '<emphasis role="codebf">RechtlicheWuerdigung</emphasis>'>
                     <!ENTITY datentyp.ref.link.rechtlichewuerdigung '<link linkend="XBerufsbildung.Baukasten.RechtlicheWuerdigung">RechtlicheWuerdigung</link>'>
                     <!ENTITY datentyp.ref.xref.rechtlichewuerdigung '<xref linkend="XBerufsbildung.Baukasten.RechtlicheWuerdigung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.registerabruf '<emphasis role="codebf">Registerabruf</emphasis>'>
+                    <!ENTITY datentyp.ref.link.registerabruf '<link linkend="XBerufsbildung.Baukasten.Registerabruf">Registerabruf</link>'>
+                    <!ENTITY datentyp.ref.xref.registerabruf '<xref linkend="XBerufsbildung.Baukasten.Registerabruf" role="AS"/>'>
                     <!ENTITY datentyp.ref.stellezustaendig '<emphasis role="codebf">StelleZustaendig</emphasis>'>
                     <!ENTITY datentyp.ref.link.stellezustaendig '<link linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig">StelleZustaendig</link>'>
                     <!ENTITY datentyp.ref.xref.stellezustaendig '<xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig" role="AS"/>'>

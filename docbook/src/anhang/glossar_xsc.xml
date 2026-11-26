@@ -15,12 +15,38 @@
             </thead>
             <tbody>
                 <row>
+                    <entry>AEVO</entry>
+                    <entry>Die Ausbilder-Eignungsverordnung regelt den Nachweis der
+                        berufs- und arbeitspädagogischen Fertigkeiten, Kenntnisse und
+                        Fähigkeiten für die Ausbildung in anerkannten Ausbildungsberufen
+                        nach dem Berufsbildungsgesetz.</entry>
+                </row>
+                <row>
+                    <entry>Ausbildungsbetrieb</entry>
+                    <entry>Ein Ausbildungsbetrieb ist ein Betrieb, der im Rahmen eines
+                        Berufsausbildungsverhältnisses die betriebliche Berufsausbildung
+                        durchführt.</entry>
+                </row>
+                <row>
+                    <entry>Ausbildungsstätte</entry>
+                    <entry>Eine Ausbildungsstätte ist die örtliche Einrichtung, in der
+                        die Berufsausbildung ganz oder teilweise durchgeführt wird.
+                        Sie ist vom Ausbildungsbetrieb als organisatorischer Einheit
+                        zu unterscheiden.</entry>
+                </row>
+                <row>
                     <entry>Basismodul</entry>
                     <entry>Ein Basismodul im XÖV bezieht sich auf einen standardisierten Satz von
                         Basisdaten und -funktionen, der als Grundlage für den Austausch von
                         Fachdaten zwischen verschiedenen Behörden oder Verwaltungen dient. Es stellt
                         eine gemeinsame Infrastruktur bereit, um eine reibungslose Kommunikation und
                         Interoperabilität zu ermöglichen.</entry>
+                </row>
+                <row>
+                    <entry>BBiG</entry>
+                    <entry>Das Berufsbildungsgesetz regelt die Berufsausbildungsvorbereitung,
+                        die Berufsausbildung, die berufliche Fortbildung und die berufliche
+                        Umschulung in seinem Anwendungsbereich.</entry>
                 </row>
                 <row>
                     <entry>Berufsbildung</entry>
@@ -35,6 +61,34 @@
                     <entry>Die Berufsbildungsjourney präzisiert die berufsbildungsbezogenen
                         Stationen der übergeordneten Bildungsjourney für die Lebenslage
                         Berufsausbildung und Weiterbildung.</entry>
+                </row>
+                <row>
+                    <entry>Berufsbildungsstatistik</entry>
+                    <entry>Die Berufsbildungsstatistik ist eine amtliche Statistik
+                        zur Berufsbildung. Die Erhebungsmerkmale richten sich nach
+                        § 88 BBiG und umfassen unter anderem Angaben zu
+                        Berufsausbildungsverhältnissen, Prüfungen sowie
+                        Ausbilderinnen und Ausbildern.</entry>
+                </row>
+                <row>
+                    <entry>Binnendifferenzierung</entry>
+                    <entry>Die Binnendifferenzierung bezeichnet die fachliche
+                        Differenzierung innerhalb eines Ausbildungsberufs,
+                        beispielsweise durch Fachrichtungen, Schwerpunkte,
+                        Wahlqualifikationen oder Einsatzgebiete.</entry>
+                </row>
+                <row>
+                    <entry>BQFG</entry>
+                    <entry>Das Berufsqualifikationsfeststellungsgesetz regelt die Feststellung
+                        der Gleichwertigkeit im Ausland erworbener Berufsqualifikationen
+                        mit entsprechenden inländischen Berufsqualifikationen in seinem
+                        Anwendungsbereich.</entry>
+                </row>
+                <row>
+                    <entry>Codeliste</entry>
+                    <entry>Eine Codeliste ist eine definierte Menge von Werten, die durch
+                        eindeutige Codes identifiziert werden und der standardisierten
+                        Übermittlung fachlicher Informationen dienen.</entry>
                 </row>
                 <row>
                     <entry>Datenaustauschstandard</entry>
@@ -70,21 +124,22 @@
                         niedrigste und 8 das höchste Niveau.</entry>
                 </row>
                 <row>
-                    <entry>eIDAS</entry>
-                    <entry>Verordnung des Europäischen Parlaments und des Rates vom 23. Juli 2014
-                        über elektronische Identifizierung und Vertrauensdienste für elektronische
-                        Transaktionen im Binnenmarkt und zur Aufhebung der Richtlinie 1999/93/EG. In
-                        der Verordnung, die in der Bundesrepublik Deutschland mit dem
-                        eIDAS-Durchführungsgesetz vom 29.07.2017 im nationalen Recht umgesetzt
-                        wurde, wird europaweit der Einsatz von Vertrauensdiensten bzw. die
-                        elektronische Identifizierung geregelt.</entry>
+                    <entry>HwO</entry>
+                    <entry>Die Handwerksordnung regelt die Ausübung des Handwerks sowie
+                        unter anderem die berufliche Bildung und das Prüfungswesen
+                        im Handwerk.</entry>
                 </row>
                 <row>
-                    <entry>Teilmodul</entry>
-                    <entry>Ein Teilmodul definiert die Struktur, das Format und die Inhalte der
-                        Daten, die zwischen den beteiligten Parteien ausgetauscht werden sollen. Es
-                        beschreibt, welche Informationen übermittelt werden müssen, wie sie zu
-                        codieren sind und wie sie interpretiert werden sollen.</entry>
+                    <entry>IDNrG</entry>
+                    <entry>Das Identifikationsnummerngesetz regelt die Verwendung der
+                        steuerlichen Identifikationsnummer als zusätzliches Ordnungsmerkmal
+                        in den vom Gesetz erfassten Registern.</entry>
+                </row>
+                <row>
+                    <entry>Interoperabilität</entry>
+                    <entry>Als Interoperabilität wird die Fähigkeit zum Zusammenspiel (möglichst
+                        nahtlos und effizient) verschiedener Systeme, Techniken oder Organisationen
+                        bezeichnet.</entry>
                 </row>
                 <row>
                     <entry>Kammern</entry>
@@ -94,37 +149,38 @@
                         vertreten.</entry>
                 </row>
                 <row>
-                    <entry>Kammerleistungen</entry>
-                    <entry>Unter Kammerleistungen sind Verwaltungsleistungen der Kammern als Akteur
-                        der beruflichen Bildung zu verstehen.</entry>
-                </row>
-                <row>
-                    <entry>Kerndatenmodell</entry>
-                    <entry>Ein Kerndatenmodell ist ein konzeptionelles Modell, das die grundlegenden
-                        und essenziellen Datenobjekte und -attribute eines bestimmten
-                        Anwendungsbereichs oder einer bestimmten Domäne beschreibt. Es bildet die
-                        Kernstruktur und den Kerninhalt der Daten ab, die in diesem Bereich benötigt
-                        werden.</entry>
-                </row>
-                <row>
                     <entry>Lehrlingsrolle</entry>
-                    <entry>Auch Berufsausbildungsverzeichnis, ist eine öffentlich zugängliche
-                        Datenbank oder Liste, in der alle anerkannten Ausbildungsberufe eines Landes
-                        oder einer Region aufgeführt sind. Es dient als umfassende
-                        Informationsquelle über die verschiedenen Ausbildungsmöglichkeiten in einem
-                        bestimmten Bildungssystem.</entry>
+                    <entry>Die Lehrlingsrolle ist das von der Handwerkskammer gemäß § 28 HwO
+                        geführte Verzeichnis der in ihrem Bezirk bestehenden
+                        Berufsausbildungsverhältnisse.</entry>
                 </row>
                 <row>
-                    <entry>Interoperabilität</entry>
-                    <entry>Als Interoperabilität wird die Fähigkeit zum Zusammenspiel (möglichst
-                        nahtlos und effizient) verschiedener Systeme, Techniken oder Organisationen
-                        bezeichnet.</entry>
+                    <entry>NOOTS</entry>
+                    <entry>Das Nationale Once-Only-Technical-System dient dem standardisierten
+                        elektronischen Abruf und der Übermittlung von Nachweisen und Daten
+                        zwischen abrufberechtigten und datenbereitstellenden Stellen.</entry>
                 </row>
                 <row>
-                    <entry>Nicht-Kammerleistung</entry>
-                    <entry>Verwaltungsleistungen die nicht in der Verantwortung von Kammern liegen.
-                        Dies können Verwaltungsleistungen von berufsbildenden Schulen oder anderen
-                        Akteuren der Berufsbildung sein.</entry>
+                    <entry>Referenzberuf</entry>
+                    <entry>Ein Referenzberuf ist der inländische Beruf, der bei der
+                        Feststellung der Gleichwertigkeit einer im Ausland erworbenen
+                        Berufsqualifikation als Vergleichsgrundlage dient.</entry>
+                </row>
+                <row>
+                    <entry>Registertyp</entry>
+                    <entry>Ein Registertyp bezeichnet eine Kategorie von Registern
+                        mit einem bestimmten fachlichen Gegenstand. Im Kontext von
+                        NOOTS dient die Registertypkennung der fachlichen Zuordnung
+                        eines Registers und nicht der eindeutigen Identifikation
+                        eines konkreten Registers.</entry>
+                </row>
+                <row>
+                    <entry>Schematron</entry>
+                    <entry>Schematron ist eine regelbasierte Sprache zur Validierung
+                        von XML-Dokumenten. Sie ermöglicht insbesondere die Prüfung
+                        fachlicher Bedingungen und Abhängigkeiten zwischen
+                        Datenelementen ergänzend zur Validierung mittels
+                        XML-Schema.</entry>
                 </row>
                 <row>
                     <entry>Standardisierung</entry>
@@ -133,6 +189,26 @@
                         bestimmten Bereich gelten. Es geht darum, gemeinsame Regeln, Richtlinien
                         oder Verfahren zu entwickeln, um eine einheitliche Vorgehensweise,
                         Interoperabilität und Vergleichbarkeit zu gewährleisten.</entry>
+                </row>
+                <row>
+                    <entry>Teilmodul</entry>
+                    <entry>Ein Teilmodul definiert die Struktur, das Format und die Inhalte der
+                        Daten, die zwischen den beteiligten Parteien ausgetauscht werden sollen. Es
+                        beschreibt, welche Informationen übermittelt werden müssen, wie sie zu
+                        codieren sind und wie sie interpretiert werden sollen.</entry>
+                </row>
+                <row>
+                    <entry>XÖV</entry>
+                    <entry>XML in der öffentlichen Verwaltung (XÖV) bezeichnet das Rahmenwerk
+                        für die Entwicklung und Bereitstellung von Standards für den
+                        elektronischen Datenaustausch in der öffentlichen Verwaltung.</entry>
+                </row>
+                <row>
+                    <entry>Zuständige Stelle</entry>
+                    <entry>Eine zuständige Stelle ist eine Institution, der nach
+                        den einschlägigen Rechtsvorschriften bestimmte Aufgaben
+                        im Bereich der Berufsbildung oder der Anerkennung von
+                        Berufsqualifikationen zugewiesen sind.</entry>
                 </row>
             </tbody>
         </tgroup>

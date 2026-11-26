@@ -21,7 +21,7 @@
 		zu einer Entlastung sämtlicher Akteure und Bildungsteilnehmenden im Kontext der
 		Berufsbildung.</para>
 	<para>So werden beispielsweise berufsbildende Schulen, zuständige Stellen wie Kammern und andere
-		öffentliche Behörden, in die Lage versetzt, elektronische Daten standardisiert und länder-
+		öffentliche Behörden in die Lage versetzt, elektronische Daten standardisiert und länder-
 		sowie organisationsübergreifend miteinander auszutauschen. Die digitale Erfassung von
 		Bildungsnachweisen, wie beispielsweise Abschlusszeugnissen, bietet zahlreiche Vorteile, da
 		Prozesse beschleunigt und damit Akteure entlastet werden. </para>
@@ -36,45 +36,37 @@
 		relevant sind, konkret definiert er semantische und fachlich übergreifende Bausteine zur
 		Wiederverwendung. Das erhöht die Interoperabilität im Bildungswesen durch übergreifend
 		einheitlich definierte Datenstrukturen.</para>
-
-	<para>Die Grundlage für das Vorhaben bildete das <link
+	<para>Die Entwicklung von XBerufsbildung steht im Zusammenhang mit dem <link
 			xlink:href="https://www.gesetze-im-internet.de/ozg/BJNR313800017.html"
-			>Onlinezugangsgesetz (OZG)</link>, das im August 2017 in Kraft trat. Das OZG
-		verpflichtete alle deutschen Behörden, einschließlich der zuständigen Stellen und
-		berufsbildenden Schulen, ihre Verwaltungsdienstleistungen digital anzubieten. Das
-		Bundeskabinett hat im Jahr 2024 nun das <link
+			>Onlinezugangsgesetz (OZG)</link>, der Digitalisierung von Verwaltungsleistungen und der
+		Registermodernisierung. Das OZG wurde 2017 eingeführt und durch das <link
 			xlink:href="https://www.recht.bund.de/bgbl/1/2024/245/regelungstext.pdf?__blob=publicationFile&amp;v=3"
-			>Gesetz zur Änderung des Onlinezugangsgesetzes</link> sowie dazugehörige Eckpunkte
-		verabschiedet. Mit diesem Gesetz möchte die Bundesregierung die Digitalisierung weiter
-		vorantreiben. Das politische Begleitpapier legt entscheidende Richtlinien fest, die eine
-		stärkere Priorisierung und Standardisierung anstreben und eine enge Verknüpfung des OZG mit
-		Großprojekten wie der Registermodernisierung und den digitalen Identitäten sicherstellen
-		sollen. Mit dem OZG-Änderungsgesetz soll die permanente Entwicklung und Fortentwicklung von
-		verbindlichen Standards, Schnittstellen und Basisdiensten durch das Bundesministerium des
-		Inneren und für Heimat in Zusammenarbeit mit der föderalen IT-Kooperation (FITKO)
-		vorangetrieben werden. Als Leitprojekt im OZG-Bildungsbereich des Landes Sachsen-Anhalt
-		wurde der Bedarf für die Standardisierung im Berufsbildungsbereich beschrieben und in
-		virtuellen Workshops mit den zuständigen Stellen (Kammern), Softwareherstellern und
-		IT-Dienstleistern abgestimmt. </para>
+			>OZG-Änderungsgesetz</link> vom 19. Juli 2024 weiterentwickelt. Dieses stärkt
+		insbesondere die elektronische Abwicklung von Verwaltungsverfahren sowie die
+		Standardisierung und Interoperabilität der eingesetzten IT-Systeme. XBerufsbildung
+		unterstützt diese Ziele durch die Bereitstellung einheitlicher Datenstrukturen für den
+		elektronischen Austausch von Bildungsnachweisen und weiteren Informationen im
+		Berufsbildungswesen. Als Leitprojekt im OZG-Bildungsbereich des Landes Sachsen-Anhalt wurde
+		der Bedarf für die Standardisierung im Berufsbildungsbereich identifiziert und in virtuellen
+		Workshops mit den zuständigen Stellen (Kammern), Softwareherstellern und IT-Dienstleistern
+		abgestimmt.</para>
 	<para>In der <link xlink:href="https://www.it-planungsrat.de/beschluss/beschluss-2024-12">43.
-			Sitzung des IT-Planungsrates</link>, die am 20. März 2024 stattfand, wurde die <link
+			Sitzung des IT-Planungsrates</link> am 20. März 2024 wurde die <link
 			xlink:href="https://xberufsbildung.de/def/req/1.0/Definition_of_Ready_XBerufsbildung.pdf"
 			>"Definition of Ready" (DoR)</link> zum Datenaustausch im Berufsbildungswesen
-		vorgestellt. Diese DoR legt Anforderungen für einen XÖV-konformen Datenaustausch im
-		deutschen Berufsbildungsbereich fest. Sie umfasst technische Spezifikationen,
-		Sicherheitsstandards und organisatorische Vorgaben, vereinfacht damit den Austausch von
-		Bildungsdaten und erhöht ihre Verlässlichkeit und Sicherheit.^</para>
+		vorgestellt. Sie beschreibt den Standardisierungsbedarf, die beteiligten Akteure und die
+		fachlichen Anforderungen an einen XÖV-konformen Datenaustausch in der Berufsbildung.</para>
 	<para>In <link xlink:href="https://www.it-planungsrat.de/beschluss/b-2025-43-it" xml:id="menura6h"
-			>seiner 48. Sitzung </link>, die am 26. November 2025 stattfand, hat der IT-Planungsrat
+			>seiner 48. Sitzung</link>, die am 26. November 2025 stattfand, hat der IT-Planungsrat
 		den Beschluss getroffen, "die verbindliche Nutzung von XBildung mit Beginn des Jahres 2029
 		für den Anwendungsbereich „digitale Zeugnisausstellung“ auf Basis der verfügbaren
 		Spezifikationen im Geltungsbereich deutscher Schulen, Hochschulen und zuständiger Stellen
 		nach HWO und BBiG mit einem Übergangszeitraum von zwei Jahren ab 2027" vorzuschreiben. </para>
-	<para>Der IT-Planungsrat bittet die Kultusministerkonferenz in der Standardfamilie "XBildung"
-		mit den Spezifikationen „XSchule“, „XHochschule“ und „XBerufsbildung“ ab 2027 die
-		Anforderungen aller Fachbereiche der Verwaltung im Bildungsbereich zu berücksichtigen und
-		den Standard bei Bedarf entsprechend fortzuschreiben. Dies gilt insbesondere für Vorhaben
-		des Onlinezugangsgesetzes, der Registermodernisierung, der Umsetzung der SDG-VO und des
+	<para>Der IT-Planungsrat bittet die Kultusministerkonferenz, in der Standardfamilie "XBildung" mit
+		den Spezifikationen „XSchule“, „XHochschule“ und „XBerufsbildung“ ab 2027 die Anforderungen
+		aller Fachbereiche der Verwaltung im Bildungsbereich zu berücksichtigen und den Standard bei
+		Bedarf entsprechend fortzuschreiben. Dies gilt insbesondere für Vorhaben des
+		Onlinezugangsgesetzes, der Registermodernisierung, der Umsetzung der SDG-VO und des
 		IDNrG.</para>
 	
 </chapter>

@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.Entscheidungsgrundlage">
    <title>Entscheidungsgrundlage</title>
    <subtitle>Typ: <emphasis role="codebf">Entscheidungsgrundlage</emphasis>
-   </subtitle><para>Die Klasse enthält die Entscheidungsbegründung sowie die bei der Entscheidung berücksichtigten Nachweise.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Entscheidungsgrundlage">
+   </subtitle><para>Die Klasse enthält die Begründung der Entscheidung. Berücksichtigte Nachweise können zusätzlich angegeben werden.</para><figure xml:id="figure.XBerufsbildung.Baukasten.Entscheidungsgrundlage">
       <title>Entscheidungsgrundlage</title>
       <mediaobject>
          <imageobject>

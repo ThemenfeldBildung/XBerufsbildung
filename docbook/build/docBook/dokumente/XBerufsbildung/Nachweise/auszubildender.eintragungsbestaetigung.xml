@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung">
    <title>auszubildender.eintragungsbestaetigung</title>
    <subtitle>Dokument: <emphasis role="codebf">auszubildender.eintragungsbestaetigung</emphasis>
-   </subtitle><para>Dieses Dokument bildet die Eintragungsbestätigung der zuständigen Stelle nach BBiG und HwO ab. Die Eintragung des Ausbildungsvertrags in das Verzeichnis der Berufsausbildungsverhältnisse wird dem Ausbildungsbetrieb und der auszubildenden Person mit einer schriftlichen Eintragungsbestätigung angezeigt. Diese enthält Angaben zur Ausbildung (personenbezogene Daten zum Auszubildenden, Ausbildungsberuf, Ausbildungszeitraum) und Informationen zum Ausbildungsbetrieb (Name, Anschrift).</para><figure xml:id="figure.XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung">
+   </subtitle><para>Dieses Dokument bildet die Bestätigung über die Eintragung eines Berufsausbildungsverhältnisses in das Verzeichnis der zuständigen Stelle ab. Es enthält Angaben zur auszubildenden Person und zur Ausbildung. Ergänzend können Angaben zur gesetzlichen Vertretung, zum Ausbildungsbetrieb, zur ausstellenden Stelle und zur Eintragungsnummer übermittelt werden.</para><figure xml:id="figure.XBerufsbildung.Nachweise.auszubildender.eintragungsbestaetigung">
       <title>auszubildender.eintragungsbestaetigung</title>
       <mediaobject>
          <imageobject>
@@ -123,11 +123,10 @@
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsbetrieb"
-                        role="AbschnittNummer"/>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Ausbildungsbetrieb" role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -141,7 +140,7 @@
                   <emphasis role="codebf">StelleZustaendig</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.StelleZustaendig"
@@ -163,7 +162,7 @@
                   <emphasis role="codebf">Identifikation</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Identifikation"

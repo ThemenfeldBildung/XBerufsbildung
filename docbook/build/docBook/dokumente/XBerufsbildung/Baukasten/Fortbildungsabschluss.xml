@@ -54,7 +54,7 @@
                   <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
@@ -74,7 +74,7 @@
                   <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1..n</emphasis>
+                  <emphasis role="bold">0..n</emphasis>
                </entry>
                <entry>
                   <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>

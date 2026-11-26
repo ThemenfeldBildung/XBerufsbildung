@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Art der fachlichen Eignung</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Die Codeliste enthält die Arten der fachlichen Eignung von Ausbilderinnen und Ausbildern gemäß § 88 Absatz 1 Satz 1 Nummer 3 BBiG. Die Ausprägungen entsprechen den Vorgaben der amtlichen Berufsbildungsstatistik und berücksichtigen die Anforderungen an die fachliche Eignung nach § 30 BBiG.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XBerufsbildung</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>ArtDerFachlichenEignung-Codes</ShortName>
+      <LongName>Art der fachlichen Eignung</LongName>
+      <Version>2026-11-26</Version>
+      <CanonicalUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderfachlicheneignung</CanonicalUri>
+      <CanonicalVersionUri>urn:xberufsbildung-de:xberufsbildung:codeliste:artderfachlicheneignung_2026-11-26</CanonicalVersionUri>
+      <Agency>
+         <LongName>XBerufsbildung</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Art der fachlichen Eignung</LongName>
+         <Data Type="string" Lang="de-DE"/>
+      </Column>
+      <Column Id="amtlicherSchluessel" Use="required">
+         <ShortName>amtlicherSchluessel</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+      <Key Id="amtlicherSchluesselKey">
+         <ShortName>amtlicherSchluesselKey</ShortName>
+         <ColumnRef Ref="amtlicherSchluessel"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/ausbildereignungspruefung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Ausbildereignungsprüfung</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>6</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/befreiung_von_der_ausbildereignungspruefung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Befreiung von der Ausbildereignungsprüfung</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>7</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/berufsausbildungsabschluss</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Berufsausbildungsabschluss</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/berufszulassung_freie_berufe</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Berufszulassung, Freie Berufe</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>8</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/fachschulabschluss</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Fachschulabschluss</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>5</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/feststellungsverfahren_vollstaendige_vergleichbarkeit</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Feststellungsverfahren mit dem Ergebnis der vollständigen Vergleichbarkeit</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>9</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/fortsetzung_der_ausbildertaetigkeit</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Fortsetzung der Ausbildertätigkeit</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>4</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/hochschul_oder_fachhochschulabschluss</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Hochschul-/Fachhochschulabschluss</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>2</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xberufsbildung.de/def/xberufsbildung/2026-11-26/code/artderfachlicheneignung/meisterpruefung_oder_gleichgestellte_pruefung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Meisterprüfung oder gleichgestellte Prüfung</SimpleValue>
+         </Value>
+         <Value ColumnRef="amtlicherSchluessel">
+            <SimpleValue>3</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

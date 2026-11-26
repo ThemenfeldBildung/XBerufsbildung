@@ -70,6 +70,28 @@
             </row>
             <row>
                <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">geburt</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Geburt</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geburt"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geburt"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Geburt der auszubildenden Person.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
                   <emphasis role="bold">anschrift</emphasis>
                </entry>
                <entry>
@@ -109,28 +131,6 @@
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>Angaben zum Geschlecht der auszubildenden Person.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">geburt</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Geburt</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geburt"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.Geburt"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zur Geburt der auszubildenden Person.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">

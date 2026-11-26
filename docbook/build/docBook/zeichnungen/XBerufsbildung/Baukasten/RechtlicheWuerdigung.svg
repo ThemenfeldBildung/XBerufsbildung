@@ -104,17 +104,17 @@
             y1="114"
             x2="55"
             y2="114"
-            class="type-structure-required"/>
+            class="type-structure-optional"/>
       <text font-size="11"
             fill="black"
             x="53"
             y="112"
-            text-anchor="end"/>
+            text-anchor="end">0..1</text>
       <line x1="33"
             y1="66"
             x2="33"
             y2="114"
-            class="type-structure-required"/>
+            class="type-structure-optional"/>
       <g transform="translate(55,144)">
          <rect width="191.31562499999998" height="18" class="element-upper"/>
          <rect width="191.31562499999998"
@@ -229,13 +229,13 @@
                   y1="66"
                   x2="55"
                   y2="66"
-                  class="type-structure-required"/>
-            <text font-size="11" fill="black" x="53" y="64" text-anchor="end"/>
+                  class="type-structure-optional"/>
+            <text font-size="11" fill="black" x="53" y="64" text-anchor="end">0..1</text>
             <line x1="33"
                   y1="18"
                   x2="33"
                   y2="66"
-                  class="type-structure-required"/>
+                  class="type-structure-optional"/>
             <circle cx="15"
                     cy="18"
                     r="10"

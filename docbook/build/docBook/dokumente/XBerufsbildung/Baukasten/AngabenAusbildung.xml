@@ -8,7 +8,7 @@
          xml:id="XBerufsbildung.Baukasten.AngabenAusbildung">
    <title>AngabenAusbildung</title>
    <subtitle>Typ: <emphasis role="codebf">AngabenAusbildung</emphasis>
-   </subtitle><para>Die Klasse enthält Angaben zum Ausbildungsberuf und zum Zeitraum der Berufsausbildung.</para><figure xml:id="figure.XBerufsbildung.Baukasten.AngabenAusbildung">
+   </subtitle><para>Die Klasse enthält den Ausbildungsberuf. Der Zeitraum der Berufsausbildung kann zusätzlich angegeben werden.</para><figure xml:id="figure.XBerufsbildung.Baukasten.AngabenAusbildung">
       <title>AngabenAusbildung</title>
       <mediaobject>
          <imageobject>
@@ -50,6 +50,45 @@
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">ausbildungsberuf</emphasis>
                </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zum Ausbildungsberuf. Die Angabe erfolgt entweder über die bereitgestellte Codeliste „Ausbildungsberufe“ oder über eine manuelle Angabe des Ausbildungsberufs.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">ausbildungsberufCode</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Ausbildungsberufe</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.Ausbildungsberufe"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XBerufsbildung.Baukasten.Codes.Code.Ausbildungsberufe"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe des Ausbildungsberufs über die bereitgestellte Codeliste „Ausbildungsberufe“.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">manuelleAngabe</emphasis>
+               </entry>
                <entry>
                   <emphasis role="codebf">Ausbildungsberuf</emphasis>
                </entry>
@@ -65,7 +104,8 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zum Ausbildungsberuf, einschließlich Bezeichnung, Fundstelle der Ausbildungsverordnung sowie prüfungsrelevanter Binnendifferenzierungen.</para></entry>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Manuelle Angabe des Ausbildungsberufs als Alternative zur Angabe über die Codeliste „Ausbildungsberufe“.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -87,7 +127,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angaben zum Zeitraum der Berufsausbildung. Der Zeitraum umfasst ein Startdatum, das den offiziellen Beginn des Ausbildungsverhältnisses kennzeichnet, sowie ein Enddatum, das das reguläre oder vorzeitige Ende festlegt.</para></entry>
+               <entry namest="indent0" nameend="page">Angaben zum Zeitraum der Berufsausbildung. Der Zeitraum kann Angaben zum Beginn und/oder Ende des Ausbildungsverhältnisses enthalten. Der Beginn kennzeichnet den offiziellen Beginn, das Ende das reguläre oder vorzeitige Ende des Ausbildungsverhältnisses.</entry>
             </row>
          </tbody>
       </tgroup>

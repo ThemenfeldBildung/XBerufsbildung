@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XBerufsbildung.Baukasten.Codes.Code.ArtDerFoerderung"
+         status="&specstatus;"
+         revision="&xrecent;">
+   <title>Code.ArtDerFoerderung</title>
+   <informaltable>
+      <tgroup cols="2">
+         <colspec colnum="1" colname="des" colwidth="22mm"/>
+         <colspec colnum="2" colname="val" colwidth="138mm"/>
+         <thead>
+            <row>
+               <entry>Codelisten</entry>
+               <entry/>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry>-beschreibung</entry>
+               <entry><para>Die Codeliste enthält die Arten der Förderung von Berufsausbildungsverhältnissen gemäß § 34 Absatz 2 Nummer 9 und § 88 Absatz 1 Satz 1 Nummer 1 Buchstabe j BBiG. Sie basiert auf der Klassifikation der amtlichen Berufsbildungsstatistik und unterscheidet zwischen überwiegend betrieblich finanzierten und überwiegend öffentlich geförderten Berufsausbildungsverhältnissen nach Art der Förderung. Eine überwiegende öffentliche Finanzierung liegt vor, wenn mehr als 50 Prozent der maßgeblichen Ausbildungskosten im ersten Ausbildungsjahr durch entsprechende öffentliche Fördermaßnahmen getragen werden.</para></entry>
+            </row>
+            <row>
+               <entry>-nutzung</entry>
+               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xberufsbildung-de.xberufsbildung.codeliste.artderfoerderung.ArtDerFoerderung-Codes"
+                        role="Seite"/>
+               </entry>
+            </row>
+            <row>
+               <entry>-kennung</entry>
+               <entry>urn:xberufsbildung-de:xberufsbildung:codeliste:artderfoerderung</entry>
+            </row>
+            <row>
+               <entry>-version</entry>
+               <entry>2026-11-26</entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../verwendung/complexTypes/code.artderfoerderung_list.xml"/>
+</section>

@@ -54,7 +54,7 @@
                   <emphasis role="codebf">NameOrganisation</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XBerufsbildung.Baukasten.Kernkomponenten.NameOrganisation"
@@ -215,7 +215,7 @@
                </row>
                <row>
                   <entry morerows="1">X&#x200B;B&#x200B;B&#x200B;D&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;</entry>
-                  <entry>XBBD-1000-0002-WNIL_RA: Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+                  <entry>XBBD-1000-0002-WNIL_AdS: Wird der Codelisteneintrag „Wert nicht in Liste“ gewählt, muss das Element nichtGelisteterWert vorhanden sein. Es darf leer sein. Bei allen anderen Codelisteneinträgen muss es entfallen.</entry>
                </row>
                <row>
                   <entry align="left">
